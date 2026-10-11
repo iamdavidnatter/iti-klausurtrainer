@@ -11,7 +11,7 @@ function App(){
  const [navOpen,setNavOpen]=useState(false);
  useEffect(()=>{localStorage.setItem(cacheKey,JSON.stringify(state))},[state]);
  const base=mode==='old'?oldQuestions:mode==='new'?newQuestions:[...oldQuestions,...newQuestions];
- const pool=useMemo(()=>base.filter(q=>topic==='Alle'||q.type==='old'||q.topic===topic).filter(q=>!onlyErrors||(state[q.id]?.checked&&q.correct!==null&&state[q.id]?.choice!==q.correct))),[mode,topic,onlyErrors,state]);
+ const pool=useMemo(()=>base.filter(q=>topic==='Alle'||q.type==='old'||q.topic===topic).filter(q=>!onlyErrors||(state[q.id]?.checked&&q.correct!==null&&state[q.id]?.choice!==q.correct)),[mode,topic,onlyErrors,state]);
  const current=pool[Math.min(index,Math.max(0,pool.length-1))];
  const stats=useMemo(()=>{let checked=0,ok=0,unverified=0;for(const q of base){const entry=state[q.id];if(entry?.checked){checked++;if(q.correct===null)unverified++;else if(entry.choice===q.correct)ok++}}return{checked,ok,unverified}},[base,state]);
  const change=(which,val)=>{if(which==='mode')setMode(val);if(which==='topic')setTopic(val);setIndex(0);setOnlyErrors(false);setShowResults(false)};
