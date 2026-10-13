@@ -1,5 +1,5 @@
-// Altklausur: Fragen 2–48 aus den Original-Screenshots transkribiert; einzelne offensichtliche Scanfehler korrigiert.
-// Lösungen sind aus Lehrmaterial abgeleitet, nicht offiziell bestätigt. null = ungeprüft.
+// Altklausur: Fragen 2–48 aus den Screenshots transkribiert; keine offiziell bestätigte Musterlösung.
+// Antwortentscheidungen und Begründungen sind anhand der Vortragsfolien selbst hergeleitet.
 export const oldQuestions = [
   {
     "id": "old-2",
@@ -14,7 +14,9 @@ export const oldQuestions = [
       "Steigender Wartungs- und Verwaltungsaufwand für das gesamte Netzwerk"
     ],
     "correct": 2,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Die zentralisierte Control Plane kann ohne redundante Controller einen Single Point of Failure bilden.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-3",
@@ -29,7 +31,9 @@ export const oldQuestions = [
       "RAID 6 und RAID 10"
     ],
     "correct": 3,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "RAID 6 benötigt mindestens vier Datenträger; RAID 10 benötigt mindestens zwei Spiegelpaare, also vier Datenträger.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-4",
@@ -44,7 +48,9 @@ export const oldQuestions = [
       "Small Computer System Interface"
     ],
     "correct": 3,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "SAS steht für Serial Attached SCSI und verwendet das SCSI-Protokoll.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-5",
@@ -58,8 +64,10 @@ export const oldQuestions = [
       "Warme Luft steigt auf und wird von der Kühlung angesaugt",
       "Konstruktion nach dem Warm- und Kaltgangkonzept nötig"
     ],
-    "correct": null,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "correct": 1,
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Einheitliche Temperaturgradienten in allen Racks sind durch die reine vertikale Unterbodenverteilung nicht gewährleistet.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-6",
@@ -74,7 +82,9 @@ export const oldQuestions = [
       "RAID 0"
     ],
     "correct": 2,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "RAID 6 kann den gleichzeitigen Ausfall von zwei Festplatten tolerieren.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-7",
@@ -89,7 +99,9 @@ export const oldQuestions = [
       "Effizientes Lifecycle-Management von 24x7 Applikationen"
     ],
     "correct": 2,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Komplexe Fallback-Szenarien sind kein Vorteil beziehungsweise keine sinnvolle Begründung für Applikationsvirtualisierung.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-8",
@@ -104,7 +116,9 @@ export const oldQuestions = [
       "Hosting"
     ],
     "correct": 1,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "PaaS ermöglicht die Bereitstellung eigener Applikationen; die zugrunde liegende Plattform wird vom Anbieter betrieben.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-9",
@@ -119,7 +133,9 @@ export const oldQuestions = [
       "Distributed Power Management"
     ],
     "correct": 3,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "DPM reduziert den Energieverbrauch durch Konsolidierung von VMs und Abschalten nicht benötigter Hosts.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-10",
@@ -134,7 +150,9 @@ export const oldQuestions = [
       "MTTF"
     ],
     "correct": 2,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "MTBF ist die durchschnittliche Zeit zwischen zwei Ausfällen.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-11",
@@ -149,7 +167,9 @@ export const oldQuestions = [
       "Lizenzbestimmungen"
     ],
     "correct": 2,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Bei Microsoft-Volumenlizenzverträgen regeln die Produktbestimmungen die konkreten Nutzungsrechte.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-12",
@@ -164,7 +184,9 @@ export const oldQuestions = [
       "SnapVault"
     ],
     "correct": 0,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "MetroCluster wird in den Vortragsfolien als standortübergreifende Redundanzlösung mit synchroner Spiegelung und sehr kurzen Wiederanlaufzielen behandelt. Die Frage nennt versehentlich zweimal RPO.",
+    "solutionStatus": "Auslegung nach Vortragsfolien; Fragestellung teilweise ungenau"
   },
   {
     "id": "old-13",
@@ -179,7 +201,9 @@ export const oldQuestions = [
       "Hardwarevirtualisierung"
     ],
     "correct": 2,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Ein zentral bereitgestellter Windows-Desktop, auf den Nutzer über eine Sitzung zugreifen, ist Sessionvirtualisierung.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-14",
@@ -194,7 +218,9 @@ export const oldQuestions = [
       "Open Value Companywide"
     ],
     "correct": 3,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Open Value Companywide ist das in den Folien passende Modell für kleine Unternehmen mit Vollstandardisierung und Softwarewartung.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-15",
@@ -209,7 +235,9 @@ export const oldQuestions = [
       "Blockbasiert, Client-Side"
     ],
     "correct": 3,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Blockbasierte Client-Side-Deduplizierung erkennt gleiche Blöcke vor dem Transfer und entlastet die langsame Netzwerkverbindung.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-16",
@@ -224,7 +252,9 @@ export const oldQuestions = [
       "Ein Rechenzentrum ist eine organisatorische Einheit, die Rechen- und Serviceleistungen verteilt anbietet und über leistungsfähige IT-Systeme verfügt."
     ],
     "correct": 1,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Ein Rechenzentrum ist laut Modul 1 eine organisatorische Einheit mit zentraler Bereitstellung von Rechen- und Serviceleistungen.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-17",
@@ -239,7 +269,9 @@ export const oldQuestions = [
       "High Availability"
     ],
     "correct": 1,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Fault Tolerance hält eine zweite laufende Instanz bereit und verursacht damit einen zusätzlichen Ressourcenbedarf.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-18",
@@ -254,7 +286,9 @@ export const oldQuestions = [
       "ATA"
     ],
     "correct": 1,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "SAS ist laut Modul 2 für performante lokale Serverlaufwerke ausgelegt.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-19",
@@ -268,7 +302,9 @@ export const oldQuestions = [
       "Direct Attached Storage"
     ],
     "correct": 2,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "DAS bietet kurze Zugriffswege, niedrige Kosten und ist für lokales Caching geeignet.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-20",
@@ -283,7 +319,9 @@ export const oldQuestions = [
       "Plattformunabhängiger Betrieb"
     ],
     "correct": 2,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Eine physische Umgebung kann hinsichtlich bestimmter Lizenzierungsmodelle einfacher sein; die anderen Optionen sprechen eher für Virtualisierung.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-21",
@@ -298,7 +336,9 @@ export const oldQuestions = [
       "SDS bedeutet Unabhängigkeit von der Hardware"
     ],
     "correct": 2,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Die Folien stellen ausdrücklich klar: SDS ist nicht dasselbe wie Storage-Virtualisierung; letztere ist die Grundlage dafür.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-22",
@@ -313,7 +353,9 @@ export const oldQuestions = [
       "Kein Mischbetrieb möglich"
     ],
     "correct": 3,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Bei Hyperconverged Infrastructure wird eingeschränkter Mischbetrieb ausdrücklich als Nachteil genannt.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-23",
@@ -328,7 +370,9 @@ export const oldQuestions = [
       "Physical Servers, Virtualization"
     ],
     "correct": 2,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Im dargestellten Servicemodell unterscheiden sich IaaS und PaaS vor allem bei Betriebssystem und verwalteten Datenbankdiensten. Die exakte Grenze hängt vom Dienst ab.",
+    "solutionStatus": "Auslegung nach Vortragsfolien; Fragestellung teilweise ungenau"
   },
   {
     "id": "old-24",
@@ -343,7 +387,9 @@ export const oldQuestions = [
       "Geringe Komplexität"
     ],
     "correct": 2,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Multi-Cloud kann die Bindung an einen einzigen Anbieter reduzieren; vollständig ausgeschlossen ist Lock-in in der Praxis nicht.",
+    "solutionStatus": "Auslegung nach Vortragsfolien; Fragestellung teilweise ungenau"
   },
   {
     "id": "old-25",
@@ -358,7 +404,9 @@ export const oldQuestions = [
       "Kurze Laufzeiten, da nur Differenzen zur letzten Sicherung gespeichert werden"
     ],
     "correct": 2,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Bei differenziellen Sicherungen genügen die letzte Vollsicherung und das letzte Differenzial-Backup für einen Restore.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-26",
@@ -373,7 +421,9 @@ export const oldQuestions = [
       "Geografische Lage"
     ],
     "correct": 3,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Die grundlegende Rechenzentrumskategorisierung erfolgt unter anderem nach Fläche, Systemanzahl und Energiebedarf, nicht primär nach geografischer Lage.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-27",
@@ -388,7 +438,9 @@ export const oldQuestions = [
       "Fibre Channel ist ein Datenkanal für Lichtwellenleiter"
     ],
     "correct": 2,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Fibre Channel ist ein standardisiertes Protokoll für Speichernetzwerke.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-28",
@@ -403,7 +455,9 @@ export const oldQuestions = [
       "Einfache Aufstellung"
     ],
     "correct": 3,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Towerserver können meist ohne speziellen Serverschrank unkompliziert aufgestellt werden.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-29",
@@ -417,7 +471,9 @@ export const oldQuestions = [
       "Archiv Ebene"
     ],
     "correct": 2,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Tape ist aufgrund seines Kosten-/Kapazitätsverhältnisses für die Archivebene geeignet.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-30",
@@ -432,7 +488,9 @@ export const oldQuestions = [
       "Vertikaler Deckenkanal"
     ],
     "correct": 3,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Ein Deckenkanal erlaubt Luftführung ohne Doppelboden.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-31",
@@ -447,7 +505,9 @@ export const oldQuestions = [
       "Open Value Companywide"
     ],
     "correct": 2,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Für große Unternehmen mit Vollstandardisierung und Software Assurance nennt die Unterlage das Enterprise Agreement.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-32",
@@ -462,7 +522,9 @@ export const oldQuestions = [
       "Schnelle Skalierung der IT-Infrastruktur"
     ],
     "correct": 0,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Zugang zu modernen Technologien ist eine strategische Cloud-Chance; die anderen Antworten betreffen finanzielle und operative Aspekte.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-33",
@@ -477,7 +539,9 @@ export const oldQuestions = [
       "Differenziell"
     ],
     "correct": 2,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Mehrmals täglich erforderliche kleine Änderungsbackups sprechen für inkrementelle Sicherung.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-34",
@@ -492,7 +556,9 @@ export const oldQuestions = [
       "Community Cloud"
     ],
     "correct": 0,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Die Kombination aus interner Private Cloud und externer Public Cloud ist Hybrid Cloud.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-35",
@@ -507,7 +573,9 @@ export const oldQuestions = [
       "Single Loop"
     ],
     "correct": 1,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Ein Standard Cluster kombiniert zwei Controller für Redundanz ohne die standortübergreifende Komplexität eines MetroClusters.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-36",
@@ -522,7 +590,9 @@ export const oldQuestions = [
       "Mean-Time to Desaster"
     ],
     "correct": 2,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "RPO ist die zeitliche Grenze des tolerierbaren Datenverlusts rückblickend vom Ausfall.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-37",
@@ -537,7 +607,9 @@ export const oldQuestions = [
       "Converged Infrastructure"
     ],
     "correct": 3,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Converged Infrastructure fasst Computing-, Storage- und Netzwerkkomponenten in einer kombinierten Infrastruktur zusammen.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-38",
@@ -551,8 +623,10 @@ export const oldQuestions = [
       "Fusion von Infrastruktur und deren Konfiguration",
       "Paketweiterleitung findet Destination-Based statt"
     ],
-    "correct": 1,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "correct": 0,
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Die Control Plane ist für Entscheidungen über die Steuerung des Datenverkehrs zuständig; die Data Plane leitet Pakete weiter.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-39",
@@ -567,7 +641,9 @@ export const oldQuestions = [
       "Zusätzlicher Protokollaufwand"
     ],
     "correct": 2,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "DAS ist typischerweise auf Scale-up-Erweiterungen begrenzt.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-40",
@@ -582,7 +658,9 @@ export const oldQuestions = [
       "Broad Network Access"
     ],
     "correct": 1,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Rapid Elasticity bedeutet schnelles bedarfsgerechtes Hoch- und Herunterskalieren von Ressourcen.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-41",
@@ -597,7 +675,9 @@ export const oldQuestions = [
       "Batterien"
     ],
     "correct": 0,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Ein Kaltwassertank speichert Kälteenergie; eine Kältemaschine erzeugt Kälte.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-42",
@@ -612,7 +692,9 @@ export const oldQuestions = [
       "Doppelte Festplattenkapazität"
     ],
     "correct": 1,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "RAID 0 verteilt Datenblöcke über mehrere Disks und kann dadurch die Performance erhöhen, bietet aber keine Redundanz.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-43",
@@ -626,7 +708,9 @@ export const oldQuestions = [
       "Network Attached Storage"
     ],
     "correct": 2,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "NAS ist für gemeinsame Dateizugriffe von mehreren Clients über ein LAN geeignet.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-44",
@@ -641,7 +725,9 @@ export const oldQuestions = [
       "Partitionierung"
     ],
     "correct": 3,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Partitionierung bezeichnet die Aufteilung physischer Ressourcen eines Hosts auf mehrere VMs.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-45",
@@ -656,7 +742,9 @@ export const oldQuestions = [
       "Windows Hotfixes"
     ],
     "correct": 1,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Office-Plug-ins können im Kontext der dargestellten Applikationsvirtualisierung paketiert werden; Treiber und Windows-Hotfixes nicht.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-46",
@@ -671,7 +759,9 @@ export const oldQuestions = [
       "Türme von Hanoi"
     ],
     "correct": 2,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Grandfather-Father-Son rotiert tägliche, wöchentliche und monatliche Backupgenerationen.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   },
   {
     "id": "old-47",
@@ -685,8 +775,10 @@ export const oldQuestions = [
       "Synthetisch",
       "Inkrementell"
     ],
-    "correct": 3,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "correct": 2,
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Die Folien bezeichnen synthetische Sicherung ausdrücklich als Incremental Forever beziehungsweise Reverse-Deltas-Variante. Die Wortwahl ist etwas unscharf, da Incremental Forever auch eine inkrementelle Strategie bezeichnet.",
+    "solutionStatus": "Auslegung nach Vortragsfolien; Fragestellung teilweise ungenau"
   },
   {
     "id": "old-48",
@@ -701,10 +793,12 @@ export const oldQuestions = [
       "Bladeserver"
     ],
     "correct": 0,
-    "source": "Schriftliche Klausur (1. Termin), 24.10.2025"
+    "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
+    "why": "Ein Rackserver passt in den vorhandenen 19-Zoll-Schrank.",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
   }
 ];
-// Ergänzungsfragen: 28 geprüfte Ein-Antwort-Fragen je Modul, getrennt von der Original-Altklausur.
+
 export const newQuestions = [
   {
     "id": "mod1-1",
