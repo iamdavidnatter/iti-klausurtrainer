@@ -36,9 +36,9 @@ export const originalAlternativeDetails = {
 3:["Virtualisierte Anwendungen lassen sich zentral aktualisieren und ausrollen. Das erleichtert insbesondere den Betrieb regelmäßig genutzter Anwendungen.","Einheitliches Lifecycle-Management ist für viele Clients und dauernd verfügbare Anwendungen wichtig."]
 },
 "old-8":{
-0:["SaaS liefert eine bereits fertige Anwendung, nicht primär eine Plattform zur Bereitstellung und Ausführung eigener Applikationen.","SaaS wäre richtig, wenn Mitarbeitende nur eine fertige CRM-, Office- oder Buchhaltungssoftware nutzen sollen."],
-2:["IaaS stellt virtuelle Server, Netzwerk und Storage bereit; Betriebssystem und Laufzeitumgebung müssen oft vom Kunden administriert werden. Für schnelle App-Bereitstellung ohne Plattformbetrieb ist PaaS passender.","IaaS passt, wenn man Betriebssystem, Middleware und Applikation selbst kontrollieren will."],
-3:["Klassisches Hosting beschreibt meist gemietete Server- oder Webhosting-Leistungen, nicht automatisch eine verwaltete Entwicklungsplattform.","Hosting eignet sich etwa für eine feste Website oder einen gemieteten Server."]
+0:["SaaS liefert eine fertige Anwendung. Hier soll der Kunde jedoch eigene Applikationen auf einer vom Anbieter betriebenen Virtualisierungsinfrastruktur bereitstellen.","SaaS wäre richtig, wenn Mitarbeitende nur eine fertige CRM-, Office- oder Buchhaltungssoftware verwenden sollen."],
+1:["PaaS verwaltet neben Infrastruktur und Virtualisierung üblicherweise auch Betriebssystem und Laufzeitplattform. Die Frage begrenzt die Zuständigkeit des Cloud-Anbieters aber ausdrücklich auf die Virtualisierungsebene.","PaaS wäre richtig, wenn Entwickler eigenen Code bereitstellen möchten, ohne Betriebssystem und Laufzeitumgebung selbst zu administrieren."],
+3:["Klassisches Hosting beschreibt gemietete Server- oder Webhosting-Leistungen, aber nicht automatisch ein Cloud-Servicemodell mit automatisierter IaaS-Provisionierung.","Hosting wäre für eine feste Website oder einen individuell gemieteten Server ohne bedarfsgerechte Cloudressourcen passend."]
 },
 "old-9":{
 0:["Storage vMotion verschiebt virtuelle Datenträger zwischen Speichern, nicht virtuelle Maschinen zur Energieeinsparung zwischen Hosts.","Storage vMotion wäre korrekt, wenn ein Datastore gewartet oder ersetzt werden soll."],
