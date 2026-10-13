@@ -16,7 +16,13 @@ export const oldQuestions = [
     "correct": 2,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Die zentralisierte Control Plane kann ohne redundante Controller einen Single Point of Failure bilden.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "„Höhere Abhängigkeit von Hardware-Herstellern“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Die zentralisierte Control Plane kann ohne redundante Controller einen Single Point of Failure bilden.",
+      "„Höhere Hardware- und Betriebskosten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Die zentralisierte Control Plane kann ohne redundante Controller einen Single Point of Failure bilden.",
+      "",
+      "DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet. Deshalb ist „Steigender Wartungs- und Verwaltungsaufwand für das gesamte Netzwerk“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "old-3",
@@ -33,7 +39,13 @@ export const oldQuestions = [
     "correct": 3,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "RAID 6 benötigt mindestens vier Datenträger; RAID 10 benötigt mindestens zwei Spiegelpaare, also vier Datenträger.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "RAID 5 verteilt Daten und eine Paritätsinformation; damit lässt sich der Ausfall genau eines Laufwerks abfangen. Deshalb ist „RAID 5 und RAID 6“ hier nicht die gesuchte Antwort.",
+      "RAID 1 spiegelt Daten auf mehrere Festplatten und bietet dadurch Schutz vor einem einzelnen Laufwerksausfall. Deshalb ist „RAID 5 und RAID 10“ hier nicht die gesuchte Antwort.",
+      "RAID 0 verteilt Daten auf mehrere Laufwerke, besitzt aber keine Redundanz; der Ausfall eines beteiligten Laufwerks gefährdet den gesamten Verbund. Deshalb ist „RAID 0 und RAID 1“ hier nicht die gesuchte Antwort.",
+      ""
+    ]
   },
   {
     "id": "old-4",
@@ -50,7 +62,13 @@ export const oldQuestions = [
     "correct": 3,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "SAS steht für Serial Attached SCSI und verwendet das SCSI-Protokoll.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "„Integrated Disc Electronics“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: SAS steht für Serial Attached SCSI und verwendet das SCSI-Protokoll.",
+      "Fibre Channel ist eine Netzwerktechnik für Speicherzugriffe, vor allem in SAN-Umgebungen. Deshalb ist „Fibre Channel“ hier nicht die gesuchte Antwort.",
+      "SATA ist eine serielle Massenspeicherschnittstelle und häufig auf preisgünstigen Laufwerken zu finden. Deshalb ist „Advanced Technology Attachement“ hier nicht die gesuchte Antwort.",
+      ""
+    ]
   },
   {
     "id": "old-5",
@@ -67,7 +85,13 @@ export const oldQuestions = [
     "correct": 1,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Einheitliche Temperaturgradienten in allen Racks sind durch die reine vertikale Unterbodenverteilung nicht gewährleistet.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "„Gekühlte Zuluft wird via Doppelboden in die Kaltgänge eingeblasen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Einheitliche Temperaturgradienten in allen Racks sind durch die reine vertikale Unterbodenverteilung nicht gewährleistet.",
+      "",
+      "„Warme Luft steigt auf und wird von der Kühlung angesaugt“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Einheitliche Temperaturgradienten in allen Racks sind durch die reine vertikale Unterbodenverteilung nicht gewährleistet.",
+      "Das Warm-/Kaltgang-Konzept trennt die kalte Serverzuluft von der warmen Abluft und verhindert ineffiziente Rückströmungen. Deshalb ist „Konstruktion nach dem Warm- und Kaltgangkonzept nötig“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "old-6",
@@ -84,7 +108,13 @@ export const oldQuestions = [
     "correct": 2,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "RAID 6 kann den gleichzeitigen Ausfall von zwei Festplatten tolerieren.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "RAID 1 spiegelt Daten auf mehrere Festplatten und bietet dadurch Schutz vor einem einzelnen Laufwerksausfall. Deshalb ist „RAID 1“ hier nicht die gesuchte Antwort.",
+      "RAID 5 verteilt Daten und eine Paritätsinformation; damit lässt sich der Ausfall genau eines Laufwerks abfangen. Deshalb ist „RAID 5“ hier nicht die gesuchte Antwort.",
+      "",
+      "RAID 0 verteilt Daten auf mehrere Laufwerke, besitzt aber keine Redundanz; der Ausfall eines beteiligten Laufwerks gefährdet den gesamten Verbund. Deshalb ist „RAID 0“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "old-7",
@@ -101,7 +131,13 @@ export const oldQuestions = [
     "correct": 2,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Komplexe Fallback-Szenarien sind kein Vorteil beziehungsweise keine sinnvolle Begründung für Applikationsvirtualisierung.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "„Nahtlose Integration von Software Rollout Tools (wie System Center)“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Komplexe Fallback-Szenarien sind kein Vorteil beziehungsweise keine sinnvolle Begründung für Applikationsvirtualisierung.",
+      "„Betrieb inkompatibler Softwarestände in einer Umgebung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Komplexe Fallback-Szenarien sind kein Vorteil beziehungsweise keine sinnvolle Begründung für Applikationsvirtualisierung.",
+      "",
+      "„Effizientes Lifecycle-Management von 24x7 Applikationen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Komplexe Fallback-Szenarien sind kein Vorteil beziehungsweise keine sinnvolle Begründung für Applikationsvirtualisierung."
+    ]
   },
   {
     "id": "old-8",
@@ -118,7 +154,13 @@ export const oldQuestions = [
     "correct": 1,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "PaaS ermöglicht die Bereitstellung eigener Applikationen; die zugrunde liegende Plattform wird vom Anbieter betrieben.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "„Software as a Service“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: PaaS ermöglicht die Bereitstellung eigener Applikationen; die zugrunde liegende Plattform wird vom Anbieter betrieben.",
+      "",
+      "„Infrastructure as a Service“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: PaaS ermöglicht die Bereitstellung eigener Applikationen; die zugrunde liegende Plattform wird vom Anbieter betrieben.",
+      "„Hosting“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: PaaS ermöglicht die Bereitstellung eigener Applikationen; die zugrunde liegende Plattform wird vom Anbieter betrieben."
+    ]
   },
   {
     "id": "old-9",
@@ -135,7 +177,13 @@ export const oldQuestions = [
     "correct": 3,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "DPM reduziert den Energieverbrauch durch Konsolidierung von VMs und Abschalten nicht benötigter Hosts.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "vMotion verschiebt eine laufende virtuelle Maschine zwischen physischen Hosts ohne geplante Dienstunterbrechung. Deshalb ist „Storage vMotion“ hier nicht die gesuchte Antwort.",
+      "HA startet bei Hostausfällen betroffene VMs auf einem verfügbaren Host neu; ein kurzer Unterbruch kann auftreten. Deshalb ist „High Availability“ hier nicht die gesuchte Antwort.",
+      "„Dynamic Ressource Sheduler“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: DPM reduziert den Energieverbrauch durch Konsolidierung von VMs und Abschalten nicht benötigter Hosts.",
+      ""
+    ]
   },
   {
     "id": "old-10",
@@ -152,7 +200,13 @@ export const oldQuestions = [
     "correct": 2,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "MTBF ist die durchschnittliche Zeit zwischen zwei Ausfällen.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "„MTBR“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: MTBF ist die durchschnittliche Zeit zwischen zwei Ausfällen.",
+      "MTTR beschreibt die mittlere Zeitspanne, die zur Wiederherstellung oder Reparatur benötigt wird. Deshalb ist „MTTR“ hier nicht die gesuchte Antwort.",
+      "",
+      "MTTF ist die mittlere Betriebszeit bis zum Ausfall einer Komponente. Deshalb ist „MTTF“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "old-11",
@@ -169,7 +223,13 @@ export const oldQuestions = [
     "correct": 2,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Bei Microsoft-Volumenlizenzverträgen regeln die Produktbestimmungen die konkreten Nutzungsrechte.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "„Products and Services Agreement“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Bei Microsoft-Volumenlizenzverträgen regeln die Produktbestimmungen die konkreten Nutzungsrechte.",
+      "Enterprise Agreement ist ein Microsoft-Volumenlizenzvertrag für größere Organisationen. Deshalb ist „Enterprise Agreement“ hier nicht die gesuchte Antwort.",
+      "",
+      "„Lizenzbestimmungen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Bei Microsoft-Volumenlizenzverträgen regeln die Produktbestimmungen die konkreten Nutzungsrechte."
+    ]
   },
   {
     "id": "old-12",
@@ -186,7 +246,13 @@ export const oldQuestions = [
     "correct": 0,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "MetroCluster wird in den Vortragsfolien als standortübergreifende Redundanzlösung mit synchroner Spiegelung und sehr kurzen Wiederanlaufzielen behandelt. Die Frage nennt versehentlich zweimal RPO.",
-    "solutionStatus": "Auslegung nach Vortragsfolien; Fragestellung teilweise ungenau"
+    "solutionStatus": "Auslegung nach Vortragsfolien; Fragestellung teilweise ungenau",
+    "wrongReasons": [
+      "",
+      "„SnapMirror“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: MetroCluster wird in den Vortragsfolien als standortübergreifende Redundanzlösung mit synchroner Spiegelung und sehr kurzen Wiederanlaufzielen behandelt. Die Frage nennt versehentlich zweimal RPO.",
+      "Ein Snapshot hält einen Datenzustand zu einem Zeitpunkt fest, ist aber ohne separate Aufbewahrung kein vollständiger Ersatz für unabhängige Backups. Deshalb ist „Snapshot“ hier nicht die gesuchte Antwort.",
+      "„SnapVault“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: MetroCluster wird in den Vortragsfolien als standortübergreifende Redundanzlösung mit synchroner Spiegelung und sehr kurzen Wiederanlaufzielen behandelt. Die Frage nennt versehentlich zweimal RPO."
+    ]
   },
   {
     "id": "old-13",
@@ -203,7 +269,13 @@ export const oldQuestions = [
     "correct": 2,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Ein zentral bereitgestellter Windows-Desktop, auf den Nutzer über eine Sitzung zugreifen, ist Sessionvirtualisierung.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "„Betriebssystemvirtualisierung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ein zentral bereitgestellter Windows-Desktop, auf den Nutzer über eine Sitzung zugreifen, ist Sessionvirtualisierung.",
+      "Applikationsvirtualisierung kapselt Anwendungen und erleichtert deren Bereitstellung unabhängig von einer klassischen lokalen Installation. Deshalb ist „Applikationsvirtualisierung“ hier nicht die gesuchte Antwort.",
+      "",
+      "„Hardwarevirtualisierung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ein zentral bereitgestellter Windows-Desktop, auf den Nutzer über eine Sitzung zugreifen, ist Sessionvirtualisierung."
+    ]
   },
   {
     "id": "old-14",
@@ -220,7 +292,13 @@ export const oldQuestions = [
     "correct": 3,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Open Value Companywide ist das in den Folien passende Modell für kleine Unternehmen mit Vollstandardisierung und Softwarewartung.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "„Open License“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Open Value Companywide ist das in den Folien passende Modell für kleine Unternehmen mit Vollstandardisierung und Softwarewartung.",
+      "„Open Value“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Open Value Companywide ist das in den Folien passende Modell für kleine Unternehmen mit Vollstandardisierung und Softwarewartung.",
+      "Enterprise Agreement ist ein Microsoft-Volumenlizenzvertrag für größere Organisationen. Deshalb ist „Enterprise Agreement“ hier nicht die gesuchte Antwort.",
+      ""
+    ]
   },
   {
     "id": "old-15",
@@ -237,7 +315,13 @@ export const oldQuestions = [
     "correct": 3,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Blockbasierte Client-Side-Deduplizierung erkennt gleiche Blöcke vor dem Transfer und entlastet die langsame Netzwerkverbindung.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "„Dateibasiert, Server-Side“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Blockbasierte Client-Side-Deduplizierung erkennt gleiche Blöcke vor dem Transfer und entlastet die langsame Netzwerkverbindung.",
+      "„Dateibasiert, Client-Side“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Blockbasierte Client-Side-Deduplizierung erkennt gleiche Blöcke vor dem Transfer und entlastet die langsame Netzwerkverbindung.",
+      "„Blockbasiert, Server-Side“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Blockbasierte Client-Side-Deduplizierung erkennt gleiche Blöcke vor dem Transfer und entlastet die langsame Netzwerkverbindung.",
+      ""
+    ]
   },
   {
     "id": "old-16",
@@ -253,8 +337,14 @@ export const oldQuestions = [
     ],
     "correct": 1,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
-    "why": "Ein Rechenzentrum ist laut Modul 1 eine organisatorische Einheit mit zentraler Bereitstellung von Rechen- und Serviceleistungen.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "why": "Ein Rechenzentrum ist",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "„Ein Rechenzentrum ist eine technische Einheit, die Rechen- und Serviceleistungen verteilt anbietet und über leistungsfähige IT-Systeme verfügt.“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ein Rechenzentrum ist",
+      "",
+      "„Ein Rechenzentrum ist eine technische Einheit, die Rechen- und Serviceleistungen zentralisiert anbietet und über leistungsfähige IT-Systeme verfügt.“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ein Rechenzentrum ist",
+      "„Ein Rechenzentrum ist eine organisatorische Einheit, die Rechen- und Serviceleistungen verteilt anbietet und über leistungsfähige IT-Systeme verfügt.“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ein Rechenzentrum ist"
+    ]
   },
   {
     "id": "old-17",
@@ -271,7 +361,13 @@ export const oldQuestions = [
     "correct": 1,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Fault Tolerance hält eine zweite laufende Instanz bereit und verursacht damit einen zusätzlichen Ressourcenbedarf.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "DRS verteilt Workloads nach der Auslastung verfügbarer Hosts. Deshalb ist „Distributed Resources Scheduler“ hier nicht die gesuchte Antwort.",
+      "",
+      "vMotion verschiebt eine laufende virtuelle Maschine zwischen physischen Hosts ohne geplante Dienstunterbrechung. Deshalb ist „vMotion“ hier nicht die gesuchte Antwort.",
+      "HA startet bei Hostausfällen betroffene VMs auf einem verfügbaren Host neu; ein kurzer Unterbruch kann auftreten. Deshalb ist „High Availability“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "old-18",
@@ -287,8 +383,14 @@ export const oldQuestions = [
     ],
     "correct": 1,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
-    "why": "SAS ist laut Modul 2 für performante lokale Serverlaufwerke ausgelegt.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "why": "SAS ist",
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "SATA ist eine serielle Massenspeicherschnittstelle und häufig auf preisgünstigen Laufwerken zu finden. Deshalb ist „SATA“ hier nicht die gesuchte Antwort.",
+      "",
+      "„SCSI“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: SAS ist",
+      "„ATA“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: SAS ist"
+    ]
   },
   {
     "id": "old-19",
@@ -304,7 +406,12 @@ export const oldQuestions = [
     "correct": 2,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "DAS bietet kurze Zugriffswege, niedrige Kosten und ist für lokales Caching geeignet.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "Ein SAN stellt zentralen blockbasierten Speicher über eine eigene Speicher-Netzwerkinfrastruktur bereit. Deshalb ist „Storage Area Network“ hier nicht die gesuchte Antwort.",
+      "NAS stellt Dateien über ein Netzwerk bereit, typischerweise über SMB oder NFS für mehrere Benutzer. Deshalb ist „Network Attached Storage“ hier nicht die gesuchte Antwort.",
+      ""
+    ]
   },
   {
     "id": "old-20",
@@ -321,7 +428,13 @@ export const oldQuestions = [
     "correct": 2,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Eine physische Umgebung kann hinsichtlich bestimmter Lizenzierungsmodelle einfacher sein; die anderen Optionen sprechen eher für Virtualisierung.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "„Viele Sicherheitsfeatures“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Eine physische Umgebung kann hinsichtlich bestimmter Lizenzierungsmodelle einfacher sein; die anderen Optionen sprechen eher für Virtualisierung.",
+      "„Dynamische Optimierung im Betrieb“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Eine physische Umgebung kann hinsichtlich bestimmter Lizenzierungsmodelle einfacher sein; die anderen Optionen sprechen eher für Virtualisierung.",
+      "",
+      "„Plattformunabhängiger Betrieb“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Eine physische Umgebung kann hinsichtlich bestimmter Lizenzierungsmodelle einfacher sein; die anderen Optionen sprechen eher für Virtualisierung."
+    ]
   },
   {
     "id": "old-21",
@@ -338,7 +451,13 @@ export const oldQuestions = [
     "correct": 2,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Die Folien stellen ausdrücklich klar: SDS ist nicht dasselbe wie Storage-Virtualisierung; letztere ist die Grundlage dafür.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "SDS abstrahiert Speicherfunktionen von der physischen Hardware und verwaltet sie softwaregestützt. Deshalb ist „SDS abstrahiert die Storage Hardware“ hier nicht die gesuchte Antwort.",
+      "SDS abstrahiert Speicherfunktionen von der physischen Hardware und verwaltet sie softwaregestützt. Deshalb ist „SDS ist eine Storagearchitektur“ hier nicht die gesuchte Antwort.",
+      "",
+      "SDS abstrahiert Speicherfunktionen von der physischen Hardware und verwaltet sie softwaregestützt. Deshalb ist „SDS bedeutet Unabhängigkeit von der Hardware“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "old-22",
@@ -355,7 +474,13 @@ export const oldQuestions = [
     "correct": 3,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Bei Hyperconverged Infrastructure wird eingeschränkter Mischbetrieb ausdrücklich als Nachteil genannt.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "„Hohe Kosten aufgrund des konsolidierten Betriebs“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Bei Hyperconverged Infrastructure wird eingeschränkter Mischbetrieb ausdrücklich als Nachteil genannt.",
+      "„Geringere Agilität bei der Reaktion auf neue Anforderungen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Bei Hyperconverged Infrastructure wird eingeschränkter Mischbetrieb ausdrücklich als Nachteil genannt.",
+      "„Komplexerer Betrieb“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Bei Hyperconverged Infrastructure wird eingeschränkter Mischbetrieb ausdrücklich als Nachteil genannt.",
+      ""
+    ]
   },
   {
     "id": "old-23",
@@ -372,7 +497,13 @@ export const oldQuestions = [
     "correct": 2,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Im dargestellten Servicemodell unterscheiden sich IaaS und PaaS vor allem bei Betriebssystem und verwalteten Datenbankdiensten. Die exakte Grenze hängt vom Dienst ab.",
-    "solutionStatus": "Auslegung nach Vortragsfolien; Fragestellung teilweise ungenau"
+    "solutionStatus": "Auslegung nach Vortragsfolien; Fragestellung teilweise ungenau",
+    "wrongReasons": [
+      "„Virtualization, Operating System“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Im dargestellten Servicemodell unterscheiden sich IaaS und PaaS vor allem bei Betriebssystem und verwalteten Datenbankdiensten. Die exakte Grenze hängt vom Dienst ab.",
+      "„Databases, Application“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Im dargestellten Servicemodell unterscheiden sich IaaS und PaaS vor allem bei Betriebssystem und verwalteten Datenbankdiensten. Die exakte Grenze hängt vom Dienst ab.",
+      "",
+      "„Physical Servers, Virtualization“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Im dargestellten Servicemodell unterscheiden sich IaaS und PaaS vor allem bei Betriebssystem und verwalteten Datenbankdiensten. Die exakte Grenze hängt vom Dienst ab."
+    ]
   },
   {
     "id": "old-24",
@@ -389,7 +520,13 @@ export const oldQuestions = [
     "correct": 2,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Multi-Cloud kann die Bindung an einen einzigen Anbieter reduzieren; vollständig ausgeschlossen ist Lock-in in der Praxis nicht.",
-    "solutionStatus": "Auslegung nach Vortragsfolien; Fragestellung teilweise ungenau"
+    "solutionStatus": "Auslegung nach Vortragsfolien; Fragestellung teilweise ungenau",
+    "wrongReasons": [
+      "„Einheitliches Datenschutz- und Datensicherheitskonzept“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Multi-Cloud kann die Bindung an einen einzigen Anbieter reduzieren; vollständig ausgeschlossen ist Lock-in in der Praxis nicht.",
+      "„Einfache Verwaltung und Abrechnung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Multi-Cloud kann die Bindung an einen einzigen Anbieter reduzieren; vollständig ausgeschlossen ist Lock-in in der Praxis nicht.",
+      "",
+      "„Geringe Komplexität“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Multi-Cloud kann die Bindung an einen einzigen Anbieter reduzieren; vollständig ausgeschlossen ist Lock-in in der Praxis nicht."
+    ]
   },
   {
     "id": "old-25",
@@ -406,7 +543,13 @@ export const oldQuestions = [
     "correct": 2,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Bei differenziellen Sicherungen genügen die letzte Vollsicherung und das letzte Differenzial-Backup für einen Restore.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen. Deshalb ist „Medienset beinhaltet die vollständige Datenmenge“ hier nicht die gesuchte Antwort.",
+      "„Geringer Datenzuwachs, da nur Differenzen zur letzten Sicherung gespeichert werden“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Bei differenziellen Sicherungen genügen die letzte Vollsicherung und das letzte Differenzial-Backup für einen Restore.",
+      "",
+      "„Kurze Laufzeiten, da nur Differenzen zur letzten Sicherung gespeichert werden“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Bei differenziellen Sicherungen genügen die letzte Vollsicherung und das letzte Differenzial-Backup für einen Restore."
+    ]
   },
   {
     "id": "old-26",
@@ -423,7 +566,13 @@ export const oldQuestions = [
     "correct": 3,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Die grundlegende Rechenzentrumskategorisierung erfolgt unter anderem nach Fläche, Systemanzahl und Energiebedarf, nicht primär nach geografischer Lage.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "„Energieverbrauch“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Die grundlegende Rechenzentrumskategorisierung erfolgt unter anderem nach Fläche, Systemanzahl und Energiebedarf, nicht primär nach geografischer Lage.",
+      "„Raumfläche“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Die grundlegende Rechenzentrumskategorisierung erfolgt unter anderem nach Fläche, Systemanzahl und Energiebedarf, nicht primär nach geografischer Lage.",
+      "„Anzahl der Systeme“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Die grundlegende Rechenzentrumskategorisierung erfolgt unter anderem nach Fläche, Systemanzahl und Energiebedarf, nicht primär nach geografischer Lage.",
+      ""
+    ]
   },
   {
     "id": "old-27",
@@ -440,7 +589,13 @@ export const oldQuestions = [
     "correct": 2,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Fibre Channel ist ein standardisiertes Protokoll für Speichernetzwerke.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "Fibre Channel ist eine Netzwerktechnik für Speicherzugriffe, vor allem in SAN-Umgebungen. Deshalb ist „Fibre Channel ist ein optischer Übertragungskanal“ hier nicht die gesuchte Antwort.",
+      "Fibre Channel ist eine Netzwerktechnik für Speicherzugriffe, vor allem in SAN-Umgebungen. Deshalb ist „Fibre Channel ist ein auf dem ISO/OSI Modell basierendes Protokoll“ hier nicht die gesuchte Antwort.",
+      "",
+      "Fibre Channel ist eine Netzwerktechnik für Speicherzugriffe, vor allem in SAN-Umgebungen. Deshalb ist „Fibre Channel ist ein Datenkanal für Lichtwellenleiter“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "old-28",
@@ -457,7 +612,13 @@ export const oldQuestions = [
     "correct": 3,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Towerserver können meist ohne speziellen Serverschrank unkompliziert aufgestellt werden.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "„Verdichtete Bauweise“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Towerserver können meist ohne speziellen Serverschrank unkompliziert aufgestellt werden.",
+      "„Redundante Lüfter“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Towerserver können meist ohne speziellen Serverschrank unkompliziert aufgestellt werden.",
+      "„Einheitliches Remote-Management“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Towerserver können meist ohne speziellen Serverschrank unkompliziert aufgestellt werden.",
+      ""
+    ]
   },
   {
     "id": "old-29",
@@ -473,7 +634,12 @@ export const oldQuestions = [
     "correct": 2,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Tape ist aufgrund seines Kosten-/Kapazitätsverhältnisses für die Archivebene geeignet.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "„Performance Ebene“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Tape ist aufgrund seines Kosten-/Kapazitätsverhältnisses für die Archivebene geeignet.",
+      "„Kapazitäts Ebene“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Tape ist aufgrund seines Kosten-/Kapazitätsverhältnisses für die Archivebene geeignet.",
+      ""
+    ]
   },
   {
     "id": "old-30",
@@ -490,7 +656,13 @@ export const oldQuestions = [
     "correct": 3,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Ein Deckenkanal erlaubt Luftführung ohne Doppelboden.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "„Optimierte vertikale Unterbodenverteilung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ein Deckenkanal erlaubt Luftführung ohne Doppelboden.",
+      "„Vertikale Unterbodenverteilung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ein Deckenkanal erlaubt Luftführung ohne Doppelboden.",
+      "„Kühlung durch geöffnete Fenster“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ein Deckenkanal erlaubt Luftführung ohne Doppelboden.",
+      ""
+    ]
   },
   {
     "id": "old-31",
@@ -507,7 +679,13 @@ export const oldQuestions = [
     "correct": 2,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Für große Unternehmen mit Vollstandardisierung und Software Assurance nennt die Unterlage das Enterprise Agreement.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "„Products and Services Agreement“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Für große Unternehmen mit Vollstandardisierung und Software Assurance nennt die Unterlage das Enterprise Agreement.",
+      "„Open License“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Für große Unternehmen mit Vollstandardisierung und Software Assurance nennt die Unterlage das Enterprise Agreement.",
+      "",
+      "Open Value Companywide war ein Volumenlizenzmodell für die vollständige Standardisierung kleinerer Organisationen. Deshalb ist „Open Value Companywide“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "old-32",
@@ -524,7 +702,13 @@ export const oldQuestions = [
     "correct": 0,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Zugang zu modernen Technologien ist eine strategische Cloud-Chance; die anderen Antworten betreffen finanzielle und operative Aspekte.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "",
+      "„Reduktion der Investitionskosten in eigene IT-Infrastruktur“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zugang zu modernen Technologien ist eine strategische Cloud-Chance; die anderen Antworten betreffen finanzielle und operative Aspekte.",
+      "„Reduzierter Administrations- und Wartungsaufwand“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zugang zu modernen Technologien ist eine strategische Cloud-Chance; die anderen Antworten betreffen finanzielle und operative Aspekte.",
+      "„Schnelle Skalierung der IT-Infrastruktur“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zugang zu modernen Technologien ist eine strategische Cloud-Chance; die anderen Antworten betreffen finanzielle und operative Aspekte."
+    ]
   },
   {
     "id": "old-33",
@@ -541,7 +725,13 @@ export const oldQuestions = [
     "correct": 2,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Mehrmals täglich erforderliche kleine Änderungsbackups sprechen für inkrementelle Sicherung.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen. Deshalb ist „Vollständig“ hier nicht die gesuchte Antwort.",
+      "Ein synthetisches Vollbackup wird aus vorhandenen Voll- und Änderungssicherungen zusammengesetzt, ohne sämtliche Originaldaten erneut zu lesen. Deshalb ist „Synthetisch“ hier nicht die gesuchte Antwort.",
+      "",
+      "Ein differenzielles Backup enthält Änderungen seit der letzten Vollsicherung; für das Restore reichen Vollsicherung und letztes Differenzial. Deshalb ist „Differenziell“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "old-34",
@@ -558,7 +748,13 @@ export const oldQuestions = [
     "correct": 0,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Die Kombination aus interner Private Cloud und externer Public Cloud ist Hybrid Cloud.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "",
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Multi Cloud“ hier nicht die gesuchte Antwort.",
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Selective Cloud“ hier nicht die gesuchte Antwort.",
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Community Cloud“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "old-35",
@@ -575,7 +771,13 @@ export const oldQuestions = [
     "correct": 1,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Ein Standard Cluster kombiniert zwei Controller für Redundanz ohne die standortübergreifende Komplexität eines MetroClusters.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "Double Loop fügt einen weiteren Verbindungsweg zu Laufwerken hinzu, ersetzt aber keinen redundanten Controller. Deshalb ist „Double Loop“ hier nicht die gesuchte Antwort.",
+      "",
+      "Ein MetroCluster schützt durch verteilte Standorte und gespiegelte Daten zusätzlich gegen einen Standortausfall. Deshalb ist „Metro Cluster“ hier nicht die gesuchte Antwort.",
+      "Single Loop nutzt nur einen Verbindungsweg zwischen Controller und Laufwerken und hat dort keine Pfadredundanz. Deshalb ist „Single Loop“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "old-36",
@@ -592,7 +794,13 @@ export const oldQuestions = [
     "correct": 2,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "RPO ist die zeitliche Grenze des tolerierbaren Datenverlusts rückblickend vom Ausfall.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "RTO legt fest, bis wann ein ausgefallenes System wieder betriebsbereit sein soll. Deshalb ist „Recovery Time Objective“ hier nicht die gesuchte Antwort.",
+      "„Mean-Time to Recovery“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: RPO ist die zeitliche Grenze des tolerierbaren Datenverlusts rückblickend vom Ausfall.",
+      "",
+      "„Mean-Time to Desaster“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: RPO ist die zeitliche Grenze des tolerierbaren Datenverlusts rückblickend vom Ausfall."
+    ]
   },
   {
     "id": "old-37",
@@ -609,7 +817,13 @@ export const oldQuestions = [
     "correct": 3,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Converged Infrastructure fasst Computing-, Storage- und Netzwerkkomponenten in einer kombinierten Infrastruktur zusammen.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "„Hyperconverged Infrastructure“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Converged Infrastructure fasst Computing-, Storage- und Netzwerkkomponenten in einer kombinierten Infrastruktur zusammen.",
+      "„Traditional Infrastructure“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Converged Infrastructure fasst Computing-, Storage- und Netzwerkkomponenten in einer kombinierten Infrastruktur zusammen.",
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Cloud Infrastructure“ hier nicht die gesuchte Antwort.",
+      ""
+    ]
   },
   {
     "id": "old-38",
@@ -626,7 +840,13 @@ export const oldQuestions = [
     "correct": 0,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Die Control Plane ist für Entscheidungen über die Steuerung des Datenverkehrs zuständig; die Data Plane leitet Pakete weiter.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "",
+      "„Abstraktion der in der Hardware implementierten Datenschicht“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Die Control Plane ist für Entscheidungen über die Steuerung des Datenverkehrs zuständig; die Data Plane leitet Pakete weiter.",
+      "„Fusion von Infrastruktur und deren Konfiguration“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Die Control Plane ist für Entscheidungen über die Steuerung des Datenverkehrs zuständig; die Data Plane leitet Pakete weiter.",
+      "„Paketweiterleitung findet Destination-Based statt“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Die Control Plane ist für Entscheidungen über die Steuerung des Datenverkehrs zuständig; die Data Plane leitet Pakete weiter."
+    ]
   },
   {
     "id": "old-39",
@@ -643,7 +863,13 @@ export const oldQuestions = [
     "correct": 2,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "DAS ist typischerweise auf Scale-up-Erweiterungen begrenzt.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "„Hoher Hardwareaufwand“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: DAS ist typischerweise auf Scale-up-Erweiterungen begrenzt.",
+      "„Lange Laufzeiten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: DAS ist typischerweise auf Scale-up-Erweiterungen begrenzt.",
+      "",
+      "„Zusätzlicher Protokollaufwand“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: DAS ist typischerweise auf Scale-up-Erweiterungen begrenzt."
+    ]
   },
   {
     "id": "old-40",
@@ -660,7 +886,13 @@ export const oldQuestions = [
     "correct": 1,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Rapid Elasticity bedeutet schnelles bedarfsgerechtes Hoch- und Herunterskalieren von Ressourcen.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "„Measured Service“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Rapid Elasticity bedeutet schnelles bedarfsgerechtes Hoch- und Herunterskalieren von Ressourcen.",
+      "",
+      "„On-Demand Self Service“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Rapid Elasticity bedeutet schnelles bedarfsgerechtes Hoch- und Herunterskalieren von Ressourcen.",
+      "„Broad Network Access“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Rapid Elasticity bedeutet schnelles bedarfsgerechtes Hoch- und Herunterskalieren von Ressourcen."
+    ]
   },
   {
     "id": "old-41",
@@ -677,7 +909,13 @@ export const oldQuestions = [
     "correct": 0,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Ein Kaltwassertank speichert Kälteenergie; eine Kältemaschine erzeugt Kälte.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "",
+      "„Notstromaggregat“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ein Kaltwassertank speichert Kälteenergie; eine Kältemaschine erzeugt Kälte.",
+      "„Kältemaschine“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ein Kaltwassertank speichert Kälteenergie; eine Kältemaschine erzeugt Kälte.",
+      "„Batterien“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ein Kaltwassertank speichert Kälteenergie; eine Kältemaschine erzeugt Kälte."
+    ]
   },
   {
     "id": "old-42",
@@ -694,7 +932,13 @@ export const oldQuestions = [
     "correct": 1,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "RAID 0 verteilt Datenblöcke über mehrere Disks und kann dadurch die Performance erhöhen, bietet aber keine Redundanz.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen. Deshalb ist „Vollständige Redundanz“ hier nicht die gesuchte Antwort.",
+      "",
+      "„Hohe Write Penalty“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: RAID 0 verteilt Datenblöcke über mehrere Disks und kann dadurch die Performance erhöhen, bietet aber keine Redundanz.",
+      "„Doppelte Festplattenkapazität“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: RAID 0 verteilt Datenblöcke über mehrere Disks und kann dadurch die Performance erhöhen, bietet aber keine Redundanz."
+    ]
   },
   {
     "id": "old-43",
@@ -710,7 +954,12 @@ export const oldQuestions = [
     "correct": 2,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "NAS ist für gemeinsame Dateizugriffe von mehreren Clients über ein LAN geeignet.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet. Deshalb ist „Direct Attached Storage“ hier nicht die gesuchte Antwort.",
+      "Ein SAN stellt zentralen blockbasierten Speicher über eine eigene Speicher-Netzwerkinfrastruktur bereit. Deshalb ist „Storage Area Network“ hier nicht die gesuchte Antwort.",
+      ""
+    ]
   },
   {
     "id": "old-44",
@@ -727,7 +976,13 @@ export const oldQuestions = [
     "correct": 3,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Partitionierung bezeichnet die Aufteilung physischer Ressourcen eines Hosts auf mehrere VMs.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "„Hardwareunabhängigkeit“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Partitionierung bezeichnet die Aufteilung physischer Ressourcen eines Hosts auf mehrere VMs.",
+      "Isolierung trennt die Ausführung unterschiedlicher virtueller Maschinen voneinander. Deshalb ist „Isolierung“ hier nicht die gesuchte Antwort.",
+      "Einkapselung bündelt den Zustand einer virtuellen Maschine, damit er leichter gespeichert oder übertragen werden kann. Deshalb ist „Einkapselung“ hier nicht die gesuchte Antwort.",
+      ""
+    ]
   },
   {
     "id": "old-45",
@@ -744,7 +999,13 @@ export const oldQuestions = [
     "correct": 1,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Office-Plug-ins können im Kontext der dargestellten Applikationsvirtualisierung paketiert werden; Treiber und Windows-Hotfixes nicht.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "„Endpoint Protection“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Office-Plug-ins können im Kontext der dargestellten Applikationsvirtualisierung paketiert werden; Treiber und Windows-Hotfixes nicht.",
+      "",
+      "„Druckertreiber“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Office-Plug-ins können im Kontext der dargestellten Applikationsvirtualisierung paketiert werden; Treiber und Windows-Hotfixes nicht.",
+      "„Windows Hotfixes“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Office-Plug-ins können im Kontext der dargestellten Applikationsvirtualisierung paketiert werden; Treiber und Windows-Hotfixes nicht."
+    ]
   },
   {
     "id": "old-46",
@@ -761,7 +1022,13 @@ export const oldQuestions = [
     "correct": 2,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Grandfather-Father-Son rotiert tägliche, wöchentliche und monatliche Backupgenerationen.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "FIFO löscht oder überschreibt zuerst den ältesten Sicherungsstand. Deshalb ist „First In - Last Out“ hier nicht die gesuchte Antwort.",
+      "FIFO löscht oder überschreibt zuerst den ältesten Sicherungsstand. Deshalb ist „First In - First Out“ hier nicht die gesuchte Antwort.",
+      "",
+      "„Türme von Hanoi“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Grandfather-Father-Son rotiert tägliche, wöchentliche und monatliche Backupgenerationen."
+    ]
   },
   {
     "id": "old-47",
@@ -778,7 +1045,13 @@ export const oldQuestions = [
     "correct": 2,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Die Folien bezeichnen synthetische Sicherung ausdrücklich als Incremental Forever beziehungsweise Reverse-Deltas-Variante. Die Wortwahl ist etwas unscharf, da Incremental Forever auch eine inkrementelle Strategie bezeichnet.",
-    "solutionStatus": "Auslegung nach Vortragsfolien; Fragestellung teilweise ungenau"
+    "solutionStatus": "Auslegung nach Vortragsfolien; Fragestellung teilweise ungenau",
+    "wrongReasons": [
+      "Ein differenzielles Backup enthält Änderungen seit der letzten Vollsicherung; für das Restore reichen Vollsicherung und letztes Differenzial. Deshalb ist „Differenziell“ hier nicht die gesuchte Antwort.",
+      "Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen. Deshalb ist „Vollständig“ hier nicht die gesuchte Antwort.",
+      "",
+      "Bei einer inkrementellen Sicherung werden nur Änderungen seit der jeweils letzten Sicherung gespeichert; für das Restore ist oft eine Sicherungskette nötig. Deshalb ist „Inkrementell“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "old-48",
@@ -795,7 +1068,13 @@ export const oldQuestions = [
     "correct": 0,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
     "why": "Ein Rackserver passt in den vorhandenen 19-Zoll-Schrank.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt"
+    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "wrongReasons": [
+      "",
+      "„Desktopserver“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ein Rackserver passt in den vorhandenen 19-Zoll-Schrank.",
+      "Ein Towerserver kann wie ein Stand-PC außerhalb eines Racks aufgestellt werden. Deshalb ist „Towerserver“ hier nicht die gesuchte Antwort.",
+      "Ein Bladeserver verwendet ein gemeinsames Chassis für mehrere kompakte Servermodule. Deshalb ist „Bladeserver“ hier nicht die gesuchte Antwort."
+    ]
   }
 ];
 
@@ -814,7 +1093,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Überbrückung kurzfristiger Stromausfälle."
+    "why": "Überbrückung kurzfristiger Stromausfälle bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Dauerhafte Stromerzeugung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Überbrückung kurzfristiger Stromausfälle bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Regelung der Internetbandbreite“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Überbrückung kurzfristiger Stromausfälle bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Verschlüsselung sämtlicher Festplatten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Überbrückung kurzfristiger Stromausfälle bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      ""
+    ]
   },
   {
     "id": "mod1-2",
@@ -830,7 +1115,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Vertraulichkeit."
+    "why": "Vertraulichkeit bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "",
+      "„Integrität“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Vertraulichkeit bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Verfügbarkeit“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Vertraulichkeit bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Skalierbarkeit“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Vertraulichkeit bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod1-3",
@@ -846,7 +1137,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Daten sind korrekt und vor unerlaubten Veränderungen geschützt."
+    "why": "Daten sind korrekt und vor unerlaubten Veränderungen geschützt bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Hardware wird möglichst günstig beschafft“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Daten sind korrekt und vor unerlaubten Veränderungen geschützt bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„Server sind jederzeit eingeschaltet“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Daten sind korrekt und vor unerlaubten Veränderungen geschützt bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Nur autorisierte Nutzer melden sich an“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Daten sind korrekt und vor unerlaubten Veränderungen geschützt bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod1-4",
@@ -862,7 +1159,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Gezielte Versorgung der Servervorderseiten mit gekühlter Luft."
+    "why": "Gezielte Versorgung der Servervorderseiten mit gekühlter Luft bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "Eine USV versorgt angeschlossene Systeme bei kurzzeitigen Netzunterbrechungen weiter, bis Strom wieder da ist oder Ersatzversorgung übernimmt. Deshalb ist „Unterbringung der USV-Batterien“ hier nicht die gesuchte Antwort.",
+      "„Trennung des Internetzugangs“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Gezielte Versorgung der Servervorderseiten mit gekühlter Luft bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„Ableitung warmer Luft über Servervorderseiten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Gezielte Versorgung der Servervorderseiten mit gekühlter Luft bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod1-5",
@@ -878,7 +1181,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Um unerwünschte Vermischung warmer und kalter Luft zu reduzieren."
+    "why": "Um unerwünschte Vermischung warmer und kalter Luft zu reduzieren bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Um mehr Steckdosen zu erhalten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Um unerwünschte Vermischung warmer und kalter Luft zu reduzieren bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Um die RAID-Kapazität zu erhöhen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Um unerwünschte Vermischung warmer und kalter Luft zu reduzieren bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Um Softwarelizenzen zu sparen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Um unerwünschte Vermischung warmer und kalter Luft zu reduzieren bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      ""
+    ]
   },
   {
     "id": "mod1-6",
@@ -894,7 +1203,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Montage in einem standardisierten Serverschrank."
+    "why": "Montage in einem standardisierten Serverschrank bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "",
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Ausschließlich privater Desktop-Einsatz“ hier nicht die gesuchte Antwort.",
+      "„Betrieb ohne Stromversorgung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Montage in einem standardisierten Serverschrank bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Nur ein einzelner Prozessorkern“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Montage in einem standardisierten Serverschrank bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod1-7",
@@ -910,7 +1225,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Hohe Packdichte und gemeinschaftlich nutzbare Infrastruktur."
+    "why": "Hohe Packdichte und gemeinschaftlich nutzbare Infrastruktur bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Keine zentrale Verwaltung möglich“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Hohe Packdichte und gemeinschaftlich nutzbare Infrastruktur bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen. Deshalb ist „Vollständige Unabhängigkeit von einem Chassis“ hier nicht die gesuchte Antwort.",
+      "„Immer niedrigste Anschaffungskosten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Hohe Packdichte und gemeinschaftlich nutzbare Infrastruktur bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod1-8",
@@ -926,7 +1247,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Höheneinheit (HE)."
+    "why": "Höheneinheit (HE) bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Hertz (Hz)“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Höheneinheit (HE) bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Gigabit pro Sekunde“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Höheneinheit (HE) bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„Terabyte (TB)“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Höheneinheit (HE) bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod1-9",
@@ -942,7 +1269,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: 44,45 mm."
+    "why": "44,45 mm bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„19 mm“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: 44,45 mm bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„100 mm“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: 44,45 mm bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„10 cm“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: 44,45 mm bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      ""
+    ]
   },
   {
     "id": "mod1-10",
@@ -958,7 +1291,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Bereitstellung und Verwaltung virtueller Maschinen."
+    "why": "Bereitstellung und Verwaltung virtueller Maschinen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "",
+      "„Archivierung abgelaufener Verträge“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Bereitstellung und Verwaltung virtueller Maschinen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Physische Gebäudekühlung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Bereitstellung und Verwaltung virtueller Maschinen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Umsetzung von DNS-Namen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Bereitstellung und Verwaltung virtueller Maschinen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod1-11",
@@ -974,7 +1313,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Höhere Auslastung physischer Server."
+    "why": "Höhere Auslastung physischer Server bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Die physischen Stromkosten werden immer null“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Höhere Auslastung physischer Server bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„Jede Anwendung benötigt zwingend neue Hardware“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Höhere Auslastung physischer Server bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Alle Backups entfallen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Höhere Auslastung physischer Server bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod1-12",
@@ -990,7 +1335,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Mehrere virtuelle Systeme nutzen Ressourcen eines physischen Servers."
+    "why": "Mehrere virtuelle Systeme nutzen Ressourcen eines physischen Servers bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Jede VM benötigt eigenes Rechenzentrum“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Mehrere virtuelle Systeme nutzen Ressourcen eines physischen Servers bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Löschen aller Hardwaretreiber“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Mehrere virtuelle Systeme nutzen Ressourcen eines physischen Servers bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "Magnetband ist günstig für lange Aufbewahrung und kann offline gelagert werden, hat aber lange Zugriffszeiten. Deshalb ist „Daten werden immer auf Magnetband gespeichert“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "mod1-13",
@@ -1006,7 +1357,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Virtuelle Maschinen sind logisch voneinander getrennt."
+    "why": "Virtuelle Maschinen sind logisch voneinander getrennt bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Alle VMs verwenden zwingend dasselbe Betriebssystem“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Virtuelle Maschinen sind logisch voneinander getrennt bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Alle Gastdaten sind öffentlich“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Virtuelle Maschinen sind logisch voneinander getrennt bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet. Deshalb ist „Keine VM darf das Netzwerk verwenden“ hier nicht die gesuchte Antwort.",
+      ""
+    ]
   },
   {
     "id": "mod1-14",
@@ -1022,7 +1379,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Der Zustand einer VM lässt sich als zusammengehörige virtuelle Einheit handhaben."
+    "why": "Der Zustand einer VM lässt sich als zusammengehörige virtuelle Einheit handhaben bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "",
+      "„Die CPU wird physisch versiegelt“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Der Zustand einer VM lässt sich als zusammengehörige virtuelle Einheit handhaben bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet. Deshalb ist „Das LAN wird abgeschaltet“ hier nicht die gesuchte Antwort.",
+      "DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet. Deshalb ist „Das Betriebssystem ist unlizenzierbar“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "mod1-15",
@@ -1038,7 +1401,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: vMotion."
+    "why": "vMotion verschiebt eine laufende virtuelle Maschine zwischen physischen Hosts ohne geplante Dienstunterbrechung.",
+    "wrongReasons": [
+      "„Open License“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: vMotion verschiebt eine laufende virtuelle Maschine zwischen physischen Hosts ohne geplante Dienstunterbrechung.",
+      "",
+      "RAID 0 verteilt Daten auf mehrere Laufwerke, besitzt aber keine Redundanz; der Ausfall eines beteiligten Laufwerks gefährdet den gesamten Verbund. Deshalb ist „RAID 0“ hier nicht die gesuchte Antwort.",
+      "„SnapVault“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: vMotion verschiebt eine laufende virtuelle Maschine zwischen physischen Hosts ohne geplante Dienstunterbrechung."
+    ]
   },
   {
     "id": "mod1-16",
@@ -1054,7 +1423,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Distributed Resource Scheduler (DRS)."
+    "why": "DRS verteilt Workloads nach der Auslastung verfügbarer Hosts.",
+    "wrongReasons": [
+      "DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet. Deshalb ist „Direct Attached Storage“ hier nicht die gesuchte Antwort.",
+      "„Disaster Recovery Point“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: DRS verteilt Workloads nach der Auslastung verfügbarer Hosts.",
+      "",
+      "„Data Center Infrastructure Efficiency“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: DRS verteilt Workloads nach der Auslastung verfügbarer Hosts."
+    ]
   },
   {
     "id": "mod1-17",
@@ -1070,7 +1445,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Neustart betroffener VMs auf anderen Hosts nach einem Host-Ausfall."
+    "why": "Neustart betroffener VMs auf anderen Hosts nach einem Host-Ausfall bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Ausschließlich laufende Verschlüsselung der VM“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Neustart betroffener VMs auf anderen Hosts nach einem Host-Ausfall bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Automatische Lizenzkündigung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Neustart betroffener VMs auf anderen Hosts nach einem Host-Ausfall bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Jede VM dauerhaft auszuschalten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Neustart betroffener VMs auf anderen Hosts nach einem Host-Ausfall bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      ""
+    ]
   },
   {
     "id": "mod1-18",
@@ -1086,7 +1467,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Distributed Power Management (DPM)."
+    "why": "DPM konsolidiert VMs auf weniger Hosts und kann nicht benötigte Hosts in den Stromsparmodus versetzen.",
+    "wrongReasons": [
+      "",
+      "vMotion verschiebt eine laufende virtuelle Maschine zwischen physischen Hosts ohne geplante Dienstunterbrechung. Deshalb ist „Storage vMotion“ hier nicht die gesuchte Antwort.",
+      "Software Assurance umfasst je nach Lizenzvertrag Versionsrechte und zusätzliche Wartungs- beziehungsweise Supportleistungen. Deshalb ist „Software Assurance“ hier nicht die gesuchte Antwort.",
+      "Fibre Channel ist eine Netzwerktechnik für Speicherzugriffe, vor allem in SAN-Umgebungen. Deshalb ist „Fibre Channel“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "mod1-19",
@@ -1102,7 +1489,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Storage vMotion."
+    "why": "vMotion verschiebt eine laufende virtuelle Maschine zwischen physischen Hosts ohne geplante Dienstunterbrechung.",
+    "wrongReasons": [
+      "RAID 1 spiegelt Daten auf mehrere Festplatten und bietet dadurch Schutz vor einem einzelnen Laufwerksausfall. Deshalb ist „RAID 1“ hier nicht die gesuchte Antwort.",
+      "",
+      "„vCenter Single Sign On“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: vMotion verschiebt eine laufende virtuelle Maschine zwischen physischen Hosts ohne geplante Dienstunterbrechung.",
+      "„Open Value“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: vMotion verschiebt eine laufende virtuelle Maschine zwischen physischen Hosts ohne geplante Dienstunterbrechung."
+    ]
   },
   {
     "id": "mod1-20",
@@ -1118,7 +1511,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Zugriff auf eine zentral bereitgestellte Desktopsitzung."
+    "why": "Zugriff auf eine zentral bereitgestellte Desktopsitzung bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Erstellen einer RAID-Parität“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zugriff auf eine zentral bereitgestellte Desktopsitzung bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Austausch eines Serverlüfters“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zugriff auf eine zentral bereitgestellte Desktopsitzung bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„Aufrüsten einer lokalen Festplatte“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zugriff auf eine zentral bereitgestellte Desktopsitzung bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod1-21",
@@ -1134,7 +1533,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Getrennte Bereitstellung unterschiedlicher Anwendungsversionen."
+    "why": "Getrennte Bereitstellung unterschiedlicher Anwendungsversionen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Notwendigkeit eines physischen PCs für jede Softwareversion“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Getrennte Bereitstellung unterschiedlicher Anwendungsversionen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Ersetzung der Netzwerkverkabelung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Getrennte Bereitstellung unterschiedlicher Anwendungsversionen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Verbot von Softwareupdates“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Getrennte Bereitstellung unterschiedlicher Anwendungsversionen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      ""
+    ]
   },
   {
     "id": "mod1-22",
@@ -1150,7 +1555,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Paketierung einer Anwendung auf einem sauberen Referenzsystem."
+    "why": "Paketierung einer Anwendung auf einem sauberen Referenzsystem bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "",
+      "„Installation aller Programme ausschließlich auf Routern“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Paketierung einer Anwendung auf einem sauberen Referenzsystem bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Ausschließlich mechanische Festplattenspiegelung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Paketierung einer Anwendung auf einem sauberen Referenzsystem bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Einrichtung einer Luftschleuse“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Paketierung einer Anwendung auf einem sauberen Referenzsystem bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod1-23",
@@ -1166,7 +1577,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Ausfall einzelner Komponenten abfangen."
+    "why": "Ausfall einzelner Komponenten abfangen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Verhinderung von Softwarevirtualisierung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ausfall einzelner Komponenten abfangen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„Aufzeichnung aller Benutzergespräche“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ausfall einzelner Komponenten abfangen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Abschaffung jedes Sicherheitskonzepts“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ausfall einzelner Komponenten abfangen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod1-24",
@@ -1182,7 +1599,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Schutz von Räumen und IT-Anlagen vor unberechtigtem Zutritt und Schäden."
+    "why": "Schutz von Räumen und IT-Anlagen vor unberechtigtem Zutritt und Schäden bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Verringerung der Bildschirmauflösung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Schutz von Räumen und IT-Anlagen vor unberechtigtem Zutritt und Schäden bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Nur Optimierung von Datenbankabfragen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Schutz von Räumen und IT-Anlagen vor unberechtigtem Zutritt und Schäden bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„Automatische Zuordnung von Softwarelizenzen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Schutz von Räumen und IT-Anlagen vor unberechtigtem Zutritt und Schäden bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod1-25",
@@ -1198,7 +1621,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Zusätzliche Leistungen und Versionsrechte gemäß Vertrag."
+    "why": "Zusätzliche Leistungen und Versionsrechte gemäß Vertrag bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Eine Art RAID-Controller“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zusätzliche Leistungen und Versionsrechte gemäß Vertrag bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "Ein Rackserver wird in einem standardisierten Serverschrank montiert und ist für kompakte Serverräume geeignet. Deshalb ist „Eine Kühltechnik für Rackserver“ hier nicht die gesuchte Antwort.",
+      "„Ein Netzwerkprotokoll für Storage“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zusätzliche Leistungen und Versionsrechte gemäß Vertrag bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      ""
+    ]
   },
   {
     "id": "mod1-26",
@@ -1214,7 +1643,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Das Nutzungsrecht ist bei Subscription an eine Laufzeit gebunden."
+    "why": "DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet.",
+    "wrongReasons": [
+      "",
+      "Ein Subscription-Nutzungsrecht ist zeitlich an den laufenden Abonnementvertrag gebunden. Deshalb ist „Subscription erlaubt immer unbegrenzte Installationen ohne Kosten“ hier nicht die gesuchte Antwort.",
+      "Ein Subscription-Nutzungsrecht ist zeitlich an den laufenden Abonnementvertrag gebunden. Deshalb ist „Subscription bezeichnet ausschließlich Hardwaremiete“ hier nicht die gesuchte Antwort.",
+      "„Eine Nutzungslizenz läuft immer täglich ab“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet."
+    ]
   },
   {
     "id": "mod1-27",
@@ -1230,7 +1665,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Open Value Companywide."
+    "why": "Open Value Companywide war ein Volumenlizenzmodell für die vollständige Standardisierung kleinerer Organisationen.",
+    "wrongReasons": [
+      "Ein Subscription-Nutzungsrecht ist zeitlich an den laufenden Abonnementvertrag gebunden. Deshalb ist „RAID Enterprise Subscription“ hier nicht die gesuchte Antwort.",
+      "",
+      "Grandfather-Father-Son ist ein Rotationsmodell mit täglichen, wöchentlichen und monatlichen Backup-Generationen. Deshalb ist „Enterprise Agreement nur für Einzelpersonen“ hier nicht die gesuchte Antwort.",
+      "Fibre Channel ist eine Netzwerktechnik für Speicherzugriffe, vor allem in SAN-Umgebungen. Deshalb ist „Fibre Channel Agreement“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "mod1-28",
@@ -1246,7 +1687,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Regelmäßige Erfassung und Nachlizenzierung eines gestiegenen Lizenzbedarfs."
+    "why": "Regelmäßige Erfassung und Nachlizenzierung eines gestiegenen Lizenzbedarfs bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Löschen aller VMs nach drei Tagen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Regelmäßige Erfassung und Nachlizenzierung eines gestiegenen Lizenzbedarfs bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Verteilung der Paritätsblöcke“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Regelmäßige Erfassung und Nachlizenzierung eines gestiegenen Lizenzbedarfs bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„Tägliche Überprüfung der Servertemperatur“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Regelmäßige Erfassung und Nachlizenzierung eines gestiegenen Lizenzbedarfs bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod2-1",
@@ -1262,7 +1709,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Serial Attached SCSI."
+    "why": "SAS verwendet SCSI-Befehle und ist für professionelle Speicheranbindungen mit leistungsfähigen und oft redundanten Wegen geeignet.",
+    "wrongReasons": [
+      "SATA ist eine serielle Massenspeicherschnittstelle und häufig auf preisgünstigen Laufwerken zu finden. Deshalb ist „Serial Advanced Technology Attachment“ hier nicht die gesuchte Antwort.",
+      "„Integrated Drive Electronics“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: SAS verwendet SCSI-Befehle und ist für professionelle Speicheranbindungen mit leistungsfähigen und oft redundanten Wegen geeignet.",
+      "Fibre Channel ist eine Netzwerktechnik für Speicherzugriffe, vor allem in SAN-Umgebungen. Deshalb ist „Fibre Channel“ hier nicht die gesuchte Antwort.",
+      ""
+    ]
   },
   {
     "id": "mod2-2",
@@ -1278,7 +1731,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Kostengünstige Speicher und Archivsysteme."
+    "why": "Kostengünstige Speicher und Archivsysteme bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "",
+      "„Ausschließlich extrem latenzkritische HPC-Cluster“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Kostengünstige Speicher und Archivsysteme bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Nur Glasfaserverbindungen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Kostengünstige Speicher und Archivsysteme bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Softwarelizenzverwaltung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Kostengünstige Speicher und Archivsysteme bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod2-3",
@@ -1294,7 +1753,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Zwei Schnittstellen pro Disk."
+    "why": "Zwei Schnittstellen pro Disk bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Verzicht auf Speichercontroller“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zwei Schnittstellen pro Disk bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„Nur eine maximale Kabellänge von 1 cm“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zwei Schnittstellen pro Disk bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Ausschließlich einzelne Schreibwarteschlangen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zwei Schnittstellen pro Disk bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod2-4",
@@ -1310,7 +1775,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Viele parallele Befehlswarteschlangen und kurze Zugriffszeiten."
+    "why": "Viele parallele Befehlswarteschlangen und kurze Zugriffszeiten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "Magnetband ist günstig für lange Aufbewahrung und kann offline gelagert werden, hat aber lange Zugriffszeiten. Deshalb ist „Nur sequentielle Magnetbandzugriffe“ hier nicht die gesuchte Antwort.",
+      "„Es benötigt zwingend einen optischen Datenträger“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Viele parallele Befehlswarteschlangen und kurze Zugriffszeiten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„Ausschließlich parallele 40-polige Kabel“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Viele parallele Befehlswarteschlangen und kurze Zugriffszeiten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod2-5",
@@ -1326,7 +1797,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Speichernetzwerke (SAN)."
+    "why": "Ein SAN stellt zentralen blockbasierten Speicher über eine eigene Speicher-Netzwerkinfrastruktur bereit.",
+    "wrongReasons": [
+      "„Lizenzschlüsselverwaltung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ein SAN stellt zentralen blockbasierten Speicher über eine eigene Speicher-Netzwerkinfrastruktur bereit.",
+      "„HTTP-Webseitenanzeige“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ein SAN stellt zentralen blockbasierten Speicher über eine eigene Speicher-Netzwerkinfrastruktur bereit.",
+      "„CPU-Kühlung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ein SAN stellt zentralen blockbasierten Speicher über eine eigene Speicher-Netzwerkinfrastruktur bereit.",
+      ""
+    ]
   },
   {
     "id": "mod2-6",
@@ -1342,7 +1819,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Just a Bunch of Disks ohne eingebaute RAID-Redundanz."
+    "why": "Just a Bunch of Disks ohne eingebaute RAID-Redundanz bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "",
+      "„Daten werden auf zwei Platten gespiegelt“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Just a Bunch of Disks ohne eingebaute RAID-Redundanz bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "RAID 6 verwendet zwei unabhängige Paritäten und verträgt den Ausfall von zwei Laufwerken. Deshalb ist „Eine Variante von RAID 6“ hier nicht die gesuchte Antwort.",
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Ein spezielles Cloud-Service-Modell“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "mod2-7",
@@ -1358,7 +1841,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: RAID 0."
+    "why": "RAID 0 verteilt Daten auf mehrere Laufwerke, besitzt aber keine Redundanz; der Ausfall eines beteiligten Laufwerks gefährdet den gesamten Verbund.",
+    "wrongReasons": [
+      "RAID 6 verwendet zwei unabhängige Paritäten und verträgt den Ausfall von zwei Laufwerken. Deshalb ist „RAID 6“ hier nicht die gesuchte Antwort.",
+      "",
+      "RAID 1 spiegelt Daten auf mehrere Festplatten und bietet dadurch Schutz vor einem einzelnen Laufwerksausfall. Deshalb ist „RAID 1“ hier nicht die gesuchte Antwort.",
+      "RAID 5 verteilt Daten und eine Paritätsinformation; damit lässt sich der Ausfall genau eines Laufwerks abfangen. Deshalb ist „RAID 5“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "mod2-8",
@@ -1374,7 +1863,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Blockweises Striping."
+    "why": "Blockweises Striping bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Spiegelung jedes Datenträgers“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Blockweises Striping bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Standortübergreifende Replikation“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Blockweises Striping bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„Doppelte Parität“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Blockweises Striping bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod2-9",
@@ -1390,7 +1885,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Mirroring (Spiegelung)."
+    "why": "Mirroring (Spiegelung) bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Distributed Parity“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Mirroring (Spiegelung) bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Double Parity“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Mirroring (Spiegelung) bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "Deduplizierung erkennt identische Dateien oder Datenblöcke und speichert diese möglichst nur einmal. Deshalb ist „Deduplizierung“ hier nicht die gesuchte Antwort.",
+      ""
+    ]
   },
   {
     "id": "mod2-10",
@@ -1406,7 +1907,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Eine Festplatte."
+    "why": "Eine Festplatte bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "",
+      "„Zwei beliebige Festplatten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Eine Festplatte bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Drei beliebige Festplatten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Eine Festplatte bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Keine einzige Festplatte“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Eine Festplatte bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod2-11",
@@ -1422,7 +1929,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Write Penalty."
+    "why": "Write Penalty bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Vendor Lock-in“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Write Penalty bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„Rapid Elasticity“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Write Penalty bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Hot Aisle“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Write Penalty bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod2-12",
@@ -1438,7 +1951,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Zwei Festplatten."
+    "why": "Zwei Festplatten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Beliebig viele Festplatten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zwei Festplatten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Keinen einzigen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zwei Festplatten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„Nur eine Festplatte“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zwei Festplatten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod2-13",
@@ -1454,7 +1973,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Striping über gespiegelte Festplattenpaare."
+    "why": "Striping über gespiegelte Festplattenpaare bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Nur doppelte Parität ohne Spiegelung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Striping über gespiegelte Festplattenpaare bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Eine einzelne Festplatte ohne Backup“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Striping über gespiegelte Festplattenpaare bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet. Deshalb ist „Daten ausschließlich über das LAN“ hier nicht die gesuchte Antwort.",
+      ""
+    ]
   },
   {
     "id": "mod2-14",
@@ -1470,7 +1995,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Hoher Bedarf an physischer Festplattenkapazität."
+    "why": "Hoher Bedarf an physischer Festplattenkapazität bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "",
+      "„Grundsätzlich keine Redundanz“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Hoher Bedarf an physischer Festplattenkapazität bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Immer langsamer als ein einzelner Datenträger“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Hoher Bedarf an physischer Festplattenkapazität bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "Magnetband ist günstig für lange Aufbewahrung und kann offline gelagert werden, hat aber lange Zugriffszeiten. Deshalb ist „Erfordert ausschließlich Magnetband“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "mod2-15",
@@ -1486,7 +2017,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Löschungen und logische Fehler können auch den RAID-Verbund betreffen."
+    "why": "Löschungen und logische Fehler können auch den RAID-Verbund betreffen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Weil RAID nur auf Druckern funktioniert“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Löschungen und logische Fehler können auch den RAID-Verbund betreffen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„Weil RAID keine Daten speichert“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Löschungen und logische Fehler können auch den RAID-Verbund betreffen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Weil RAID immer nach Sekunden deaktiviert wird“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Löschungen und logische Fehler können auch den RAID-Verbund betreffen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod2-16",
@@ -1502,7 +2039,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Direct Attached Storage."
+    "why": "DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet.",
+    "wrongReasons": [
+      "Ein Subscription-Nutzungsrecht ist zeitlich an den laufenden Abonnementvertrag gebunden. Deshalb ist „Data Access Subscription“ hier nicht die gesuchte Antwort.",
+      "„Digital Archive Service“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet.",
+      "",
+      "„Distributed Application Software“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet."
+    ]
   },
   {
     "id": "mod2-17",
@@ -1518,7 +2061,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Begrenzte Skalierbarkeit und Bindung an einen Host."
+    "why": "Begrenzte Skalierbarkeit und Bindung an einen Host bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Ausschließlich Dateizugriff über alle Standorte“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Begrenzte Skalierbarkeit und Bindung an einen Host bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "Ein SAN stellt zentralen blockbasierten Speicher über eine eigene Speicher-Netzwerkinfrastruktur bereit. Deshalb ist „Erfordert immer eigenes Fibre-Channel-SAN“ hier nicht die gesuchte Antwort.",
+      "„Kein direkter Zugriff möglich“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Begrenzte Skalierbarkeit und Bindung an einen Host bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      ""
+    ]
   },
   {
     "id": "mod2-18",
@@ -1534,7 +2083,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Dateizugriff über ein vorhandenes Netzwerk mit SMB oder NFS."
+    "why": "Dateizugriff über ein vorhandenes Netzwerk mit SMB oder NFS bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "",
+      "„Nur direkter Anschluss einer Festplatte an einen einzelnen Host“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Dateizugriff über ein vorhandenes Netzwerk mit SMB oder NFS bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Ausschließlich GPU-Computing“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Dateizugriff über ein vorhandenes Netzwerk mit SMB oder NFS bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "Magnetband ist günstig für lange Aufbewahrung und kann offline gelagert werden, hat aber lange Zugriffszeiten. Deshalb ist „Nur analoges Magnetband“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "mod2-19",
@@ -1550,7 +2105,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: SMB und NFS."
+    "why": "SMB und NFS bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„USB und PCIe“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: SMB und NFS bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "SATA ist eine serielle Massenspeicherschnittstelle und häufig auf preisgünstigen Laufwerken zu finden. Deshalb ist „SATA und IDE“ hier nicht die gesuchte Antwort.",
+      "„HTTP und HDMI“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: SMB und NFS bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod2-20",
@@ -1566,7 +2127,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Zentrales blockbasiertes Storage über ein separates Speichernetzwerk."
+    "why": "Zentrales blockbasiertes Storage über ein separates Speichernetzwerk bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Kein Administrationsaufwand unter allen Umständen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zentrales blockbasiertes Storage über ein separates Speichernetzwerk bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Keine Netzwerkswitches erforderlich“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zentrales blockbasiertes Storage über ein separates Speichernetzwerk bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„Nur lokale USB-Sticks“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zentrales blockbasiertes Storage über ein separates Speichernetzwerk bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod2-21",
@@ -1582,7 +2149,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Kostenintensive Infrastruktur und komplexe Konfiguration."
+    "why": "Kostenintensive Infrastruktur und komplexe Konfiguration bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Ausschließlich Nutzung auf einem Laptop“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Kostenintensive Infrastruktur und komplexe Konfiguration bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Unmöglichkeit mehrerer Pfade“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Kostenintensive Infrastruktur und komplexe Konfiguration bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Fehlende Speicherkonsolidierung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Kostenintensive Infrastruktur und komplexe Konfiguration bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      ""
+    ]
   },
   {
     "id": "mod2-22",
@@ -1598,7 +2171,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: SAN."
+    "why": "Ein SAN stellt zentralen blockbasierten Speicher über eine eigene Speicher-Netzwerkinfrastruktur bereit.",
+    "wrongReasons": [
+      "",
+      "„Lokaler USB-Stick“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ein SAN stellt zentralen blockbasierten Speicher über eine eigene Speicher-Netzwerkinfrastruktur bereit.",
+      "„DVD-Laufwerk“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ein SAN stellt zentralen blockbasierten Speicher über eine eigene Speicher-Netzwerkinfrastruktur bereit.",
+      "Magnetband ist günstig für lange Aufbewahrung und kann offline gelagert werden, hat aber lange Zugriffszeiten. Deshalb ist „Nur Offline Tape“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "mod2-23",
@@ -1614,7 +2193,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Bereitstellung mehrerer Datei- und Blockprotokolle durch eine Storage-Plattform."
+    "why": "Bereitstellung mehrerer Datei- und Blockprotokolle durch eine Storage-Plattform bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Ein exklusiv optisches Netzwerk“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Bereitstellung mehrerer Datei- und Blockprotokolle durch eine Storage-Plattform bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„Alle Daten müssen auf einem einzigen USB-Stick liegen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Bereitstellung mehrerer Datei- und Blockprotokolle durch eine Storage-Plattform bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Nur magnetische Archivierung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Bereitstellung mehrerer Datei- und Blockprotokolle durch eine Storage-Plattform bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod2-24",
@@ -1630,7 +2215,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Redundante Daten nur einmal speichern."
+    "why": "Redundante Daten nur einmal speichern bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Unwiderruflich alle Versionen löschen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Redundante Daten nur einmal speichern bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Physische Lüfter redundant ausführen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Redundante Daten nur einmal speichern bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„Daten bewusst mehrfach ohne Zeiger ablegen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Redundante Daten nur einmal speichern bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod2-25",
@@ -1646,7 +2237,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Logische Bereitstellung von Kapazität ohne sofortige vollständige physische Belegung."
+    "why": "Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen.",
+    "wrongReasons": [
+      "„Doppelte physische Kapazität muss immer reserviert sein“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen.",
+      "„Verbot virtueller Datenträger“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen.",
+      "„Nur Backup auf Blu-ray“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen.",
+      ""
+    ]
   },
   {
     "id": "mod2-26",
@@ -1662,7 +2259,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Maximal angestrebten tolerierbaren Datenverlust in Zeit."
+    "why": "Maximal angestrebten tolerierbaren Datenverlust in Zeit bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "",
+      "„Zeit bis zum nächsten Hardwarekauf“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Maximal angestrebten tolerierbaren Datenverlust in Zeit bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Gesamtpreis eines Cloud-Vertrags“ hier nicht die gesuchte Antwort.",
+      "„Anzahl physischer Speichercontroller“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Maximal angestrebten tolerierbaren Datenverlust in Zeit bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod2-27",
@@ -1678,7 +2281,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Angestrebte maximale Wiederherstellungsdauer."
+    "why": "Angestrebte maximale Wiederherstellungsdauer bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Monatliche Speicherkosten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Angestrebte maximale Wiederherstellungsdauer bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„Die Anzahl an RAID-Disks“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Angestrebte maximale Wiederherstellungsdauer bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "SAS verwendet SCSI-Befehle und ist für professionelle Speicheranbindungen mit leistungsfähigen und oft redundanten Wegen geeignet. Deshalb ist „Die Taktfrequenz einer SAS-Schnittstelle“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "mod2-28",
@@ -1694,7 +2303,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Standortübergreifende Spiegelung und Verfügbarkeit."
+    "why": "Standortübergreifende Spiegelung und Verfügbarkeit bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "Ein Standardcluster verwendet redundante Controller, um den Ausfall einer Storage-Steuereinheit aufzufangen. Deshalb ist „Standard Cluster hat stets mehr Standorte“ hier nicht die gesuchte Antwort.",
+      "Ein Standardcluster verwendet redundante Controller, um den Ausfall einer Storage-Steuereinheit aufzufangen. Deshalb ist „Nur der Standard Cluster unterstützt Festplatten“ hier nicht die gesuchte Antwort.",
+      "",
+      "Ein MetroCluster schützt durch verteilte Standorte und gespiegelte Daten zusätzlich gegen einen Standortausfall. Deshalb ist „Metro Cluster besitzt grundsätzlich keine Controller“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "mod3-1",
@@ -1710,7 +2325,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Wiederherstellung verlorener Produktionsdaten."
+    "why": "Wiederherstellung verlorener Produktionsdaten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Langfristige unveränderliche Archivierung als einziges Ziel“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Wiederherstellung verlorener Produktionsdaten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Ausschließlich laufende Lastverteilung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Wiederherstellung verlorener Produktionsdaten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Ersetzen der Nutzerverwaltung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Wiederherstellung verlorener Produktionsdaten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      ""
+    ]
   },
   {
     "id": "mod3-2",
@@ -1726,7 +2347,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Langfristige, nachvollziehbare Aufbewahrung von Daten."
+    "why": "Langfristige, nachvollziehbare Aufbewahrung von Daten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "",
+      "„Nur sofortige Wiederherstellung der letzten fünf Sekunden“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Langfristige, nachvollziehbare Aufbewahrung von Daten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Automatische Lastverteilung zwischen Cloud-Regionen“ hier nicht die gesuchte Antwort.",
+      "„Serverkühlung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Langfristige, nachvollziehbare Aufbewahrung von Daten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod3-3",
@@ -1742,7 +2369,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Versehentliches Löschen kann auf das replizierte System übertragen werden."
+    "why": "DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet.",
+    "wrongReasons": [
+      "„Weil Replikation immer offline ist“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet.",
+      "",
+      "„Weil Replikation keine Kopien erzeugt“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet.",
+      "„Weil Replikation nur auf optischen Medien funktioniert“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet."
+    ]
   },
   {
     "id": "mod3-4",
@@ -1758,7 +2391,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: 8 Stunden und 45 Minuten."
+    "why": "8 Stunden und 45 Minuten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„87 Stunden“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: 8 Stunden und 45 Minuten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„52 Minuten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: 8 Stunden und 45 Minuten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„5 Minuten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: 8 Stunden und 45 Minuten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod3-5",
@@ -1774,7 +2413,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Durchschnittliche Zeit zwischen zwei Ausfällen."
+    "why": "Durchschnittliche Zeit zwischen zwei Ausfällen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Maximale Datenmenge in Terabyte“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Durchschnittliche Zeit zwischen zwei Ausfällen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Zugriffsrecht eines Backup-Administrators“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Durchschnittliche Zeit zwischen zwei Ausfällen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Sicherungsintervall eines Cloud-Speichers“ hier nicht die gesuchte Antwort.",
+      ""
+    ]
   },
   {
     "id": "mod3-6",
@@ -1790,7 +2435,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Mean Time To Repair."
+    "why": "MTTR beschreibt die mittlere Zeitspanne, die zur Wiederherstellung oder Reparatur benötigt wird.",
+    "wrongReasons": [
+      "",
+      "„Maximum Time To Replicate“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: MTTR beschreibt die mittlere Zeitspanne, die zur Wiederherstellung oder Reparatur benötigt wird.",
+      "„Measured Transfer Rate“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: MTTR beschreibt die mittlere Zeitspanne, die zur Wiederherstellung oder Reparatur benötigt wird.",
+      "Magnetband ist günstig für lange Aufbewahrung und kann offline gelagert werden, hat aber lange Zugriffszeiten. Deshalb ist „Managed Tape Recovery“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "mod3-7",
@@ -1806,7 +2457,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Maximal tolerierbaren Datenverlust als Zeitspanne."
+    "why": "Maximal tolerierbaren Datenverlust als Zeitspanne bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Den Stromverbrauch des Rechenzentrums“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Maximal tolerierbaren Datenverlust als Zeitspanne bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„Die monatlichen Backup-Kosten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Maximal tolerierbaren Datenverlust als Zeitspanne bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Dauer eines Lizenzvertrags“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Maximal tolerierbaren Datenverlust als Zeitspanne bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod3-8",
@@ -1822,7 +2479,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Zielzeit für die Wiederherstellung des Systems."
+    "why": "Zielzeit für die Wiederherstellung des Systems bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Anzahl gesicherter Generationen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zielzeit für die Wiederherstellung des Systems bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Verfügbare Speicherkapazität“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zielzeit für die Wiederherstellung des Systems bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„Durchschnittliche Nutzungsdauer einer Festplatte“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zielzeit für die Wiederherstellung des Systems bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod3-9",
@@ -1838,7 +2501,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Vom Kunden formulierte Service Level Requirements."
+    "why": "SLR sind die Anforderungen des Kunden an den gewünschten Dienst.",
+    "wrongReasons": [
+      "„Externer Lizenzvertrag“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: SLR sind die Anforderungen des Kunden an den gewünschten Dienst.",
+      "„Protokoll für eine Datensicherung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: SLR sind die Anforderungen des Kunden an den gewünschten Dienst.",
+      "„Hardware für Redundanz“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: SLR sind die Anforderungen des Kunden an den gewünschten Dienst.",
+      ""
+    ]
   },
   {
     "id": "mod3-10",
@@ -1854,7 +2523,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Vereinbarung über zugesicherte Serviceleistungen."
+    "why": "Vereinbarung über zugesicherte Serviceleistungen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "",
+      "„Interner Backup-Datenträger“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Vereinbarung über zugesicherte Serviceleistungen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„RAID-Level mit Parität“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Vereinbarung über zugesicherte Serviceleistungen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Ein Storage-Protokoll“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Vereinbarung über zugesicherte Serviceleistungen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod3-11",
@@ -1870,7 +2545,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Interne Vereinbarung zur Unterstützung eines SLA."
+    "why": "Ein SLA enthält vereinbarte Leistungs- und Qualitätszusagen zwischen Dienstleister und Kunde.",
+    "wrongReasons": [
+      "„Ein Backup auf einem USB-Stick“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ein SLA enthält vereinbarte Leistungs- und Qualitätszusagen zwischen Dienstleister und Kunde.",
+      "",
+      "„Vereinbarung ausschließlich mit externem Provider“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ein SLA enthält vereinbarte Leistungs- und Qualitätszusagen zwischen Dienstleister und Kunde.",
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Eine unverschlüsselte Cloud-Datei“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "mod3-12",
@@ -1886,7 +2567,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Externe Vereinbarung zur Unterstützung eines SLA."
+    "why": "Ein SLA enthält vereinbarte Leistungs- und Qualitätszusagen zwischen Dienstleister und Kunde.",
+    "wrongReasons": [
+      "Ein Snapshot hält einen Datenzustand zu einem Zeitpunkt fest, ist aber ohne separate Aufbewahrung kein vollständiger Ersatz für unabhängige Backups. Deshalb ist „Ein Snapshotspeicher“ hier nicht die gesuchte Antwort.",
+      "Deduplizierung erkennt identische Dateien oder Datenblöcke und speichert diese möglichst nur einmal. Deshalb ist „Eine Form der Datendeduplizierung“ hier nicht die gesuchte Antwort.",
+      "",
+      "„Interne Schichtplanung ohne Vertrag“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ein SLA enthält vereinbarte Leistungs- und Qualitätszusagen zwischen Dienstleister und Kunde."
+    ]
   },
   {
     "id": "mod3-13",
@@ -1902,7 +2589,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: LTO-Magnetband."
+    "why": "Magnetband ist günstig für lange Aufbewahrung und kann offline gelagert werden, hat aber lange Zugriffszeiten.",
+    "wrongReasons": [
+      "„Reiner RAM-Cache“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Magnetband ist günstig für lange Aufbewahrung und kann offline gelagert werden, hat aber lange Zugriffszeiten.",
+      "„Nur CPU-Register“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Magnetband ist günstig für lange Aufbewahrung und kann offline gelagert werden, hat aber lange Zugriffszeiten.",
+      "Ein Snapshot hält einen Datenzustand zu einem Zeitpunkt fest, ist aber ohne separate Aufbewahrung kein vollständiger Ersatz für unabhängige Backups. Deshalb ist „Ein einzelner SSD-Snapshot“ hier nicht die gesuchte Antwort.",
+      ""
+    ]
   },
   {
     "id": "mod3-14",
@@ -1918,7 +2611,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: SSD."
+    "why": "Eine SSD speichert Daten ohne bewegliche Teile und ermöglicht besonders schnelle Zugriffe.",
+    "wrongReasons": [
+      "",
+      "„Papierarchiv“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Eine SSD speichert Daten ohne bewegliche Teile und ermöglicht besonders schnelle Zugriffe.",
+      "Magnetband ist günstig für lange Aufbewahrung und kann offline gelagert werden, hat aber lange Zugriffszeiten. Deshalb ist „Ausschließlich Magnetband“ hier nicht die gesuchte Antwort.",
+      "„Lochkarte“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Eine SSD speichert Daten ohne bewegliche Teile und ermöglicht besonders schnelle Zugriffe."
+    ]
   },
   {
     "id": "mod3-15",
@@ -1934,7 +2633,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Skalierbarkeit, Automatisierung und Georedundanz."
+    "why": "Skalierbarkeit, Automatisierung und Georedundanz bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Keine Verantwortung für Datenschutz“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Skalierbarkeit, Automatisierung und Georedundanz bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen. Deshalb ist „Vollständige Unabhängigkeit vom Internet“ hier nicht die gesuchte Antwort.",
+      "„Grundsätzlich keine laufenden Kosten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Skalierbarkeit, Automatisierung und Georedundanz bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod3-16",
@@ -1950,7 +2655,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Backup-Medium ist vom Netzwerk physisch getrennt."
+    "why": "Backup-Medium ist vom Netzwerk physisch getrennt bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Alle Systeme nutzen dieselbe Administratoranmeldung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Backup-Medium ist vom Netzwerk physisch getrennt bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "RAID 0 verteilt Daten auf mehrere Laufwerke, besitzt aber keine Redundanz; der Ausfall eines beteiligten Laufwerks gefährdet den gesamten Verbund. Deshalb ist „Ein RAID 0 als einziges Backup“ hier nicht die gesuchte Antwort.",
+      "",
+      "„Jede Kopie liegt im gleichen Netzwerksegment“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Backup-Medium ist vom Netzwerk physisch getrennt bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod3-17",
@@ -1966,7 +2677,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Vollsicherung."
+    "why": "Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen.",
+    "wrongReasons": [
+      "Bei einer inkrementellen Sicherung werden nur Änderungen seit der jeweils letzten Sicherung gespeichert; für das Restore ist oft eine Sicherungskette nötig. Deshalb ist „Inkrementelle Sicherung“ hier nicht die gesuchte Antwort.",
+      "Ein differenzielles Backup enthält Änderungen seit der letzten Vollsicherung; für das Restore reichen Vollsicherung und letztes Differenzial. Deshalb ist „Differenzielle Sicherung“ hier nicht die gesuchte Antwort.",
+      "„Replikation ohne Historie“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen.",
+      ""
+    ]
   },
   {
     "id": "mod3-18",
@@ -1982,7 +2699,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Inkrementelle Sicherung."
+    "why": "Bei einer inkrementellen Sicherung werden nur Änderungen seit der jeweils letzten Sicherung gespeichert; für das Restore ist oft eine Sicherungskette nötig.",
+    "wrongReasons": [
+      "",
+      "Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen. Deshalb ist „Vollsicherung“ hier nicht die gesuchte Antwort.",
+      "Ein differenzielles Backup enthält Änderungen seit der letzten Vollsicherung; für das Restore reichen Vollsicherung und letztes Differenzial. Deshalb ist „Differenzielle Sicherung“ hier nicht die gesuchte Antwort.",
+      "„Langzeitarchivierung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Bei einer inkrementellen Sicherung werden nur Änderungen seit der jeweils letzten Sicherung gespeichert; für das Restore ist oft eine Sicherungskette nötig."
+    ]
   },
   {
     "id": "mod3-19",
@@ -1998,7 +2721,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Differenzielle Sicherung."
+    "why": "Ein differenzielles Backup enthält Änderungen seit der letzten Vollsicherung; für das Restore reichen Vollsicherung und letztes Differenzial.",
+    "wrongReasons": [
+      "vMotion verschiebt eine laufende virtuelle Maschine zwischen physischen Hosts ohne geplante Dienstunterbrechung. Deshalb ist „Storage vMotion“ hier nicht die gesuchte Antwort.",
+      "",
+      "Bei einer inkrementellen Sicherung werden nur Änderungen seit der jeweils letzten Sicherung gespeichert; für das Restore ist oft eine Sicherungskette nötig. Deshalb ist „Inkrementelle Sicherung“ hier nicht die gesuchte Antwort.",
+      "Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen. Deshalb ist „Vollsicherung“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "mod3-20",
@@ -2014,7 +2743,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Vollsicherung und sämtliche benötigten Folgeinkremente."
+    "why": "Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen.",
+    "wrongReasons": [
+      "DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet. Deshalb ist „Nur das nächste geplante Backup“ hier nicht die gesuchte Antwort.",
+      "„Keine einzige Sicherung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen.",
+      "",
+      "DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet. Deshalb ist „Ausschließlich das letzte Inkrement“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "mod3-21",
@@ -2030,7 +2765,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Vollsicherung und letzte differenzielle Sicherung."
+    "why": "Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen.",
+    "wrongReasons": [
+      "Ein differenzielles Backup enthält Änderungen seit der letzten Vollsicherung; für das Restore reichen Vollsicherung und letztes Differenzial. Deshalb ist „Alle seit Beginn erstellten differenziellen Sicherungen“ hier nicht die gesuchte Antwort.",
+      "Ein differenzielles Backup enthält Änderungen seit der letzten Vollsicherung; für das Restore reichen Vollsicherung und letztes Differenzial. Deshalb ist „Nur die älteste differenzielle Sicherung“ hier nicht die gesuchte Antwort.",
+      "„Zwingend ein weiteres Betriebssystem“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen.",
+      ""
+    ]
   },
   {
     "id": "mod3-22",
@@ -2046,7 +2787,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Aktuelle Vollsicherung wird fortgeschrieben und ältere Änderungen werden rückwärts gespeichert."
+    "why": "Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen.",
+    "wrongReasons": [
+      "",
+      "Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen. Deshalb ist „Vollsicherung bleibt immer unverändert“ hier nicht die gesuchte Antwort.",
+      "Magnetband ist günstig für lange Aufbewahrung und kann offline gelagert werden, hat aber lange Zugriffszeiten. Deshalb ist „Alle Sicherungen werden ausschließlich auf Tape geschrieben“ hier nicht die gesuchte Antwort.",
+      "„Zunächst wird jeder Server formatiert“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen."
+    ]
   },
   {
     "id": "mod3-23",
@@ -2062,7 +2809,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Konsolidierte Vollsicherung aus bereits vorhandenen Sicherungssätzen."
+    "why": "Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen.",
+    "wrongReasons": [
+      "Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen. Deshalb ist „Ein vollständiges Neu-Lesen aller Produktivdaten bei jedem Lauf“ hier nicht die gesuchte Antwort.",
+      "",
+      "„Physische Spiegelung zweier Netzwerkrouter“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen.",
+      "DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet. Deshalb ist „Ausschließlich das letzte kleine Inkrement“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "mod3-24",
@@ -2078,7 +2831,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Gleiche Daten nicht mehrfach vollständig speichern."
+    "why": "Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen.",
+    "wrongReasons": [
+      "„Jede Datei unverschlüsselt ins Internet laden“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen.",
+      "RAID 6 verwendet zwei unabhängige Paritäten und verträgt den Ausfall von zwei Laufwerken. Deshalb ist „Automatisch RAID 6 konfigurieren“ hier nicht die gesuchte Antwort.",
+      "",
+      "„Gezielt alle Datensätze vervierfachen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen."
+    ]
   },
   {
     "id": "mod3-25",
@@ -2094,7 +2853,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Vor Übertragung an den Backup-Server."
+    "why": "Vor Übertragung an den Backup-Server bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Erst nach jeder Wiederherstellung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Vor Übertragung an den Backup-Server bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Ausschließlich beim Speichern im Offline-Archiv“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Vor Übertragung an den Backup-Server bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Nur am Netzwerkrouter“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Vor Übertragung an den Backup-Server bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      ""
+    ]
   },
   {
     "id": "mod3-26",
@@ -2110,7 +2875,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Rotationsprinzip mit täglichen, wöchentlichen und monatlichen Sicherungsständen."
+    "why": "Rotationsprinzip mit täglichen, wöchentlichen und monatlichen Sicherungsständen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "",
+      "„Eine Methode zur Serverkühlung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Rotationsprinzip mit täglichen, wöchentlichen und monatlichen Sicherungsständen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Ein Verfahren für Festplattenparität“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Rotationsprinzip mit täglichen, wöchentlichen und monatlichen Sicherungsständen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Ein Cloud-Vertragsmodell“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "mod3-27",
@@ -2126,7 +2897,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Älteste Sicherungen werden zuerst überschrieben oder gelöscht."
+    "why": "Älteste Sicherungen werden zuerst überschrieben oder gelöscht bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Sicherungen dürfen nie automatisch laufen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Älteste Sicherungen werden zuerst überschrieben oder gelöscht bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„Neueste Sicherung wird immer zuerst gelöscht“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Älteste Sicherungen werden zuerst überschrieben oder gelöscht bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Alle Sicherungen bleiben zwingend ewig bestehen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Älteste Sicherungen werden zuerst überschrieben oder gelöscht bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod3-28",
@@ -2142,7 +2919,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Analyse, Planung und Test."
+    "why": "Analyse, Planung und Test bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Kaufen, Vergessen und Wiederholen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Analyse, Planung und Test bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Nur Geräte bestellen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Analyse, Planung und Test bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„Löschen, Verschlüsseln und Ignorieren“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Analyse, Planung und Test bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod4-1",
@@ -2158,7 +2941,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: IaaS, PaaS und SaaS."
+    "why": "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+    "wrongReasons": [
+      "NAS stellt Dateien über ein Netzwerk bereit, typischerweise über SMB oder NFS für mehrere Benutzer. Deshalb ist „RAID, SAN und NAS“ hier nicht die gesuchte Antwort.",
+      "MTBF beschreibt die durchschnittliche Zeit zwischen Ausfällen und dient der Zuverlässigkeitsbewertung. Deshalb ist „MTTR, MTBF und MTTF“ hier nicht die gesuchte Antwort.",
+      "„VPN, HDMI und USB“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+      ""
+    ]
   },
   {
     "id": "mod4-2",
@@ -2174,7 +2963,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Infrastructure as a Service."
+    "why": "Infrastructure as a Service bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "",
+      "„Integrity as a Storage“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Infrastructure as a Service bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Internet as a Software“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Infrastructure as a Service bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "Ein Subscription-Nutzungsrecht ist zeitlich an den laufenden Abonnementvertrag gebunden. Deshalb ist „Identity as a Subscription“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "mod4-3",
@@ -2190,7 +2985,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Software as a Service (SaaS)."
+    "why": "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+    "wrongReasons": [
+      "DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet. Deshalb ist „Direct Attached Storage“ hier nicht die gesuchte Antwort.",
+      "",
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Infrastructure as a Service (IaaS)“ hier nicht die gesuchte Antwort.",
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Platform as a Service (PaaS)“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "mod4-4",
@@ -2206,7 +3007,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Platform as a Service (PaaS)."
+    "why": "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+    "wrongReasons": [
+      "NAS stellt Dateien über ein Netzwerk bereit, typischerweise über SMB oder NFS für mehrere Benutzer. Deshalb ist „Network Attached Storage“ hier nicht die gesuchte Antwort.",
+      "RAID 1 spiegelt Daten auf mehrere Festplatten und bietet dadurch Schutz vor einem einzelnen Laufwerksausfall. Deshalb ist „RAID 10“ hier nicht die gesuchte Antwort.",
+      "",
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Software as a Service (SaaS)“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "mod4-5",
@@ -2222,7 +3029,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: On-Demand Self-Service."
+    "why": "On-Demand Self-Service bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Mirroring“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: On-Demand Self-Service bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Cold Storage“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: On-Demand Self-Service bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "Single Loop nutzt nur einen Verbindungsweg zwischen Controller und Laufwerken und hat dort keine Pfadredundanz. Deshalb ist „Single Loop“ hier nicht die gesuchte Antwort.",
+      ""
+    ]
   },
   {
     "id": "mod4-6",
@@ -2238,7 +3051,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Gemeinsame bedarfsgerechte Nutzung zusammengefasster Ressourcen."
+    "why": "Gemeinsame bedarfsgerechte Nutzung zusammengefasster Ressourcen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "",
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Jeder Cloud-Kunde erhält zwingend eigene physische Server“ hier nicht die gesuchte Antwort.",
+      "„Automatisches Löschen sämtlicher Backups“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Gemeinsame bedarfsgerechte Nutzung zusammengefasster Ressourcen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Abschaltung sämtlicher Netzwerkknoten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Gemeinsame bedarfsgerechte Nutzung zusammengefasster Ressourcen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod4-7",
@@ -2254,7 +3073,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Schnelles Anpassen der Cloud-Kapazität an den tatsächlichen Bedarf."
+    "why": "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+    "wrongReasons": [
+      "Magnetband ist günstig für lange Aufbewahrung und kann offline gelagert werden, hat aber lange Zugriffszeiten. Deshalb ist „Sicherung auf offline gelagertem Magnetband“ hier nicht die gesuchte Antwort.",
+      "",
+      "„Langfristige unveränderliche Archivierung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+      "„Manuelle Konfiguration jedes Routers“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden."
+    ]
   },
   {
     "id": "mod4-8",
@@ -2270,7 +3095,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Nutzung der Cloud-Ressourcen wird gemessen und überwacht."
+    "why": "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+    "wrongReasons": [
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Cloud-Zugang ist nur offline möglich“ hier nicht die gesuchte Antwort.",
+      "„Ein RAID wird gespiegelt“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+      "",
+      "„Leistung kann niemals abgerechnet werden“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden."
+    ]
   },
   {
     "id": "mod4-9",
@@ -2286,7 +3117,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Cloud-Dienste sind über standardisierte Netzwerke erreichbar."
+    "why": "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+    "wrongReasons": [
+      "„Nur lokaler Zugriff an einem physischen Server“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+      "„Keine Nutzung durch mobile Endgeräte“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+      "SATA ist eine serielle Massenspeicherschnittstelle und häufig auf preisgünstigen Laufwerken zu finden. Deshalb ist „Zugriff ausschließlich über SATA“ hier nicht die gesuchte Antwort.",
+      ""
+    ]
   },
   {
     "id": "mod4-10",
@@ -2302,7 +3139,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Cloud-Infrastruktur zur exklusiven Nutzung durch eine Organisation."
+    "why": "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+    "wrongReasons": [
+      "",
+      "„Öffentliche Plattform für alle Nutzer ohne Anmeldung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+      "Magnetband ist günstig für lange Aufbewahrung und kann offline gelagert werden, hat aber lange Zugriffszeiten. Deshalb ist „Ausschließlich Magnetband-Backup“ hier nicht die gesuchte Antwort.",
+      "„Eine Kombination aus vier RAID-Leveln“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden."
+    ]
   },
   {
     "id": "mod4-11",
@@ -2318,7 +3161,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Cloud-Dienste eines Anbieters für mehrere Kunden."
+    "why": "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+    "wrongReasons": [
+      "„Nur ein dedizierter Fibre-Channel-Switch“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+      "",
+      "„Ausschließlich ein internes Rechenzentrum ohne externe Nutzer“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Die Kopie eines privaten USB-Sticks“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "mod4-12",
@@ -2334,7 +3183,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Verknüpfung unterschiedlicher Cloud-Umgebungen etwa Private und Public."
+    "why": "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+    "wrongReasons": [
+      "„Automatische Löschung aller öffentlichen Daten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Eine Cloud ohne Internetverbindung“ hier nicht die gesuchte Antwort.",
+      "",
+      "RAID 1 spiegelt Daten auf mehrere Festplatten und bietet dadurch Schutz vor einem einzelnen Laufwerksausfall. Deshalb ist „Ausschließlich RAID 1“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "mod4-13",
@@ -2350,7 +3205,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Parallele Nutzung verschiedener Cloud-Anbieter."
+    "why": "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+    "wrongReasons": [
+      "„Mehrere Nutzer auf einem einzigen Betriebssystemkonto“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Ausschließlich private Hardwareserver“ hier nicht die gesuchte Antwort.",
+      "„Ein Backup pro Monat“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+      ""
+    ]
   },
   {
     "id": "mod4-14",
@@ -2366,7 +3227,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Schwieriger oder teurer Wechsel des Cloud-Anbieters."
+    "why": "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+    "wrongReasons": [
+      "",
+      "„Automatisch unbegrenzte Anbieterunabhängigkeit“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+      "„Daten können grundsätzlich nie gespeichert werden“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+      "„Jede Anwendung wird kostenfrei“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden."
+    ]
   },
   {
     "id": "mod4-15",
@@ -2382,7 +3249,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Trennung von Steuerungs- und Weiterleitungsebene."
+    "why": "Trennung von Steuerungs- und Weiterleitungsebene bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Alle Server erhalten ein eigenes RAID“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Trennung von Steuerungs- und Weiterleitungsebene bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„Jeder Switch muss manuell isoliert gesteuert werden“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Trennung von Steuerungs- und Weiterleitungsebene bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Cloud-Daten werden ausschließlich archiviert“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "mod4-16",
@@ -2398,7 +3271,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Data Plane."
+    "why": "Die Data Plane leitet Datenpakete auf Grundlage der vorgegebenen Regeln weiter.",
+    "wrongReasons": [
+      "„Contract Plane“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Die Data Plane leitet Datenpakete auf Grundlage der vorgegebenen Regeln weiter.",
+      "„Backup Plane“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Die Data Plane leitet Datenpakete auf Grundlage der vorgegebenen Regeln weiter.",
+      "",
+      "Die Control Plane berechnet oder verwaltet Weiterleitungsentscheidungen; sie transportiert die Nutzdaten nicht selbst. Deshalb ist „Control Plane“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "mod4-17",
@@ -2414,7 +3293,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Control Plane."
+    "why": "Die Control Plane berechnet oder verwaltet Weiterleitungsentscheidungen; sie transportiert die Nutzdaten nicht selbst.",
+    "wrongReasons": [
+      "Die Data Plane leitet Datenpakete auf Grundlage der vorgegebenen Regeln weiter. Deshalb ist „Data Plane“ hier nicht die gesuchte Antwort.",
+      "„Storage Plane“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Die Control Plane berechnet oder verwaltet Weiterleitungsentscheidungen; sie transportiert die Nutzdaten nicht selbst.",
+      "„Cooling Plane“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Die Control Plane berechnet oder verwaltet Weiterleitungsentscheidungen; sie transportiert die Nutzdaten nicht selbst.",
+      ""
+    ]
   },
   {
     "id": "mod4-18",
@@ -2430,7 +3315,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: OpenFlow."
+    "why": "OpenFlow ist eine mögliche Schnittstelle, über die SDN-Controller Weiterleitungsregeln an Netzgeräte übermitteln.",
+    "wrongReasons": [
+      "",
+      "SATA ist eine serielle Massenspeicherschnittstelle und häufig auf preisgünstigen Laufwerken zu finden. Deshalb ist „SATA“ hier nicht die gesuchte Antwort.",
+      "SDN trennt die Netzsteuerung logisch von der Paketweiterleitung und ermöglicht zentrale, programmatische Steuerung. Deshalb ist „NFS als einziges SDN-Protokoll“ hier nicht die gesuchte Antwort.",
+      "Magnetband ist günstig für lange Aufbewahrung und kann offline gelagert werden, hat aber lange Zugriffszeiten. Deshalb ist „LTO“ hier nicht die gesuchte Antwort."
+    ]
   },
   {
     "id": "mod4-19",
@@ -2446,7 +3337,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Zentrale Kontrollinstanz kann ohne Redundanz zum Single Point of Failure werden."
+    "why": "Zentrale Kontrollinstanz kann ohne Redundanz zum Single Point of Failure werden bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Es wird zwingend mehr Hardware pro Nutzer benötigt“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zentrale Kontrollinstanz kann ohne Redundanz zum Single Point of Failure werden bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„Dynamische Konfiguration ist grundsätzlich unmöglich“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zentrale Kontrollinstanz kann ohne Redundanz zum Single Point of Failure werden bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Netzwerkgeräte können niemals weiterleiten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zentrale Kontrollinstanz kann ohne Redundanz zum Single Point of Failure werden bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod4-20",
@@ -2462,7 +3359,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Trennung der Speichersteuerung von der physischen Speicherhardware."
+    "why": "Trennung der Speichersteuerung von der physischen Speicherhardware bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Ein RAID ohne Speicherkapazität“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Trennung der Speichersteuerung von der physischen Speicherhardware bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Eine neue Art Softwarelizenz“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Trennung der Speichersteuerung von der physischen Speicherhardware bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„Ausschließlich ein lokales DVD-Laufwerk“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Trennung der Speichersteuerung von der physischen Speicherhardware bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod4-21",
@@ -2478,7 +3381,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Weitgehend softwarebasierte Verwaltung und Automatisierung von Computing, Storage und Network."
+    "why": "Weitgehend softwarebasierte Verwaltung und Automatisierung von Computing, Storage und Network bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Ausschließlich mechanische Serverkühlung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Weitgehend softwarebasierte Verwaltung und Automatisierung von Computing, Storage und Network bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "Magnetband ist günstig für lange Aufbewahrung und kann offline gelagert werden, hat aber lange Zugriffszeiten. Deshalb ist „Nur langfristige Magnetbandlagerung“ hier nicht die gesuchte Antwort.",
+      "„Ein weiterer Office-Abonnementtyp“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Weitgehend softwarebasierte Verwaltung und Automatisierung von Computing, Storage und Network bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      ""
+    ]
   },
   {
     "id": "mod4-22",
@@ -2494,7 +3403,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Vertraulichkeit, Integrität und Verfügbarkeit."
+    "why": "Vertraulichkeit, Integrität und Verfügbarkeit bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "",
+      "„Nur Kosten und Skalierung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Vertraulichkeit, Integrität und Verfügbarkeit bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Nur Softwarelizenzen und Produktdesign“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Vertraulichkeit, Integrität und Verfügbarkeit bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Ausschließlich Stromverbrauch“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Vertraulichkeit, Integrität und Verfügbarkeit bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod4-23",
@@ -2510,7 +3425,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Cloud-Strategie mit Zielen und Risikoanalyse."
+    "why": "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+    "wrongReasons": [
+      "„Kauf möglichst vieler Festplatten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+      "",
+      "„Ungeprüfter Vertragsabschluss“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+      "„Sofortige Löschung lokaler Daten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden."
+    ]
   },
   {
     "id": "mod4-24",
@@ -2526,7 +3447,13 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Zugriffsrechte, Verschlüsselung und Maßnahmen bei Sicherheitsvorfällen."
+    "why": "Zugriffsrechte, Verschlüsselung und Maßnahmen bei Sicherheitsvorfällen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Ausschließlich Zahl der Mitarbeitenden“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zugriffsrechte, Verschlüsselung und Maßnahmen bei Sicherheitsvorfällen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Nur die Domain-Endung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zugriffsrechte, Verschlüsselung und Maßnahmen bei Sicherheitsvorfällen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "",
+      "„Nur Farbe der Benutzeroberfläche“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zugriffsrechte, Verschlüsselung und Maßnahmen bei Sicherheitsvorfällen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod4-25",
@@ -2542,7 +3469,13 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Sicherheitsnachweise, Datenstandorte, Unterauftragnehmer und Gesamtkosten."
+    "why": "Sicherheitsnachweise, Datenstandorte, Unterauftragnehmer und Gesamtkosten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "„Ausschließlich Logo und Werbeslogan“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Sicherheitsnachweise, Datenstandorte, Unterauftragnehmer und Gesamtkosten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Nur Anzahl verfügbarer Schriftarten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Sicherheitsnachweise, Datenstandorte, Unterauftragnehmer und Gesamtkosten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Allein die Farbe der Serverräume“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Sicherheitsnachweise, Datenstandorte, Unterauftragnehmer und Gesamtkosten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      ""
+    ]
   },
   {
     "id": "mod4-26",
@@ -2558,7 +3491,13 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Späterer Anbieterwechsel und sichere Rückgabe beziehungsweise Löschung der Daten."
+    "why": "Späterer Anbieterwechsel und sichere Rückgabe beziehungsweise Löschung der Daten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "",
+      "„Ausschließlich lokale Druckertreiber“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Späterer Anbieterwechsel und sichere Rückgabe beziehungsweise Löschung der Daten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Nur die Anzahl der Firmenautos“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Späterer Anbieterwechsel und sichere Rückgabe beziehungsweise Löschung der Daten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+      "„Optische Darstellung einer Startseite“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Späterer Anbieterwechsel und sichere Rückgabe beziehungsweise Löschung der Daten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   },
   {
     "id": "mod4-27",
@@ -2574,7 +3513,13 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Strukturierte Beurteilung und Prüfung der Informationssicherheit von Cloud-Diensten."
+    "why": "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+    "wrongReasons": [
+      "„Messung des Stromverbrauchs von Desktops“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden.",
+      "",
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Festlegung eines weltweit einheitlichen Cloud-Preises“ hier nicht die gesuchte Antwort.",
+      "„Definition eines neuen RAID-Levels“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden."
+    ]
   },
   {
     "id": "mod4-28",
@@ -2590,11 +3535,16 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Richtig ist: Anbieter und Kunde erfüllen jeweils unterschiedliche Sicherheitsaufgaben."
+    "why": "Anbieter und Kunde erfüllen jeweils unterschiedliche Sicherheitsaufgaben bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "wrongReasons": [
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Cloud-Nutzer müssen keine Zugriffsrechte verwalten“ hier nicht die gesuchte Antwort.",
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Alle Sicherheitsmaßnahmen entfallen beim Wechsel zu SaaS“ hier nicht die gesuchte Antwort.",
+      "",
+      "„Nur der Anbieter trägt unter allen Umständen jede Pflicht“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Anbieter und Kunde erfüllen jeweils unterschiedliche Sicherheitsaufgaben bezeichnet die gesuchte Funktion beziehungsweise das Verfahren."
+    ]
   }
 ];
 
-// Praxispool: zehn Entscheidungsszenarien je Modul; genau eine Antwort richtig.
 export const practicalQuestions = [
   {
     "id": "practical-1-1",
@@ -2611,9 +3561,9 @@ export const practicalQuestions = [
     "correct": 3,
     "why": "Ein Tower benötigt keinen Rackschrank und lässt sich einfach aufstellen.",
     "wrongReasons": [
-      "„Bladeserver“ erfüllt die geschilderte Anforderung nicht. Ein Tower benötigt keinen Rackschrank und lässt sich einfach aufstellen.",
-      "„Vier Rackserver“ erfüllt die geschilderte Anforderung nicht. Ein Tower benötigt keinen Rackschrank und lässt sich einfach aufstellen.",
-      "„Ein Fibre-Channel-Switch“ erfüllt die geschilderte Anforderung nicht. Ein Tower benötigt keinen Rackschrank und lässt sich einfach aufstellen.",
+      "Ein Bladeserver verwendet ein gemeinsames Chassis für mehrere kompakte Servermodule. Deshalb ist „Bladeserver“ hier nicht die gesuchte Antwort.",
+      "Ein Rackserver wird in einem standardisierten Serverschrank montiert und ist für kompakte Serverräume geeignet. Deshalb ist „Vier Rackserver“ hier nicht die gesuchte Antwort.",
+      "„Ein Fibre-Channel-Switch“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ein Tower benötigt keinen Rackschrank und lässt sich einfach aufstellen.",
       ""
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
@@ -2633,10 +3583,10 @@ export const practicalQuestions = [
     "correct": 2,
     "why": "Geordnete Luftführung verhindert Rückströmung und verbessert die Kühleffizienz.",
     "wrongReasons": [
-      "„USV entfernen“ erfüllt die geschilderte Anforderung nicht. Geordnete Luftführung verhindert Rückströmung und verbessert die Kühleffizienz.",
-      "„Mehr Datenbanklizenzen kaufen“ erfüllt die geschilderte Anforderung nicht. Geordnete Luftführung verhindert Rückströmung und verbessert die Kühleffizienz.",
+      "Eine USV versorgt angeschlossene Systeme bei kurzzeitigen Netzunterbrechungen weiter, bis Strom wieder da ist oder Ersatzversorgung übernimmt. Deshalb ist „USV entfernen“ hier nicht die gesuchte Antwort.",
+      "„Mehr Datenbanklizenzen kaufen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Geordnete Luftführung verhindert Rückströmung und verbessert die Kühleffizienz.",
       "",
-      "„Alle Server dauerhaft bei Höchstleistung betreiben“ erfüllt die geschilderte Anforderung nicht. Geordnete Luftführung verhindert Rückströmung und verbessert die Kühleffizienz."
+      "„Alle Server dauerhaft bei Höchstleistung betreiben“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Geordnete Luftführung verhindert Rückströmung und verbessert die Kühleffizienz."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -2655,10 +3605,10 @@ export const practicalQuestions = [
     "correct": 1,
     "why": "Virtualisierung erlaubt mehreren getrennten Systemen dieselbe physische Hardware zu nutzen.",
     "wrongReasons": [
-      "„Abschalten der Netzwerküberwachung“ erfüllt die geschilderte Anforderung nicht. Virtualisierung erlaubt mehreren getrennten Systemen dieselbe physische Hardware zu nutzen.",
+      "„Abschalten der Netzwerküberwachung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Virtualisierung erlaubt mehreren getrennten Systemen dieselbe physische Hardware zu nutzen.",
       "",
-      "„Vier weitere physische Server“ erfüllt die geschilderte Anforderung nicht. Virtualisierung erlaubt mehreren getrennten Systemen dieselbe physische Hardware zu nutzen.",
-      "„Wechsel auf Magnetband als Arbeitslaufwerk“ erfüllt die geschilderte Anforderung nicht. Virtualisierung erlaubt mehreren getrennten Systemen dieselbe physische Hardware zu nutzen."
+      "„Vier weitere physische Server“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Virtualisierung erlaubt mehreren getrennten Systemen dieselbe physische Hardware zu nutzen.",
+      "Magnetband ist günstig für lange Aufbewahrung und kann offline gelagert werden, hat aber lange Zugriffszeiten. Deshalb ist „Wechsel auf Magnetband als Arbeitslaufwerk“ hier nicht die gesuchte Antwort."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -2678,9 +3628,9 @@ export const practicalQuestions = [
     "why": "vMotion verschiebt laufende virtuelle Maschinen zu anderen Hosts.",
     "wrongReasons": [
       "",
-      "„RAID 0“ erfüllt die geschilderte Anforderung nicht. vMotion verschiebt laufende virtuelle Maschinen zu anderen Hosts.",
-      "„Snapshot als einziges Mittel“ erfüllt die geschilderte Anforderung nicht. vMotion verschiebt laufende virtuelle Maschinen zu anderen Hosts.",
-      "„Open Value Companywide“ erfüllt die geschilderte Anforderung nicht. vMotion verschiebt laufende virtuelle Maschinen zu anderen Hosts."
+      "RAID 0 verteilt Daten auf mehrere Laufwerke, besitzt aber keine Redundanz; der Ausfall eines beteiligten Laufwerks gefährdet den gesamten Verbund. Deshalb ist „RAID 0“ hier nicht die gesuchte Antwort.",
+      "Ein Snapshot hält einen Datenzustand zu einem Zeitpunkt fest, ist aber ohne separate Aufbewahrung kein vollständiger Ersatz für unabhängige Backups. Deshalb ist „Snapshot als einziges Mittel“ hier nicht die gesuchte Antwort.",
+      "Open Value Companywide war ein Volumenlizenzmodell für die vollständige Standardisierung kleinerer Organisationen. Deshalb ist „Open Value Companywide“ hier nicht die gesuchte Antwort."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -2699,9 +3649,9 @@ export const practicalQuestions = [
     "correct": 3,
     "why": "HA startet betroffene virtuelle Maschinen auf verbleibenden Hosts neu.",
     "wrongReasons": [
-      "„Storage vMotion“ erfüllt die geschilderte Anforderung nicht. HA startet betroffene virtuelle Maschinen auf verbleibenden Hosts neu.",
-      "„Application Sequencer“ erfüllt die geschilderte Anforderung nicht. HA startet betroffene virtuelle Maschinen auf verbleibenden Hosts neu.",
-      "„Software Assurance“ erfüllt die geschilderte Anforderung nicht. HA startet betroffene virtuelle Maschinen auf verbleibenden Hosts neu.",
+      "vMotion verschiebt eine laufende virtuelle Maschine zwischen physischen Hosts ohne geplante Dienstunterbrechung. Deshalb ist „Storage vMotion“ hier nicht die gesuchte Antwort.",
+      "„Application Sequencer“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: HA startet betroffene virtuelle Maschinen auf verbleibenden Hosts neu.",
+      "Software Assurance umfasst je nach Lizenzvertrag Versionsrechte und zusätzliche Wartungs- beziehungsweise Supportleistungen. Deshalb ist „Software Assurance“ hier nicht die gesuchte Antwort.",
       ""
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
@@ -2721,10 +3671,10 @@ export const practicalQuestions = [
     "correct": 2,
     "why": "Fault Tolerance arbeitet mit parallel bereitgestellten Instanzen, benötigt aber zusätzliche Ressourcen.",
     "wrongReasons": [
-      "„Differenzielles Backup“ erfüllt die geschilderte Anforderung nicht. Fault Tolerance arbeitet mit parallel bereitgestellten Instanzen, benötigt aber zusätzliche Ressourcen.",
-      "„Direct Attached Storage“ erfüllt die geschilderte Anforderung nicht. Fault Tolerance arbeitet mit parallel bereitgestellten Instanzen, benötigt aber zusätzliche Ressourcen.",
+      "Ein differenzielles Backup enthält Änderungen seit der letzten Vollsicherung; für das Restore reichen Vollsicherung und letztes Differenzial. Deshalb ist „Differenzielles Backup“ hier nicht die gesuchte Antwort.",
+      "DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet. Deshalb ist „Direct Attached Storage“ hier nicht die gesuchte Antwort.",
       "",
-      "„Distributed Power Management“ erfüllt die geschilderte Anforderung nicht. Fault Tolerance arbeitet mit parallel bereitgestellten Instanzen, benötigt aber zusätzliche Ressourcen."
+      "DPM konsolidiert VMs auf weniger Hosts und kann nicht benötigte Hosts in den Stromsparmodus versetzen. Deshalb ist „Distributed Power Management“ hier nicht die gesuchte Antwort."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -2743,10 +3693,10 @@ export const practicalQuestions = [
     "correct": 1,
     "why": "Bei Sessionvirtualisierung laufen die Benutzer-Sitzungen auf zentraler Infrastruktur.",
     "wrongReasons": [
-      "„Kaltgang-Einhausung“ erfüllt die geschilderte Anforderung nicht. Bei Sessionvirtualisierung laufen die Benutzer-Sitzungen auf zentraler Infrastruktur.",
+      "Das Warm-/Kaltgang-Konzept trennt die kalte Serverzuluft von der warmen Abluft und verhindert ineffiziente Rückströmungen. Deshalb ist „Kaltgang-Einhausung“ hier nicht die gesuchte Antwort.",
       "",
-      "„RAID 6“ erfüllt die geschilderte Anforderung nicht. Bei Sessionvirtualisierung laufen die Benutzer-Sitzungen auf zentraler Infrastruktur.",
-      "„Nur SAS-Festplatten“ erfüllt die geschilderte Anforderung nicht. Bei Sessionvirtualisierung laufen die Benutzer-Sitzungen auf zentraler Infrastruktur."
+      "RAID 6 verwendet zwei unabhängige Paritäten und verträgt den Ausfall von zwei Laufwerken. Deshalb ist „RAID 6“ hier nicht die gesuchte Antwort.",
+      "SAS verwendet SCSI-Befehle und ist für professionelle Speicheranbindungen mit leistungsfähigen und oft redundanten Wegen geeignet. Deshalb ist „Nur SAS-Festplatten“ hier nicht die gesuchte Antwort."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -2766,9 +3716,9 @@ export const practicalQuestions = [
     "why": "Applikationsvirtualisierung entkoppelt Anwendungen von der üblichen lokalen Installation.",
     "wrongReasons": [
       "",
-      "„Doppelter Datenbankserver ohne Trennung“ erfüllt die geschilderte Anforderung nicht. Applikationsvirtualisierung entkoppelt Anwendungen von der üblichen lokalen Installation.",
-      "„Single Loop“ erfüllt die geschilderte Anforderung nicht. Applikationsvirtualisierung entkoppelt Anwendungen von der üblichen lokalen Installation.",
-      "„LTO-Bandrobotik“ erfüllt die geschilderte Anforderung nicht. Applikationsvirtualisierung entkoppelt Anwendungen von der üblichen lokalen Installation."
+      "„Doppelter Datenbankserver ohne Trennung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Applikationsvirtualisierung entkoppelt Anwendungen von der üblichen lokalen Installation.",
+      "Single Loop nutzt nur einen Verbindungsweg zwischen Controller und Laufwerken und hat dort keine Pfadredundanz. Deshalb ist „Single Loop“ hier nicht die gesuchte Antwort.",
+      "Magnetband ist günstig für lange Aufbewahrung und kann offline gelagert werden, hat aber lange Zugriffszeiten. Deshalb ist „LTO-Bandrobotik“ hier nicht die gesuchte Antwort."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -2787,9 +3737,9 @@ export const practicalQuestions = [
     "correct": 3,
     "why": "Die Vortragsfolien ordnen diese Anforderungen dem Open-Value-Companywide-Modell zu.",
     "wrongReasons": [
-      "„Enterprise Agreement ab 250 Arbeitsplätzen“ erfüllt die geschilderte Anforderung nicht. Die Vortragsfolien ordnen diese Anforderungen dem Open-Value-Companywide-Modell zu.",
-      "„Fibre Channel“ erfüllt die geschilderte Anforderung nicht. Die Vortragsfolien ordnen diese Anforderungen dem Open-Value-Companywide-Modell zu.",
-      "„Software Defined Storage“ erfüllt die geschilderte Anforderung nicht. Die Vortragsfolien ordnen diese Anforderungen dem Open-Value-Companywide-Modell zu.",
+      "Enterprise Agreement ist ein Microsoft-Volumenlizenzvertrag für größere Organisationen. Deshalb ist „Enterprise Agreement ab 250 Arbeitsplätzen“ hier nicht die gesuchte Antwort.",
+      "Fibre Channel ist eine Netzwerktechnik für Speicherzugriffe, vor allem in SAN-Umgebungen. Deshalb ist „Fibre Channel“ hier nicht die gesuchte Antwort.",
+      "SDS abstrahiert Speicherfunktionen von der physischen Hardware und verwaltet sie softwaregestützt. Deshalb ist „Software Defined Storage“ hier nicht die gesuchte Antwort.",
       ""
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
@@ -2809,10 +3759,10 @@ export const practicalQuestions = [
     "correct": 2,
     "why": "DPM konsolidiert VMs und spart durch Abschaltung leerer Hosts Energie.",
     "wrongReasons": [
-      "„Direct Attached Storage“ erfüllt die geschilderte Anforderung nicht. DPM konsolidiert VMs und spart durch Abschaltung leerer Hosts Energie.",
-      "„Software Defined Networking allein“ erfüllt die geschilderte Anforderung nicht. DPM konsolidiert VMs und spart durch Abschaltung leerer Hosts Energie.",
+      "DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet. Deshalb ist „Direct Attached Storage“ hier nicht die gesuchte Antwort.",
+      "SDN trennt die Netzsteuerung logisch von der Paketweiterleitung und ermöglicht zentrale, programmatische Steuerung. Deshalb ist „Software Defined Networking allein“ hier nicht die gesuchte Antwort.",
       "",
-      "„RAID 1“ erfüllt die geschilderte Anforderung nicht. DPM konsolidiert VMs und spart durch Abschaltung leerer Hosts Energie."
+      "RAID 1 spiegelt Daten auf mehrere Festplatten und bietet dadurch Schutz vor einem einzelnen Laufwerksausfall. Deshalb ist „RAID 1“ hier nicht die gesuchte Antwort."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -2831,9 +3781,9 @@ export const practicalQuestions = [
     "correct": 3,
     "why": "DAS bietet kurze lokale Zugriffswege und eignet sich für performantes Caching und Datenbanken.",
     "wrongReasons": [
-      "„Ein ausschließliches Tape-Archiv“ erfüllt die geschilderte Anforderung nicht. DAS bietet kurze lokale Zugriffswege und eignet sich für performantes Caching und Datenbanken.",
-      "„Ein Blu-ray-Laufwerk“ erfüllt die geschilderte Anforderung nicht. DAS bietet kurze lokale Zugriffswege und eignet sich für performantes Caching und Datenbanken.",
-      "„Public-Cloud-Office-Software“ erfüllt die geschilderte Anforderung nicht. DAS bietet kurze lokale Zugriffswege und eignet sich für performantes Caching und Datenbanken.",
+      "Magnetband ist günstig für lange Aufbewahrung und kann offline gelagert werden, hat aber lange Zugriffszeiten. Deshalb ist „Ein ausschließliches Tape-Archiv“ hier nicht die gesuchte Antwort.",
+      "„Ein Blu-ray-Laufwerk“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: DAS bietet kurze lokale Zugriffswege und eignet sich für performantes Caching und Datenbanken.",
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Public-Cloud-Office-Software“ hier nicht die gesuchte Antwort.",
       ""
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
@@ -2853,10 +3803,10 @@ export const practicalQuestions = [
     "correct": 2,
     "why": "NAS stellt Dateien mehreren Clients über das Netzwerk bereit.",
     "wrongReasons": [
-      "„DAS nur am Einzelserver“ erfüllt die geschilderte Anforderung nicht. NAS stellt Dateien mehreren Clients über das Netzwerk bereit.",
-      "„RAID 0 ohne Netzwerk“ erfüllt die geschilderte Anforderung nicht. NAS stellt Dateien mehreren Clients über das Netzwerk bereit.",
+      "DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet. Deshalb ist „DAS nur am Einzelserver“ hier nicht die gesuchte Antwort.",
+      "RAID 0 verteilt Daten auf mehrere Laufwerke, besitzt aber keine Redundanz; der Ausfall eines beteiligten Laufwerks gefährdet den gesamten Verbund. Deshalb ist „RAID 0 ohne Netzwerk“ hier nicht die gesuchte Antwort.",
       "",
-      "„Separates Fibre-Channel-SAN zwingend“ erfüllt die geschilderte Anforderung nicht. NAS stellt Dateien mehreren Clients über das Netzwerk bereit."
+      "Ein SAN stellt zentralen blockbasierten Speicher über eine eigene Speicher-Netzwerkinfrastruktur bereit. Deshalb ist „Separates Fibre-Channel-SAN zwingend“ hier nicht die gesuchte Antwort."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -2875,10 +3825,10 @@ export const practicalQuestions = [
     "correct": 1,
     "why": "Ein SAN stellt performanten gemeinsamen Blockspeicher über dedizierte Verbindungen bereit.",
     "wrongReasons": [
-      "„Ein einzelnes NAS ohne Blockprotokoll“ erfüllt die geschilderte Anforderung nicht. Ein SAN stellt performanten gemeinsamen Blockspeicher über dedizierte Verbindungen bereit.",
+      "NAS stellt Dateien über ein Netzwerk bereit, typischerweise über SMB oder NFS für mehrere Benutzer. Deshalb ist „Ein einzelnes NAS ohne Blockprotokoll“ hier nicht die gesuchte Antwort.",
       "",
-      "„Ein USB-Stick an einem Host“ erfüllt die geschilderte Anforderung nicht. Ein SAN stellt performanten gemeinsamen Blockspeicher über dedizierte Verbindungen bereit.",
-      "„Nur lokale DVDs“ erfüllt die geschilderte Anforderung nicht. Ein SAN stellt performanten gemeinsamen Blockspeicher über dedizierte Verbindungen bereit."
+      "„Ein USB-Stick an einem Host“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ein SAN stellt performanten gemeinsamen Blockspeicher über dedizierte Verbindungen bereit.",
+      "„Nur lokale DVDs“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ein SAN stellt performanten gemeinsamen Blockspeicher über dedizierte Verbindungen bereit."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -2898,9 +3848,9 @@ export const practicalQuestions = [
     "why": "RAID 6 kann durch doppelte Parität zwei Plattenausfälle tolerieren.",
     "wrongReasons": [
       "",
-      "„RAID 0“ erfüllt die geschilderte Anforderung nicht. RAID 6 kann durch doppelte Parität zwei Plattenausfälle tolerieren.",
-      "„RAID 5“ erfüllt die geschilderte Anforderung nicht. RAID 6 kann durch doppelte Parität zwei Plattenausfälle tolerieren.",
-      "„Ein einfaches JBOD“ erfüllt die geschilderte Anforderung nicht. RAID 6 kann durch doppelte Parität zwei Plattenausfälle tolerieren."
+      "RAID 0 verteilt Daten auf mehrere Laufwerke, besitzt aber keine Redundanz; der Ausfall eines beteiligten Laufwerks gefährdet den gesamten Verbund. Deshalb ist „RAID 0“ hier nicht die gesuchte Antwort.",
+      "RAID 5 verteilt Daten und eine Paritätsinformation; damit lässt sich der Ausfall genau eines Laufwerks abfangen. Deshalb ist „RAID 5“ hier nicht die gesuchte Antwort.",
+      "JBOD fasst Laufwerke ohne fest eingebautes RAID-Redundanzkonzept zusammen. Deshalb ist „Ein einfaches JBOD“ hier nicht die gesuchte Antwort."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -2919,9 +3869,9 @@ export const practicalQuestions = [
     "correct": 3,
     "why": "RAID 1 spiegelt Daten auf mehrere Platten.",
     "wrongReasons": [
-      "„RAID 0“ erfüllt die geschilderte Anforderung nicht. RAID 1 spiegelt Daten auf mehrere Platten.",
-      "„JBOD“ erfüllt die geschilderte Anforderung nicht. RAID 1 spiegelt Daten auf mehrere Platten.",
-      "„Nur ein externes Cloud-Archiv“ erfüllt die geschilderte Anforderung nicht. RAID 1 spiegelt Daten auf mehrere Platten.",
+      "RAID 0 verteilt Daten auf mehrere Laufwerke, besitzt aber keine Redundanz; der Ausfall eines beteiligten Laufwerks gefährdet den gesamten Verbund. Deshalb ist „RAID 0“ hier nicht die gesuchte Antwort.",
+      "JBOD fasst Laufwerke ohne fest eingebautes RAID-Redundanzkonzept zusammen. Deshalb ist „JBOD“ hier nicht die gesuchte Antwort.",
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Nur ein externes Cloud-Archiv“ hier nicht die gesuchte Antwort.",
       ""
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
@@ -2941,10 +3891,10 @@ export const practicalQuestions = [
     "correct": 2,
     "why": "RAID 10 kombiniert Striping mit Spiegelung und hoher Leistung.",
     "wrongReasons": [
-      "„JBOD“ erfüllt die geschilderte Anforderung nicht. RAID 10 kombiniert Striping mit Spiegelung und hoher Leistung.",
-      "„Einzelne SATA-Disk ohne Redundanz“ erfüllt die geschilderte Anforderung nicht. RAID 10 kombiniert Striping mit Spiegelung und hoher Leistung.",
+      "JBOD fasst Laufwerke ohne fest eingebautes RAID-Redundanzkonzept zusammen. Deshalb ist „JBOD“ hier nicht die gesuchte Antwort.",
+      "SATA ist eine serielle Massenspeicherschnittstelle und häufig auf preisgünstigen Laufwerken zu finden. Deshalb ist „Einzelne SATA-Disk ohne Redundanz“ hier nicht die gesuchte Antwort.",
       "",
-      "„RAID 0“ erfüllt die geschilderte Anforderung nicht. RAID 10 kombiniert Striping mit Spiegelung und hoher Leistung."
+      "RAID 0 verteilt Daten auf mehrere Laufwerke, besitzt aber keine Redundanz; der Ausfall eines beteiligten Laufwerks gefährdet den gesamten Verbund. Deshalb ist „RAID 0“ hier nicht die gesuchte Antwort."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -2963,10 +3913,10 @@ export const practicalQuestions = [
     "correct": 1,
     "why": "Der Standard Cluster verbindet redundante Controller mit Failover.",
     "wrongReasons": [
-      "„Nur eine physische Platte“ erfüllt die geschilderte Anforderung nicht. Der Standard Cluster verbindet redundante Controller mit Failover.",
+      "„Nur eine physische Platte“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Der Standard Cluster verbindet redundante Controller mit Failover.",
       "",
-      "„Single Loop“ erfüllt die geschilderte Anforderung nicht. Der Standard Cluster verbindet redundante Controller mit Failover.",
-      "„Nur Double Loop“ erfüllt die geschilderte Anforderung nicht. Der Standard Cluster verbindet redundante Controller mit Failover."
+      "Single Loop nutzt nur einen Verbindungsweg zwischen Controller und Laufwerken und hat dort keine Pfadredundanz. Deshalb ist „Single Loop“ hier nicht die gesuchte Antwort.",
+      "Double Loop fügt einen weiteren Verbindungsweg zu Laufwerken hinzu, ersetzt aber keinen redundanten Controller. Deshalb ist „Nur Double Loop“ hier nicht die gesuchte Antwort."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -2986,9 +3936,9 @@ export const practicalQuestions = [
     "why": "Metro Cluster spiegelt Daten standortübergreifend und ermöglicht Weiterbetrieb am zweiten Standort.",
     "wrongReasons": [
       "",
-      "„Single Loop“ erfüllt die geschilderte Anforderung nicht. Metro Cluster spiegelt Daten standortübergreifend und ermöglicht Weiterbetrieb am zweiten Standort.",
-      "„Ein einzelner DAS-Server“ erfüllt die geschilderte Anforderung nicht. Metro Cluster spiegelt Daten standortübergreifend und ermöglicht Weiterbetrieb am zweiten Standort.",
-      "„RAID 0“ erfüllt die geschilderte Anforderung nicht. Metro Cluster spiegelt Daten standortübergreifend und ermöglicht Weiterbetrieb am zweiten Standort."
+      "Single Loop nutzt nur einen Verbindungsweg zwischen Controller und Laufwerken und hat dort keine Pfadredundanz. Deshalb ist „Single Loop“ hier nicht die gesuchte Antwort.",
+      "DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet. Deshalb ist „Ein einzelner DAS-Server“ hier nicht die gesuchte Antwort.",
+      "RAID 0 verteilt Daten auf mehrere Laufwerke, besitzt aber keine Redundanz; der Ausfall eines beteiligten Laufwerks gefährdet den gesamten Verbund. Deshalb ist „RAID 0“ hier nicht die gesuchte Antwort."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -3007,9 +3957,9 @@ export const practicalQuestions = [
     "correct": 3,
     "why": "Unified Storage vereint Datei- und Blockzugriffe auf einer Plattform.",
     "wrongReasons": [
-      "„Ausschließlich einen einzelnen DVD-Brenner“ erfüllt die geschilderte Anforderung nicht. Unified Storage vereint Datei- und Blockzugriffe auf einer Plattform.",
-      "„RAID 0 ohne Protokoll“ erfüllt die geschilderte Anforderung nicht. Unified Storage vereint Datei- und Blockzugriffe auf einer Plattform.",
-      "„Nur Ethernet-Verkabelung ohne Storage-System“ erfüllt die geschilderte Anforderung nicht. Unified Storage vereint Datei- und Blockzugriffe auf einer Plattform.",
+      "„Ausschließlich einen einzelnen DVD-Brenner“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Unified Storage vereint Datei- und Blockzugriffe auf einer Plattform.",
+      "RAID 0 verteilt Daten auf mehrere Laufwerke, besitzt aber keine Redundanz; der Ausfall eines beteiligten Laufwerks gefährdet den gesamten Verbund. Deshalb ist „RAID 0 ohne Protokoll“ hier nicht die gesuchte Antwort.",
+      "„Nur Ethernet-Verkabelung ohne Storage-System“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Unified Storage vereint Datei- und Blockzugriffe auf einer Plattform.",
       ""
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
@@ -3029,10 +3979,10 @@ export const practicalQuestions = [
     "correct": 2,
     "why": "RPO beschreibt den maximal angestrebten Datenverlust in Zeit.",
     "wrongReasons": [
-      "„MTBF von 15 Monaten“ erfüllt die geschilderte Anforderung nicht. RPO beschreibt den maximal angestrebten Datenverlust in Zeit.",
-      "„PUE von 15“ erfüllt die geschilderte Anforderung nicht. RPO beschreibt den maximal angestrebten Datenverlust in Zeit.",
+      "MTBF beschreibt die durchschnittliche Zeit zwischen Ausfällen und dient der Zuverlässigkeitsbewertung. Deshalb ist „MTBF von 15 Monaten“ hier nicht die gesuchte Antwort.",
+      "„PUE von 15“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: RPO beschreibt den maximal angestrebten Datenverlust in Zeit.",
       "",
-      "„RTO von 15 Tagen“ erfüllt die geschilderte Anforderung nicht. RPO beschreibt den maximal angestrebten Datenverlust in Zeit."
+      "RTO legt fest, bis wann ein ausgefallenes System wieder betriebsbereit sein soll. Deshalb ist „RTO von 15 Tagen“ hier nicht die gesuchte Antwort."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -3051,9 +4001,9 @@ export const practicalQuestions = [
     "correct": 3,
     "why": "RTO ist die angestrebte maximale Wiederherstellungsdauer.",
     "wrongReasons": [
-      "„MTBF von einer Stunde“ erfüllt die geschilderte Anforderung nicht. RTO ist die angestrebte maximale Wiederherstellungsdauer.",
-      "„PUE von einer Stunde“ erfüllt die geschilderte Anforderung nicht. RTO ist die angestrebte maximale Wiederherstellungsdauer.",
-      "„Service Level Requirement für Speicherkosten“ erfüllt die geschilderte Anforderung nicht. RTO ist die angestrebte maximale Wiederherstellungsdauer.",
+      "MTBF beschreibt die durchschnittliche Zeit zwischen Ausfällen und dient der Zuverlässigkeitsbewertung. Deshalb ist „MTBF von einer Stunde“ hier nicht die gesuchte Antwort.",
+      "„PUE von einer Stunde“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: RTO ist die angestrebte maximale Wiederherstellungsdauer.",
+      "„Service Level Requirement für Speicherkosten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: RTO ist die angestrebte maximale Wiederherstellungsdauer.",
       ""
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
@@ -3073,10 +4023,10 @@ export const practicalQuestions = [
     "correct": 2,
     "why": "Inkrementelle Sicherungen erfassen Änderungen seit der letzten Sicherung.",
     "wrongReasons": [
-      "„Nur Jahresarchivierung“ erfüllt die geschilderte Anforderung nicht. Inkrementelle Sicherungen erfassen Änderungen seit der letzten Sicherung.",
-      "„Eine nicht versionierte Replikation“ erfüllt die geschilderte Anforderung nicht. Inkrementelle Sicherungen erfassen Änderungen seit der letzten Sicherung.",
+      "„Nur Jahresarchivierung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Inkrementelle Sicherungen erfassen Änderungen seit der letzten Sicherung.",
+      "„Eine nicht versionierte Replikation“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Inkrementelle Sicherungen erfassen Änderungen seit der letzten Sicherung.",
       "",
-      "„Tägliche vollständige Sicherung“ erfüllt die geschilderte Anforderung nicht. Inkrementelle Sicherungen erfassen Änderungen seit der letzten Sicherung."
+      "Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen. Deshalb ist „Tägliche vollständige Sicherung“ hier nicht die gesuchte Antwort."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -3095,10 +4045,10 @@ export const practicalQuestions = [
     "correct": 1,
     "why": "Vollbackup plus jüngstes Differenzial genügen für eine differenzielle Wiederherstellung.",
     "wrongReasons": [
-      "„Nur RAID 0“ erfüllt die geschilderte Anforderung nicht. Vollbackup plus jüngstes Differenzial genügen für eine differenzielle Wiederherstellung.",
+      "RAID 0 verteilt Daten auf mehrere Laufwerke, besitzt aber keine Redundanz; der Ausfall eines beteiligten Laufwerks gefährdet den gesamten Verbund. Deshalb ist „Nur RAID 0“ hier nicht die gesuchte Antwort.",
       "",
-      "„Lange Kette inkrementeller Backups“ erfüllt die geschilderte Anforderung nicht. Vollbackup plus jüngstes Differenzial genügen für eine differenzielle Wiederherstellung.",
-      "„Nur Replikation“ erfüllt die geschilderte Anforderung nicht. Vollbackup plus jüngstes Differenzial genügen für eine differenzielle Wiederherstellung."
+      "Bei einer inkrementellen Sicherung werden nur Änderungen seit der jeweils letzten Sicherung gespeichert; für das Restore ist oft eine Sicherungskette nötig. Deshalb ist „Lange Kette inkrementeller Backups“ hier nicht die gesuchte Antwort.",
+      "„Nur Replikation“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Vollbackup plus jüngstes Differenzial genügen für eine differenzielle Wiederherstellung."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -3118,9 +4068,9 @@ export const practicalQuestions = [
     "why": "Physisch getrennte Offline-Medien sind über das kompromittierte Netzwerk nicht direkt erreichbar.",
     "wrongReasons": [
       "",
-      "„Eine ständig beschreibbare Netzwerkfreigabe“ erfüllt die geschilderte Anforderung nicht. Physisch getrennte Offline-Medien sind über das kompromittierte Netzwerk nicht direkt erreichbar.",
-      "„Nur ein RAID 1 im betroffenen Server“ erfüllt die geschilderte Anforderung nicht. Physisch getrennte Offline-Medien sind über das kompromittierte Netzwerk nicht direkt erreichbar.",
-      "„Backup mit identischem Admin-Konto im selben Netz“ erfüllt die geschilderte Anforderung nicht. Physisch getrennte Offline-Medien sind über das kompromittierte Netzwerk nicht direkt erreichbar."
+      "„Eine ständig beschreibbare Netzwerkfreigabe“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Physisch getrennte Offline-Medien sind über das kompromittierte Netzwerk nicht direkt erreichbar.",
+      "RAID 1 spiegelt Daten auf mehrere Festplatten und bietet dadurch Schutz vor einem einzelnen Laufwerksausfall. Deshalb ist „Nur ein RAID 1 im betroffenen Server“ hier nicht die gesuchte Antwort.",
+      "„Backup mit identischem Admin-Konto im selben Netz“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Physisch getrennte Offline-Medien sind über das kompromittierte Netzwerk nicht direkt erreichbar."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -3139,9 +4089,9 @@ export const practicalQuestions = [
     "correct": 3,
     "why": "Das Generationenprinzip hält tägliche, wöchentliche und monatliche Sicherungen vor.",
     "wrongReasons": [
-      "„Nur RAID 5“ erfüllt die geschilderte Anforderung nicht. Das Generationenprinzip hält tägliche, wöchentliche und monatliche Sicherungen vor.",
-      "„OpenFlow“ erfüllt die geschilderte Anforderung nicht. Das Generationenprinzip hält tägliche, wöchentliche und monatliche Sicherungen vor.",
-      "„Rapid Elasticity“ erfüllt die geschilderte Anforderung nicht. Das Generationenprinzip hält tägliche, wöchentliche und monatliche Sicherungen vor.",
+      "RAID 5 verteilt Daten und eine Paritätsinformation; damit lässt sich der Ausfall genau eines Laufwerks abfangen. Deshalb ist „Nur RAID 5“ hier nicht die gesuchte Antwort.",
+      "OpenFlow ist eine mögliche Schnittstelle, über die SDN-Controller Weiterleitungsregeln an Netzgeräte übermitteln. Deshalb ist „OpenFlow“ hier nicht die gesuchte Antwort.",
+      "„Rapid Elasticity“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Das Generationenprinzip hält tägliche, wöchentliche und monatliche Sicherungen vor.",
       ""
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
@@ -3161,10 +4111,10 @@ export const practicalQuestions = [
     "correct": 2,
     "why": "Clientseitige Blockdeduplizierung reduziert identische Daten bereits vor dem Netzwerktransfer.",
     "wrongReasons": [
-      "„Jede VM vollständig ohne Deduplizierung übertragen“ erfüllt die geschilderte Anforderung nicht. Clientseitige Blockdeduplizierung reduziert identische Daten bereits vor dem Netzwerktransfer.",
-      "„Ausschließlich stärkere Kühlung“ erfüllt die geschilderte Anforderung nicht. Clientseitige Blockdeduplizierung reduziert identische Daten bereits vor dem Netzwerktransfer.",
+      "Eine Vollsicherung kopiert alle ausgewählten Daten; sie braucht mehr Speicher und Zeit, ist dafür einfach wiederherzustellen. Deshalb ist „Jede VM vollständig ohne Deduplizierung übertragen“ hier nicht die gesuchte Antwort.",
+      "„Ausschließlich stärkere Kühlung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Clientseitige Blockdeduplizierung reduziert identische Daten bereits vor dem Netzwerktransfer.",
       "",
-      "„Serverseitige Deduplizierung erst nach Übertragung aller Daten“ erfüllt die geschilderte Anforderung nicht. Clientseitige Blockdeduplizierung reduziert identische Daten bereits vor dem Netzwerktransfer."
+      "Deduplizierung erkennt identische Dateien oder Datenblöcke und speichert diese möglichst nur einmal. Deshalb ist „Serverseitige Deduplizierung erst nach Übertragung aller Daten“ hier nicht die gesuchte Antwort."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -3183,10 +4133,10 @@ export const practicalQuestions = [
     "correct": 1,
     "why": "Erst ein erfolgreicher Test zeigt, dass die Daten tatsächlich wiederherstellbar sind.",
     "wrongReasons": [
-      "„Die RTO ohne Test halbieren“ erfüllt die geschilderte Anforderung nicht. Erst ein erfolgreicher Test zeigt, dass die Daten tatsächlich wiederherstellbar sind.",
+      "RTO legt fest, bis wann ein ausgefallenes System wieder betriebsbereit sein soll. Deshalb ist „Die RTO ohne Test halbieren“ hier nicht die gesuchte Antwort.",
       "",
-      "„Nur das Firmenlogo der Software ändern“ erfüllt die geschilderte Anforderung nicht. Erst ein erfolgreicher Test zeigt, dass die Daten tatsächlich wiederherstellbar sind.",
-      "„Sofortige Löschung der letzten Backups“ erfüllt die geschilderte Anforderung nicht. Erst ein erfolgreicher Test zeigt, dass die Daten tatsächlich wiederherstellbar sind."
+      "DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet. Deshalb ist „Nur das Firmenlogo der Software ändern“ hier nicht die gesuchte Antwort.",
+      "„Sofortige Löschung der letzten Backups“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Erst ein erfolgreicher Test zeigt, dass die Daten tatsächlich wiederherstellbar sind."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -3206,9 +4156,9 @@ export const practicalQuestions = [
     "why": "Ein Image Backup enthält auch Betriebssystem und Einstellungen.",
     "wrongReasons": [
       "",
-      "„Nur Export einzelner Textdateien“ erfüllt die geschilderte Anforderung nicht. Ein Image Backup enthält auch Betriebssystem und Einstellungen.",
-      "„Ein reiner NAS-Switch“ erfüllt die geschilderte Anforderung nicht. Ein Image Backup enthält auch Betriebssystem und Einstellungen.",
-      "„Nur SLA ohne Daten“ erfüllt die geschilderte Anforderung nicht. Ein Image Backup enthält auch Betriebssystem und Einstellungen."
+      "„Nur Export einzelner Textdateien“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ein Image Backup enthält auch Betriebssystem und Einstellungen.",
+      "NAS stellt Dateien über ein Netzwerk bereit, typischerweise über SMB oder NFS für mehrere Benutzer. Deshalb ist „Ein reiner NAS-Switch“ hier nicht die gesuchte Antwort.",
+      "Ein SLA enthält vereinbarte Leistungs- und Qualitätszusagen zwischen Dienstleister und Kunde. Deshalb ist „Nur SLA ohne Daten“ hier nicht die gesuchte Antwort."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -3227,9 +4177,9 @@ export const practicalQuestions = [
     "correct": 3,
     "why": "Getrennte Aufbewahrung vermindert das Risiko eines gemeinsamen Standortausfalls.",
     "wrongReasons": [
-      "„Mehr Backups am selben ungeschützten Standort“ erfüllt die geschilderte Anforderung nicht. Getrennte Aufbewahrung vermindert das Risiko eines gemeinsamen Standortausfalls.",
-      "„RAID 0 statt Backup“ erfüllt die geschilderte Anforderung nicht. Getrennte Aufbewahrung vermindert das Risiko eines gemeinsamen Standortausfalls.",
-      "„Löschen aller Sicherungsprotokolle“ erfüllt die geschilderte Anforderung nicht. Getrennte Aufbewahrung vermindert das Risiko eines gemeinsamen Standortausfalls.",
+      "„Mehr Backups am selben ungeschützten Standort“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Getrennte Aufbewahrung vermindert das Risiko eines gemeinsamen Standortausfalls.",
+      "RAID 0 verteilt Daten auf mehrere Laufwerke, besitzt aber keine Redundanz; der Ausfall eines beteiligten Laufwerks gefährdet den gesamten Verbund. Deshalb ist „RAID 0 statt Backup“ hier nicht die gesuchte Antwort.",
+      "„Löschen aller Sicherungsprotokolle“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Getrennte Aufbewahrung vermindert das Risiko eines gemeinsamen Standortausfalls.",
       ""
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
@@ -3249,10 +4199,10 @@ export const practicalQuestions = [
     "correct": 2,
     "why": "Das Mehrstufenkonzept aus Modul 3 kombiniert schnelle Wiederherstellung und günstige Langzeitkopien.",
     "wrongReasons": [
-      "„Ausschließlich Arbeitsspeicher“ erfüllt die geschilderte Anforderung nicht. Das Mehrstufenkonzept aus Modul 3 kombiniert schnelle Wiederherstellung und günstige Langzeitkopien.",
-      "„Verzicht auf Aufbewahrungsregeln“ erfüllt die geschilderte Anforderung nicht. Das Mehrstufenkonzept aus Modul 3 kombiniert schnelle Wiederherstellung und günstige Langzeitkopien.",
+      "„Ausschließlich Arbeitsspeicher“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Das Mehrstufenkonzept aus Modul 3 kombiniert schnelle Wiederherstellung und günstige Langzeitkopien.",
+      "„Verzicht auf Aufbewahrungsregeln“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Das Mehrstufenkonzept aus Modul 3 kombiniert schnelle Wiederherstellung und günstige Langzeitkopien.",
       "",
-      "„Nur eine SSD ohne Sicherungshistorie“ erfüllt die geschilderte Anforderung nicht. Das Mehrstufenkonzept aus Modul 3 kombiniert schnelle Wiederherstellung und günstige Langzeitkopien."
+      "Eine SSD speichert Daten ohne bewegliche Teile und ermöglicht besonders schnelle Zugriffe. Deshalb ist „Nur eine SSD ohne Sicherungshistorie“ hier nicht die gesuchte Antwort."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -3271,9 +4221,9 @@ export const practicalQuestions = [
     "correct": 3,
     "why": "SaaS stellt eine fertige Anwendung als Dienst bereit.",
     "wrongReasons": [
-      "„IaaS mit eigenem Betriebssystem und Eigenentwicklung“ erfüllt die geschilderte Anforderung nicht. SaaS stellt eine fertige Anwendung als Dienst bereit.",
-      "„Nur Fibre-Channel-SAN“ erfüllt die geschilderte Anforderung nicht. SaaS stellt eine fertige Anwendung als Dienst bereit.",
-      "„RAID 10“ erfüllt die geschilderte Anforderung nicht. SaaS stellt eine fertige Anwendung als Dienst bereit.",
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „IaaS mit eigenem Betriebssystem und Eigenentwicklung“ hier nicht die gesuchte Antwort.",
+      "Ein SAN stellt zentralen blockbasierten Speicher über eine eigene Speicher-Netzwerkinfrastruktur bereit. Deshalb ist „Nur Fibre-Channel-SAN“ hier nicht die gesuchte Antwort.",
+      "RAID 1 spiegelt Daten auf mehrere Festplatten und bietet dadurch Schutz vor einem einzelnen Laufwerksausfall. Deshalb ist „RAID 10“ hier nicht die gesuchte Antwort.",
       ""
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
@@ -3293,10 +4243,10 @@ export const practicalQuestions = [
     "correct": 2,
     "why": "PaaS stellt eine gemanagte Entwicklungs- und Laufzeitplattform bereit.",
     "wrongReasons": [
-      "„Ein reines Tape-Archiv“ erfüllt die geschilderte Anforderung nicht. PaaS stellt eine gemanagte Entwicklungs- und Laufzeitplattform bereit.",
-      "„Manuelle Netzwerkkonfiguration aller Router“ erfüllt die geschilderte Anforderung nicht. PaaS stellt eine gemanagte Entwicklungs- und Laufzeitplattform bereit.",
+      "Magnetband ist günstig für lange Aufbewahrung und kann offline gelagert werden, hat aber lange Zugriffszeiten. Deshalb ist „Ein reines Tape-Archiv“ hier nicht die gesuchte Antwort.",
+      "„Manuelle Netzwerkkonfiguration aller Router“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: PaaS stellt eine gemanagte Entwicklungs- und Laufzeitplattform bereit.",
       "",
-      "„Nur eine lokale SSD“ erfüllt die geschilderte Anforderung nicht. PaaS stellt eine gemanagte Entwicklungs- und Laufzeitplattform bereit."
+      "Eine SSD speichert Daten ohne bewegliche Teile und ermöglicht besonders schnelle Zugriffe. Deshalb ist „Nur eine lokale SSD“ hier nicht die gesuchte Antwort."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -3315,10 +4265,10 @@ export const practicalQuestions = [
     "correct": 1,
     "why": "IaaS stellt Infrastruktur bereit, während der Kunde Betriebssystem und Anwendungen verwaltet.",
     "wrongReasons": [
-      "„Ein lokaler DVD-Server“ erfüllt die geschilderte Anforderung nicht. IaaS stellt Infrastruktur bereit, während der Kunde Betriebssystem und Anwendungen verwaltet.",
+      "„Ein lokaler DVD-Server“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: IaaS stellt Infrastruktur bereit, während der Kunde Betriebssystem und Anwendungen verwaltet.",
       "",
-      "„SaaS“ erfüllt die geschilderte Anforderung nicht. IaaS stellt Infrastruktur bereit, während der Kunde Betriebssystem und Anwendungen verwaltet.",
-      "„Only Backup as a Service“ erfüllt die geschilderte Anforderung nicht. IaaS stellt Infrastruktur bereit, während der Kunde Betriebssystem und Anwendungen verwaltet."
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „SaaS“ hier nicht die gesuchte Antwort.",
+      "„Only Backup as a Service“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: IaaS stellt Infrastruktur bereit, während der Kunde Betriebssystem und Anwendungen verwaltet."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -3338,9 +4288,9 @@ export const practicalQuestions = [
     "why": "Hybrid Cloud kombiniert beispielsweise Private und Public Cloud.",
     "wrongReasons": [
       "",
-      "„Reine Community Cloud“ erfüllt die geschilderte Anforderung nicht. Hybrid Cloud kombiniert beispielsweise Private und Public Cloud.",
-      "„Ausschließlich lokale DAS-Platten“ erfüllt die geschilderte Anforderung nicht. Hybrid Cloud kombiniert beispielsweise Private und Public Cloud.",
-      "„Nur eine Public Cloud ohne private Ressourcen“ erfüllt die geschilderte Anforderung nicht. Hybrid Cloud kombiniert beispielsweise Private und Public Cloud."
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Reine Community Cloud“ hier nicht die gesuchte Antwort.",
+      "DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet. Deshalb ist „Ausschließlich lokale DAS-Platten“ hier nicht die gesuchte Antwort.",
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Nur eine Public Cloud ohne private Ressourcen“ hier nicht die gesuchte Antwort."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -3359,9 +4309,9 @@ export const practicalQuestions = [
     "correct": 3,
     "why": "Multi Cloud verteilt Dienste auf mehrere Anbieter; das reduziert, beseitigt aber nicht jede Abhängigkeit.",
     "wrongReasons": [
-      "„RAID 6“ erfüllt die geschilderte Anforderung nicht. Multi Cloud verteilt Dienste auf mehrere Anbieter; das reduziert, beseitigt aber nicht jede Abhängigkeit.",
-      "„Single Loop“ erfüllt die geschilderte Anforderung nicht. Multi Cloud verteilt Dienste auf mehrere Anbieter; das reduziert, beseitigt aber nicht jede Abhängigkeit.",
-      "„Sessionvirtualisierung“ erfüllt die geschilderte Anforderung nicht. Multi Cloud verteilt Dienste auf mehrere Anbieter; das reduziert, beseitigt aber nicht jede Abhängigkeit.",
+      "RAID 6 verwendet zwei unabhängige Paritäten und verträgt den Ausfall von zwei Laufwerken. Deshalb ist „RAID 6“ hier nicht die gesuchte Antwort.",
+      "Single Loop nutzt nur einen Verbindungsweg zwischen Controller und Laufwerken und hat dort keine Pfadredundanz. Deshalb ist „Single Loop“ hier nicht die gesuchte Antwort.",
+      "Sessionvirtualisierung stellt Desktop- oder Anwendungssitzungen auf einer zentralen Plattform bereit. Deshalb ist „Sessionvirtualisierung“ hier nicht die gesuchte Antwort.",
       ""
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
@@ -3381,10 +4331,10 @@ export const practicalQuestions = [
     "correct": 2,
     "why": "SDN trennt die Steuerung von der Datenweiterleitung und unterstützt zentrale Regelverteilung.",
     "wrongReasons": [
-      "„Ein zusätzlicher RAID-Controller“ erfüllt die geschilderte Anforderung nicht. SDN trennt die Steuerung von der Datenweiterleitung und unterstützt zentrale Regelverteilung.",
-      "„Manuelle Änderung jedes einzelnen Switches“ erfüllt die geschilderte Anforderung nicht. SDN trennt die Steuerung von der Datenweiterleitung und unterstützt zentrale Regelverteilung.",
+      "„Ein zusätzlicher RAID-Controller“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: SDN trennt die Steuerung von der Datenweiterleitung und unterstützt zentrale Regelverteilung.",
+      "„Manuelle Änderung jedes einzelnen Switches“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: SDN trennt die Steuerung von der Datenweiterleitung und unterstützt zentrale Regelverteilung.",
       "",
-      "„Nur Magnetbandrotation“ erfüllt die geschilderte Anforderung nicht. SDN trennt die Steuerung von der Datenweiterleitung und unterstützt zentrale Regelverteilung."
+      "Magnetband ist günstig für lange Aufbewahrung und kann offline gelagert werden, hat aber lange Zugriffszeiten. Deshalb ist „Nur Magnetbandrotation“ hier nicht die gesuchte Antwort."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -3403,10 +4353,10 @@ export const practicalQuestions = [
     "correct": 1,
     "why": "SDS abstrahiert Speicherfunktionen von der physischen Hardware.",
     "wrongReasons": [
-      "„Nur ein SLA“ erfüllt die geschilderte Anforderung nicht. SDS abstrahiert Speicherfunktionen von der physischen Hardware.",
+      "Ein SLA enthält vereinbarte Leistungs- und Qualitätszusagen zwischen Dienstleister und Kunde. Deshalb ist „Nur ein SLA“ hier nicht die gesuchte Antwort.",
       "",
-      "„Ein einzelner DVD-Brenner“ erfüllt die geschilderte Anforderung nicht. SDS abstrahiert Speicherfunktionen von der physischen Hardware.",
-      "„Eine klassische nur lokal beschreibbare Festplatte“ erfüllt die geschilderte Anforderung nicht. SDS abstrahiert Speicherfunktionen von der physischen Hardware."
+      "„Ein einzelner DVD-Brenner“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: SDS abstrahiert Speicherfunktionen von der physischen Hardware.",
+      "„Eine klassische nur lokal beschreibbare Festplatte“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: SDS abstrahiert Speicherfunktionen von der physischen Hardware."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -3426,9 +4376,9 @@ export const practicalQuestions = [
     "why": "Das BSI fordert Klärung von Datenstandorten, Sicherheitsnachweisen und Verantwortlichkeiten.",
     "wrongReasons": [
       "",
-      "„Ungeprüfte sofortige Datenmigration“ erfüllt die geschilderte Anforderung nicht. Das BSI fordert Klärung von Datenstandorten, Sicherheitsnachweisen und Verantwortlichkeiten.",
-      "„Verzicht auf Datenschutzprüfung“ erfüllt die geschilderte Anforderung nicht. Das BSI fordert Klärung von Datenstandorten, Sicherheitsnachweisen und Verantwortlichkeiten.",
-      "„Nur billigsten Preis vergleichen“ erfüllt die geschilderte Anforderung nicht. Das BSI fordert Klärung von Datenstandorten, Sicherheitsnachweisen und Verantwortlichkeiten."
+      "„Ungeprüfte sofortige Datenmigration“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Das BSI fordert Klärung von Datenstandorten, Sicherheitsnachweisen und Verantwortlichkeiten.",
+      "„Verzicht auf Datenschutzprüfung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Das BSI fordert Klärung von Datenstandorten, Sicherheitsnachweisen und Verantwortlichkeiten.",
+      "„Nur billigsten Preis vergleichen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Das BSI fordert Klärung von Datenstandorten, Sicherheitsnachweisen und Verantwortlichkeiten."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   },
@@ -3447,9 +4397,9 @@ export const practicalQuestions = [
     "correct": 3,
     "why": "Eine Exit-Strategie begrenzt Vendor Lock-in und regelt den Umgang mit Daten bei Vertragsende.",
     "wrongReasons": [
-      "„Nur das Logo des neuen Anbieters“ erfüllt die geschilderte Anforderung nicht. Eine Exit-Strategie begrenzt Vendor Lock-in und regelt den Umgang mit Daten bei Vertragsende.",
-      "„Verzicht auf alle Testmigrationen“ erfüllt die geschilderte Anforderung nicht. Eine Exit-Strategie begrenzt Vendor Lock-in und regelt den Umgang mit Daten bei Vertragsende.",
-      "„Keine Verträge über Datenrückgabe“ erfüllt die geschilderte Anforderung nicht. Eine Exit-Strategie begrenzt Vendor Lock-in und regelt den Umgang mit Daten bei Vertragsende.",
+      "DAS ist direkt an einen Host angebunden; es ist günstig und schnell, aber für den gemeinsamen Zugriff mehrerer Hosts nur eingeschränkt geeignet. Deshalb ist „Nur das Logo des neuen Anbieters“ hier nicht die gesuchte Antwort.",
+      "„Verzicht auf alle Testmigrationen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Eine Exit-Strategie begrenzt Vendor Lock-in und regelt den Umgang mit Daten bei Vertragsende.",
+      "„Keine Verträge über Datenrückgabe“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Eine Exit-Strategie begrenzt Vendor Lock-in und regelt den Umgang mit Daten bei Vertragsende.",
       ""
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
@@ -3469,10 +4419,10 @@ export const practicalQuestions = [
     "correct": 2,
     "why": "C5-Testate dokumentieren die Prüfung definierter Kriterien; Kundenpflichten bleiben bestehen.",
     "wrongReasons": [
-      "„Alle denkbaren Angriffe sind ausgeschlossen“ erfüllt die geschilderte Anforderung nicht. C5-Testate dokumentieren die Prüfung definierter Kriterien; Kundenpflichten bleiben bestehen.",
-      "„Die Cloud erfüllt automatisch jedes Datenschutzgesetz weltweit“ erfüllt die geschilderte Anforderung nicht. C5-Testate dokumentieren die Prüfung definierter Kriterien; Kundenpflichten bleiben bestehen.",
+      "„Alle denkbaren Angriffe sind ausgeschlossen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: C5-Testate dokumentieren die Prüfung definierter Kriterien; Kundenpflichten bleiben bestehen.",
+      "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Die Cloud erfüllt automatisch jedes Datenschutzgesetz weltweit“ hier nicht die gesuchte Antwort.",
       "",
-      "„Der Kunde muss keinerlei Berechtigungen mehr prüfen“ erfüllt die geschilderte Anforderung nicht. C5-Testate dokumentieren die Prüfung definierter Kriterien; Kundenpflichten bleiben bestehen."
+      "„Der Kunde muss keinerlei Berechtigungen mehr prüfen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: C5-Testate dokumentieren die Prüfung definierter Kriterien; Kundenpflichten bleiben bestehen."
     ],
     "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
   }
