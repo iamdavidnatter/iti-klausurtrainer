@@ -151,10 +151,10 @@ export const oldQuestions = [
       "Infrastructure as a Service",
       "Hosting"
     ],
-    "correct": 1,
+    "correct": 2,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
-    "why": "PaaS ermöglicht die Bereitstellung eigener Applikationen; die zugrunde liegende Plattform wird vom Anbieter betrieben.",
-    "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
+    "why": "Bei Infrastructure as a Service betreibt der Cloud-Anbieter die physische und virtualisierte Infrastruktur. Das Betriebssystem, die Laufzeitumgebung und die eigenen Anwendungen verwaltet dagegen der Kunde. Die Angabe \"bis zur Virtualisierungsebene\" grenzt daher IaaS von PaaS ab.",
+    "solutionStatus": "Eigene fachliche Auslegung: Das Verantwortungsmodell bis einschließlich Virtualisierung spricht für IaaS; die Formulierung zur schnellen Applikationsbereitstellung könnte zu PaaS verleiten. Kein offizieller Lösungsschlüssel.",
     "wrongReasons": [
       "„Software as a Service“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: PaaS ermöglicht die Bereitstellung eigener Applikationen; die zugrunde liegende Plattform wird vom Anbieter betrieben.",
       "",
