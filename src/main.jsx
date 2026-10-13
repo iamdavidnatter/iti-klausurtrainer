@@ -2,9 +2,9 @@ import React,{useState,useEffect,useMemo} from 'react';
 import{createRoot}from'react-dom/client';
 import{BookOpen,GraduationCap,CheckCircle2,XCircle,ArrowRight,ArrowLeft,RotateCcw,Filter,ShieldCheck,Info,ChartNoAxesColumn,Clock,Menu,Flag,ClipboardCheck}from'lucide-react';
 import{oldQuestions,newQuestions,practicalQuestions}from './questions.js';
+import {getIncorrectExplanation} from './answerGuide.js';
 import './style.css';
 const cacheKey='iti-trainer-v1';
-const explainIncorrect=(q,selected)=>{if(selected===undefined||selected===q.correct)return '';return q.wrongReasons?.[selected]||'Diese Alternative löst die beschriebene Anforderung nicht.'};
 const saveState=()=>{try{return JSON.parse(localStorage.getItem(cacheKey)||'{}')}catch{return {}}};
 function App(){
  const [mode,setMode]=useState('old');const[topic,setTopic]=useState('Alle');const[exam,setExam]=useState(false);
@@ -30,10 +30,30 @@ function App(){
  {showResults?<section className="questionCard finish"><div className="finishIcon"><CheckCircle2 size={42}/></div><h2>Training ausgewertet</h2><p>{stats.checked} Fragen beantwortet; {stats.ok} mit dem verfügbaren Lösungshinweis übereinstimmend. Bei {stats.unverified} Antworten liegt kein belastbarer Lösungsschlüssel vor.</p><button className="primary" onClick={()=>{setShowResults(false);setIndex(0)}}>Fragen noch einmal ansehen <ArrowRight size={17}/></button></section>:current?<section className="questionCard"><div className="questionHeader"><div className="chips"><span className="chip mainchip">{current.type==='old'?'ORIGINAL-ALTKLAUSUR':current.type==='practical'?'PRAXISFALL':'NEUE ÜBUNGSFRAGE'}</span>{current.type!=='old'&&<span className="chip">{current.topic}</span>}</div><span className="questionCounter">{index+1} <span>/ {pool.length}</span></span></div><div className="progress"><div style={{width:`${pool.length?(index+1)/pool.length*100:0}%`}}/></div>
  <><h2>Frage {current.number} {current.type==='old'&&<span className="mutedMini">· Originalklausur</span>}</h2><h3>{current.q}</h3></>
  <div className="options" role="radiogroup" aria-label="Antwortmöglichkeiten">{current.a.map((name,n)=><button key={n} className={'answer '+(entry.choice===n?'picked ':'')+(entry.checked&&current.correct!==null&&current.correct===n?'right ':'')+(entry.checked&&current.correct!==null&&entry.choice===n&&current.correct!==n?'wrong ':'')} disabled={entry.checked} onClick={()=>choose(n)}><span className="letter">{String.fromCharCode(65+n)}</span><span className="answerText">{name}</span>{entry.checked&&current.correct===n&&<CheckCircle2 size={19} className="yes"/>}{entry.checked&&entry.choice===n&&current.correct!==null&&current.correct!==n&&<XCircle size={19} className="no"/>}</button>)}</div>
- {entry.checked&&<div className={'feedback '+(current.correct===null?'neutral':entry.choice===current.correct?'success':'error')}>
- <div className="feedbackTitle">{current.correct===null?'Keine belastbare Musterlösung':entry.choice===current.correct?'Richtig beantwortet':'Nicht richtig beantwortet'}</div>
- {current.correct!==null&&<><p><b>Richtige Antwort: {String.fromCharCode(65+current.correct)} – {current.a[current.correct]}</b></p><p><b>Warum richtig?</b> {current.why||'Diese Alternative entspricht den dargestellten Lehrinhalten.'}</p>{entry.choice!==current.correct&&<p><b>Warum deine Antwort falsch ist:</b> {explainIncorrect(current,entry.choice)}</p>}{current.solutionStatus&&<p className="mutedMini">{current.solutionStatus}</p>}</>}
- {current.correct===null&&<p>Für diese Frage liegt noch keine begründbare Musterlösung vor.</p>}</div>}
+
+ {entry.checked&&<div className={'feedback '+(entry.choice===current.correct?'success':'error')}>
+  <div className="feedbackTitle">{entry.choice===current.correct?'Richtig beantwortet':'Nicht richtig beantwortet'}</div>
+  <div className="solutionExplanation">
+   <p><b>Richtige Antwort: {String.fromCharCode(65+current.correct)} – {current.a[current.correct]}</b></p>
+   <p><strong>Warum ist das richtig?</strong> {current.why}</p>
+  </div>
+  {entry.choice!==current.correct&&<div className="selectedWrongExplanation">
+    <strong>Deine Antwort: {String.fromCharCode(65+entry.choice)} – {current.a[entry.choice]}</strong>
+    <p><b>Warum ist sie hier falsch?</b> {getIncorrectExplanation(current,entry.choice)?.why}</p>
+    <p><b>Wann wäre diese Antwort richtig oder sinnvoll?</b> {getIncorrectExplanation(current,entry.choice)?.when}</p>
+  </div>}
+  {current.solutionStatus&&<p className="mutedMini">{current.solutionStatus}</p>}
+  <details className="otherAnswers">
+    <summary>{entry.choice===current.correct?'Warum sind die drei anderen Antworten falsch?':'Auch die übrigen Antwortmöglichkeiten verstehen'}</summary>
+    <div className="alternativeExplanationList">
+     {current.a.map((answer,n)=>n===current.correct||n===entry.choice?null:<div className="alternativeExplanation" key={n}>
+       <strong>{String.fromCharCode(65+n)} – {answer}</strong>
+       <p><b>Warum hier nicht?</b> {getIncorrectExplanation(current,n)?.why}</p>
+       <p><b>Wann passt diese Antwort?</b> {getIncorrectExplanation(current,n)?.when}</p>
+     </div>)}
+    </div>
+  </details>
+ </div>}
 
  <div className="actions"><button className="outline" disabled={index===0} onClick={()=>setIndex(i=>Math.max(0,i-1))}><ArrowLeft size={17}/> Zurück</button><div className="actionRight"><button className="primary" onClick={()=>index<pool.length-1?setIndex(i=>i+1):finish()}>{index<pool.length-1?'Nächste Frage':'Auswertung'} <ArrowRight size={17}/></button></div></div></section>:<div className="questionCard finish"><h2>Keine Fehler gefunden</h2><p>Im ausgewählten Bereich gibt es keine beantworteten Fehlerfragen.</p><button className="primary" onClick={()=>setOnlyErrors(false)}>Alle Fragen anzeigen</button></div>}
  <section className="navigator"><div className="navHead"><strong>Fragenübersicht</strong><span>Klicke auf eine Nummer, um direkt zur Frage zu springen.</span></div><div className="numberGrid">{pool.map((q,i)=><button key={q.id} title={`Frage ${q.number}`} className={(index===i?'current ':'')+(state[q.id]?.checked?'done ':'')+(state[q.id]?.choice!==undefined&&!state[q.id]?.checked?'answered ':'')} onClick={()=>{setIndex(i);setShowResults(false)}}>{q.type==='old'?q.number:q.type==='practical'?'P'+q.number:'N'+q.number}</button>)}</div></section><footer>ITI Trainer · Originalfragen: Klausur-PDF · Neue Fragen und Praxisfälle: Modul 1–4 · Fortschritt nur lokal im Browser gespeichert · Kein offizieller Prüfungslösungsschlüssel</footer></main></div></div>
