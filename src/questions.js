@@ -2593,3 +2593,887 @@ export const newQuestions = [
     "why": "Richtig ist: Anbieter und Kunde erfüllen jeweils unterschiedliche Sicherheitsaufgaben."
   }
 ];
+
+// Praxispool: zehn Entscheidungsszenarien je Modul; genau eine Antwort richtig.
+export const practicalQuestions = [
+  {
+    "id": "practical-1-1",
+    "number": 1,
+    "type": "practical",
+    "topic": "Computing",
+    "q": "In einem kleinen Büro soll ein einzelner Dateiserver ohne Serverschrank aufgestellt werden. Welche Bauform wählen Sie?",
+    "a": [
+      "Bladeserver",
+      "Vier Rackserver",
+      "Ein Fibre-Channel-Switch",
+      "Towerserver"
+    ],
+    "correct": 3,
+    "why": "Ein Tower benötigt keinen Rackschrank und lässt sich einfach aufstellen.",
+    "wrongReasons": [
+      "„Bladeserver“ erfüllt die geschilderte Anforderung nicht. Ein Tower benötigt keinen Rackschrank und lässt sich einfach aufstellen.",
+      "„Vier Rackserver“ erfüllt die geschilderte Anforderung nicht. Ein Tower benötigt keinen Rackschrank und lässt sich einfach aufstellen.",
+      "„Ein Fibre-Channel-Switch“ erfüllt die geschilderte Anforderung nicht. Ein Tower benötigt keinen Rackschrank und lässt sich einfach aufstellen.",
+      ""
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-1-2",
+    "number": 2,
+    "type": "practical",
+    "topic": "Computing",
+    "q": "Ein Rechenzentrum hat häufig Probleme durch Vermischung warmer Abluft mit Kaltluft. Was ist zuerst sinnvoll?",
+    "a": [
+      "USV entfernen",
+      "Mehr Datenbanklizenzen kaufen",
+      "Warm- und Kaltgänge trennen und freie Rackplätze verblenden",
+      "Alle Server dauerhaft bei Höchstleistung betreiben"
+    ],
+    "correct": 2,
+    "why": "Geordnete Luftführung verhindert Rückströmung und verbessert die Kühleffizienz.",
+    "wrongReasons": [
+      "„USV entfernen“ erfüllt die geschilderte Anforderung nicht. Geordnete Luftführung verhindert Rückströmung und verbessert die Kühleffizienz.",
+      "„Mehr Datenbanklizenzen kaufen“ erfüllt die geschilderte Anforderung nicht. Geordnete Luftführung verhindert Rückströmung und verbessert die Kühleffizienz.",
+      "",
+      "„Alle Server dauerhaft bei Höchstleistung betreiben“ erfüllt die geschilderte Anforderung nicht. Geordnete Luftführung verhindert Rückströmung und verbessert die Kühleffizienz."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-1-3",
+    "number": 3,
+    "type": "practical",
+    "topic": "Computing",
+    "q": "Vier kaum ausgelastete physische Server sollen konsolidiert werden. Welche Maßnahme passt?",
+    "a": [
+      "Abschalten der Netzwerküberwachung",
+      "Virtualisierung auf leistungsfähigen Hosts",
+      "Vier weitere physische Server",
+      "Wechsel auf Magnetband als Arbeitslaufwerk"
+    ],
+    "correct": 1,
+    "why": "Virtualisierung erlaubt mehreren getrennten Systemen dieselbe physische Hardware zu nutzen.",
+    "wrongReasons": [
+      "„Abschalten der Netzwerküberwachung“ erfüllt die geschilderte Anforderung nicht. Virtualisierung erlaubt mehreren getrennten Systemen dieselbe physische Hardware zu nutzen.",
+      "",
+      "„Vier weitere physische Server“ erfüllt die geschilderte Anforderung nicht. Virtualisierung erlaubt mehreren getrennten Systemen dieselbe physische Hardware zu nutzen.",
+      "„Wechsel auf Magnetband als Arbeitslaufwerk“ erfüllt die geschilderte Anforderung nicht. Virtualisierung erlaubt mehreren getrennten Systemen dieselbe physische Hardware zu nutzen."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-1-4",
+    "number": 4,
+    "type": "practical",
+    "topic": "Computing",
+    "q": "Ein Host muss wegen Wartung abgeschaltet werden; die VM soll weiterlaufen. Welches Feature verwenden Sie?",
+    "a": [
+      "vMotion",
+      "RAID 0",
+      "Snapshot als einziges Mittel",
+      "Open Value Companywide"
+    ],
+    "correct": 0,
+    "why": "vMotion verschiebt laufende virtuelle Maschinen zu anderen Hosts.",
+    "wrongReasons": [
+      "",
+      "„RAID 0“ erfüllt die geschilderte Anforderung nicht. vMotion verschiebt laufende virtuelle Maschinen zu anderen Hosts.",
+      "„Snapshot als einziges Mittel“ erfüllt die geschilderte Anforderung nicht. vMotion verschiebt laufende virtuelle Maschinen zu anderen Hosts.",
+      "„Open Value Companywide“ erfüllt die geschilderte Anforderung nicht. vMotion verschiebt laufende virtuelle Maschinen zu anderen Hosts."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-1-5",
+    "number": 5,
+    "type": "practical",
+    "topic": "Computing",
+    "q": "Ein Host fällt plötzlich aus und VMs sollen auf einem zweiten Host neu starten. Was hilft?",
+    "a": [
+      "Storage vMotion",
+      "Application Sequencer",
+      "Software Assurance",
+      "High Availability (HA)"
+    ],
+    "correct": 3,
+    "why": "HA startet betroffene virtuelle Maschinen auf verbleibenden Hosts neu.",
+    "wrongReasons": [
+      "„Storage vMotion“ erfüllt die geschilderte Anforderung nicht. HA startet betroffene virtuelle Maschinen auf verbleibenden Hosts neu.",
+      "„Application Sequencer“ erfüllt die geschilderte Anforderung nicht. HA startet betroffene virtuelle Maschinen auf verbleibenden Hosts neu.",
+      "„Software Assurance“ erfüllt die geschilderte Anforderung nicht. HA startet betroffene virtuelle Maschinen auf verbleibenden Hosts neu.",
+      ""
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-1-6",
+    "number": 6,
+    "type": "practical",
+    "topic": "Computing",
+    "q": "Zwei laufende VM-Instanzen sollen einen Host-Ausfall ohne regulären Neustart abfangen. Was passt?",
+    "a": [
+      "Differenzielles Backup",
+      "Direct Attached Storage",
+      "Fault Tolerance",
+      "Distributed Power Management"
+    ],
+    "correct": 2,
+    "why": "Fault Tolerance arbeitet mit parallel bereitgestellten Instanzen, benötigt aber zusätzliche Ressourcen.",
+    "wrongReasons": [
+      "„Differenzielles Backup“ erfüllt die geschilderte Anforderung nicht. Fault Tolerance arbeitet mit parallel bereitgestellten Instanzen, benötigt aber zusätzliche Ressourcen.",
+      "„Direct Attached Storage“ erfüllt die geschilderte Anforderung nicht. Fault Tolerance arbeitet mit parallel bereitgestellten Instanzen, benötigt aber zusätzliche Ressourcen.",
+      "",
+      "„Distributed Power Management“ erfüllt die geschilderte Anforderung nicht. Fault Tolerance arbeitet mit parallel bereitgestellten Instanzen, benötigt aber zusätzliche Ressourcen."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-1-7",
+    "number": 7,
+    "type": "practical",
+    "topic": "Computing",
+    "q": "Eine Schule möchte Programme zentral als Desktopsitzungen bereitstellen. Welches Verfahren ist geeignet?",
+    "a": [
+      "Kaltgang-Einhausung",
+      "Sessionvirtualisierung",
+      "RAID 6",
+      "Nur SAS-Festplatten"
+    ],
+    "correct": 1,
+    "why": "Bei Sessionvirtualisierung laufen die Benutzer-Sitzungen auf zentraler Infrastruktur.",
+    "wrongReasons": [
+      "„Kaltgang-Einhausung“ erfüllt die geschilderte Anforderung nicht. Bei Sessionvirtualisierung laufen die Benutzer-Sitzungen auf zentraler Infrastruktur.",
+      "",
+      "„RAID 6“ erfüllt die geschilderte Anforderung nicht. Bei Sessionvirtualisierung laufen die Benutzer-Sitzungen auf zentraler Infrastruktur.",
+      "„Nur SAS-Festplatten“ erfüllt die geschilderte Anforderung nicht. Bei Sessionvirtualisierung laufen die Benutzer-Sitzungen auf zentraler Infrastruktur."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-1-8",
+    "number": 8,
+    "type": "practical",
+    "topic": "Computing",
+    "q": "Ein Unternehmen will unterschiedliche inkompatible Anwendungsstände besser voneinander trennen. Was hilft?",
+    "a": [
+      "Applikationsvirtualisierung",
+      "Doppelter Datenbankserver ohne Trennung",
+      "Single Loop",
+      "LTO-Bandrobotik"
+    ],
+    "correct": 0,
+    "why": "Applikationsvirtualisierung entkoppelt Anwendungen von der üblichen lokalen Installation.",
+    "wrongReasons": [
+      "",
+      "„Doppelter Datenbankserver ohne Trennung“ erfüllt die geschilderte Anforderung nicht. Applikationsvirtualisierung entkoppelt Anwendungen von der üblichen lokalen Installation.",
+      "„Single Loop“ erfüllt die geschilderte Anforderung nicht. Applikationsvirtualisierung entkoppelt Anwendungen von der üblichen lokalen Installation.",
+      "„LTO-Bandrobotik“ erfüllt die geschilderte Anforderung nicht. Applikationsvirtualisierung entkoppelt Anwendungen von der üblichen lokalen Installation."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-1-9",
+    "number": 9,
+    "type": "practical",
+    "topic": "Computing",
+    "q": "Ein Unternehmen mit 25 Arbeitsplätzen wünscht standardisierte Microsoft-Lizenzen samt Wartung. Welches historische Programm passt zu den Folien?",
+    "a": [
+      "Enterprise Agreement ab 250 Arbeitsplätzen",
+      "Fibre Channel",
+      "Software Defined Storage",
+      "Open Value Companywide"
+    ],
+    "correct": 3,
+    "why": "Die Vortragsfolien ordnen diese Anforderungen dem Open-Value-Companywide-Modell zu.",
+    "wrongReasons": [
+      "„Enterprise Agreement ab 250 Arbeitsplätzen“ erfüllt die geschilderte Anforderung nicht. Die Vortragsfolien ordnen diese Anforderungen dem Open-Value-Companywide-Modell zu.",
+      "„Fibre Channel“ erfüllt die geschilderte Anforderung nicht. Die Vortragsfolien ordnen diese Anforderungen dem Open-Value-Companywide-Modell zu.",
+      "„Software Defined Storage“ erfüllt die geschilderte Anforderung nicht. Die Vortragsfolien ordnen diese Anforderungen dem Open-Value-Companywide-Modell zu.",
+      ""
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-1-10",
+    "number": 10,
+    "type": "practical",
+    "topic": "Computing",
+    "q": "Ein Unternehmen möchte die Server im Leerlauf über Nacht abschalten, aber vorher VMs verlagern. Was passt?",
+    "a": [
+      "Direct Attached Storage",
+      "Software Defined Networking allein",
+      "Distributed Power Management",
+      "RAID 1"
+    ],
+    "correct": 2,
+    "why": "DPM konsolidiert VMs und spart durch Abschaltung leerer Hosts Energie.",
+    "wrongReasons": [
+      "„Direct Attached Storage“ erfüllt die geschilderte Anforderung nicht. DPM konsolidiert VMs und spart durch Abschaltung leerer Hosts Energie.",
+      "„Software Defined Networking allein“ erfüllt die geschilderte Anforderung nicht. DPM konsolidiert VMs und spart durch Abschaltung leerer Hosts Energie.",
+      "",
+      "„RAID 1“ erfüllt die geschilderte Anforderung nicht. DPM konsolidiert VMs und spart durch Abschaltung leerer Hosts Energie."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-2-1",
+    "number": 1,
+    "type": "practical",
+    "topic": "Storage",
+    "q": "Eine Datenbank benötigt schnellen lokalen Speicher und nur einen Host. Was wählen Sie?",
+    "a": [
+      "Ein ausschließliches Tape-Archiv",
+      "Ein Blu-ray-Laufwerk",
+      "Public-Cloud-Office-Software",
+      "DAS über SAS oder NVMe"
+    ],
+    "correct": 3,
+    "why": "DAS bietet kurze lokale Zugriffswege und eignet sich für performantes Caching und Datenbanken.",
+    "wrongReasons": [
+      "„Ein ausschließliches Tape-Archiv“ erfüllt die geschilderte Anforderung nicht. DAS bietet kurze lokale Zugriffswege und eignet sich für performantes Caching und Datenbanken.",
+      "„Ein Blu-ray-Laufwerk“ erfüllt die geschilderte Anforderung nicht. DAS bietet kurze lokale Zugriffswege und eignet sich für performantes Caching und Datenbanken.",
+      "„Public-Cloud-Office-Software“ erfüllt die geschilderte Anforderung nicht. DAS bietet kurze lokale Zugriffswege und eignet sich für performantes Caching und Datenbanken.",
+      ""
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-2-2",
+    "number": 2,
+    "type": "practical",
+    "topic": "Storage",
+    "q": "Eine Abteilung braucht günstige gemeinsame Dateiablagen über das vorhandene LAN. Was passt?",
+    "a": [
+      "DAS nur am Einzelserver",
+      "RAID 0 ohne Netzwerk",
+      "NAS mit SMB-Freigaben",
+      "Separates Fibre-Channel-SAN zwingend"
+    ],
+    "correct": 2,
+    "why": "NAS stellt Dateien mehreren Clients über das Netzwerk bereit.",
+    "wrongReasons": [
+      "„DAS nur am Einzelserver“ erfüllt die geschilderte Anforderung nicht. NAS stellt Dateien mehreren Clients über das Netzwerk bereit.",
+      "„RAID 0 ohne Netzwerk“ erfüllt die geschilderte Anforderung nicht. NAS stellt Dateien mehreren Clients über das Netzwerk bereit.",
+      "",
+      "„Separates Fibre-Channel-SAN zwingend“ erfüllt die geschilderte Anforderung nicht. NAS stellt Dateien mehreren Clients über das Netzwerk bereit."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-2-3",
+    "number": 3,
+    "type": "practical",
+    "topic": "Storage",
+    "q": "Ein Virtualisierungscluster braucht zentralen Blockspeicher über separates Speichernetzwerk. Was wählen Sie?",
+    "a": [
+      "Ein einzelnes NAS ohne Blockprotokoll",
+      "Fibre-Channel-SAN",
+      "Ein USB-Stick an einem Host",
+      "Nur lokale DVDs"
+    ],
+    "correct": 1,
+    "why": "Ein SAN stellt performanten gemeinsamen Blockspeicher über dedizierte Verbindungen bereit.",
+    "wrongReasons": [
+      "„Ein einzelnes NAS ohne Blockprotokoll“ erfüllt die geschilderte Anforderung nicht. Ein SAN stellt performanten gemeinsamen Blockspeicher über dedizierte Verbindungen bereit.",
+      "",
+      "„Ein USB-Stick an einem Host“ erfüllt die geschilderte Anforderung nicht. Ein SAN stellt performanten gemeinsamen Blockspeicher über dedizierte Verbindungen bereit.",
+      "„Nur lokale DVDs“ erfüllt die geschilderte Anforderung nicht. Ein SAN stellt performanten gemeinsamen Blockspeicher über dedizierte Verbindungen bereit."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-2-4",
+    "number": 4,
+    "type": "practical",
+    "topic": "Storage",
+    "q": "Sie haben vier Platten. Zwei davon dürfen gleichzeitig ausfallen, ohne dass Daten verloren gehen. Welches RAID wählen Sie?",
+    "a": [
+      "RAID 6",
+      "RAID 0",
+      "RAID 5",
+      "Ein einfaches JBOD"
+    ],
+    "correct": 0,
+    "why": "RAID 6 kann durch doppelte Parität zwei Plattenausfälle tolerieren.",
+    "wrongReasons": [
+      "",
+      "„RAID 0“ erfüllt die geschilderte Anforderung nicht. RAID 6 kann durch doppelte Parität zwei Plattenausfälle tolerieren.",
+      "„RAID 5“ erfüllt die geschilderte Anforderung nicht. RAID 6 kann durch doppelte Parität zwei Plattenausfälle tolerieren.",
+      "„Ein einfaches JBOD“ erfüllt die geschilderte Anforderung nicht. RAID 6 kann durch doppelte Parität zwei Plattenausfälle tolerieren."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-2-5",
+    "number": 5,
+    "type": "practical",
+    "topic": "Storage",
+    "q": "Zwei Festplatten sollen identische Daten enthalten. Was konfigurieren Sie?",
+    "a": [
+      "RAID 0",
+      "JBOD",
+      "Nur ein externes Cloud-Archiv",
+      "RAID 1"
+    ],
+    "correct": 3,
+    "why": "RAID 1 spiegelt Daten auf mehrere Platten.",
+    "wrongReasons": [
+      "„RAID 0“ erfüllt die geschilderte Anforderung nicht. RAID 1 spiegelt Daten auf mehrere Platten.",
+      "„JBOD“ erfüllt die geschilderte Anforderung nicht. RAID 1 spiegelt Daten auf mehrere Platten.",
+      "„Nur ein externes Cloud-Archiv“ erfüllt die geschilderte Anforderung nicht. RAID 1 spiegelt Daten auf mehrere Platten.",
+      ""
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-2-6",
+    "number": 6,
+    "type": "practical",
+    "topic": "Storage",
+    "q": "Hohe I/O-Leistung und Redundanz sind wichtig; Kapazitätskosten sind weniger entscheidend. Was passt?",
+    "a": [
+      "JBOD",
+      "Einzelne SATA-Disk ohne Redundanz",
+      "RAID 10",
+      "RAID 0"
+    ],
+    "correct": 2,
+    "why": "RAID 10 kombiniert Striping mit Spiegelung und hoher Leistung.",
+    "wrongReasons": [
+      "„JBOD“ erfüllt die geschilderte Anforderung nicht. RAID 10 kombiniert Striping mit Spiegelung und hoher Leistung.",
+      "„Einzelne SATA-Disk ohne Redundanz“ erfüllt die geschilderte Anforderung nicht. RAID 10 kombiniert Striping mit Spiegelung und hoher Leistung.",
+      "",
+      "„RAID 0“ erfüllt die geschilderte Anforderung nicht. RAID 10 kombiniert Striping mit Spiegelung und hoher Leistung."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-2-7",
+    "number": 7,
+    "type": "practical",
+    "topic": "Storage",
+    "q": "Die Storage-Hardware eines Controllers soll ausfalltolerant werden, ohne zwei Standorte zu betreiben. Welche NetApp-Architektur passt?",
+    "a": [
+      "Nur eine physische Platte",
+      "Standard Cluster",
+      "Single Loop",
+      "Nur Double Loop"
+    ],
+    "correct": 1,
+    "why": "Der Standard Cluster verbindet redundante Controller mit Failover.",
+    "wrongReasons": [
+      "„Nur eine physische Platte“ erfüllt die geschilderte Anforderung nicht. Der Standard Cluster verbindet redundante Controller mit Failover.",
+      "",
+      "„Single Loop“ erfüllt die geschilderte Anforderung nicht. Der Standard Cluster verbindet redundante Controller mit Failover.",
+      "„Nur Double Loop“ erfüllt die geschilderte Anforderung nicht. Der Standard Cluster verbindet redundante Controller mit Failover."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-2-8",
+    "number": 8,
+    "type": "practical",
+    "topic": "Storage",
+    "q": "Ein Unternehmen möchte sich auch gegen den Ausfall eines gesamten Storage-Standorts absichern. Was ist geeignet?",
+    "a": [
+      "Metro Cluster",
+      "Single Loop",
+      "Ein einzelner DAS-Server",
+      "RAID 0"
+    ],
+    "correct": 0,
+    "why": "Metro Cluster spiegelt Daten standortübergreifend und ermöglicht Weiterbetrieb am zweiten Standort.",
+    "wrongReasons": [
+      "",
+      "„Single Loop“ erfüllt die geschilderte Anforderung nicht. Metro Cluster spiegelt Daten standortübergreifend und ermöglicht Weiterbetrieb am zweiten Standort.",
+      "„Ein einzelner DAS-Server“ erfüllt die geschilderte Anforderung nicht. Metro Cluster spiegelt Daten standortübergreifend und ermöglicht Weiterbetrieb am zweiten Standort.",
+      "„RAID 0“ erfüllt die geschilderte Anforderung nicht. Metro Cluster spiegelt Daten standortübergreifend und ermöglicht Weiterbetrieb am zweiten Standort."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-2-9",
+    "number": 9,
+    "type": "practical",
+    "topic": "Storage",
+    "q": "Dieselben Storage-Systeme sollen SMB-Freigaben und iSCSI-LUNs bereitstellen. Was benötigen Sie?",
+    "a": [
+      "Ausschließlich einen einzelnen DVD-Brenner",
+      "RAID 0 ohne Protokoll",
+      "Nur Ethernet-Verkabelung ohne Storage-System",
+      "Unified Storage"
+    ],
+    "correct": 3,
+    "why": "Unified Storage vereint Datei- und Blockzugriffe auf einer Plattform.",
+    "wrongReasons": [
+      "„Ausschließlich einen einzelnen DVD-Brenner“ erfüllt die geschilderte Anforderung nicht. Unified Storage vereint Datei- und Blockzugriffe auf einer Plattform.",
+      "„RAID 0 ohne Protokoll“ erfüllt die geschilderte Anforderung nicht. Unified Storage vereint Datei- und Blockzugriffe auf einer Plattform.",
+      "„Nur Ethernet-Verkabelung ohne Storage-System“ erfüllt die geschilderte Anforderung nicht. Unified Storage vereint Datei- und Blockzugriffe auf einer Plattform.",
+      ""
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-2-10",
+    "number": 10,
+    "type": "practical",
+    "topic": "Storage",
+    "q": "Ein 24/7-System hat als Ziel, höchstens 15 Minuten Daten zu verlieren. Welche Kennzahl muss festgelegt werden?",
+    "a": [
+      "MTBF von 15 Monaten",
+      "PUE von 15",
+      "RPO von 15 Minuten",
+      "RTO von 15 Tagen"
+    ],
+    "correct": 2,
+    "why": "RPO beschreibt den maximal angestrebten Datenverlust in Zeit.",
+    "wrongReasons": [
+      "„MTBF von 15 Monaten“ erfüllt die geschilderte Anforderung nicht. RPO beschreibt den maximal angestrebten Datenverlust in Zeit.",
+      "„PUE von 15“ erfüllt die geschilderte Anforderung nicht. RPO beschreibt den maximal angestrebten Datenverlust in Zeit.",
+      "",
+      "„RTO von 15 Tagen“ erfüllt die geschilderte Anforderung nicht. RPO beschreibt den maximal angestrebten Datenverlust in Zeit."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-3-1",
+    "number": 1,
+    "type": "practical",
+    "topic": "Backup & Restore",
+    "q": "Ein Unternehmen möchte nach einem Ausfall innerhalb einer Stunde wieder starten. Was wird primär festgelegt?",
+    "a": [
+      "MTBF von einer Stunde",
+      "PUE von einer Stunde",
+      "Service Level Requirement für Speicherkosten",
+      "RTO von einer Stunde"
+    ],
+    "correct": 3,
+    "why": "RTO ist die angestrebte maximale Wiederherstellungsdauer.",
+    "wrongReasons": [
+      "„MTBF von einer Stunde“ erfüllt die geschilderte Anforderung nicht. RTO ist die angestrebte maximale Wiederherstellungsdauer.",
+      "„PUE von einer Stunde“ erfüllt die geschilderte Anforderung nicht. RTO ist die angestrebte maximale Wiederherstellungsdauer.",
+      "„Service Level Requirement für Speicherkosten“ erfüllt die geschilderte Anforderung nicht. RTO ist die angestrebte maximale Wiederherstellungsdauer.",
+      ""
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-3-2",
+    "number": 2,
+    "type": "practical",
+    "topic": "Backup & Restore",
+    "q": "Ein Unternehmen will nur Änderungen seit dem vorigen Backup täglich sichern. Was eignet sich?",
+    "a": [
+      "Nur Jahresarchivierung",
+      "Eine nicht versionierte Replikation",
+      "Inkrementelle Sicherung",
+      "Tägliche vollständige Sicherung"
+    ],
+    "correct": 2,
+    "why": "Inkrementelle Sicherungen erfassen Änderungen seit der letzten Sicherung.",
+    "wrongReasons": [
+      "„Nur Jahresarchivierung“ erfüllt die geschilderte Anforderung nicht. Inkrementelle Sicherungen erfassen Änderungen seit der letzten Sicherung.",
+      "„Eine nicht versionierte Replikation“ erfüllt die geschilderte Anforderung nicht. Inkrementelle Sicherungen erfassen Änderungen seit der letzten Sicherung.",
+      "",
+      "„Tägliche vollständige Sicherung“ erfüllt die geschilderte Anforderung nicht. Inkrementelle Sicherungen erfassen Änderungen seit der letzten Sicherung."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-3-3",
+    "number": 3,
+    "type": "practical",
+    "topic": "Backup & Restore",
+    "q": "Die Wiederherstellung soll mit höchstens zwei Backup-Sätzen möglich sein. Was eignet sich nach dem Vollbackup?",
+    "a": [
+      "Nur RAID 0",
+      "Differenzielle Sicherung",
+      "Lange Kette inkrementeller Backups",
+      "Nur Replikation"
+    ],
+    "correct": 1,
+    "why": "Vollbackup plus jüngstes Differenzial genügen für eine differenzielle Wiederherstellung.",
+    "wrongReasons": [
+      "„Nur RAID 0“ erfüllt die geschilderte Anforderung nicht. Vollbackup plus jüngstes Differenzial genügen für eine differenzielle Wiederherstellung.",
+      "",
+      "„Lange Kette inkrementeller Backups“ erfüllt die geschilderte Anforderung nicht. Vollbackup plus jüngstes Differenzial genügen für eine differenzielle Wiederherstellung.",
+      "„Nur Replikation“ erfüllt die geschilderte Anforderung nicht. Vollbackup plus jüngstes Differenzial genügen für eine differenzielle Wiederherstellung."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-3-4",
+    "number": 4,
+    "type": "practical",
+    "topic": "Backup & Restore",
+    "q": "Das Backup soll nach Ransomware-Angriff vom Netzwerkangriff getrennt sein. Was hilft besonders?",
+    "a": [
+      "Offline-Air-Gap auf Magnetband",
+      "Eine ständig beschreibbare Netzwerkfreigabe",
+      "Nur ein RAID 1 im betroffenen Server",
+      "Backup mit identischem Admin-Konto im selben Netz"
+    ],
+    "correct": 0,
+    "why": "Physisch getrennte Offline-Medien sind über das kompromittierte Netzwerk nicht direkt erreichbar.",
+    "wrongReasons": [
+      "",
+      "„Eine ständig beschreibbare Netzwerkfreigabe“ erfüllt die geschilderte Anforderung nicht. Physisch getrennte Offline-Medien sind über das kompromittierte Netzwerk nicht direkt erreichbar.",
+      "„Nur ein RAID 1 im betroffenen Server“ erfüllt die geschilderte Anforderung nicht. Physisch getrennte Offline-Medien sind über das kompromittierte Netzwerk nicht direkt erreichbar.",
+      "„Backup mit identischem Admin-Konto im selben Netz“ erfüllt die geschilderte Anforderung nicht. Physisch getrennte Offline-Medien sind über das kompromittierte Netzwerk nicht direkt erreichbar."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-3-5",
+    "number": 5,
+    "type": "practical",
+    "topic": "Backup & Restore",
+    "q": "Ein Unternehmen muss Datenstände täglich, wöchentlich und monatlich aufbewahren. Welche Rotation wählen Sie?",
+    "a": [
+      "Nur RAID 5",
+      "OpenFlow",
+      "Rapid Elasticity",
+      "Grandfather–Father–Son"
+    ],
+    "correct": 3,
+    "why": "Das Generationenprinzip hält tägliche, wöchentliche und monatliche Sicherungen vor.",
+    "wrongReasons": [
+      "„Nur RAID 5“ erfüllt die geschilderte Anforderung nicht. Das Generationenprinzip hält tägliche, wöchentliche und monatliche Sicherungen vor.",
+      "„OpenFlow“ erfüllt die geschilderte Anforderung nicht. Das Generationenprinzip hält tägliche, wöchentliche und monatliche Sicherungen vor.",
+      "„Rapid Elasticity“ erfüllt die geschilderte Anforderung nicht. Das Generationenprinzip hält tägliche, wöchentliche und monatliche Sicherungen vor.",
+      ""
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-3-6",
+    "number": 6,
+    "type": "practical",
+    "topic": "Backup & Restore",
+    "q": "Viele gleiche Windows-VMs sollen gesichert werden, die Leitung zum Backupserver ist knapp. Was wählen Sie?",
+    "a": [
+      "Jede VM vollständig ohne Deduplizierung übertragen",
+      "Ausschließlich stärkere Kühlung",
+      "Blockbasierte Client-Side-Deduplizierung",
+      "Serverseitige Deduplizierung erst nach Übertragung aller Daten"
+    ],
+    "correct": 2,
+    "why": "Clientseitige Blockdeduplizierung reduziert identische Daten bereits vor dem Netzwerktransfer.",
+    "wrongReasons": [
+      "„Jede VM vollständig ohne Deduplizierung übertragen“ erfüllt die geschilderte Anforderung nicht. Clientseitige Blockdeduplizierung reduziert identische Daten bereits vor dem Netzwerktransfer.",
+      "„Ausschließlich stärkere Kühlung“ erfüllt die geschilderte Anforderung nicht. Clientseitige Blockdeduplizierung reduziert identische Daten bereits vor dem Netzwerktransfer.",
+      "",
+      "„Serverseitige Deduplizierung erst nach Übertragung aller Daten“ erfüllt die geschilderte Anforderung nicht. Clientseitige Blockdeduplizierung reduziert identische Daten bereits vor dem Netzwerktransfer."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-3-7",
+    "number": 7,
+    "type": "practical",
+    "topic": "Backup & Restore",
+    "q": "Ein Backup-Protokoll meldet Erfolg, aber niemand hat einen Restore versucht. Was ist als Nächstes nötig?",
+    "a": [
+      "Die RTO ohne Test halbieren",
+      "Wiederherstellung unter realistischen Bedingungen testen",
+      "Nur das Firmenlogo der Software ändern",
+      "Sofortige Löschung der letzten Backups"
+    ],
+    "correct": 1,
+    "why": "Erst ein erfolgreicher Test zeigt, dass die Daten tatsächlich wiederherstellbar sind.",
+    "wrongReasons": [
+      "„Die RTO ohne Test halbieren“ erfüllt die geschilderte Anforderung nicht. Erst ein erfolgreicher Test zeigt, dass die Daten tatsächlich wiederherstellbar sind.",
+      "",
+      "„Nur das Firmenlogo der Software ändern“ erfüllt die geschilderte Anforderung nicht. Erst ein erfolgreicher Test zeigt, dass die Daten tatsächlich wiederherstellbar sind.",
+      "„Sofortige Löschung der letzten Backups“ erfüllt die geschilderte Anforderung nicht. Erst ein erfolgreicher Test zeigt, dass die Daten tatsächlich wiederherstellbar sind."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-3-8",
+    "number": 8,
+    "type": "practical",
+    "topic": "Backup & Restore",
+    "q": "Ein Server muss nach Totalausfall inklusive Betriebssystem zurückgespielt werden. Was hilft?",
+    "a": [
+      "Image Backup",
+      "Nur Export einzelner Textdateien",
+      "Ein reiner NAS-Switch",
+      "Nur SLA ohne Daten"
+    ],
+    "correct": 0,
+    "why": "Ein Image Backup enthält auch Betriebssystem und Einstellungen.",
+    "wrongReasons": [
+      "",
+      "„Nur Export einzelner Textdateien“ erfüllt die geschilderte Anforderung nicht. Ein Image Backup enthält auch Betriebssystem und Einstellungen.",
+      "„Ein reiner NAS-Switch“ erfüllt die geschilderte Anforderung nicht. Ein Image Backup enthält auch Betriebssystem und Einstellungen.",
+      "„Nur SLA ohne Daten“ erfüllt die geschilderte Anforderung nicht. Ein Image Backup enthält auch Betriebssystem und Einstellungen."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-3-9",
+    "number": 9,
+    "type": "practical",
+    "topic": "Backup & Restore",
+    "q": "Lokale Backups sind vorhanden, ein Brand könnte aber alles zerstören. Was sollte ergänzt werden?",
+    "a": [
+      "Mehr Backups am selben ungeschützten Standort",
+      "RAID 0 statt Backup",
+      "Löschen aller Sicherungsprotokolle",
+      "Räumlich getrennte gesicherte Kopie"
+    ],
+    "correct": 3,
+    "why": "Getrennte Aufbewahrung vermindert das Risiko eines gemeinsamen Standortausfalls.",
+    "wrongReasons": [
+      "„Mehr Backups am selben ungeschützten Standort“ erfüllt die geschilderte Anforderung nicht. Getrennte Aufbewahrung vermindert das Risiko eines gemeinsamen Standortausfalls.",
+      "„RAID 0 statt Backup“ erfüllt die geschilderte Anforderung nicht. Getrennte Aufbewahrung vermindert das Risiko eines gemeinsamen Standortausfalls.",
+      "„Löschen aller Sicherungsprotokolle“ erfüllt die geschilderte Anforderung nicht. Getrennte Aufbewahrung vermindert das Risiko eines gemeinsamen Standortausfalls.",
+      ""
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-3-10",
+    "number": 10,
+    "type": "practical",
+    "topic": "Backup & Restore",
+    "q": "Ein Backup muss kurzfristige Restores und langjährige Aufbewahrung leisten. Was ist sinnvoll?",
+    "a": [
+      "Ausschließlich Arbeitsspeicher",
+      "Verzicht auf Aufbewahrungsregeln",
+      "Schnelle HDD/SSD-Ebene mit zusätzlichen Offline-Tapes",
+      "Nur eine SSD ohne Sicherungshistorie"
+    ],
+    "correct": 2,
+    "why": "Das Mehrstufenkonzept aus Modul 3 kombiniert schnelle Wiederherstellung und günstige Langzeitkopien.",
+    "wrongReasons": [
+      "„Ausschließlich Arbeitsspeicher“ erfüllt die geschilderte Anforderung nicht. Das Mehrstufenkonzept aus Modul 3 kombiniert schnelle Wiederherstellung und günstige Langzeitkopien.",
+      "„Verzicht auf Aufbewahrungsregeln“ erfüllt die geschilderte Anforderung nicht. Das Mehrstufenkonzept aus Modul 3 kombiniert schnelle Wiederherstellung und günstige Langzeitkopien.",
+      "",
+      "„Nur eine SSD ohne Sicherungshistorie“ erfüllt die geschilderte Anforderung nicht. Das Mehrstufenkonzept aus Modul 3 kombiniert schnelle Wiederherstellung und günstige Langzeitkopien."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-4-1",
+    "number": 1,
+    "type": "practical",
+    "topic": "Cloud",
+    "q": "Ein Unternehmen möchte eine sofort nutzbare Buchhaltungssoftware im Browser. Welches Cloud-Modell ist passend?",
+    "a": [
+      "IaaS mit eigenem Betriebssystem und Eigenentwicklung",
+      "Nur Fibre-Channel-SAN",
+      "RAID 10",
+      "SaaS"
+    ],
+    "correct": 3,
+    "why": "SaaS stellt eine fertige Anwendung als Dienst bereit.",
+    "wrongReasons": [
+      "„IaaS mit eigenem Betriebssystem und Eigenentwicklung“ erfüllt die geschilderte Anforderung nicht. SaaS stellt eine fertige Anwendung als Dienst bereit.",
+      "„Nur Fibre-Channel-SAN“ erfüllt die geschilderte Anforderung nicht. SaaS stellt eine fertige Anwendung als Dienst bereit.",
+      "„RAID 10“ erfüllt die geschilderte Anforderung nicht. SaaS stellt eine fertige Anwendung als Dienst bereit.",
+      ""
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-4-2",
+    "number": 2,
+    "type": "practical",
+    "topic": "Cloud",
+    "q": "Ein Entwickler will eigenen Anwendungscode betreiben, aber die Plattform nicht administrieren. Was passt?",
+    "a": [
+      "Ein reines Tape-Archiv",
+      "Manuelle Netzwerkkonfiguration aller Router",
+      "PaaS",
+      "Nur eine lokale SSD"
+    ],
+    "correct": 2,
+    "why": "PaaS stellt eine gemanagte Entwicklungs- und Laufzeitplattform bereit.",
+    "wrongReasons": [
+      "„Ein reines Tape-Archiv“ erfüllt die geschilderte Anforderung nicht. PaaS stellt eine gemanagte Entwicklungs- und Laufzeitplattform bereit.",
+      "„Manuelle Netzwerkkonfiguration aller Router“ erfüllt die geschilderte Anforderung nicht. PaaS stellt eine gemanagte Entwicklungs- und Laufzeitplattform bereit.",
+      "",
+      "„Nur eine lokale SSD“ erfüllt die geschilderte Anforderung nicht. PaaS stellt eine gemanagte Entwicklungs- und Laufzeitplattform bereit."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-4-3",
+    "number": 3,
+    "type": "practical",
+    "topic": "Cloud",
+    "q": "Ein Unternehmen benötigt virtuelle Server und möchte Betriebssystem und Anwendung selbst verwalten. Was passt?",
+    "a": [
+      "Ein lokaler DVD-Server",
+      "IaaS",
+      "SaaS",
+      "Only Backup as a Service"
+    ],
+    "correct": 1,
+    "why": "IaaS stellt Infrastruktur bereit, während der Kunde Betriebssystem und Anwendungen verwaltet.",
+    "wrongReasons": [
+      "„Ein lokaler DVD-Server“ erfüllt die geschilderte Anforderung nicht. IaaS stellt Infrastruktur bereit, während der Kunde Betriebssystem und Anwendungen verwaltet.",
+      "",
+      "„SaaS“ erfüllt die geschilderte Anforderung nicht. IaaS stellt Infrastruktur bereit, während der Kunde Betriebssystem und Anwendungen verwaltet.",
+      "„Only Backup as a Service“ erfüllt die geschilderte Anforderung nicht. IaaS stellt Infrastruktur bereit, während der Kunde Betriebssystem und Anwendungen verwaltet."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-4-4",
+    "number": 4,
+    "type": "practical",
+    "topic": "Cloud",
+    "q": "Vertrauliche Systeme bleiben intern; Lastspitzen laufen zusätzlich in einer Public Cloud. Welches Modell liegt vor?",
+    "a": [
+      "Hybrid Cloud",
+      "Reine Community Cloud",
+      "Ausschließlich lokale DAS-Platten",
+      "Nur eine Public Cloud ohne private Ressourcen"
+    ],
+    "correct": 0,
+    "why": "Hybrid Cloud kombiniert beispielsweise Private und Public Cloud.",
+    "wrongReasons": [
+      "",
+      "„Reine Community Cloud“ erfüllt die geschilderte Anforderung nicht. Hybrid Cloud kombiniert beispielsweise Private und Public Cloud.",
+      "„Ausschließlich lokale DAS-Platten“ erfüllt die geschilderte Anforderung nicht. Hybrid Cloud kombiniert beispielsweise Private und Public Cloud.",
+      "„Nur eine Public Cloud ohne private Ressourcen“ erfüllt die geschilderte Anforderung nicht. Hybrid Cloud kombiniert beispielsweise Private und Public Cloud."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-4-5",
+    "number": 5,
+    "type": "practical",
+    "topic": "Cloud",
+    "q": "Eine Firma möchte mehrere Cloud-Anbieter parallel nutzen, um Anbieterbindung zu reduzieren. Wie nennt man das?",
+    "a": [
+      "RAID 6",
+      "Single Loop",
+      "Sessionvirtualisierung",
+      "Multi Cloud"
+    ],
+    "correct": 3,
+    "why": "Multi Cloud verteilt Dienste auf mehrere Anbieter; das reduziert, beseitigt aber nicht jede Abhängigkeit.",
+    "wrongReasons": [
+      "„RAID 6“ erfüllt die geschilderte Anforderung nicht. Multi Cloud verteilt Dienste auf mehrere Anbieter; das reduziert, beseitigt aber nicht jede Abhängigkeit.",
+      "„Single Loop“ erfüllt die geschilderte Anforderung nicht. Multi Cloud verteilt Dienste auf mehrere Anbieter; das reduziert, beseitigt aber nicht jede Abhängigkeit.",
+      "„Sessionvirtualisierung“ erfüllt die geschilderte Anforderung nicht. Multi Cloud verteilt Dienste auf mehrere Anbieter; das reduziert, beseitigt aber nicht jede Abhängigkeit.",
+      ""
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-4-6",
+    "number": 6,
+    "type": "practical",
+    "topic": "Cloud",
+    "q": "Ein IT-Team möchte Regeln für viele Switches zentral ändern. Was ist besonders geeignet?",
+    "a": [
+      "Ein zusätzlicher RAID-Controller",
+      "Manuelle Änderung jedes einzelnen Switches",
+      "Software Defined Networking",
+      "Nur Magnetbandrotation"
+    ],
+    "correct": 2,
+    "why": "SDN trennt die Steuerung von der Datenweiterleitung und unterstützt zentrale Regelverteilung.",
+    "wrongReasons": [
+      "„Ein zusätzlicher RAID-Controller“ erfüllt die geschilderte Anforderung nicht. SDN trennt die Steuerung von der Datenweiterleitung und unterstützt zentrale Regelverteilung.",
+      "„Manuelle Änderung jedes einzelnen Switches“ erfüllt die geschilderte Anforderung nicht. SDN trennt die Steuerung von der Datenweiterleitung und unterstützt zentrale Regelverteilung.",
+      "",
+      "„Nur Magnetbandrotation“ erfüllt die geschilderte Anforderung nicht. SDN trennt die Steuerung von der Datenweiterleitung und unterstützt zentrale Regelverteilung."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-4-7",
+    "number": 7,
+    "type": "practical",
+    "topic": "Cloud",
+    "q": "Ein Unternehmen will Speicher herstellerübergreifend per Software verwalten. Was passt?",
+    "a": [
+      "Nur ein SLA",
+      "Software Defined Storage",
+      "Ein einzelner DVD-Brenner",
+      "Eine klassische nur lokal beschreibbare Festplatte"
+    ],
+    "correct": 1,
+    "why": "SDS abstrahiert Speicherfunktionen von der physischen Hardware.",
+    "wrongReasons": [
+      "„Nur ein SLA“ erfüllt die geschilderte Anforderung nicht. SDS abstrahiert Speicherfunktionen von der physischen Hardware.",
+      "",
+      "„Ein einzelner DVD-Brenner“ erfüllt die geschilderte Anforderung nicht. SDS abstrahiert Speicherfunktionen von der physischen Hardware.",
+      "„Eine klassische nur lokal beschreibbare Festplatte“ erfüllt die geschilderte Anforderung nicht. SDS abstrahiert Speicherfunktionen von der physischen Hardware."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-4-8",
+    "number": 8,
+    "type": "practical",
+    "topic": "Cloud",
+    "q": "Vor einem Cloud-Vertragsabschluss sind mögliche Datenstandorte und Subunternehmer unklar. Was ist ratsam?",
+    "a": [
+      "Aufklärung und vertragliche Regelung vor Vertragsabschluss",
+      "Ungeprüfte sofortige Datenmigration",
+      "Verzicht auf Datenschutzprüfung",
+      "Nur billigsten Preis vergleichen"
+    ],
+    "correct": 0,
+    "why": "Das BSI fordert Klärung von Datenstandorten, Sicherheitsnachweisen und Verantwortlichkeiten.",
+    "wrongReasons": [
+      "",
+      "„Ungeprüfte sofortige Datenmigration“ erfüllt die geschilderte Anforderung nicht. Das BSI fordert Klärung von Datenstandorten, Sicherheitsnachweisen und Verantwortlichkeiten.",
+      "„Verzicht auf Datenschutzprüfung“ erfüllt die geschilderte Anforderung nicht. Das BSI fordert Klärung von Datenstandorten, Sicherheitsnachweisen und Verantwortlichkeiten.",
+      "„Nur billigsten Preis vergleichen“ erfüllt die geschilderte Anforderung nicht. Das BSI fordert Klärung von Datenstandorten, Sicherheitsnachweisen und Verantwortlichkeiten."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-4-9",
+    "number": 9,
+    "type": "practical",
+    "topic": "Cloud",
+    "q": "Ein Betrieb ist von einer Cloud-Plattform abhängig und möchte den Anbieter wechseln. Was sollte bereits zu Beginn geplant werden?",
+    "a": [
+      "Nur das Logo des neuen Anbieters",
+      "Verzicht auf alle Testmigrationen",
+      "Keine Verträge über Datenrückgabe",
+      "Export, Migration und sichere Löschung beim bisherigen Anbieter"
+    ],
+    "correct": 3,
+    "why": "Eine Exit-Strategie begrenzt Vendor Lock-in und regelt den Umgang mit Daten bei Vertragsende.",
+    "wrongReasons": [
+      "„Nur das Logo des neuen Anbieters“ erfüllt die geschilderte Anforderung nicht. Eine Exit-Strategie begrenzt Vendor Lock-in und regelt den Umgang mit Daten bei Vertragsende.",
+      "„Verzicht auf alle Testmigrationen“ erfüllt die geschilderte Anforderung nicht. Eine Exit-Strategie begrenzt Vendor Lock-in und regelt den Umgang mit Daten bei Vertragsende.",
+      "„Keine Verträge über Datenrückgabe“ erfüllt die geschilderte Anforderung nicht. Eine Exit-Strategie begrenzt Vendor Lock-in und regelt den Umgang mit Daten bei Vertragsende.",
+      ""
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  },
+  {
+    "id": "practical-4-10",
+    "number": 10,
+    "type": "practical",
+    "topic": "Cloud",
+    "q": "Ein Anbieter zeigt ein C5-Testat. Welche Schlussfolgerung ist korrekt?",
+    "a": [
+      "Alle denkbaren Angriffe sind ausgeschlossen",
+      "Die Cloud erfüllt automatisch jedes Datenschutzgesetz weltweit",
+      "Es bietet einen geprüften Sicherheitsnachweis im beschriebenen Umfang, aber keine absolute Sicherheitsgarantie",
+      "Der Kunde muss keinerlei Berechtigungen mehr prüfen"
+    ],
+    "correct": 2,
+    "why": "C5-Testate dokumentieren die Prüfung definierter Kriterien; Kundenpflichten bleiben bestehen.",
+    "wrongReasons": [
+      "„Alle denkbaren Angriffe sind ausgeschlossen“ erfüllt die geschilderte Anforderung nicht. C5-Testate dokumentieren die Prüfung definierter Kriterien; Kundenpflichten bleiben bestehen.",
+      "„Die Cloud erfüllt automatisch jedes Datenschutzgesetz weltweit“ erfüllt die geschilderte Anforderung nicht. C5-Testate dokumentieren die Prüfung definierter Kriterien; Kundenpflichten bleiben bestehen.",
+      "",
+      "„Der Kunde muss keinerlei Berechtigungen mehr prüfen“ erfüllt die geschilderte Anforderung nicht. C5-Testate dokumentieren die Prüfung definierter Kriterien; Kundenpflichten bleiben bestehen."
+    ],
+    "source": "Praxisfall, aus den Vortragsfolien und E-Learning-Materialien abgeleitet"
+  }
+];
