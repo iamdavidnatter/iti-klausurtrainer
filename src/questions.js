@@ -245,7 +245,7 @@ export const oldQuestions = [
     ],
     "correct": 0,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
-    "why": "MetroCluster wird in den Vortragsfolien als standortübergreifende Redundanzlösung mit synchroner Spiegelung und sehr kurzen Wiederanlaufzielen behandelt. Die Frage nennt versehentlich zweimal RPO.",
+    "why": "MetroCluster kann Daten synchron zwischen zwei Standorten spiegeln, sodass beim synchron bestätigten Schreibvorgang kein Datenverlust durch den Verlust eines Standorts entsteht. RTO null ist jedoch nicht pauschal garantiert; die Originalfrage verwechselt zweimal RPO.",
     "solutionStatus": "Auslegung nach Vortragsfolien; Fragestellung teilweise ungenau",
     "wrongReasons": [
       "",
@@ -291,7 +291,7 @@ export const oldQuestions = [
     ],
     "correct": 3,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
-    "why": "Open Value Companywide ist das in den Folien passende Modell für kleine Unternehmen mit Vollstandardisierung und Softwarewartung.",
+    "why": "Open Value Companywide bündelt die standardisierte Lizenzierung aller Arbeitsplätze einschließlich der vereinbarten Softwarewartung und ist für die angegebene Unternehmensgröße ausgelegt.",
     "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
     "wrongReasons": [
       "„Open License“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Open Value Companywide ist das in den Folien passende Modell für kleine Unternehmen mit Vollstandardisierung und Softwarewartung.",
@@ -450,7 +450,7 @@ export const oldQuestions = [
     ],
     "correct": 2,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
-    "why": "Die Folien stellen ausdrücklich klar: SDS ist nicht dasselbe wie Storage-Virtualisierung; letztere ist die Grundlage dafür.",
+    "why": "Storagevirtualisierung fasst Speicherressourcen logisch zusammen; Software Defined Storage ergänzt die hardwareabstrakte automatisierte Bereitstellung und Richtliniensteuerung. Beide Begriffe sind deshalb nicht identisch.",
     "solutionStatus": "Eigene Musterlösung nach Vortragsfolien, nicht offiziell bestätigt",
     "wrongReasons": [
       "SDS abstrahiert Speicherfunktionen von der physischen Hardware und verwaltet sie softwaregestützt. Deshalb ist „SDS abstrahiert die Storage Hardware“ hier nicht die gesuchte Antwort.",
@@ -1044,7 +1044,7 @@ export const oldQuestions = [
     ],
     "correct": 2,
     "source": "Schriftliche Klausur (1. Termin), 24.10.2025",
-    "why": "Die Folien bezeichnen synthetische Sicherung ausdrücklich als Incremental Forever beziehungsweise Reverse-Deltas-Variante. Die Wortwahl ist etwas unscharf, da Incremental Forever auch eine inkrementelle Strategie bezeichnet.",
+    "why": "Bei einer synthetischen Vollsicherung werden vorhandene Inkremente serverseitig zu einem neuen Vollbackup zusammengeführt. 'Incremental Forever' bezeichnet allgemeiner eine Strategie fortlaufender inkrementeller Sicherungen und ist daher kein eindeutiges Synonym.",
     "solutionStatus": "Auslegung nach Vortragsfolien; Fragestellung teilweise ungenau",
     "wrongReasons": [
       "Ein differenzielles Backup enthält Änderungen seit der letzten Vollsicherung; für das Restore reichen Vollsicherung und letztes Differenzial. Deshalb ist „Differenziell“ hier nicht die gesuchte Antwort.",
@@ -1093,7 +1093,7 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Überbrückung kurzfristiger Stromausfälle bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Eine USV liefert über Batterien oder andere Energiespeicher kurzfristig Strom, damit Server einen Netzausfall überstehen oder kontrolliert herunterfahren können.",
     "wrongReasons": [
       "„Dauerhafte Stromerzeugung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Überbrückung kurzfristiger Stromausfälle bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„Regelung der Internetbandbreite“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Überbrückung kurzfristiger Stromausfälle bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -1115,7 +1115,7 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Vertraulichkeit bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Vertraulichkeit beschränkt den Informationszugang auf berechtigte Personen. Integrität schützt dagegen die Richtigkeit der Daten, Verfügbarkeit deren Erreichbarkeit.",
     "wrongReasons": [
       "",
       "„Integrität“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Vertraulichkeit bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -1137,7 +1137,7 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Daten sind korrekt und vor unerlaubten Veränderungen geschützt bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Integrität schützt Informationen gegen unerlaubte oder unbeabsichtigte Änderungen und ermöglicht das Erkennen von Verfälschungen.",
     "wrongReasons": [
       "„Hardware wird möglichst günstig beschafft“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Daten sind korrekt und vor unerlaubten Veränderungen geschützt bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "",
@@ -1159,7 +1159,7 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Gezielte Versorgung der Servervorderseiten mit gekühlter Luft bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Server saugen Kaltluft vorne an und geben warme Abluft hinten ab. Der Kaltgang führt die kalte Zuluft gezielt zu den Ansaugseiten.",
     "wrongReasons": [
       "Eine USV versorgt angeschlossene Systeme bei kurzzeitigen Netzunterbrechungen weiter, bis Strom wieder da ist oder Ersatzversorgung übernimmt. Deshalb ist „Unterbringung der USV-Batterien“ hier nicht die gesuchte Antwort.",
       "„Trennung des Internetzugangs“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Gezielte Versorgung der Servervorderseiten mit gekühlter Luft bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -1181,7 +1181,7 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Um unerwünschte Vermischung warmer und kalter Luft zu reduzieren bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Offene Rackplätze erlauben warme Abluft zurück zur Ansaugseite zu strömen; Blindblenden schließen diese Wege.",
     "wrongReasons": [
       "„Um mehr Steckdosen zu erhalten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Um unerwünschte Vermischung warmer und kalter Luft zu reduzieren bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„Um die RAID-Kapazität zu erhöhen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Um unerwünschte Vermischung warmer und kalter Luft zu reduzieren bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -1203,7 +1203,7 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Montage in einem standardisierten Serverschrank bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Rackserver besitzen standardisierte Einbaumaße für 19-Zoll-Racks und können dort platzsparend mit weiteren Geräten betrieben werden.",
     "wrongReasons": [
       "",
       "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Ausschließlich privater Desktop-Einsatz“ hier nicht die gesuchte Antwort.",
@@ -1225,7 +1225,7 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Hohe Packdichte und gemeinschaftlich nutzbare Infrastruktur bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Blades teilen Gehäuse, Stromversorgung und Management; dadurch steigt die Serverdichte bei vergleichsweise kompakter Verkabelung.",
     "wrongReasons": [
       "„Keine zentrale Verwaltung möglich“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Hohe Packdichte und gemeinschaftlich nutzbare Infrastruktur bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "",
@@ -1247,7 +1247,7 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Höheneinheit (HE) bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "HE normiert die Höhe von Rackeinschüben und ermöglicht, Geräte unterschiedlicher Hersteller passend einzuplanen.",
     "wrongReasons": [
       "„Hertz (Hz)“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Höheneinheit (HE) bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„Gigabit pro Sekunde“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Höheneinheit (HE) bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -1269,7 +1269,7 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "44,45 mm bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Eine HE entspricht exakt 1,75 Zoll, also 44,45 Millimetern. So werden Einbauhöhen von Rackgeräten berechnet.",
     "wrongReasons": [
       "„19 mm“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: 44,45 mm bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„100 mm“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: 44,45 mm bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -1291,7 +1291,7 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Bereitstellung und Verwaltung virtueller Maschinen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Ein Hypervisor weist physischen Prozessor-, Arbeits- und Speicherressourcen virtuelle Geräte zu und führt mehrere Gastsysteme isoliert aus.",
     "wrongReasons": [
       "",
       "„Archivierung abgelaufener Verträge“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Bereitstellung und Verwaltung virtueller Maschinen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -1313,7 +1313,7 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Höhere Auslastung physischer Server bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Viele Workloads benötigen nur einen Teil eines physischen Servers. Ihre Konsolidierung erhöht die durchschnittliche Hardwareauslastung.",
     "wrongReasons": [
       "„Die physischen Stromkosten werden immer null“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Höhere Auslastung physischer Server bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "",
@@ -1335,7 +1335,7 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Mehrere virtuelle Systeme nutzen Ressourcen eines physischen Servers bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Durch Partitionierung können VMs festgelegte oder dynamisch zugewiesene Teile von CPU, Arbeitsspeicher und weiteren Hostressourcen nutzen.",
     "wrongReasons": [
       "„Jede VM benötigt eigenes Rechenzentrum“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Mehrere virtuelle Systeme nutzen Ressourcen eines physischen Servers bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„Löschen aller Hardwaretreiber“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Mehrere virtuelle Systeme nutzen Ressourcen eines physischen Servers bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -1357,7 +1357,7 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Virtuelle Maschinen sind logisch voneinander getrennt bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Getrennte virtuelle Ausführungsumgebungen verhindern, dass gewöhnliche Prozesse einer VM direkt auf den Speicher anderer VMs zugreifen.",
     "wrongReasons": [
       "„Alle VMs verwenden zwingend dasselbe Betriebssystem“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Virtuelle Maschinen sind logisch voneinander getrennt bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„Alle Gastdaten sind öffentlich“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Virtuelle Maschinen sind logisch voneinander getrennt bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -1379,7 +1379,7 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Der Zustand einer VM lässt sich als zusammengehörige virtuelle Einheit handhaben bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Virtuelle Datenträger und Konfiguration bilden eine transportierbare Einheit; dadurch sind Kopien, Snapshots und Migration einfacher.",
     "wrongReasons": [
       "",
       "„Die CPU wird physisch versiegelt“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Der Zustand einer VM lässt sich als zusammengehörige virtuelle Einheit handhaben bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -1445,7 +1445,7 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Neustart betroffener VMs auf anderen Hosts nach einem Host-Ausfall bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Bei Hostausfall registriert HA den Ausfall und startet die ausgefallenen Gastsysteme auf einem verbleibenden Host neu.",
     "wrongReasons": [
       "„Ausschließlich laufende Verschlüsselung der VM“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Neustart betroffener VMs auf anderen Hosts nach einem Host-Ausfall bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„Automatische Lizenzkündigung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Neustart betroffener VMs auf anderen Hosts nach einem Host-Ausfall bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -1511,7 +1511,7 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Zugriff auf eine zentral bereitgestellte Desktopsitzung bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Der Benutzer erhält eine Sitzung auf einem zentralen System; Programme müssen daher nicht vollständig auf seinem Endgerät laufen.",
     "wrongReasons": [
       "„Erstellen einer RAID-Parität“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zugriff auf eine zentral bereitgestellte Desktopsitzung bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„Austausch eines Serverlüfters“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zugriff auf eine zentral bereitgestellte Desktopsitzung bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -1533,7 +1533,7 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Getrennte Bereitstellung unterschiedlicher Anwendungsversionen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Die Laufzeitumgebung kann für eine Anwendung gekapselt werden, sodass unterschiedliche Softwarestände sich seltener gegenseitig stören.",
     "wrongReasons": [
       "„Notwendigkeit eines physischen PCs für jede Softwareversion“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Getrennte Bereitstellung unterschiedlicher Anwendungsversionen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„Ersetzung der Netzwerkverkabelung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Getrennte Bereitstellung unterschiedlicher Anwendungsversionen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -1555,7 +1555,7 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Paketierung einer Anwendung auf einem sauberen Referenzsystem bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Ein sauberes Referenzsystem erleichtert es, alle notwendigen Anwendungsdateien und Registry-Änderungen in einem verteilbaren Paket zu erfassen.",
     "wrongReasons": [
       "",
       "„Installation aller Programme ausschließlich auf Routern“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Paketierung einer Anwendung auf einem sauberen Referenzsystem bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -1577,7 +1577,7 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Ausfall einzelner Komponenten abfangen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Redundante Netzteile, Lüfter oder Hosts übernehmen beim Ausfall einer Komponente und verringern die Gefahr eines Totalausfalls.",
     "wrongReasons": [
       "„Verhinderung von Softwarevirtualisierung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Ausfall einzelner Komponenten abfangen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "",
@@ -1599,7 +1599,7 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Schutz von Räumen und IT-Anlagen vor unberechtigtem Zutritt und Schäden bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Zutrittskontrollen, Brand- und Einbruchschutz verhindern Schäden oder Manipulation an realen Servern und Netzanlagen.",
     "wrongReasons": [
       "„Verringerung der Bildschirmauflösung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Schutz von Räumen und IT-Anlagen vor unberechtigtem Zutritt und Schäden bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„Nur Optimierung von Datenbankabfragen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Schutz von Räumen und IT-Anlagen vor unberechtigtem Zutritt und Schäden bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -1621,7 +1621,7 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Zusätzliche Leistungen und Versionsrechte gemäß Vertrag bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Software Assurance kann Upgraderechte, Trainings- oder Supportleistungen gewähren, die eine bloße Versionslizenz nicht enthält.",
     "wrongReasons": [
       "„Eine Art RAID-Controller“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zusätzliche Leistungen und Versionsrechte gemäß Vertrag bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "Ein Rackserver wird in einem standardisierten Serverschrank montiert und ist für kompakte Serverräume geeignet. Deshalb ist „Eine Kühltechnik für Rackserver“ hier nicht die gesuchte Antwort.",
@@ -1687,7 +1687,7 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Regelmäßige Erfassung und Nachlizenzierung eines gestiegenen Lizenzbedarfs bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "True-up gleicht nachträglich gemessene zusätzlich genutzte Lizenzen mit dem vereinbarten Vertragsbestand ab.",
     "wrongReasons": [
       "„Löschen aller VMs nach drei Tagen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Regelmäßige Erfassung und Nachlizenzierung eines gestiegenen Lizenzbedarfs bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„Verteilung der Paritätsblöcke“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Regelmäßige Erfassung und Nachlizenzierung eines gestiegenen Lizenzbedarfs bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -1731,7 +1731,7 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Kostengünstige Speicher und Archivsysteme bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "SATA ist ein vergleichsweise kostengünstiger Anschluss für Massenspeicher mit meist geringeren Anforderungen an parallele Unternehmenszugriffe.",
     "wrongReasons": [
       "",
       "„Ausschließlich extrem latenzkritische HPC-Cluster“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Kostengünstige Speicher und Archivsysteme bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -1753,7 +1753,7 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Zwei Schnittstellen pro Disk bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Dual-Port-SAS-Laufwerke können über zwei Controllerpfade erreicht werden; fällt ein Pfad aus, ist der andere weiterhin nutzbar.",
     "wrongReasons": [
       "„Verzicht auf Speichercontroller“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zwei Schnittstellen pro Disk bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "",
@@ -1775,7 +1775,7 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Viele parallele Befehlswarteschlangen und kurze Zugriffszeiten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "NVMe vermeidet die Engpässe älterer Festplattenprotokolle durch zahlreiche parallele Warteschlangen und einen auf SSDs zugeschnittenen Befehlsweg.",
     "wrongReasons": [
       "Magnetband ist günstig für lange Aufbewahrung und kann offline gelagert werden, hat aber lange Zugriffszeiten. Deshalb ist „Nur sequentielle Magnetbandzugriffe“ hier nicht die gesuchte Antwort.",
       "„Es benötigt zwingend einen optischen Datenträger“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Viele parallele Befehlswarteschlangen und kurze Zugriffszeiten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -1819,7 +1819,7 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Just a Bunch of Disks ohne eingebaute RAID-Redundanz bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "JBOD stellt einzelne Platten bereit, ohne automatisch Paritätsinformationen oder Spiegelkopien zu erzeugen.",
     "wrongReasons": [
       "",
       "„Daten werden auf zwei Platten gespiegelt“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Just a Bunch of Disks ohne eingebaute RAID-Redundanz bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -1863,7 +1863,7 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Blockweises Striping bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Striping verteilt aufeinanderfolgende Datenblöcke auf mehrere Disks. Das beschleunigt Zugriffe, bietet allein aber keinerlei Fehlertoleranz.",
     "wrongReasons": [
       "„Spiegelung jedes Datenträgers“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Blockweises Striping bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„Standortübergreifende Replikation“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Blockweises Striping bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -1885,7 +1885,7 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Mirroring (Spiegelung) bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Mirroring schreibt dieselben Daten auf beide Mitglieder eines Spiegelpaares und ermöglicht Weiterbetrieb beim Ausfall einer Platte.",
     "wrongReasons": [
       "„Distributed Parity“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Mirroring (Spiegelung) bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„Double Parity“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Mirroring (Spiegelung) bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -1907,7 +1907,7 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Eine Festplatte bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "RAID 5 verteilt genau eine Parität pro Stripe. Die fehlenden Blöcke einer ausgefallenen Disk können daraus errechnet werden.",
     "wrongReasons": [
       "",
       "„Zwei beliebige Festplatten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Eine Festplatte bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -1929,7 +1929,7 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Write Penalty bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Bei Änderungen kleiner Datenblöcke muss RAID 5 alte Daten und Parität lesen und neue Parität schreiben; das erzeugt zusätzliche Schreiboperationen.",
     "wrongReasons": [
       "„Vendor Lock-in“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Write Penalty bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "",
@@ -1951,7 +1951,7 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Zwei Festplatten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "RAID 6 hält zwei unabhängige Paritätsinformationen bereit, sodass die Daten auch beim gleichzeitigen Verlust zweier Platten berechenbar bleiben.",
     "wrongReasons": [
       "„Beliebig viele Festplatten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zwei Festplatten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„Keinen einzigen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zwei Festplatten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -1973,7 +1973,7 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Striping über gespiegelte Festplattenpaare bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Zuerst werden Plattenpaare gespiegelt. Datenblöcke werden anschließend auf die Spiegelpaare verteilt, was Striping und Redundanz kombiniert.",
     "wrongReasons": [
       "„Nur doppelte Parität ohne Spiegelung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Striping über gespiegelte Festplattenpaare bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„Eine einzelne Festplatte ohne Backup“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Striping über gespiegelte Festplattenpaare bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -1995,7 +1995,7 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Hoher Bedarf an physischer Festplattenkapazität bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Beim Spiegeln wird Nutzkapazität für identische Kopien benötigt; bei klassischen Zweierpaaren steht ungefähr die Hälfte der Rohkapazität zur Verfügung.",
     "wrongReasons": [
       "",
       "„Grundsätzlich keine Redundanz“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Hoher Bedarf an physischer Festplattenkapazität bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -2017,7 +2017,7 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Löschungen und logische Fehler können auch den RAID-Verbund betreffen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "RAID kopiert logische Fehler oder Löschungen mit und schützt nicht gegen Verlust der gesamten Anlage. Ein getrenntes Backup hält ältere Datenstände vor.",
     "wrongReasons": [
       "„Weil RAID nur auf Druckern funktioniert“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Löschungen und logische Fehler können auch den RAID-Verbund betreffen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "",
@@ -2061,7 +2061,7 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Begrenzte Skalierbarkeit und Bindung an einen Host bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "DAS hängt unmittelbar an einem Host. Erweiterungen bleiben an dessen Schnittstellen, Gehäuse und Anschlussmöglichkeiten gebunden.",
     "wrongReasons": [
       "„Ausschließlich Dateizugriff über alle Standorte“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Begrenzte Skalierbarkeit und Bindung an einen Host bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "Ein SAN stellt zentralen blockbasierten Speicher über eine eigene Speicher-Netzwerkinfrastruktur bereit. Deshalb ist „Erfordert immer eigenes Fibre-Channel-SAN“ hier nicht die gesuchte Antwort.",
@@ -2083,7 +2083,7 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Dateizugriff über ein vorhandenes Netzwerk mit SMB oder NFS bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "NAS ermöglicht mehreren Clients den gemeinsamen Zugriff auf Dateien über Protokolle wie SMB und NFS im normalen Netzwerk.",
     "wrongReasons": [
       "",
       "„Nur direkter Anschluss einer Festplatte an einen einzelnen Host“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Dateizugriff über ein vorhandenes Netzwerk mit SMB oder NFS bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -2105,7 +2105,7 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "SMB und NFS bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "SMB und NFS übertragen Dateioperationen über das Netzwerk und regeln Zugriffe auf gemeinsam bereitgestellte Ordner.",
     "wrongReasons": [
       "„USB und PCIe“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: SMB und NFS bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "",
@@ -2127,7 +2127,7 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Zentrales blockbasiertes Storage über ein separates Speichernetzwerk bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Im SAN greifen Hosts blockbasiert auf zentral bereitgestellte logische Laufwerke zu; ein separates Netzwerk reduziert die Konkurrenz mit normalem LAN-Verkehr.",
     "wrongReasons": [
       "„Kein Administrationsaufwand unter allen Umständen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zentrales blockbasiertes Storage über ein separates Speichernetzwerk bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„Keine Netzwerkswitches erforderlich“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zentrales blockbasiertes Storage über ein separates Speichernetzwerk bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -2149,7 +2149,7 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Kostenintensive Infrastruktur und komplexe Konfiguration bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Für Fibre Channel sind eigene Adapter, Switches, Verkabelung und Zoning-Konfiguration nötig; das verursacht zusätzliche Kosten und Aufwand.",
     "wrongReasons": [
       "„Ausschließlich Nutzung auf einem Laptop“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Kostenintensive Infrastruktur und komplexe Konfiguration bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„Unmöglichkeit mehrerer Pfade“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Kostenintensive Infrastruktur und komplexe Konfiguration bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -2193,7 +2193,7 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Bereitstellung mehrerer Datei- und Blockprotokolle durch eine Storage-Plattform bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Unified Storage unterstützt Dateifreigaben etwa per SMB/NFS und Blockvolumes etwa per iSCSI/FC auf derselben Plattform.",
     "wrongReasons": [
       "„Ein exklusiv optisches Netzwerk“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Bereitstellung mehrerer Datei- und Blockprotokolle durch eine Storage-Plattform bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "",
@@ -2215,7 +2215,7 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Redundante Daten nur einmal speichern bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Speicher-Deduplizierung ersetzt identische Datenblöcke oder Dateien durch gemeinsame Referenzen und senkt so den physischen Platzbedarf.",
     "wrongReasons": [
       "„Unwiderruflich alle Versionen löschen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Redundante Daten nur einmal speichern bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„Physische Lüfter redundant ausführen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Redundante Daten nur einmal speichern bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -2259,7 +2259,7 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Maximal angestrebten tolerierbaren Datenverlust in Zeit bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "RPO ist der zeitliche Abstand zwischen einem Ausfall und dem letzten verfügbaren Wiederherstellungspunkt, den die Organisation toleriert.",
     "wrongReasons": [
       "",
       "„Zeit bis zum nächsten Hardwarekauf“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Maximal angestrebten tolerierbaren Datenverlust in Zeit bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -2281,7 +2281,7 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Angestrebte maximale Wiederherstellungsdauer bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "RTO gibt an, innerhalb welcher Frist ein Dienst nach einem Ausfall wieder nutzbar sein soll.",
     "wrongReasons": [
       "„Monatliche Speicherkosten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Angestrebte maximale Wiederherstellungsdauer bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "",
@@ -2303,7 +2303,7 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Standortübergreifende Spiegelung und Verfügbarkeit bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Metro Cluster spiegelt Daten zwischen getrennten Standorten; der Standardcluster bietet primär redundante Controller im selben lokalen Speicherverbund.",
     "wrongReasons": [
       "Ein Standardcluster verwendet redundante Controller, um den Ausfall einer Storage-Steuereinheit aufzufangen. Deshalb ist „Standard Cluster hat stets mehr Standorte“ hier nicht die gesuchte Antwort.",
       "Ein Standardcluster verwendet redundante Controller, um den Ausfall einer Storage-Steuereinheit aufzufangen. Deshalb ist „Nur der Standard Cluster unterstützt Festplatten“ hier nicht die gesuchte Antwort.",
@@ -2325,7 +2325,7 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Wiederherstellung verlorener Produktionsdaten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Backups bewahren unabhängige wiederherstellbare Kopien produktiver Daten auf, damit Fehler oder Verlust rückgängig gemacht werden können.",
     "wrongReasons": [
       "„Langfristige unveränderliche Archivierung als einziges Ziel“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Wiederherstellung verlorener Produktionsdaten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„Ausschließlich laufende Lastverteilung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Wiederherstellung verlorener Produktionsdaten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -2347,7 +2347,7 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Langfristige, nachvollziehbare Aufbewahrung von Daten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Archivierung soll Daten über definierte lange Fristen nachvollziehbar und möglichst unverändert aufbewahren, nicht primär einen aktuellen Server schnell wieder starten.",
     "wrongReasons": [
       "",
       "„Nur sofortige Wiederherstellung der letzten fünf Sekunden“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Langfristige, nachvollziehbare Aufbewahrung von Daten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -2391,7 +2391,7 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "8 Stunden und 45 Minuten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "99,9 Prozent Verfügbarkeit erlauben 0,1 Prozent eines Jahres als Ausfallzeit; das ergibt bei 8.760 Stunden rund 8 Stunden 45 Minuten.",
     "wrongReasons": [
       "„87 Stunden“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: 8 Stunden und 45 Minuten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„52 Minuten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: 8 Stunden und 45 Minuten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -2413,7 +2413,7 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Durchschnittliche Zeit zwischen zwei Ausfällen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "MTBF misst mittlere Zeitspannen zwischen Fehlerereignissen eines reparierbaren Systems und dient als Zuverlässigkeitsindikator.",
     "wrongReasons": [
       "„Maximale Datenmenge in Terabyte“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Durchschnittliche Zeit zwischen zwei Ausfällen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„Zugriffsrecht eines Backup-Administrators“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Durchschnittliche Zeit zwischen zwei Ausfällen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -2457,7 +2457,7 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Maximal tolerierbaren Datenverlust als Zeitspanne bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "RPO setzt die Grenze, wie weit der letzte wiederherstellbare Datenstand vor dem Ausfall liegen darf.",
     "wrongReasons": [
       "„Den Stromverbrauch des Rechenzentrums“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Maximal tolerierbaren Datenverlust als Zeitspanne bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "",
@@ -2479,7 +2479,7 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Zielzeit für die Wiederherstellung des Systems bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "RTO bestimmt, wie lange die Wiederherstellung höchstens dauern soll, bevor ein Dienst wieder verfügbar sein muss.",
     "wrongReasons": [
       "„Anzahl gesicherter Generationen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zielzeit für die Wiederherstellung des Systems bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„Verfügbare Speicherkapazität“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zielzeit für die Wiederherstellung des Systems bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -2523,7 +2523,7 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Vereinbarung über zugesicherte Serviceleistungen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Ein SLA enthält die verbindlich vereinbarten Qualitätsziele und Leistungen zwischen einem Kunden und dem Dienstanbieter.",
     "wrongReasons": [
       "",
       "„Interner Backup-Datenträger“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Vereinbarung über zugesicherte Serviceleistungen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -2633,7 +2633,7 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Skalierbarkeit, Automatisierung und Georedundanz bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Cloud-Backups können automatisiert in entfernten Rechenzentren gespeichert und bei steigendem Datenvolumen erweitert werden.",
     "wrongReasons": [
       "„Keine Verantwortung für Datenschutz“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Skalierbarkeit, Automatisierung und Georedundanz bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "",
@@ -2655,7 +2655,7 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Backup-Medium ist vom Netzwerk physisch getrennt bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Durch physische Trennung ist das Offline-Medium für einen Angreifer im Produktivnetz nicht direkt beschreibbar.",
     "wrongReasons": [
       "„Alle Systeme nutzen dieselbe Administratoranmeldung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Backup-Medium ist vom Netzwerk physisch getrennt bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "RAID 0 verteilt Daten auf mehrere Laufwerke, besitzt aber keine Redundanz; der Ausfall eines beteiligten Laufwerks gefährdet den gesamten Verbund. Deshalb ist „Ein RAID 0 als einziges Backup“ hier nicht die gesuchte Antwort.",
@@ -2853,7 +2853,7 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Vor Übertragung an den Backup-Server bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Clientseitige Deduplizierung erkennt bereits vor dem Upload redundante Blöcke; nur neue Daten müssen übertragen werden.",
     "wrongReasons": [
       "„Erst nach jeder Wiederherstellung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Vor Übertragung an den Backup-Server bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„Ausschließlich beim Speichern im Offline-Archiv“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Vor Übertragung an den Backup-Server bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -2875,7 +2875,7 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Rotationsprinzip mit täglichen, wöchentlichen und monatlichen Sicherungsständen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Das Generationenprinzip hält kurzfristige tägliche, mittelfristige wöchentliche und langfristige monatliche Stände vor.",
     "wrongReasons": [
       "",
       "„Eine Methode zur Serverkühlung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Rotationsprinzip mit täglichen, wöchentlichen und monatlichen Sicherungsständen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -2897,7 +2897,7 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Älteste Sicherungen werden zuerst überschrieben oder gelöscht bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "FIFO überschreibt die ältesten Stände zuerst, um mit begrenztem Speicherplatz neue Backups aufnehmen zu können.",
     "wrongReasons": [
       "„Sicherungen dürfen nie automatisch laufen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Älteste Sicherungen werden zuerst überschrieben oder gelöscht bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "",
@@ -2919,7 +2919,7 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Analyse, Planung und Test bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Zuerst werden Daten und Abhängigkeiten erhoben; danach werden Medien, Intervalle und Wiederherstellungsziele geplant und abschließend getestet.",
     "wrongReasons": [
       "„Kaufen, Vergessen und Wiederholen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Analyse, Planung und Test bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„Nur Geräte bestellen“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Analyse, Planung und Test bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -2963,7 +2963,7 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Infrastructure as a Service bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "IaaS bietet virtualisierte Infrastruktur, während Betriebssystem und installierte Anwendungen überwiegend vom Kunden verwaltet werden.",
     "wrongReasons": [
       "",
       "„Integrity as a Storage“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Infrastructure as a Service bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -3029,7 +3029,7 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "On-Demand Self-Service bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "On-Demand Self-Service ermöglicht dem Kunden, Rechenleistung oder Speicher automatisiert ohne manuelle Freigabe des Providers anzufordern.",
     "wrongReasons": [
       "„Mirroring“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: On-Demand Self-Service bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„Cold Storage“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: On-Demand Self-Service bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -3051,7 +3051,7 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Gemeinsame bedarfsgerechte Nutzung zusammengefasster Ressourcen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Resource Pooling bündelt Provider-Ressourcen zu einem gemeinsamen Pool, der dynamisch vielen Nutzern zugeteilt wird.",
     "wrongReasons": [
       "",
       "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Jeder Cloud-Kunde erhält zwingend eigene physische Server“ hier nicht die gesuchte Antwort.",
@@ -3249,7 +3249,7 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Trennung von Steuerungs- und Weiterleitungsebene bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "SDN lagert die Entscheidungslogik in einen programmierbaren Controller aus, während die Netzwerkgeräte Pakete nach dessen Regeln weiterleiten.",
     "wrongReasons": [
       "„Alle Server erhalten ein eigenes RAID“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Trennung von Steuerungs- und Weiterleitungsebene bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "",
@@ -3337,7 +3337,7 @@ export const newQuestions = [
     ],
     "correct": 1,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Zentrale Kontrollinstanz kann ohne Redundanz zum Single Point of Failure werden bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Die zentral verwaltete Control Plane ist kritisch: Fällt ein nicht redundant ausgelegter Controller aus, können neue Steuerungsentscheidungen ausbleiben.",
     "wrongReasons": [
       "„Es wird zwingend mehr Hardware pro Nutzer benötigt“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zentrale Kontrollinstanz kann ohne Redundanz zum Single Point of Failure werden bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "",
@@ -3359,7 +3359,7 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Trennung der Speichersteuerung von der physischen Speicherhardware bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "SDS führt Speicherfunktionen wie Bereitstellung, Platzierung und Schutz über eine Softwareebene aus und löst sie vom einzelnen Hardwaremodell.",
     "wrongReasons": [
       "„Ein RAID ohne Speicherkapazität“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Trennung der Speichersteuerung von der physischen Speicherhardware bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„Eine neue Art Softwarelizenz“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Trennung der Speichersteuerung von der physischen Speicherhardware bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -3381,7 +3381,7 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Weitgehend softwarebasierte Verwaltung und Automatisierung von Computing, Storage und Network bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Ein Software Defined Datacenter virtualisiert Rechen-, Speicher- und Netzwerkressourcen und steuert sie zentral und automatisiert.",
     "wrongReasons": [
       "„Ausschließlich mechanische Serverkühlung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Weitgehend softwarebasierte Verwaltung und Automatisierung von Computing, Storage und Network bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "Magnetband ist günstig für lange Aufbewahrung und kann offline gelagert werden, hat aber lange Zugriffszeiten. Deshalb ist „Nur langfristige Magnetbandlagerung“ hier nicht die gesuchte Antwort.",
@@ -3403,7 +3403,7 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Vertraulichkeit, Integrität und Verfügbarkeit bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Vertraulichkeit schützt Zugriffe, Integrität die Korrektheit und Verfügbarkeit den rechtzeitigen Zugang; zusammen decken sie die wichtigsten Informationsrisiken ab.",
     "wrongReasons": [
       "",
       "„Nur Kosten und Skalierung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Vertraulichkeit, Integrität und Verfügbarkeit bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -3447,7 +3447,7 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Zugriffsrechte, Verschlüsselung und Maßnahmen bei Sicherheitsvorfällen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Zugriffsrechte begrenzen den Nutzerkreis, Verschlüsselung schützt ruhende oder übertragene Daten und ein Incident-Prozess regelt die Reaktion auf Angriffe.",
     "wrongReasons": [
       "„Ausschließlich Zahl der Mitarbeitenden“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zugriffsrechte, Verschlüsselung und Maßnahmen bei Sicherheitsvorfällen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„Nur die Domain-Endung“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Zugriffsrechte, Verschlüsselung und Maßnahmen bei Sicherheitsvorfällen bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -3469,7 +3469,7 @@ export const newQuestions = [
     ],
     "correct": 3,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Sicherheitsnachweise, Datenstandorte, Unterauftragnehmer und Gesamtkosten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Sicherheitsnachweise belegen Schutzmaßnahmen, Datenstandorte beeinflussen rechtliche Pflichten, Subunternehmen erweitern Risiken und Gesamtkosten bestimmen die Wirtschaftlichkeit.",
     "wrongReasons": [
       "„Ausschließlich Logo und Werbeslogan“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Sicherheitsnachweise, Datenstandorte, Unterauftragnehmer und Gesamtkosten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
       "„Nur Anzahl verfügbarer Schriftarten“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Sicherheitsnachweise, Datenstandorte, Unterauftragnehmer und Gesamtkosten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -3491,7 +3491,7 @@ export const newQuestions = [
     ],
     "correct": 0,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Späterer Anbieterwechsel und sichere Rückgabe beziehungsweise Löschung der Daten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Ein geplanter Export und die gesicherte Löschung verhindern, dass Daten beim Anbieterwechsel verloren gehen oder beim alten Anbieter verbleiben.",
     "wrongReasons": [
       "",
       "„Ausschließlich lokale Druckertreiber“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Späterer Anbieterwechsel und sichere Rückgabe beziehungsweise Löschung der Daten bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
@@ -3535,7 +3535,7 @@ export const newQuestions = [
     ],
     "correct": 2,
     "source": "Neu aus Vortragsfolien Module 1–4 und zugehörigen E-Learning-Unterlagen abgeleitet",
-    "why": "Anbieter und Kunde erfüllen jeweils unterschiedliche Sicherheitsaufgaben bezeichnet die gesuchte Funktion beziehungsweise das Verfahren.",
+    "why": "Beim Shared-Responsibility-Modell schützt der Provider seine Infrastruktur; der Kunde bleibt für passende Rechte, Konfigurationen und Datenverarbeitung zuständig.",
     "wrongReasons": [
       "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Cloud-Nutzer müssen keine Zugriffsrechte verwalten“ hier nicht die gesuchte Antwort.",
       "Cloud-Modelle unterscheiden sich danach, wer Infrastruktur und Software betreibt und wie die Ressourcen bereitgestellt werden. Deshalb ist „Alle Sicherheitsmaßnahmen entfallen beim Wechsel zu SaaS“ hier nicht die gesuchte Antwort.",
@@ -3735,7 +3735,7 @@ export const practicalQuestions = [
       "Open Value Companywide"
     ],
     "correct": 3,
-    "why": "Die Vortragsfolien ordnen diese Anforderungen dem Open-Value-Companywide-Modell zu.",
+    "why": "Open Value Companywide war für kleinere Organisationen gedacht, die eine einheitliche Lizenzierung über alle Arbeitsplätze und Softwarewartung vereinbaren wollten.",
     "wrongReasons": [
       "Enterprise Agreement ist ein Microsoft-Volumenlizenzvertrag für größere Organisationen. Deshalb ist „Enterprise Agreement ab 250 Arbeitsplätzen“ hier nicht die gesuchte Antwort.",
       "Fibre Channel ist eine Netzwerktechnik für Speicherzugriffe, vor allem in SAN-Umgebungen. Deshalb ist „Fibre Channel“ hier nicht die gesuchte Antwort.",
@@ -4197,7 +4197,7 @@ export const practicalQuestions = [
       "Nur eine SSD ohne Sicherungshistorie"
     ],
     "correct": 2,
-    "why": "Das Mehrstufenkonzept aus Modul 3 kombiniert schnelle Wiederherstellung und günstige Langzeitkopien.",
+    "why": "SSD oder HDD ermöglichen schnelle Zugriffe auf jüngere Sicherungen. Offline-Tapes bieten günstige lange Aufbewahrung und zusätzliche Isolation bei einem Netzangriff.",
     "wrongReasons": [
       "„Ausschließlich Arbeitsspeicher“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Das Mehrstufenkonzept aus Modul 3 kombiniert schnelle Wiederherstellung und günstige Langzeitkopien.",
       "„Verzicht auf Aufbewahrungsregeln“ beschreibt nicht den hier benötigten Mechanismus. Entscheidend ist stattdessen: Das Mehrstufenkonzept aus Modul 3 kombiniert schnelle Wiederherstellung und günstige Langzeitkopien.",
