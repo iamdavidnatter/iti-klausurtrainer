@@ -1,61 +1,146 @@
-import React,{useState,useEffect,useMemo} from 'react';
-import{createRoot}from'react-dom/client';
-import{BookOpen,GraduationCap,CheckCircle2,XCircle,ArrowRight,ArrowLeft,RotateCcw,Filter,ShieldCheck,Info,ChartNoAxesColumn,Clock,Menu,Flag,ClipboardCheck}from'lucide-react';
-import{oldQuestions,newQuestions,practicalQuestions}from './questions.js';
-import {getIncorrectExplanation} from './answerGuide.js';
+import React, {useEffect, useMemo, useState} from 'react';
+import {createRoot} from 'react-dom/client';
+ import {BookOpen, GraduationCap, CheckCircle2, XCircle, ArrowRight, ArrowLeft, RotateCcw, Filter, ShieldCheck, Clock, Menu, ClipboardCheck, ChartNoAxesColumn, Info} from 'lucide-react';
+import {hkQuestions} from './qmHkQuestions.js';
+import {janQuestions} from './qmJanQuestions.js';
+import {newQuestions} from './qmNewQuestions.js';
 import './style.css';
-const cacheKey='iti-trainer-v1';
-const saveState=()=>{try{return JSON.parse(localStorage.getItem(cacheKey)||'{}')}catch{return {}}};
-function App(){
- const [mode,setMode]=useState('old');const[topic,setTopic]=useState('Alle');const[exam,setExam]=useState(false);
- const [state,setState]=useState(()=>saveState());const[index,setIndex]=useState(0);const[onlyErrors,setOnlyErrors]=useState(false);const[showResults,setShowResults]=useState(false);
- const [navOpen,setNavOpen]=useState(false);
- useEffect(()=>{localStorage.setItem(cacheKey,JSON.stringify(state))},[state]);
- const base=mode==='old'?oldQuestions:mode==='new'?newQuestions:mode==='practical'?practicalQuestions:[...oldQuestions,...newQuestions,...practicalQuestions];
- const pool=useMemo(()=>base.filter(q=>topic==='Alle'||q.type==='old'||q.topic===topic).filter(q=>!onlyErrors||(state[q.id]?.checked&&q.correct!==null&&state[q.id]?.choice!==q.correct)),[mode,topic,onlyErrors,state]);
- const current=pool[Math.min(index,Math.max(0,pool.length-1))];
- const stats=useMemo(()=>{let checked=0,ok=0,unverified=0;for(const q of base){const entry=state[q.id];if(entry?.checked){checked++;if(q.correct===null)unverified++;else if(entry.choice===q.correct)ok++}}return{checked,ok,unverified}},[base,state]);
- const change=(which,val)=>{if(which==='mode')setMode(val);if(which==='topic')setTopic(val);setIndex(0);setOnlyErrors(false);setShowResults(false)};
- const choose=(n)=>{if(!current||state[current.id]?.checked)return;setState(x=>({...x,[current.id]:{...x[current.id],choice:n,checked:true}}))};
- 
- const count=pool.filter(q=>state[q.id]?.checked).length;
- const finish=()=>{if(exam){setState(x=>{const y={...x};for(const q of pool){if(y[q.id]?.choice!==undefined)y[q.id]={...y[q.id],checked:true}}return y})}setShowResults(true)};
- const clear=()=>{if(confirm('Alle gespeicherten Antworten wirklich löschen?')){setState({});setIndex(0);setShowResults(false)}};
- const entry=current?state[current.id]||{}:{};
- return <div className="shell"><header className="topbar"><div className="brand"><div className="brandmark"><GraduationCap size={22}/></div><span>ITI<span className="brandmuted">TRAINER</span></span></div><div className="headerRight"><span className="desktopLabel">IT-INFRASTRUCTURE MANAGEMENT</span><span className="tag">2025 · 1. Termin</span></div></header>
- <div className="layout"><aside className={'sidebar '+(navOpen?'visible':'')}><div className="asideTitle">LERNBEREICHE</div><button className={'sidebutton '+(mode==='old'?'active':'')} onClick={()=>{change('mode','old');setNavOpen(false)}}><ClipboardCheck size={18}/> Altklausur <b>{oldQuestions.length}</b></button><button className={'sidebutton '+(mode==='new'?'active':'')} onClick={()=>{change('mode','new');setNavOpen(false)}}><BookOpen size={18}/> Neue Fragen <b>{newQuestions.length}</b></button><button className={'sidebutton '+(mode==='practical'?'active':'')} onClick={()=>{change('mode','practical');setNavOpen(false)}}><GraduationCap size={18}/> Praxisfragen <b>{practicalQuestions.length}</b></button><button className={'sidebutton '+(mode==='all'?'active':'')} onClick={()=>{change('mode','all');setNavOpen(false)}}><ChartNoAxesColumn size={18}/> Alle Fragen <b>{oldQuestions.length+newQuestions.length+practicalQuestions.length}</b></button><div className="asideTitle second">DEIN FORTSCHRITT</div><div className="stat"><span>Kontrollierte Antworten</span><strong>{stats.checked}</strong></div><div className="stat"><span>Davon richtig*</span><strong>{stats.ok}</strong></div><div className="stat"><span>Ohne Musterlösung</span><strong>{stats.unverified}</strong></div><button className="reset" onClick={clear}><RotateCcw size={16}/> Fortschritt zurücksetzen</button><div className="asideHint"><ShieldCheck size={17}/><span>*Altklausur-Lösungen sind nicht offiziell bestätigt, sondern aus dem Lehrstoff abgeleitet.</span></div></aside>
- <main className="content"><button className="mobileNav" onClick={()=>setNavOpen(x=>!x)}><Menu size={18}/> Lernbereiche</button><div className="eyebrow"><span className="pulse"/> DEIN PERSÖNLICHER LERNRAUM</div><h1>Bereit für die <em>IT-Klausur?</em></h1><p className="intro">Übe mit den <b>Originalfragen der Altklausur vom 24.10.2025</b> oder trainiere zusätzlich mit Fragen aus den vier Modulen.</p>
- <section className="dashboard"><div className="metric"><small>FRAGEN IN AUSWAHL</small><strong>{pool.length}</strong><span>Multiple Choice</span></div><div className="metric"><small>BEARBEITET</small><strong>{count}<span className="smallUnit"> / {pool.length}</span></strong><span>Dein Fortschritt</span></div><div className="metric"><small>RICHTIG BEWERTET</small><strong>{stats.checked-stats.unverified?Math.round(stats.ok/(stats.checked-stats.unverified)*100)+'%':'–'}</strong><span>Nur Fragen mit Lösungshinweis</span></div></section>
- <section className="controlPanel"><div className="switches"><button className={!exam?'selected':''} onClick={()=>{setExam(false);setShowResults(false)}}><BookOpen size={16}/> Lernmodus</button><button className={exam?'selected':''} onClick={()=>{setExam(true);setShowResults(false)}}><Clock size={16}/> Prüfungsmodus (sofortiges Feedback)</button></div><div className="controlRight">{mode!=='old'&&<select value={topic} onChange={e=>change('topic',e.target.value)}><option>Alle</option><option>Computing</option><option>Storage</option><option>Backup & Restore</option><option>Cloud</option></select>}<button className={'subtle '+(onlyErrors?'selectedSmall':'')} onClick={()=>{setOnlyErrors(v=>!v);setIndex(0);setShowResults(false)}}><Filter size={16}/> {onlyErrors?'Fehlerfilter an':'Fehler üben'}</button></div></section>
- {showResults?<section className="questionCard finish"><div className="finishIcon"><CheckCircle2 size={42}/></div><h2>Training ausgewertet</h2><p>{stats.checked} Fragen beantwortet; {stats.ok} mit dem verfügbaren Lösungshinweis übereinstimmend. Bei {stats.unverified} Antworten liegt kein belastbarer Lösungsschlüssel vor.</p><button className="primary" onClick={()=>{setShowResults(false);setIndex(0)}}>Fragen noch einmal ansehen <ArrowRight size={17}/></button></section>:current?<section className="questionCard"><div className="questionHeader"><div className="chips"><span className="chip mainchip">{current.type==='old'?'ORIGINAL-ALTKLAUSUR':current.type==='practical'?'PRAXISFALL':'NEUE ÜBUNGSFRAGE'}</span>{current.type!=='old'&&<span className="chip">{current.topic}</span>}</div><span className="questionCounter">{index+1} <span>/ {pool.length}</span></span></div><div className="progress"><div style={{width:`${pool.length?(index+1)/pool.length*100:0}%`}}/></div>
- <><h2>Frage {current.number} {current.type==='old'&&<span className="mutedMini">· Originalklausur</span>}</h2><h3>{current.q}</h3></>
- <div className="options" role="radiogroup" aria-label="Antwortmöglichkeiten">{current.a.map((name,n)=><button key={n} className={'answer '+(entry.choice===n?'picked ':'')+(entry.checked&&current.correct!==null&&current.correct===n?'right ':'')+(entry.checked&&current.correct!==null&&entry.choice===n&&current.correct!==n?'wrong ':'')} disabled={entry.checked} onClick={()=>choose(n)}><span className="letter">{String.fromCharCode(65+n)}</span><span className="answerText">{name}</span>{entry.checked&&current.correct===n&&<CheckCircle2 size={19} className="yes"/>}{entry.checked&&entry.choice===n&&current.correct!==null&&current.correct!==n&&<XCircle size={19} className="no"/>}</button>)}</div>
+import './qm.css';
 
- {entry.checked&&<div className={'feedback '+(entry.choice===current.correct?'success':'error')}>
-  <div className="feedbackTitle">{entry.choice===current.correct?'Richtig beantwortet':'Nicht richtig beantwortet'}</div>
-  <div className="solutionExplanation">
-   <p><b>Richtige Antwort: {String.fromCharCode(65+current.correct)} – {current.a[current.correct]}</b></p>
-   <p><strong>Warum ist das richtig?</strong> {current.why}</p>
+const allQuestions = [...hkQuestions, ...janQuestions, ...newQuestions];
+const storageKey = 'qualitaetsmanagement-trainer-v1';
+const load = () => { try { return JSON.parse(localStorage.getItem(storageKey) || '{}'); } catch { return {}; } };
+const catalogs = [
+ {id:'hk', name:'Altklausur 16.01.2025', questions:hkQuestions, icon:ClipboardCheck},
+ {id:'jan', name:'Altklausur 31.01.2025', questions:janQuestions, icon:ClipboardCheck},
+ {id:'new', name:'Neue Probeklausur', questions:newQuestions, icon:GraduationCap},
+ {id:'all', name:'Alle Fragen', questions:allQuestions, icon:ChartNoAxesColumn},
+];
+const letter = i => 'ABCD'[i] || '–';
+
+function App() {
+ const [catalog,setCatalog] = useState('hk');
+ const [exam,setExam] = useState(false);
+ const [topic,setTopic] = useState('Alle');
+ const [answers,setAnswers] = useState(load);
+ const [index,setIndex] = useState(0);
+ const [onlyErrors,setOnlyErrors] = useState(false);
+ const [submitted,setSubmitted] = useState(false);
+ const [resultView,setResultView] = useState(false);
+ const [navOpen,setNavOpen] = useState(false);
+
+ useEffect(() => { try { localStorage.setItem(storageKey, JSON.stringify(answers)); } catch {} }, [answers]);
+ const base = catalogs.find(c => c.id === catalog)?.questions || hkQuestions;
+ const topics = useMemo(() => [...new Set(base.map(q => q.topic))].sort((a,b) => a.localeCompare(b,'de')), [base]);
+ const pool = useMemo(() => base.filter(q => topic === 'Alle' || q.topic === topic).filter(q => !onlyErrors || (answers[q.id]?.checked && answers[q.id]?.choice !== q.correct)), [base,topic,onlyErrors,answers]);
+ const safeIndex = Math.min(index, Math.max(0,pool.length-1));
+ const current = pool[safeIndex];
+ const entry = current ? (answers[current.id] || {}) : {};
+ const evaluated = base.filter(q => answers[q.id]?.checked);
+ const correct = evaluated.filter(q => answers[q.id]?.choice === q.correct).length;
+ const answered = pool.filter(q => Number.isInteger(answers[q.id]?.choice)).length;
+ const isRevealed = current && (entry.checked || submitted);
+ const score = base.length ? Math.round(correct/base.length*100) : 0;
+
+ const resetView = () => {setIndex(0);setOnlyErrors(false);setSubmitted(false);setResultView(false);};
+ const switchCatalog = id => {setCatalog(id);setTopic('Alle');resetView();setNavOpen(false);};
+ const newAttempt = (nextExam=exam) => {
+   setAnswers(previous => {
+     const next = {...previous};
+     base.forEach(q => delete next[q.id]);
+     return next;
+   });
+   setExam(nextExam);resetView();
+ };
+ const select = option => {
+   if (!current || isRevealed) return;
+   setAnswers(previous => ({...previous,[current.id]:{choice:option,checked:!exam}}));
+ };
+ const finish = () => {
+   if (exam) {
+     setAnswers(previous => {
+       const next = {...previous};
+       base.forEach(q => {next[q.id]={choice:next[q.id]?.choice,checked:true};});
+       return next;
+     });
+     setSubmitted(true);
+   }
+   setResultView(true);
+ };
+ const resultsVisible = !exam || submitted;
+ const resetAll = () => {
+   if (!window.confirm('Gesamten gespeicherten QM-Lernfortschritt wirklich löschen?')) return;
+   setAnswers({});resetView();
+ };
+
+ return <div className="shell">
+  <header className="topbar"><div className="brand"><div className="brandmark"><GraduationCap size={22}/></div><span>QM<span className="brandmuted">TRAINER</span></span></div><div className="headerRight"><span className="desktopLabel">QUALITÄTSMANAGEMENT · 12 MODULE</span><span className="tag">110 FRAGEN</span></div></header>
+  <div className="layout">
+   <aside className={'sidebar '+(navOpen?'visible':'')}>
+    <div className="asideTitle">KLAUSURKATALOGE</div>
+    {catalogs.map(c => <button key={c.id} className={'sidebutton '+(catalog===c.id?'active':'')} onClick={() => switchCatalog(c.id)}><c.icon size={18}/><span>{c.name}</span><b>{c.questions.length}</b></button>)}
+    <div className="asideTitle second">DEIN FORTSCHRITT</div>
+    <div className="stat"><span>Im Katalog bewertet</span><strong>{evaluated.length}/{base.length}</strong></div>
+    <div className="stat"><span>Richtig beantwortet</span><strong>{correct}</strong></div>
+    <div className="stat"><span>Quote (bewertete)</span><strong>{evaluated.length?Math.round(correct/evaluated.length*100)+' %':'–'}</strong></div>
+    <button className="reset" onClick={resetAll}><RotateCcw size={16}/> Alles zurücksetzen</button>
+    <div className="asideHint"><ShieldCheck size={18}/><span>Die Altklausuren wurden fachlich überprüft. Offensichtliche Fehler und mehrdeutige Antwortkombinationen sind korrigiert. Das ist kein offizieller Lösungsschlüssel.</span></div>
+   </aside>
+   <main className="content">
+    <button className="mobileNav" onClick={() => setNavOpen(x => !x)}><Menu size={18}/> Kataloge auswählen</button>
+    <div className="eyebrow"><span className="pulse"/> LERNEN · VERSTEHEN · BESTEHEN</div>
+    <h1>Bereit für die <em>QM-Klausur?</em></h1>
+    <p className="intro">Zwei fachlich überprüfte Altklausuren und eine <b>neue Prüfung mit 40 Fragen</b>. Jede Frage hat genau eine richtige Antwort. Falschbeantwortete Fragen kannst du gezielt wiederholen.</p>
+    <section className="dashboard">
+     <div className="metric"><small>FRAGEN IM FILTER</small><strong>{pool.length}</strong><span>Single Choice</span></div>
+     <div className="metric"><small>BEANTWORTET</small><strong>{answered}<span className="smallUnit"> / {pool.length}</span></strong><span>Dein Fortschritt</span></div>
+     <div className="metric"><small>RICHTIG</small><strong>{evaluated.length?Math.round(correct/evaluated.length*100)+' %':'–'}</strong><span>{evaluated.length} Antworten bewertet</span></div>
+    </section>
+    <section className="controlPanel">
+      <div className="switches">
+       <button className={!exam?'selected':''} onClick={() => {if(exam)newAttempt(false);}}><BookOpen size={16}/> Lernmodus</button>
+       <button className={exam?'selected':''} onClick={() => {if(!exam)newAttempt(true);}}><Clock size={16}/> Prüfungsmodus</button>
+      </div>
+      <div className="controlRight">
+       <select aria-label="Thema" value={topic} onChange={e => {setTopic(e.target.value);setIndex(0);setResultView(false);setOnlyErrors(false);}}>
+        <option>Alle</option>{topics.map(t => <option key={t}>{t}</option>)}
+       </select>
+       <button className={'subtle '+(onlyErrors?'selectedSmall':'')} onClick={() => {setOnlyErrors(x=>!x);setIndex(0);setResultView(false);}}><Filter size={16}/> {onlyErrors?'Fehlerfilter an':'Fehler üben'}</button>
+      </div>
+    </section>
+    {exam && !submitted && <p className="qmNotice"><Clock size={17}/> Prüfungsmodus: Es gibt vor Abgabe kein Feedback. Du kannst Antworten bis zur Abgabe ändern. Unbeantwortete Fragen zählen bei der Auswertung als falsch.</p>}
+    {resultView ? <section className="questionCard finish">
+      <div className="finishIcon"><CheckCircle2 size={44}/></div>
+      <h2>{exam?'Prüfung ausgewertet':'Lernfortschritt'}</h2>
+      <p><b>{correct} von {base.length}</b> Fragen richtig ({score} % bezogen auf den ganzen Katalog). {exam ? (correct/base.length>0.5?'Die in den Folien genannte Schwelle von über 50 % ist erreicht.':'Die in den Folien genannte Schwelle von über 50 % ist noch nicht erreicht.') : 'Offene Fragen sind noch nicht bewertet.'}</p>
+      <div className="qmResultActions"><button className="primary" onClick={() => {setResultView(false);setIndex(0);}}><BookOpen size={17}/> Antworten ansehen</button><button className="outline" onClick={() => newAttempt()}><RotateCcw size={17}/> Neuer Durchgang</button></div>
+    </section> : current ? <section className="questionCard">
+      <div className="questionHeader"><div className="chips"><span className="chip mainchip">{catalog==='hk'?'ALT · 16.01.2025':catalog==='jan'?'ALT · 31.01.2025':catalog==='new'?'NEUE PROBEKLAUSUR':current.type==='hk'?'ALT · 16.01.2025':current.type==='jan'?'ALT · 31.01.2025':'NEU'}</span><span className="chip">{current.topic}</span></div><span className="questionCounter">{safeIndex+1} <span>/ {pool.length}</span></span></div>
+      <div className="progress"><div style={{width:(pool.length?((safeIndex+1)/pool.length*100):0)+'%'}}/></div>
+      <h2>Frage {current.number}</h2><h3>{current.q}</h3>
+      <div className="options" role="group" aria-label="Antwortmöglichkeiten">
+       {current.a.map((answer,n) => <button key={n} className={'answer '+(entry.choice===n?'picked ':'')+(isRevealed && current.correct===n?'right ':'')+(isRevealed && entry.choice===n && n!==current.correct?'wrong ':'')} disabled={Boolean(isRevealed)} onClick={() => select(n)}>
+        <span className="letter">{letter(n)}</span><span className="answerText">{answer}</span>
+        {isRevealed&&current.correct===n&&<CheckCircle2 className="yes" size={19}/>}
+        {isRevealed&&entry.choice===n&&entry.choice!==current.correct&&<XCircle className="no" size={19}/>}
+       </button>)}
+      </div>
+      {isRevealed && <div className={'feedback '+(entry.choice===current.correct?'success':'error')}>
+       <div className="feedbackTitle">{entry.choice===current.correct?'Richtig beantwortet':'Nicht richtig beantwortet'}</div>
+       <p><b>Richtig ist {letter(current.correct)}:</b> {current.a[current.correct]}</p>
+       <p><strong>Begründung:</strong> {current.why}</p><p className="qmSource"><Info size={14}/> Grundlage: Vorlesungsunterlagen {current.source}</p>
+      </div>}
+      <div className="actions"><button className="outline" disabled={safeIndex===0} onClick={() => setIndex(n => Math.max(0,n-1))}><ArrowLeft size={17}/> Zurück</button>
+       <div className="actionRight">{exam&&!submitted&&<button className="outline" onClick={finish}><CheckCircle2 size={17}/> Prüfung abgeben</button>}
+        <button className="primary" onClick={() => safeIndex<pool.length-1?setIndex(n=>n+1):finish()}>{safeIndex<pool.length-1?'Nächste Frage':'Auswertung'} <ArrowRight size={17}/></button></div>
+      </div>
+    </section> : <section className="questionCard finish"><h2>Keine passenden Fragen</h2><p>Ändere den Themen- oder Fehlerfilter.</p><button className="primary" onClick={() => {setOnlyErrors(false);setTopic('Alle');}}>Alle Fragen anzeigen</button></section>}
+    <section className="navigator"><div className="navHead"><strong>Fragenübersicht</strong><span>Nummer auswählen, um zur Frage zu springen.</span></div>
+     <div className="numberGrid">{pool.map((q,i) => <button key={q.id} title={q.topic+' · Frage '+q.number} className={(safeIndex===i?'current ':'')+(answers[q.id]?.checked?'done ':'')+(Number.isInteger(answers[q.id]?.choice)&&!answers[q.id]?.checked?'answered ':'')} onClick={() => {setIndex(i);setResultView(false);}}>{catalog==='all'?(q.type==='hk'?'H':q.type==='jan'?'J':'N')+q.number:q.number}</button>)}</div>
+    </section>
+    <footer>Qualitätsmanagement · 12 Module · 2 überarbeitete Altklausuren + 40 neue Fragen · Single Choice · Speicherung nur in deinem Browser · Keine offiziellen Klausurlösungen</footer>
+   </main>
   </div>
-  {entry.choice!==current.correct&&<div className="selectedWrongExplanation">
-    <strong>Deine Antwort: {String.fromCharCode(65+entry.choice)} – {current.a[entry.choice]}</strong>
-    <p><b>Warum ist sie hier falsch?</b> {getIncorrectExplanation(current,entry.choice)?.why}</p>
-    <p><b>Wann wäre diese Antwort richtig oder sinnvoll?</b> {getIncorrectExplanation(current,entry.choice)?.when}</p>
-  </div>}
-  {current.solutionStatus&&<p className="mutedMini">{current.solutionStatus}</p>}
-  <details className="otherAnswers">
-    <summary>{entry.choice===current.correct?'Warum sind die drei anderen Antworten falsch?':'Auch die übrigen Antwortmöglichkeiten verstehen'}</summary>
-    <div className="alternativeExplanationList">
-     {current.a.map((answer,n)=>n===current.correct||n===entry.choice?null:<div className="alternativeExplanation" key={n}>
-       <strong>{String.fromCharCode(65+n)} – {answer}</strong>
-       <p><b>Warum hier nicht?</b> {getIncorrectExplanation(current,n)?.why}</p>
-       <p><b>Wann passt diese Antwort?</b> {getIncorrectExplanation(current,n)?.when}</p>
-     </div>)}
-    </div>
-  </details>
- </div>}
-
- <div className="actions"><button className="outline" disabled={index===0} onClick={()=>setIndex(i=>Math.max(0,i-1))}><ArrowLeft size={17}/> Zurück</button><div className="actionRight"><button className="primary" onClick={()=>index<pool.length-1?setIndex(i=>i+1):finish()}>{index<pool.length-1?'Nächste Frage':'Auswertung'} <ArrowRight size={17}/></button></div></div></section>:<div className="questionCard finish"><h2>Keine Fehler gefunden</h2><p>Im ausgewählten Bereich gibt es keine beantworteten Fehlerfragen.</p><button className="primary" onClick={()=>setOnlyErrors(false)}>Alle Fragen anzeigen</button></div>}
- <section className="navigator"><div className="navHead"><strong>Fragenübersicht</strong><span>Klicke auf eine Nummer, um direkt zur Frage zu springen.</span></div><div className="numberGrid">{pool.map((q,i)=><button key={q.id} title={`Frage ${q.number}`} className={(index===i?'current ':'')+(state[q.id]?.checked?'done ':'')+(state[q.id]?.choice!==undefined&&!state[q.id]?.checked?'answered ':'')} onClick={()=>{setIndex(i);setShowResults(false)}}>{q.type==='old'?q.number:q.type==='practical'?'P'+q.number:'N'+q.number}</button>)}</div></section><footer>ITI Trainer · Originalfragen: Klausur-PDF · Neue Fragen und Praxisfälle: Modul 1–4 · Fortschritt nur lokal im Browser gespeichert · Kein offizieller Prüfungslösungsschlüssel</footer></main></div></div>
+ </div>;
 }
 createRoot(document.getElementById('root')).render(<App/>);
