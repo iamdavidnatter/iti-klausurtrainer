@@ -219,7 +219,7 @@ export const newQuestions = [
       "20"
     ],
     "correct": 2,
-    "why": "NPS=45−20=25.",
+    "why": "NPS=45−20=25. Dieser Wert folgt aus der im jeweiligen Modul erläuterten Berechnung beziehungsweise Definition.",
     "source": "M6",
     "type": "new"
   },
