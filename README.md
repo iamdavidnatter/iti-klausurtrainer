@@ -1,34 +1,46 @@
-# IT-Infrastructure-Management Klausurtrainer
+# Qualitätsmanagement – Klausurtrainer
 
-Deploybare React/Vite-Lernapp mit 47 Originalfragen (als unveränderte Screenshot-Ausschnitte), 33 neuen Übungsfragen, lokalem Lernfortschritt, Lernmodus, Prüfungssimulation und Fehlerfilter.
+React/Vite-Lernapp auf Basis des bisherigen ITI-Trainers, jetzt für alle zwölf Module der Lehrveranstaltung Qualitätsmanagement.
 
-## Herkunft der Originalfragen
-Die bereitgestellte PDF `HK_ITI-2025.pdf` enthält Original-Screenshots zu den Klausurfragen **2 bis 48**. Frage 1 war in der Datei nicht enthalten und wurde nicht nachgebaut. Die Texte und Antwortmöglichkeiten der Originalfragen werden **als Bild** angezeigt, damit keine irrtümliche Umformulierung passiert.
+## Fragekataloge
 
-Die PDF enthält **keinen offiziellen Lösungsschlüssel**. Die hinterlegten Lösungen zu 35 Originalfragen sind aus dem Lehrstoff abgeleitet und ausdrücklich als nicht offiziell markiert; die übrigen 12 werden ohne automatische Richtig/Falsch-Bewertung angezeigt. Die 33 zusätzlichen Übungsfragen sind eigens formuliert.
+| Katalog | Anzahl | Status |
+|---|---:|---|
+| Altklausur vom 16.01.2025 | 40 | Fachlich geprüft und korrigiert |
+| Altklausur vom 31.01.2025 | 30 | Fachlich geprüft und korrigiert |
+| Neue Probeklausur | 40 | Neu erstellt, deckt alle 12 Module ab |
+| **Gesamt** | **110** | Je vier Optionen und ein richtiger Lösungsindex |
 
-## Lokal starten
-```bash
-npm install
-npm run dev
-```
+Die Altklausuren wurden inhaltlich überarbeitet, sind also keine unveränderten Abschriften. Mehrdeutige Antwortmöglichkeiten und fehlerhafte Markierungen wurden berichtigt. Ein offizieller Lösungsschlüssel wurde nicht bereitgestellt. Details stehen in KORREKTUREN.md.
 
-## Auf Render.com veröffentlichen
-1. Dieses Projekt als GitHub-Repository hochladen (alle Dateien aus dem Ordner).
-2. Render öffnen → **New → Static Site** (oder `New → Blueprint` für `render.yaml`).
-3. GitHub-Repository auswählen.
-4. Build Command: `npm install && npm run build`
-5. Publish Directory: `dist`
-6. Deploy durchführen.
+## Funktionen
 
-Die App benötigt **keine Datenbank**, **keinen API-Key** und **kein kostenpflichtiges Backend**. Lernfortschritt wird im Browser per localStorage gespeichert, nicht geräteübergreifend synchronisiert.
+- Lernmodus: Sofortiges Feedback mit Musterlösung, kurzer Erklärung und Modulbezug.
+- Prüfungsmodus: Erst nach der Abgabe werden Lösungen angezeigt. Antworten bleiben bis zur Abgabe veränderbar, fehlende Antworten sind falsch.
+- Drei getrennte Kataloge plus Gesamtmodus, Themenfilter und Fehlerfilter.
+- Lokaler Lernfortschritt im Browser, getrennt von alten ITI-Daten.
+- Bestehensgrenze aus den Vorlesungsfolien: **über 50 %**, d. h. mindestens 21/40 bzw. 16/30.
 
-## Aufbau
-- `src/questions.js` — Lösungen (als erschlossene Hinweise gekennzeichnet) und neue Übungsfragen
-- `public/exam/` — Original-Screenshot-Ausschnitte von Frage 2–48
-- `src/main.jsx` — Interaktive Lernoberfläche
-- `render.yaml` — Render Static Site Blueprint
+## Befehle
 
+    npm install
+    npm run test
+    npm run dev
+    npm run build
 
-## Stand: 80 Fragen
-47 Original-Altklausurfragen als unveränderte Bildausschnitte (Nr. 2–48; Nr. 1 fehlt in der bereitgestellten PDF) und 33 neue Lernfragen aus den vier Modulen. Es liegt kein offizieller Lösungsschlüssel zur Altklausur bei; die automatisch bewertbaren Altklausurantworten sind als aus den Lernfolien erschlossen zu verstehen.
+## Deployment
+
+Die bisherige Render-Konfiguration kann unverändert weiterbenutzt werden: statisches Vite-Build, Veröffentlichung aus dist. Ein vorhandener Render-Dienst wird dadurch nicht automatisch umbenannt. Änderungen können zuerst über einen Pull-Request-Preview getestet werden.
+
+## Wichtige Dateien
+
+- src/qmHkQuestions.js: Altklausur 16.01.2025
+- src/qmJanQuestions.js: Altklausur 31.01.2025
+- src/qmNewQuestions.js: neue Probeklausur
+- src/main.jsx: Trainer-Oberfläche mit Lern- und Prüfungsmodus
+- src/qm.css: responsive Anpassungen
+- scripts/validate-questions.mjs: automatische Validierung
+- .github/workflows/qm-check.yml: CI für Tests und Vite-Build
+- KORREKTUREN.md: fachliche Korrekturen der Altklausuren
+
+Die älteren ITI-Quelldateien sind weiterhin im Repository, werden aber von der QM-Oberfläche nicht importiert. Automatische Tests belegen Struktur und Konsistenz, nicht die amtliche Richtigkeit von Antworten.
