@@ -43,14 +43,14 @@ function App() {
  const score = base.length ? Math.round(correct/base.length*100) : 0;
 
  const resetView = () => {setIndex(0);setOnlyErrors(false);setSubmitted(false);setResultView(false);};
- const switchCatalog = id => {setCatalog(id);setTopic('Alle');resetView();setNavOpen(false);};
+ const switchCatalog = id => {setCatalog(id);setExam(false);setTopic('Alle');resetView();setNavOpen(false);};
  const newAttempt = (nextExam=exam) => {
    setAnswers(previous => {
      const next = {...previous};
      base.forEach(q => delete next[q.id]);
      return next;
    });
-   setExam(nextExam);resetView();
+   setExam(nextExam);setTopic('Alle');resetView();
  };
  const select = option => {
    if (!current || isRevealed) return;
@@ -102,10 +102,10 @@ function App() {
        <button className={exam?'selected':''} onClick={() => {if(!exam)newAttempt(true);}}><Clock size={16}/> Prüfungsmodus</button>
       </div>
       <div className="controlRight">
-       <select aria-label="Thema" value={topic} onChange={e => {setTopic(e.target.value);setIndex(0);setResultView(false);setOnlyErrors(false);}}>
+       <select aria-label="Thema" disabled={exam&&!submitted} value={topic} onChange={e => {setTopic(e.target.value);setIndex(0);setResultView(false);setOnlyErrors(false);}}>
         <option>Alle</option>{topics.map(t => <option key={t}>{t}</option>)}
        </select>
-       <button className={'subtle '+(onlyErrors?'selectedSmall':'')} onClick={() => {setOnlyErrors(x=>!x);setIndex(0);setResultView(false);}}><Filter size={16}/> {onlyErrors?'Fehlerfilter an':'Fehler üben'}</button>
+       <button disabled={exam&&!submitted} className={'subtle '+(onlyErrors?'selectedSmall':'')} onClick={() => {setOnlyErrors(x=>!x);setIndex(0);setResultView(false);}}><Filter size={16}/> {onlyErrors?'Fehlerfilter an':'Fehler üben'}</button>
       </div>
     </section>
     {exam && !submitted && <p className="qmNotice"><Clock size={17}/> Prüfungsmodus: Es gibt vor Abgabe kein Feedback. Du kannst Antworten bis zur Abgabe ändern. Unbeantwortete Fragen zählen bei der Auswertung als falsch.</p>}
