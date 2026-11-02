@@ -1,0 +1,8 @@
+.qmNotice{border:1px solid #52623f;background:#1b2b23;border-radius:11px;padding:13px 15px;color:#c9e6c4;display:flex;gap:10px;align-items:flex-start;font-size:12px;line-height:1.6;margin:-4px 0 19px}
+.qmNotice svg{flex-shrink:0;margin-top:1px;color:#c0eb88}
+.qmSource{font-size:11px!important;opacity:.86;display:flex;gap:6px;align-items:center;margin-top:12px!important}
+.qmResultActions{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.qmResultActions button{display:flex;align-items:center;gap:8px;border:1px solid #4d6072;padding:12px 16px;border-radius:10px;font-weight:800}
+.qmResultActions .outline{color:#dce7f2}
+.sidebutton span{flex:1;min-width:0;line-height:1.4}
+@media(max-width:620px){.qmNotice{margin-top:4px}.qmResultActions{flex-direction:column;width:100%}.qmResultActions button{justify-content:center}.navHead span{line-height:1.5}}
