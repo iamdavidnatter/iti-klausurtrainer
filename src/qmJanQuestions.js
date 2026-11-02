@@ -197,7 +197,7 @@ export const janQuestions = [
     "topic": "Qualitätskosten",
     "q": "Welche Kosten sind Fehlerverhütungskosten?",
     "a": [
-      "Qualitätsplanung und Qualitätschulungen.",
+      "Qualitätsplanung und Qualitätsschulungen.",
       "Zusätzliche Prüfung fehlerhafter Ware.",
       "Nacharbeit nach einem Fehler.",
       "Gewährleistung nach Auslieferung."
