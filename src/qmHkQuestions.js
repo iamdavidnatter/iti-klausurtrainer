@@ -67,16 +67,16 @@ export const hkQuestions = [
     "id": "hk-05",
     "number": 5,
     "topic": "Qualitätskosten",
-    "q": "Welche der folgenden Positionen kann zu internen Fehlerkosten gehören?",
+    "q": "Welche Antwort enthält ausschließlich mögliche interne Fehlerkosten?",
     "a": [
-      "Ausschuss.",
-      "Fehlerursachenanalyse vor Auslieferung.",
-      "Wertminderung fehlerhafter Produkte.",
-      "Alle drei genannten Positionen."
+      "Garantieleistungen und Kulanz nach Auslieferung.",
+      "Kosten für Marktforschung und Vertrieb.",
+      "Externe Reklamationsabwicklung und Rückrufaktionen.",
+      "Ausschuss, interne Fehlerursachenanalyse und Wertminderung vor Auslieferung."
     ],
     "correct": 3,
-    "why": "Interne Fehlerkosten entstehen vor der Auslieferung, etwa durch Ausschuss, Nacharbeit und Fehleranalyse.",
-    "source": "M10",
+    "why": "Interne Fehlerkosten fallen vor Übergabe an den Kunden an; externe Kosten erst danach.",
+    "source": "M10 · Antwortkombination vereindeutigt",
     "type": "hk"
   },
   {
@@ -547,16 +547,16 @@ export const hkQuestions = [
     "id": "hk-35",
     "number": 35,
     "topic": "Führung",
-    "q": "Welche Aussage über Motivation ist richtig?",
+    "q": "Welche Aussage zur Motivation ist fachlich zutreffend?",
     "a": [
-      "Extrinsische Motivation entsteht durch äußere Anreize.",
-      "Es gibt keine universelle Motivationstechnik.",
-      "Intrinsische Motivation kann aus Sinn und Interesse entstehen.",
-      "Alle drei Aussagen treffen zu."
+      "Motivation wird ausschließlich durch äußere Prämien erzeugt.",
+      "Eine einzelne Motivationstechnik wirkt bei jedem Menschen gleich.",
+      "Intrinsische Motivation entsteht grundsätzlich nur durch Zwang.",
+      "Motivation ist kontextabhängig und kann intrinsische und extrinsische Ursachen haben."
     ],
     "correct": 3,
-    "why": "Die Folien unterscheiden äußere und innere Antriebe und betonen die Kontextabhängigkeit der Motivation.",
-    "source": "M9",
+    "why": "Motivation hängt von Kontext und Person ab und hat sowohl innere als auch äußere Antriebe.",
+    "source": "M9 · ursprüngliche 'alle Antworten'-Option vereindeutigt",
     "type": "hk"
   },
   {
