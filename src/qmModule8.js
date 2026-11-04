@@ -58,10 +58,10 @@ export const module8Questions = [
     "chapter": 8,
     "q": "Welches Merkmal trifft vorrangig auf **explizites** Wissen zu?",
     "a": [
-      "Es ist nur durch Beobachtung persönlicher Handlungen zugänglich.",
-      "Es beruht auf Intuition, die sich grundsätzlich kaum beschreiben lässt.",
+      "Es entsteht vorwiegend durch gemeinsame Erfahrung und bleibt an Personen gebunden.",
+      "Es beruht auf Intuition und ist schwer vollständig auszudrücken.",
       "Es ist formulierbar und dokumentierbar.",
-      "Es wird ausschließlich durch gemeinsames praktisches Tun übertragen."
+      "Es wird vorwiegend durch Beobachtung und Nachahmung praktischer Tätigkeiten weitergegeben."
     ],
     "correct": 2,
     "why": "Explizites Wissen ist artikulierbar, reproduzierbar und in Dokumenten oder Daten kodierbar.",
