@@ -6,3 +6,10 @@
 .qmResultActions .outline{color:#dce7f2}
 .sidebutton span{flex:1;min-width:0;line-height:1.4}
 @media(max-width:620px){.qmNotice{margin-top:4px}.qmResultActions{flex-direction:column;width:100%}.qmResultActions button{justify-content:center}.navHead span{line-height:1.5}}
+
+/* Zwölf zusätzliche Kapitelkataloge: Seitenleiste scrollbar und auf mobilen Geräten kompakt. */
+.sidebar{position:sticky;top:0;align-self:start;max-height:100vh;overflow-y:auto;scrollbar-width:thin}
+.asideTitle.chapterTitle{margin-top:29px;margin-bottom:13px;color:#9cbed6}
+.sidebar .sidebutton{min-height:42px}
+.numberGrid button{min-width:0;overflow:hidden;text-overflow:ellipsis}
+@media(max-width:950px){.sidebar{position:absolute;top:auto;max-height:80vh;overflow-y:auto}}

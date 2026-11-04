@@ -2,11 +2,14 @@ import assert from 'node:assert/strict';
 import {hkQuestions} from '../src/qmHkQuestions.js';
 import {janQuestions} from '../src/qmJanQuestions.js';
 import {newQuestions} from '../src/qmNewQuestions.js';
+import {moduleCatalogs,chapterQuestions} from '../src/qmModuleCatalogs.js';
+import {module1Questions} from '../src/qmModule1.js';
 
 const catalogs = [
   ['Altklausur 16.01.2025',hkQuestions,40],
   ['Altklausur 31.01.2025',janQuestions,30],
   ['Neue Probeklausur',newQuestions,40],
+  ...moduleCatalogs.map(c => [c.name,c.questions,[12,12,10,8,10,14,16,12,10,12,28,36][c.number-1]]),
 ];
 const ids = new Set();
 for (const [title,questions,expected] of catalogs) {
@@ -26,7 +29,25 @@ for (const [title,questions,expected] of catalogs) {
   }
   console.log(title+': '+questions.length+' Fragen geprüft');
 }
-assert.equal(ids.size,110);
+assert.equal(moduleCatalogs.length,12);
+assert.equal(chapterQuestions.length,180);
+assert.equal(ids.size,290);
+for (const c of moduleCatalogs) {
+  assert.equal(c.questions.length,c.number===11?28:c.number===12?36:[12,12,10,8,10,14,16,12,10,12][c.number-1]);
+  for (const q of c.questions) {
+    assert.equal(q.chapter,c.number,q.id+': Kapitelnummer stimmt nicht');
+    assert.equal(q.type,'chapter',q.id+': Typ stimmt nicht');
+    assert.equal(q.topic,c.topic,q.id+': Thema stimmt nicht');
+    assert.ok(q.source.startsWith('M'+c.number+', Folie '),q.id+': Quellenangabe zum falschen Modul');
+  }
+}
+assert.equal(module1Questions.length,moduleCatalogs[0].questions.length);
+// Beim Mischen müssen Antwortmenge und korrekter Antworttext erhalten bleiben.
+for (let i=0;i<module1Questions.length;i++) {
+  const raw=module1Questions[i], mixed=moduleCatalogs[0].questions[i];
+  assert.equal(mixed.a[mixed.correct],raw.a[raw.correct]);
+  assert.deepEqual([...mixed.a].sort(),[...raw.a].sort());
+}
 const covered = new Set(newQuestions.map(q=>q.topic));
 assert.equal(covered.size,12,'Neue Probeklausur muss alle zwölf Themen abdecken');
-console.log('OK: 110 gültige Fragen, eindeutige IDs, vier Optionen, genau ein Lösungsschlüssel je Frage.');
+console.log('OK: 290 gültige Fragen in 15 Fachkatalogen + Gesamtmodus, 12 Kapitel und richtige Antwortzuordnung nach Durchmischung.');

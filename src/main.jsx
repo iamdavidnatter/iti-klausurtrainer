@@ -4,10 +4,11 @@ import {createRoot} from 'react-dom/client';
 import {hkQuestions} from './qmHkQuestions.js';
 import {janQuestions} from './qmJanQuestions.js';
 import {newQuestions} from './qmNewQuestions.js';
+import {moduleCatalogs, chapterQuestions} from './qmModuleCatalogs.js';
 import './style.css';
 import './qm.css';
 
-const allQuestions = [...hkQuestions, ...janQuestions, ...newQuestions];
+const allQuestions = [...hkQuestions, ...janQuestions, ...newQuestions, ...chapterQuestions];
 const storageKey = 'qualitaetsmanagement-trainer-v1';
 const load = () => { try { return JSON.parse(localStorage.getItem(storageKey) || '{}'); } catch { return {}; } };
 const catalogs = [
@@ -15,6 +16,7 @@ const catalogs = [
  {id:'jan', name:'Altklausur 31.01.2025', questions:janQuestions, icon:ClipboardCheck},
  {id:'new', name:'Neue Probeklausur', questions:newQuestions, icon:GraduationCap},
  {id:'all', name:'Alle Fragen', questions:allQuestions, icon:ChartNoAxesColumn},
+ ...moduleCatalogs.map(c => ({id:c.id, name:c.name, questions:c.questions, icon:BookOpen})),
 ];
 const letter = i => 'ABCD'[i] || '–';
 
@@ -41,6 +43,7 @@ function App() {
  const answered = pool.filter(q => Number.isInteger(answers[q.id]?.choice)).length;
  const isRevealed = current && (entry.checked || submitted);
  const score = base.length ? Math.round(correct/base.length*100) : 0;
+ const isFullExam = ['hk','jan','new'].includes(catalog);
 
  const resetView = () => {setIndex(0);setOnlyErrors(false);setSubmitted(false);setResultView(false);};
  const switchCatalog = id => {setCatalog(id);setExam(false);setTopic('Alle');resetView();setNavOpen(false);};
@@ -67,18 +70,17 @@ function App() {
    }
    setResultView(true);
  };
- const resultsVisible = !exam || submitted;
  const resetAll = () => {
    if (!window.confirm('Gesamten gespeicherten QM-Lernfortschritt wirklich löschen?')) return;
    setAnswers({});resetView();
  };
 
  return <div className="shell">
-  <header className="topbar"><div className="brand"><div className="brandmark"><GraduationCap size={22}/></div><span>QM<span className="brandmuted">TRAINER</span></span></div><div className="headerRight"><span className="desktopLabel">QUALITÄTSMANAGEMENT · 12 MODULE</span><span className="tag">110 FRAGEN</span></div></header>
+  <header className="topbar"><div className="brand"><div className="brandmark"><GraduationCap size={22}/></div><span>QM<span className="brandmuted">TRAINER</span></span></div><div className="headerRight"><span className="desktopLabel">QUALITÄTSMANAGEMENT · 12 MODULE</span><span className="tag">{allQuestions.length} FRAGEN</span></div></header>
   <div className="layout">
    <aside className={'sidebar '+(navOpen?'visible':'')}>
     <div className="asideTitle">KLAUSURKATALOGE</div>
-    {catalogs.map(c => <button key={c.id} className={'sidebutton '+(catalog===c.id?'active':'')} onClick={() => switchCatalog(c.id)}><c.icon size={18}/><span>{c.name}</span><b>{c.questions.length}</b></button>)}
+    {catalogs.map((c,i) => <React.Fragment key={c.id}>{i===4&&<div className="asideTitle chapterTitle">KAPITELTRAINING · 12 MODULE</div>}<button key={c.id} className={'sidebutton '+(catalog===c.id?'active':'')} onClick={() => switchCatalog(c.id)}><c.icon size={18}/><span>{c.name}</span><b>{c.questions.length}</b></button></React.Fragment>)}
     <div className="asideTitle second">DEIN FORTSCHRITT</div>
     <div className="stat"><span>Im Katalog bewertet</span><strong>{evaluated.length}/{base.length}</strong></div>
     <div className="stat"><span>Richtig beantwortet</span><strong>{correct}</strong></div>
@@ -90,7 +92,7 @@ function App() {
     <button className="mobileNav" onClick={() => setNavOpen(x => !x)}><Menu size={18}/> Kataloge auswählen</button>
     <div className="eyebrow"><span className="pulse"/> LERNEN · VERSTEHEN · BESTEHEN</div>
     <h1>Bereit für die <em>QM-Klausur?</em></h1>
-    <p className="intro">Zwei fachlich überprüfte Altklausuren und eine <b>neue Prüfung mit 40 Fragen</b>. Jede Frage hat genau eine richtige Antwort. Falschbeantwortete Fragen kannst du gezielt wiederholen.</p>
+    <p className="intro">Trainiere mit zwei korrigierten Altklausuren, einer <b>neuen 40-Fragen-Probeklausur</b> und zwölf eigenen Kapitelkatalogen. Jede Frage hat eine richtige Antwort.</p>
     <section className="dashboard">
      <div className="metric"><small>FRAGEN IM FILTER</small><strong>{pool.length}</strong><span>Single Choice</span></div>
      <div className="metric"><small>BEANTWORTET</small><strong>{answered}<span className="smallUnit"> / {pool.length}</span></strong><span>Dein Fortschritt</span></div>
@@ -102,9 +104,9 @@ function App() {
        <button className={exam?'selected':''} onClick={() => {if(!exam)newAttempt(true);}}><Clock size={16}/> Prüfungsmodus</button>
       </div>
       <div className="controlRight">
-       <select aria-label="Thema" disabled={exam&&!submitted} value={topic} onChange={e => {setTopic(e.target.value);setIndex(0);setResultView(false);setOnlyErrors(false);}}>
+       {!catalog.startsWith("m")&&<select aria-label="Thema" disabled={exam&&!submitted} value={topic} onChange={e => {setTopic(e.target.value);setIndex(0);setResultView(false);setOnlyErrors(false);}}>
         <option>Alle</option>{topics.map(t => <option key={t}>{t}</option>)}
-       </select>
+       </select>}
        <button disabled={exam&&!submitted} className={'subtle '+(onlyErrors?'selectedSmall':'')} onClick={() => {setOnlyErrors(x=>!x);setIndex(0);setResultView(false);}}><Filter size={16}/> {onlyErrors?'Fehlerfilter an':'Fehler üben'}</button>
       </div>
     </section>
@@ -112,10 +114,10 @@ function App() {
     {resultView ? <section className="questionCard finish">
       <div className="finishIcon"><CheckCircle2 size={44}/></div>
       <h2>{exam?'Prüfung ausgewertet':'Lernfortschritt'}</h2>
-      <p><b>{correct} von {base.length}</b> Fragen richtig ({score} % bezogen auf den ganzen Katalog). {exam ? (correct/base.length>0.5?'Die in den Folien genannte Schwelle von über 50 % ist erreicht.':'Die in den Folien genannte Schwelle von über 50 % ist noch nicht erreicht.') : 'Offene Fragen sind noch nicht bewertet.'}</p>
+      <p><b>{correct} von {base.length}</b> Fragen richtig ({score} % bezogen auf den ganzen Katalog). {exam ? (correct/base.length>0.5?(isFullExam?'Die Bestehensgrenze von über 50 % ist erreicht.':'Das Trainingsziel von über 50 % ist erreicht.'):(isFullExam?'Die Bestehensgrenze von über 50 % ist noch nicht erreicht.':'Das Trainingsziel von über 50 % ist noch nicht erreicht.')) : 'Offene Fragen sind noch nicht bewertet.'}</p>
       <div className="qmResultActions"><button className="primary" onClick={() => {setResultView(false);setIndex(0);}}><BookOpen size={17}/> Antworten ansehen</button><button className="outline" onClick={() => newAttempt()}><RotateCcw size={17}/> Neuer Durchgang</button></div>
     </section> : current ? <section className="questionCard">
-      <div className="questionHeader"><div className="chips"><span className="chip mainchip">{catalog==='hk'?'ALT · 16.01.2025':catalog==='jan'?'ALT · 31.01.2025':catalog==='new'?'NEUE PROBEKLAUSUR':current.type==='hk'?'ALT · 16.01.2025':current.type==='jan'?'ALT · 31.01.2025':'NEU'}</span><span className="chip">{current.topic}</span></div><span className="questionCounter">{safeIndex+1} <span>/ {pool.length}</span></span></div>
+      <div className="questionHeader"><div className="chips"><span className="chip mainchip">{catalog==='hk'?'ALT · 16.01.2025':catalog==='jan'?'ALT · 31.01.2025':catalog==='new'?'NEUE PROBEKLAUSUR':current.type==='hk'?'ALT · 16.01.2025':current.type==='jan'?'ALT · 31.01.2025':current.type==='chapter'?'KAPITEL '+current.chapter:'NEU'}</span><span className="chip">{current.topic}</span></div><span className="questionCounter">{safeIndex+1} <span>/ {pool.length}</span></span></div>
       <div className="progress"><div style={{width:(pool.length?((safeIndex+1)/pool.length*100):0)+'%'}}/></div>
       <h2>Frage {current.number}</h2><h3>{current.q}</h3>
       <div className="options" role="group" aria-label="Antwortmöglichkeiten">
@@ -136,9 +138,9 @@ function App() {
       </div>
     </section> : <section className="questionCard finish"><h2>Keine passenden Fragen</h2><p>Ändere den Themen- oder Fehlerfilter.</p><button className="primary" onClick={() => {setOnlyErrors(false);setTopic('Alle');}}>Alle Fragen anzeigen</button></section>}
     <section className="navigator"><div className="navHead"><strong>Fragenübersicht</strong><span>Nummer auswählen, um zur Frage zu springen.</span></div>
-     <div className="numberGrid">{pool.map((q,i) => <button key={q.id} title={q.topic+' · Frage '+q.number} className={(safeIndex===i?'current ':'')+(answers[q.id]?.checked?'done ':'')+(Number.isInteger(answers[q.id]?.choice)&&!answers[q.id]?.checked?'answered ':'')} onClick={() => {setIndex(i);setResultView(false);}}>{catalog==='all'?(q.type==='hk'?'H':q.type==='jan'?'J':'N')+q.number:q.number}</button>)}</div>
+     <div className="numberGrid">{pool.map((q,i) => <button key={q.id} title={q.topic+' · Frage '+q.number} className={(safeIndex===i?'current ':'')+(answers[q.id]?.checked?'done ':'')+(Number.isInteger(answers[q.id]?.choice)&&!answers[q.id]?.checked?'answered ':'')} onClick={() => {setIndex(i);setResultView(false);}}>{catalog==='all'?(q.type==='chapter'?'K'+q.chapter+'.':q.type==='hk'?'H':q.type==='jan'?'J':'N')+q.number:q.number}</button>)}</div>
     </section>
-    <footer>Qualitätsmanagement · 12 Module · 2 überarbeitete Altklausuren + 40 neue Fragen · Single Choice · Speicherung nur in deinem Browser · Keine offiziellen Klausurlösungen</footer>
+    <footer>Qualitätsmanagement · 12 Kapitelkataloge · 2 überarbeitete Altklausuren + 40 neue Fragen · Single Choice · Speicherung nur in deinem Browser · Keine offiziellen Klausurlösungen</footer>
    </main>
   </div>
  </div>;

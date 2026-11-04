@@ -10,7 +10,7 @@ Die Markierungen der Original-PDFs wurden fachlich mit den Vorlesungsmodulen ver
 | 5 | 'Alle übrigen' neben einzeln richtigen Antworten war nicht eindeutig; die gesamte Kombination ist nun nur in D korrekt. |
 | 9 | Pp/Ppk und Cp/Cpk sind Prozessfähigkeitskennzahlen; allein beweisen sie keine Prozessstabilität. |
 | 10 | Grün markiert war D; richtig ist **B: Schwachstellen der Produktauslegung erkennen**. |
-| 13 | Grün markiert war B; **D1 der 8D-Methode ist die Teambildung** (D). |
+| 13 | **Folie M12/56 verwendet D1 = Problembeschreibung und D2 = Teambildung.** Die frühere Anpassung auf die verbreitete Standardreihenfolge wurde für die vorlesungsbezogene Frage zurückgenommen. |
 | 15 | EN bedeutet **Europäische Norm**, nicht zwangsläufig harmonisierte Norm. |
 | 20 | Die schwammige Pflicht eines 'Sacharguments' wurde in einen Dokumentationsgrundsatz umformuliert. |
 | 29 | Die Frage zur Kundenzufriedenheit wurde auf direkte Kundenbefragung eingegrenzt. |
