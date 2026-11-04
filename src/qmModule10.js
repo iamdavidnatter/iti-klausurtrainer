@@ -76,9 +76,9 @@ export const module10Questions = [
     "q": "Im laufenden Prozess wird regelmäßig geprüft, ob Rohmaterial die Annahmekriterien erfüllt. Welche Qualitätskostenart betrifft dies?",
     "a": [
       "Prüfkosten",
-      "Fehlerverhütungskosten durch Lieferantenschulung",
-      "Interne Fehlerkosten durch Nacharbeit am Rohmaterial",
-      "Externe Fehlerkosten nach einem Kundenmangel"
+      "Fehlerverhütungskosten",
+      "Interne Fehlerkosten",
+      "Externe Fehlerkosten"
     ],
     "correct": 0,
     "why": "Eine reguläre Wareneingangsprüfung zählt zu den Prüfkosten.",
@@ -109,10 +109,10 @@ export const module10Questions = [
     "chapter": 10,
     "q": "Nach Auslieferung übernimmt das Unternehmen eine notwendige Reparatur im Rahmen der Garantie. Welche Kostenart entsteht?",
     "a": [
-      "Interne Fehlerkosten, weil die Ursache in der Fertigung liegen kann",
+      "Interne Fehlerkosten",
       "Externe Fehlerkosten",
-      "Prüfkosten, weil die Reparatur mit einer Kontrolle endet",
-      "Fehlerverhütungskosten, weil der Kundenkontakt weitere Fehler verhindert"
+      "Prüfkosten",
+      "Fehlerverhütungskosten"
     ],
     "correct": 1,
     "why": "Die zeitliche Zuordnung hängt am Auftreten der Fehlerkosten nach Lieferung, nicht an der Fehlerursache.",
