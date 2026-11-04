@@ -381,9 +381,9 @@ export const module12Questions = [
     "chapter": 12,
     "q": "Welche Tätigkeit ist in der **konkreten 8D-Folie 56** als D1 dargestellt?",
     "a": [
-      "Teambildung – in einer verbreiteten Standardreihenfolge als D1 bezeichnet",
-      "Sofortmaßnahmen festlegen – in der Folie als D3 bezeichnet",
-      "Ursachenanalyse durchführen – in der Folie als D4 bezeichnet",
+      "Teambildung",
+      "Sofortmaßnahmen",
+      "Ursachenanalyse",
       "Problembeschreibung"
     ],
     "correct": 3,
@@ -398,10 +398,10 @@ export const module12Questions = [
     "chapter": 12,
     "q": "Ein 8D-Team hat langfristige Maßnahmen ausgewählt und prüft nun deren Einführung und Wirksamkeit. Welche Disziplin nennt Folie 56?",
     "a": [
-      "D4 – Ursachenanalyse",
+      "D4",
       "D6",
-      "D5 – Langfristmaßnahmen festlegen",
-      "D7 – Fehlerwiederholung verhindern"
+      "D5",
+      "D7"
     ],
     "correct": 1,
     "why": "In der dargestellten Reihenfolge behandelt D6 die Einführung und Wirksamkeitsprüfung der Maßnahmen.",
@@ -466,10 +466,10 @@ export const module12Questions = [
     "chapter": 12,
     "q": "Ein Automobilhersteller überprüft als Kunde die Prozesse seines Zulieferers. Welche Auditpartei trifft zu?",
     "a": [
-      "Erstparteiaudit durch den Zulieferer selbst",
+      "Erstpartei",
       "Zweitpartei",
-      "Drittparteiaudit durch eine unabhängige Zertifizierungsstelle",
-      "Erstparteiaudit durch interne Auditoren des Kunden für dessen eigenes System"
+      "Drittpartei",
+      "Kombiniertes Audit"
     ],
     "correct": 1,
     "why": "Ein Kunde prüft einen Lieferanten als interessierte Partei und führt ein Zweitparteiaudit durch.",
@@ -500,10 +500,10 @@ export const module12Questions = [
     "chapter": 12,
     "q": "Ein Teil ist durch seine Form nur in der korrekten Richtung einsetzbar. Welche Poka-Yoke-Auslöseart trifft zu?",
     "a": [
-      "Festwertmethode – das Vorhandensein einer festgelegten Anzahl wird geprüft",
-      "Bewegungsschrittmethode – die Einhaltung einer Arbeitsreihenfolge wird geprüft",
+      "Festwertmethode",
+      "Bewegungsschrittmethode",
       "Kontaktmethode",
-      "Warnmechanismus – ein Fehlersignal wird ausgegeben, ohne die Montageform zu verändern"
+      "Warnmethode"
     ],
     "correct": 2,
     "why": "Die Kontaktmethode nutzt Form, Lage oder Abmessungen zur unmittelbaren Fehlerverhinderung.",
@@ -552,9 +552,9 @@ export const module12Questions = [
     "q": "Ein Unternehmen untersucht die Wirksamkeit **des gesamten Qualitätsmanagementsystems**. Welche Auditart entspricht dem Prüfgegenstand?",
     "a": [
       "Systemaudit",
-      "Prozessaudit für einen abgegrenzten Fertigungs- oder Serviceablauf",
-      "Produktaudit für die Erfüllung von Merkmalen an fertigen Produkten",
-      "Zweitparteiaudit als Klassifikation nach den beteiligten Parteien"
+      "Prozessaudit",
+      "Produktaudit",
+      "Zweitparteiaudit"
     ],
     "correct": 0,
     "why": "Ein Systemaudit betrachtet Anwendung und Wirksamkeit des Managementsystems als Ganzes.",
@@ -568,10 +568,10 @@ export const module12Questions = [
     "chapter": 12,
     "q": "Eine Stichprobe fertiger Erzeugnisse wird mit den dokumentierten Produktspezifikationen verglichen. Welche Auditart liegt vor?",
     "a": [
-      "Systemaudit zur Bewertung des gesamten Managementsystems",
-      "Prozessaudit zur Bewertung eines Fertigungsablaufs",
+      "Systemaudit",
+      "Prozessaudit",
       "Produktaudit",
-      "Drittparteiaudit zur Bewertung der Unabhängigkeit eines Prüfers"
+      "Zweitparteiaudit"
     ],
     "correct": 2,
     "why": "Beim Produktaudit wird die Konformität konkreter Produkte mit den festgelegten Anforderungen geprüft.",
@@ -585,10 +585,10 @@ export const module12Questions = [
     "chapter": 12,
     "q": "Eine Organisation lässt ihre eigenen internen Auditoren das eigene QMS prüfen. Wie wird das nach der Beteiligung klassifiziert?",
     "a": [
-      "Zweitparteiaudit aus dem Interesse eines Kunden",
+      "Drittpartei",
       "Erstpartei",
-      "Drittparteiaudit durch eine unabhängige Zertifizierungsstelle",
-      "Lieferantenaudit im Auftrag eines Kunden"
+      "Zweitpartei",
+      "Externes Kundenaudit"
     ],
     "correct": 1,
     "why": "Die Prüfung des eigenen Systems durch die Organisation ist ein Erstparteiaudit.",
