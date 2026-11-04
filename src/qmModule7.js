@@ -160,9 +160,9 @@ export const module7Questions = [
     "chapter": 7,
     "q": "Welchem EFQM-Kriterium wird **Organisationskultur und Organisationsführung** zugeordnet?",
     "a": [
-      "Kriterium 1 – Zweck, Vision und Strategie",
-      "Kriterium 3 – Interessengruppen einbinden",
-      "Kriterium 5 – Leistungsfähigkeit und Transformation vorantreiben",
+      "Kriterium 1",
+      "Kriterium 5",
+      "Kriterium 3",
       "Kriterium 2"
     ],
     "correct": 3,
@@ -178,9 +178,9 @@ export const module7Questions = [
     "q": "Welche Nummer trägt im EFQM-Modell das Kriterium 'Nachhaltigen Nutzen schaffen'?",
     "a": [
       "Kriterium 4",
-      "Kriterium 3 – Interessengruppen einbinden",
-      "Kriterium 5 – Leistungsfähigkeit und Transformation vorantreiben",
-      "Kriterium 6 – Wahrnehmungen der Interessengruppen"
+      "Kriterium 3",
+      "Kriterium 5",
+      "Kriterium 6"
     ],
     "correct": 0,
     "why": "Das Schaffen nachhaltigen Nutzens ist Kriterium 4.",
@@ -228,9 +228,9 @@ export const module7Questions = [
     "chapter": 7,
     "q": "Eine Vorgehensweise ist festgelegt und wird nun in mehreren Bereichen ausgerollt. Welche RADAR-Komponente beschreibt die Umsetzung?",
     "a": [
-      "Approach – Festlegung der Vorgehensweise",
-      "Assessment – Analyse der Wirksamkeit",
-      "Results – erzielte Ergebnisse",
+      "Results",
+      "Approach",
+      "Assessment and Refinement",
       "Deployment"
     ],
     "correct": 3,
