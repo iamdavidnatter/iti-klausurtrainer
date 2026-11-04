@@ -143,10 +143,10 @@ export const module11Questions = [
     "chapter": 11,
     "q": "Die Verteilung gemessener Teilelängen soll in Klassen eingeteilt dargestellt werden. Welche Visualisierung ist dafür vorgesehen?",
     "a": [
-      "Pareto-Diagramm mit nach Häufigkeit geordneten Fehlerarten",
+      "Pareto-Diagramm",
       "Histogramm",
-      "Qualitätsregelkarte mit zeitlicher Reihenfolge der Messungen",
-      "Streudiagramm zum Zusammenhang zweier Merkmale"
+      "Regelkarte",
+      "Streudiagramm"
     ],
     "correct": 1,
     "why": "Histogramme bilden eine Häufigkeitsverteilung von Merkmalsausprägungen nach Klassen ab.",
@@ -314,9 +314,9 @@ export const module11Questions = [
     "q": "Auf einer Regelkarte folgen sieben stetig ansteigende Messpunkte aufeinander. Wie wird dieses Muster in der Vorlesung bezeichnet?",
     "a": [
       "Trend",
-      "Run – Werte auf derselben Seite der Mittellinie",
-      "Stufenverlagerung – sprunghafte Niveauänderung",
-      "Einzelner Ausreißer – isolierter ungewöhnlicher Messpunkt"
+      "Run",
+      "Stufenverlagerung",
+      "Ausreißer"
     ],
     "correct": 0,
     "why": "Die Folie benennt mindestens sieben aufeinanderfolgend steigende oder fallende Werte als Trend.",
@@ -330,10 +330,10 @@ export const module11Questions = [
     "chapter": 11,
     "q": "Sieben Messpunkte liegen ohne Wechsel **oberhalb** der Mittellinie. Welche Auffälligkeit der Regelkarte ist beschrieben?",
     "a": [
-      "Trend – fortlaufend steigende oder fallende Werte",
-      "Ausreißer – einzelner isolierter Extremwert",
+      "Trend",
+      "Ausreißer",
       "Run",
-      "Zyklisches Muster – regelmäßige Periodizität"
+      "Zyklisches Muster"
     ],
     "correct": 2,
     "why": "Ein Run beschreibt mehrere Werte auf derselben Seite der Mittellinie.",
