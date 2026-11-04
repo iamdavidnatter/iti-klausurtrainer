@@ -7,10 +7,10 @@ export const module6Questions = [
     "chapter": 6,
     "q": "Ein Hersteller unterstützt seine Kunden durch Wartung nach Übergabe. Welcher ISO-9001:2015-Abschnitt ist dafür besonders einschlägig?",
     "a": [
-      "7.1.6 – Wissen der Organisation",
+      "7.1.6",
       "8.5.5",
-      "9.1.2 – Kundenzufriedenheit",
-      "10.3 – fortlaufende Verbesserung"
+      "9.1.2",
+      "10.3"
     ],
     "correct": 1,
     "why": "Tätigkeiten nach der Lieferung sind in ISO 9001:2015 Abschnitt 8.5.5 behandelt.",
@@ -110,9 +110,9 @@ export const module6Questions = [
     "q": "Die Zufriedenheit mit einem Lieferdienst steigt mit jeder Verkürzung der Lieferzeit; bei längerer Lieferzeit sinkt sie. Welche Kano-Einordnung passt?",
     "a": [
       "Leistungsmerkmal",
-      "Basismerkmal, dessen Erfüllung kaum zusätzlich belohnt wird",
-      "Begeisterungsmerkmal, dessen Fehlen kaum negativ wirkt",
-      "Indifferentes Merkmal ohne nennenswerten Einfluss auf die Zufriedenheit"
+      "Basismerkmal",
+      "Begeisterungsmerkmal",
+      "Indifferentes Merkmal"
     ],
     "correct": 0,
     "why": "Leistungsmerkmale beeinflussen die Zufriedenheit abhängig vom Erfüllungsgrad.",
@@ -126,9 +126,9 @@ export const module6Questions = [
     "chapter": 6,
     "q": "Ein Kunde erhält eine unerwartete und nützliche Zusatzleistung, die nicht Teil seiner ursprünglichen Anforderungen war. Welche Kano-Kategorie passt am besten?",
     "a": [
-      "Basismerkmal, dessen Fehlen massive Unzufriedenheit auslösen würde",
-      "Leistungsmerkmal, bei dem Kundenzufriedenheit proportional zur Erfüllung steigt",
-      "Anforderung, die der Kunde als selbstverständlich voraussetzt",
+      "Basismerkmal",
+      "Leistungsmerkmal",
+      "Indifferentes Merkmal",
       "Begeisterungsmerkmal"
     ],
     "correct": 3,
@@ -160,10 +160,10 @@ export const module6Questions = [
     "chapter": 6,
     "q": "Ein Kunde vergibt bei der Weiterempfehlungsfrage den Wert 8 auf einer Skala von 0 bis 10. Wie wird er beim NPS gewertet?",
     "a": [
-      "Promotor (9–10)",
-      "Detraktor (0–6)",
+      "Promotor",
+      "Detraktor",
       "Passiv",
-      "Promotor, wenn er zuvor ein positives Erlebnis hatte"
+      "Unklassifizierter Kunde"
     ],
     "correct": 2,
     "why": "Ein NPS-Wert von 8 zählt zu den Passiven und geht weder in den Promotoren- noch in den Detraktorenanteil ein.",
@@ -178,9 +178,9 @@ export const module6Questions = [
     "q": "NPS: 50 % Promotoren, 30 % Passive, 20 % Detraktoren. Welcher Wert ergibt sich?",
     "a": [
       "+30",
-      "+50 – ohne Berücksichtigung der Detraktoren",
-      "+70 – Promotoren plus Detraktoren",
-      "+20 – Promotoren minus Passive"
+      "+50",
+      "+20",
+      "+70"
     ],
     "correct": 0,
     "why": "Der NPS ergibt sich als Promotoren minus Detraktoren: 50−20=+30.",
@@ -194,9 +194,9 @@ export const module6Questions = [
     "chapter": 6,
     "q": "100 Kunden antworten: 25 als Promotoren, 45 als Passive und 30 als Detraktoren. Welcher NPS ergibt sich?",
     "a": [
-      "+25 – nur der Anteil der Promotoren",
-      "+55 – Promotoren plus Detraktoren",
-      "+5 – absoluter Unterschied zwischen den beiden Gruppen",
+      "+25",
+      "+55",
+      "+5",
       "−5"
     ],
     "correct": 3,
