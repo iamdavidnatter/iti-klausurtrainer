@@ -24,9 +24,9 @@ export const module9Questions = [
     "chapter": 9,
     "q": "Eine Fachkraft besitzt die benötigte Kompetenz und ist motiviert, darf aber die erforderliche Entscheidung nicht treffen. Welcher Faktor der Formel fehlt?",
     "a": [
-      "Können – erforderliches Wissen und Fertigkeiten",
-      "Wollen – persönlicher Handlungsantrieb",
-      "Motivator – Anerkennung und Erfolg",
+      "Können",
+      "Wollen",
+      "Motivator",
       "Dürfen"
     ],
     "correct": 3,
