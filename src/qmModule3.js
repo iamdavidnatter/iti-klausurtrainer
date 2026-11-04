@@ -41,10 +41,10 @@ export const module3Questions = [
     "chapter": 3,
     "q": "Im Turtle-Diagramm soll erfasst werden, welche Maschinen, Werkzeuge und Hilfsmittel eingesetzt werden. Welche Frage ist maßgeblich?",
     "a": [
-      "Wer? – Verantwortungen und Kompetenzen",
+      "Wer?",
       "Womit?",
-      "Wofür? – Ziele und Kennzahlen",
-      "Wie? – Methoden und Anweisungen"
+      "Wofür?",
+      "Wie?"
     ],
     "correct": 1,
     "why": "Womit? fragt nach benötigten Ressourcen und Betriebsmitteln.",
