@@ -5,15 +5,15 @@ export const module7Questions = [
     "topic": "Nachhaltigkeit",
     "type": "chapter",
     "chapter": 7,
-    "q": "Welche Aussage charakterisiert Total Quality Management (TQM)?",
+    "q": "Eine Geschäftsführung möchte Qualität als gemeinsame Führungsaufgabe aller Bereiche etablieren. Welches Modell beschreibt den umfassenden Managementansatz?",
     "a": [
-      "TQM ist eine eigene zertifizierbare Norm.",
+      "TQM ist die sieben Kriterien umfassende Bewertungslogik des EFQM-Modells.",
       "TQM ist ein umfassender Qualitätsansatz für die ganze Organisation.",
-      "TQM ersetzt die Beteiligung der Mitarbeitenden.",
-      "TQM bezieht sich nur auf die Endprüfung."
+      "TQM definiert die nach ISO 9001 zertifizierbaren Mindestanforderungen.",
+      "TQM ist die Selbstbewertungsmethode der ISO 9004."
     ],
     "correct": 1,
-    "why": "TQM beschreibt einen umfassenden Qualitätsansatz und keine eigenständige Norm.",
+    "why": "Total Quality Management ist ein umfassender Managementansatz, nicht die Bezeichnung einer einzelnen Norm oder Bewertungslogik.",
     "source": "M7, Folie 2"
   },
   {
@@ -22,15 +22,15 @@ export const module7Questions = [
     "topic": "Nachhaltigkeit",
     "type": "chapter",
     "chapter": 7,
-    "q": "Welche Ausrichtung gehört zu den Grundprinzipien von TQM?",
+    "q": "Welche Kombination kennzeichnet das in den Folien behandelte TQM besonders?",
     "a": [
-      "Qualität als alleinige Aufgabe der Geschäftsleitung",
-      "Verzicht auf Kundenanforderungen",
-      "Nur Fehler nach Kundenreklamation betrachten",
+      "Zertifizierungsorientierung und verbindliche Auditintervalle",
+      "Produktzentrierung und ausschließliche Qualitätsprüfung am Ende",
+      "Reifegradanalyse anhand der sieben EFQM-Kriterien",
       "Ausrichtung an Kunden und Beteiligung aller Mitarbeitenden"
     ],
     "correct": 3,
-    "why": "TQM stellt Kundenorientierung und gemeinsame Qualitätsverantwortung in den Mittelpunkt.",
+    "why": "TQM beruht auf Kundenorientierung, Beteiligung vieler Bereiche und fortlaufender Verbesserung.",
     "source": "M7, Folie 3"
   },
   {
@@ -39,15 +39,15 @@ export const module7Questions = [
     "topic": "Nachhaltigkeit",
     "type": "chapter",
     "chapter": 7,
-    "q": "Wofür wird ISO 9004:2018 in den Folien hauptsächlich verwendet?",
+    "q": "Welchem Zweck dient ISO 9004:2018 insbesondere?",
     "a": [
       "Als Anleitung zum Erreichen nachhaltigen Organisationserfolgs",
-      "Als zwingendes Verfahren der Gewinnermittlung",
-      "Als Zertifizierungsnorm für Produktsicherheit",
-      "Als Norm ausschließlich für Prüflabore"
+      "Als Audit-Leitfaden zur Prüfung von Managementsystemen",
+      "Als zertifizierbarer Anforderungskatalog des QMS",
+      "Als Anleitung für die Prüfung einzelner Produktmerkmale"
     ],
     "correct": 0,
-    "why": "ISO 9004 gibt Empfehlungen für nachhaltigen Erfolg über QM-Anforderungen hinaus.",
+    "why": "ISO 9004:2018 ist ein Leitfaden zur nachhaltigen Leistungsfähigkeit einer Organisation.",
     "source": "M7, Folie 5"
   },
   {
@@ -56,15 +56,15 @@ export const module7Questions = [
     "topic": "Nachhaltigkeit",
     "type": "chapter",
     "chapter": 7,
-    "q": "Welche Rolle spielt ISO 9004:2018 im Verhältnis zu ISO 9001?",
+    "q": "Ein Unternehmen erfüllt die ISO 9001 und möchte seine langfristige Unternehmensentwicklung weiter verbessern. Welche Rolle kann ISO 9004 dabei spielen?",
     "a": [
-      "Sie hebt ISO 9001 auf.",
-      "Sie ist ein staatliches Gesetz.",
+      "ISO 9004 ersetzt die Anforderungen an die dokumentierte Information aus ISO 9001.",
+      "ISO 9004 führt eine verbindliche zusätzliche Zertifizierungspflicht ein.",
       "Sie ergänzt ISO 9001 mit Empfehlungen für nachhaltige Entwicklung.",
-      "Sie verbietet die Selbstbewertung."
+      "ISO 9004 beschreibt das Verfahren zur Akkreditierung von Zertifizierungsstellen."
     ],
     "correct": 2,
-    "why": "ISO 9004 ergänzt die Perspektive von ISO 9001 um eine ganzheitliche Orientierung.",
+    "why": "ISO 9004 erweitert die Perspektive um Empfehlungen für nachhaltigen Erfolg und Selbstbewertung.",
     "source": "M7, Folie 5"
   },
   {
@@ -73,15 +73,15 @@ export const module7Questions = [
     "topic": "Nachhaltigkeit",
     "type": "chapter",
     "chapter": 7,
-    "q": "Welche Gruppe kann zu den interessierten Parteien einer Organisation zählen?",
+    "q": "Welche Zusammenstellung verbindet interne und externe interessierte Parteien einer Organisation?",
     "a": [
-      "Nur die Marketingabteilung",
+      "Kunden, externe Lieferanten und Branchenverbände",
       "Kunden, Beschäftigte und Lieferanten",
-      "Ausschließlich staatliche Institutionen",
-      "Nur externe Auditoren"
+      "Geschäftsführung, interne Mitarbeitende und Betriebsrat",
+      "Kreditinstitute, Behörden und Endkunden"
     ],
     "correct": 1,
-    "why": "ISO 9004 berücksichtigt unterschiedliche Interessengruppen und deren Erwartungen.",
+    "why": "Die richtige Antwort enthält sowohl interne Beschäftigte als auch externe Kunden und Lieferanten.",
     "source": "M7, Folie 8"
   },
   {
@@ -90,15 +90,15 @@ export const module7Questions = [
     "topic": "Nachhaltigkeit",
     "type": "chapter",
     "chapter": 7,
-    "q": "Welche Aufgabe erfüllt eine Selbstbewertung nach ISO 9004?",
+    "q": "Ein Betrieb bewertet seinen eigenen Entwicklungsstand anhand von Kriterien und Reifegraden. Was ist die Funktion der ISO-9004-Selbstbewertung?",
     "a": [
-      "Sie erteilt automatisch ein ISO-9001-Zertifikat.",
-      "Sie ersetzt den Kontakt zu allen Lieferanten.",
-      "Sie beurteilt nur das Firmenlogo.",
+      "Die automatische Feststellung einer gültigen ISO-9001-Zertifizierung",
+      "Die unabhängige Überprüfung durch einen Kunden",
+      "Die Festlegung einzelner Produkttoleranzen anhand statistischer Stichproben",
       "Sie macht den organisationalen Reifegrad und Verbesserungsbedarf sichtbar."
     ],
     "correct": 3,
-    "why": "Die Selbstbewertung unterstützt die Bestimmung von Reifegrad und Verbesserungspotenzialen.",
+    "why": "Selbstbewertung soll Stärken und Verbesserungsfelder auf dem Weg zu nachhaltigem Erfolg erkennen.",
     "source": "M7, Folie 9"
   },
   {
@@ -107,15 +107,15 @@ export const module7Questions = [
     "topic": "Nachhaltigkeit",
     "type": "chapter",
     "chapter": 7,
-    "q": "Welches Ziel wird mit der EFQM-Bewertung verfolgt?",
+    "q": "Worauf zielt eine EFQM-Diagnose hauptsächlich?",
     "a": [
       "Stärken, Lücken und mögliche Verbesserungen der Organisation erkennen.",
-      "Nur die Anzahl der Beschäftigten bestimmen.",
-      "Eine ISO-9001-Zertifizierung automatisch ersetzen.",
-      "Die gesetzliche Steuerlast festlegen."
+      "Auf den Abgleich einzelner Produktmaße mit Spezifikationsgrenzen",
+      "Auf die alleinige Überprüfung verpflichtender ISO-9001-Muss-Forderungen",
+      "Auf die Prüfung, ob die Zertifizierungsstelle fachlich kompetent ist"
     ],
     "correct": 0,
-    "why": "EFQM ist ein Handlungsrahmen zur Weiterentwicklung organisatorischer Leistungsfähigkeit.",
+    "why": "Das EFQM-Modell unterstützt eine umfassende Standortbestimmung und Organisationsverbesserung.",
     "source": "M7, Folie 14"
   },
   {
@@ -124,15 +124,15 @@ export const module7Questions = [
     "topic": "Nachhaltigkeit",
     "type": "chapter",
     "chapter": 7,
-    "q": "Was verknüpft das EFQM-Grundprinzip miteinander?",
+    "q": "Welche Verbindung bildet den roten Faden des EFQM-Modells?",
     "a": [
-      "Nur die Herstellungskosten und Gewinnmargen",
-      "Nur Auditlisten und Prüfergebnisse",
+      "Auditprogramm, Auditcheckliste und Zertifikatsfreigabe",
+      "Produktprüfungen, Prüfmittelplanung und Fehlerkostenberichte",
       "Zweck, Vision und Strategie mit nachhaltigem Nutzen und Ergebnissen",
-      "Ausschließlich neue Software mit Schulungsbudgets"
+      "Mitarbeiterzufriedenheit, Prüfkosten und Produktionskennzahlen"
     ],
     "correct": 2,
-    "why": "Das EFQM-Modell verbindet die strategische Ausrichtung mit dem Nutzen für Interessengruppen.",
+    "why": "Das EFQM-Grundprinzip verknüpft die strategische Ausrichtung mit nachhaltigem Nutzen für Interessengruppen und Ergebnissen.",
     "source": "M7, Folie 15"
   },
   {
@@ -141,15 +141,15 @@ export const module7Questions = [
     "topic": "Nachhaltigkeit",
     "type": "chapter",
     "chapter": 7,
-    "q": "Welcher Punkt ist eines der sieben EFQM-Kriterien?",
+    "q": "Welches Thema bezeichnet in den Folien das **dritte** EFQM-Kriterium?",
     "a": [
-      "Zusätzliche Lagerfläche schaffen",
+      "Zweck, Vision und Strategie",
       "Interessengruppen einbinden",
-      "Private Internetnutzung beschränken",
-      "Prüfmittel ausschließlich auslagern"
+      "Organisationskultur und Organisationsführung",
+      "Nachhaltigen Nutzen schaffen"
     ],
     "correct": 1,
-    "why": "Interessengruppen einbinden ist Kriterium 3 des dargestellten EFQM-Modells.",
+    "why": "Kriterium 3 ist 'Interessengruppen einbinden'; die anderen Antworten sind ebenfalls EFQM-Kriterien, aber mit anderer Nummer.",
     "source": "M7, Folie 17"
   },
   {
@@ -158,15 +158,15 @@ export const module7Questions = [
     "topic": "Nachhaltigkeit",
     "type": "chapter",
     "chapter": 7,
-    "q": "Welches EFQM-Kriterium befasst sich mit Organisationskultur und Organisationsführung?",
+    "q": "Welchem EFQM-Kriterium wird **Organisationskultur und Organisationsführung** zugeordnet?",
     "a": [
-      "Kriterium 7",
-      "Kriterium 5",
-      "Kriterium 3",
+      "Kriterium 1 – Zweck, Vision und Strategie",
+      "Kriterium 3 – Interessengruppen einbinden",
+      "Kriterium 5 – Leistungsfähigkeit und Transformation vorantreiben",
       "Kriterium 2"
     ],
     "correct": 3,
-    "why": "Kriterium 2 behandelt Organisationskultur und Organisationsführung.",
+    "why": "Die Organisationskultur und -führung ist Kriterium 2 des in der Vorlesung dargestellten EFQM-Modells.",
     "source": "M7, Folie 17"
   },
   {
@@ -175,15 +175,15 @@ export const module7Questions = [
     "topic": "Nachhaltigkeit",
     "type": "chapter",
     "chapter": 7,
-    "q": "Welches EFQM-Kriterium befasst sich mit der Schaffung nachhaltigen Nutzens?",
+    "q": "Welche Nummer trägt im EFQM-Modell das Kriterium 'Nachhaltigen Nutzen schaffen'?",
     "a": [
       "Kriterium 4",
-      "Kriterium 1",
-      "Kriterium 6",
-      "Kriterium 7"
+      "Kriterium 3 – Interessengruppen einbinden",
+      "Kriterium 5 – Leistungsfähigkeit und Transformation vorantreiben",
+      "Kriterium 6 – Wahrnehmungen der Interessengruppen"
     ],
     "correct": 0,
-    "why": "Kriterium 4 trägt die Bezeichnung 'Nachhaltigen Nutzen schaffen'.",
+    "why": "Das Schaffen nachhaltigen Nutzens ist Kriterium 4.",
     "source": "M7, Folie 17"
   },
   {
@@ -192,15 +192,15 @@ export const module7Questions = [
     "topic": "Nachhaltigkeit",
     "type": "chapter",
     "chapter": 7,
-    "q": "Welche Aussagen bewertet Kriterium 6 des EFQM-Modells vorrangig?",
+    "q": "Die Organisation wertet Rückmeldungen relevanter Stakeholder über ihre Wahrnehmung der Leistungen aus. Welchem EFQM-Kriterium ist dies zuzuordnen?",
     "a": [
-      "Nur die Investitionshöhe",
-      "Nur die Geschäftsführung",
+      "Strategie- und leistungsbezogene Ergebnisse (Kriterium 7)",
+      "Leistungsfähigkeit und Transformation vorantreiben (Kriterium 5)",
       "Wahrnehmungen der Interessengruppen",
-      "Nur die technische Wartung"
+      "Interessengruppen einbinden (Kriterium 3)"
     ],
     "correct": 2,
-    "why": "Kriterium 6 betrachtet die Rückmeldungen und Wahrnehmungen relevanter Interessengruppen.",
+    "why": "Die Wahrnehmungen der Interessengruppen sind ausdrücklich Kriterium 6.",
     "source": "M7, Folie 30"
   },
   {
@@ -209,15 +209,15 @@ export const module7Questions = [
     "topic": "Nachhaltigkeit",
     "type": "chapter",
     "chapter": 7,
-    "q": "Wofür steht Results in der RADAR-Logik?",
+    "q": "Wofür steht Results innerhalb der RADAR-Logik?",
     "a": [
-      "Ausschließlich die Zahl der Mitarbeitenden",
+      "Festlegung geeigneter Vorgehensweisen (Approach)",
       "Erzielte beziehungsweise angestrebte Ergebnisse",
-      "Nur den Auditplan",
-      "Die Schreibweise eines Prozesses"
+      "Breite Umsetzung der Vorgehensweisen (Deployment)",
+      "Systematische Bewertung und Verbesserung (Assessment and Refinement)"
     ],
     "correct": 1,
-    "why": "Results betrifft Ergebnisse der Organisation im Rahmen von RADAR.",
+    "why": "Results bezieht sich auf die erreichten beziehungsweise angestrebten Ergebnisse.",
     "source": "M7, Folie 18"
   },
   {
@@ -226,15 +226,15 @@ export const module7Questions = [
     "topic": "Nachhaltigkeit",
     "type": "chapter",
     "chapter": 7,
-    "q": "Welche RADAR-Komponente beschreibt die Umsetzung festgelegter Vorgehensweisen?",
+    "q": "Eine Vorgehensweise ist festgelegt und wird nun in mehreren Bereichen ausgerollt. Welche RADAR-Komponente beschreibt die Umsetzung?",
     "a": [
-      "Results",
-      "Approach",
-      "Assessment",
+      "Approach – Festlegung der Vorgehensweise",
+      "Assessment – Analyse der Wirksamkeit",
+      "Results – erzielte Ergebnisse",
       "Deployment"
     ],
     "correct": 3,
-    "why": "Deployment steht dafür, dass die festgelegten Ansätze in der Organisation umgesetzt werden.",
+    "why": "Deployment bezeichnet das tatsächliche Umsetzen der definierten Vorgehensweisen.",
     "source": "M7, Folie 18"
   },
   {
@@ -243,15 +243,15 @@ export const module7Questions = [
     "topic": "Nachhaltigkeit",
     "type": "chapter",
     "chapter": 7,
-    "q": "Welcher RADAR-Bestandteil verlangt die Beurteilung und Verbesserung vorhandener Vorgehensweisen?",
+    "q": "Ein Unternehmen überprüft seine Ansätze anhand von Erfahrungen und passt sie anschließend an. Welcher RADAR-Bestandteil ist gemeint?",
     "a": [
       "Assessment and Refinement",
-      "Results",
-      "Approach",
-      "Deployment"
+      "Approach – Festlegung des Ansatzes",
+      "Deployment – Umsetzung des Ansatzes",
+      "Results – erreichte Ergebnisse"
     ],
     "correct": 0,
-    "why": "Assessment and Refinement bedeutet bewerten und verbessern.",
+    "why": "Assessment and Refinement meint das Bewerten und Verbessern der Vorgehensweisen.",
     "source": "M7, Folie 18"
   },
   {
@@ -260,15 +260,15 @@ export const module7Questions = [
     "topic": "Nachhaltigkeit",
     "type": "chapter",
     "chapter": 7,
-    "q": "Wie viele Punkte umfasst die numerische EFQM-Bewertung laut Folien insgesamt?",
+    "q": "Welche maximal erreichbare Gesamtpunktzahl nennt die Vorlesung für die numerische EFQM-Bewertung?",
     "a": [
-      "100",
-      "500",
+      "600 Punkte",
+      "800 Punkte",
       "1.000",
-      "10.000"
+      "900 Punkte"
     ],
     "correct": 2,
-    "why": "Die EFQM-Bewertung umfasst insgesamt 1.000 Punkte über sieben Kriterien.",
+    "why": "In der Vorlesung sind insgesamt 1.000 Punkte über sieben Kriterien verteilt.",
     "source": "M7, Folie 20"
   }
 ];
