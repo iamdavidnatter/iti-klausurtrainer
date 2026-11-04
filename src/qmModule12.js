@@ -158,16 +158,16 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Welcher FMEA-Wert bedeutet eine besonders schwerwiegende Fehlerfolge?",
+    "q": "Welche geplante Entwicklung der ISO 9001:2026 nennen die Vorlesungsfolien?",
     "a": [
-      "B=10",
-      "E=1",
-      "A=1",
-      "B=1"
+      "Ausschließliche Konzentration auf die Endprüfung",
+      "Abschaffung des Risikomanagements",
+      "Stärkere Berücksichtigung von Nachhaltigkeit und Klimabezug",
+      "Vollständige Streichung der Kundenorientierung"
     ],
-    "correct": 0,
-    "why": "Bei hoher Bedeutung B werden schwerwiegende Auswirkungen beurteilt.",
-    "source": "M12, Folie 23"
+    "correct": 2,
+    "why": "Der als Ausblick gekennzeichnete Folienteil nennt Nachhaltigkeit, Klima, Ethik und Qualitätskultur als geplante Schwerpunkte.",
+    "source": "M12, Folie 69–72 (Ausblick, geplanter Stand)"
   },
   {
     "id": "chapter-12-11",
