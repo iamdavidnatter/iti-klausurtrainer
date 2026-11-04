@@ -474,5 +474,141 @@ export const module12Questions = [
     "correct": 1,
     "why": "Kunden führen als interessierte Partei beim Lieferanten Zweitparteien-Audits durch.",
     "source": "M12, Folie 64"
+  },
+  {
+    "id": "chapter-12-29",
+    "number": 29,
+    "topic": "Methoden",
+    "type": "chapter",
+    "chapter": 12,
+    "q": "Wann ist eine FMEA laut Würdigkeitsanalyse besonders sinnvoll?",
+    "a": [
+      "Bei neuen Einsatzbedingungen oder besonderen Sicherheitsanforderungen",
+      "Nur wenn keine technischen Änderungen vorkommen",
+      "Nur für die Gehaltsabrechnung",
+      "Ausschließlich bei alten Formularen"
+    ],
+    "correct": 0,
+    "why": "Innovationsgrad, Sicherheitsaspekte, spezielle Kundenanforderungen und neue Einsatzbedingungen sprechen für FMEA.",
+    "source": "M12, Folie 22"
+  },
+  {
+    "id": "chapter-12-30",
+    "number": 30,
+    "topic": "Methoden",
+    "type": "chapter",
+    "chapter": 12,
+    "q": "Ein Bauteil lässt sich wegen seiner Geometrie nur richtig montieren. Welcher Poka-Yoke-Auslösemechanismus passt?",
+    "a": [
+      "Ausschließlich akustischer Alarm",
+      "Externe Mitarbeiterbefragung",
+      "Kontaktmethode",
+      "Nur eine Kostenstellenrechnung"
+    ],
+    "correct": 2,
+    "why": "Die Kontaktmethode nutzt etwa eindeutige geometrische Formen oder Aufnahmen.",
+    "source": "M12, Folie 37"
+  },
+  {
+    "id": "chapter-12-31",
+    "number": 31,
+    "topic": "Methoden",
+    "type": "chapter",
+    "chapter": 12,
+    "q": "Wozu dient ein paarweiser Vergleich guter und fehlerhafter Teile in den Folien?",
+    "a": [
+      "Nur zur Berechnung des Net Promoter Score",
+      "Zur Eingrenzung möglicher Ursachen anhand wiederkehrender Unterschiede",
+      "Zur Planung von Urlaubszeiten",
+      "Nur zum Aufbau eines Organigramms"
+    ],
+    "correct": 1,
+    "why": "Beim Paarvergleich werden gleiche Einsatzbedingungen genutzt, um Unterschiede zu erkennen.",
+    "source": "M12, Folie 49"
+  },
+  {
+    "id": "chapter-12-32",
+    "number": 32,
+    "topic": "Methoden",
+    "type": "chapter",
+    "chapter": 12,
+    "q": "Bei welcher Situation ist die 8D-Methode besonders geeignet?",
+    "a": [
+      "Bei einer einfachen Speisekartenänderung",
+      "Für eine einmalige kreative Ideensammlung ohne Problem",
+      "Nur zur Anpassung von Logos",
+      "Bei schwer nachvollziehbaren Reklamationen oder bereichsübergreifenden Problemen"
+    ],
+    "correct": 3,
+    "why": "Die Folien nennen Kundenreklamationen und bereichsübergreifende komplexe Probleme.",
+    "source": "M12, Folie 54"
+  },
+  {
+    "id": "chapter-12-33",
+    "number": 33,
+    "topic": "Methoden",
+    "type": "chapter",
+    "chapter": 12,
+    "q": "Welche Auditart betrachtet die Wirksamkeit des gesamten Managementsystems?",
+    "a": [
+      "Systemaudit",
+      "Produktaudit",
+      "Einkaufskontrolle ohne Auditkriterien",
+      "Nur eine Abnahmeprüfung"
+    ],
+    "correct": 0,
+    "why": "Ein Systemaudit beurteilt Anwendung und Wirksamkeit des gesamten Managementsystems.",
+    "source": "M12, Folie 63"
+  },
+  {
+    "id": "chapter-12-34",
+    "number": 34,
+    "topic": "Methoden",
+    "type": "chapter",
+    "chapter": 12,
+    "q": "Welche Auditart untersucht ausgewählte fertige Produkte anhand festgelegter Anforderungen?",
+    "a": [
+      "Managementreview",
+      "Strategieaudit",
+      "Produktaudit",
+      "Personalentwicklungsgespräch"
+    ],
+    "correct": 2,
+    "why": "Das Produktaudit betrachtet Produkte, häufig an einem geeigneten Stichprobenpunkt.",
+    "source": "M12, Folie 63"
+  },
+  {
+    "id": "chapter-12-35",
+    "number": 35,
+    "topic": "Methoden",
+    "type": "chapter",
+    "chapter": 12,
+    "q": "Ein Unternehmen prüft sein eigenes Managementsystem durch eigene Auditoren. Welche Auditpartei?",
+    "a": [
+      "Drittpartei",
+      "Erstpartei",
+      "Zweitpartei",
+      "Akkreditierungsstelle als einzige Möglichkeit"
+    ],
+    "correct": 1,
+    "why": "Ein internes Audit der Organisation ist ein Erstparteienaudit.",
+    "source": "M12, Folie 64"
+  },
+  {
+    "id": "chapter-12-36",
+    "number": 36,
+    "topic": "Methoden",
+    "type": "chapter",
+    "chapter": 12,
+    "q": "Welche Eigenschaft gehört nach den Folien zur Kompetenz eines Auditors?",
+    "a": [
+      "Fehlende Fachkenntnisse",
+      "Unangemeldete Manipulation von Nachweisen",
+      "Ausschließliche Abhängigkeit von der geprüften Stelle",
+      "Objektivität, Fachkompetenz und faire Kommunikation"
+    ],
+    "correct": 3,
+    "why": "Auditoren benötigen fachliche und soziale Kompetenz sowie Objektivität und Fairness.",
+    "source": "M12, Folie 67"
   }
 ];
