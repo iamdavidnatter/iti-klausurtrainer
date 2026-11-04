@@ -126,9 +126,9 @@ export const module1Questions = [
     "chapter": 1,
     "q": "Welche ISO-Leitlinie unterstützt insbesondere die Gestaltung des Umgangs mit Kundenreklamationen?",
     "a": [
-      "ISO 10005 für Qualitätsmanagementpläne",
-      "ISO 9004 für nachhaltigen Erfolg",
-      "ISO 19011 für Managementsystemaudits",
+      "ISO 9000",
+      "ISO 9004",
+      "ISO 19011",
       "ISO 10002"
     ],
     "correct": 3,
@@ -178,9 +178,9 @@ export const module1Questions = [
     "q": "Eine Pilotmaßnahme ist umgesetzt; die gemessenen Ergebnisse werden jetzt mit dem festgelegten Ziel verglichen. Welcher PDCA-Schritt ist das?",
     "a": [
       "Check",
-      "Act: neue Regelung standardisieren",
-      "Do: Maßnahme erstmals erproben",
-      "Plan: Ursachen und Zielgrößen festlegen"
+      "Do",
+      "Act",
+      "Plan"
     ],
     "correct": 0,
     "why": "Check untersucht die Wirksamkeit der erprobten Maßnahme anhand der Ergebnisse.",
