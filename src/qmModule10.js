@@ -5,15 +5,15 @@ export const module10Questions = [
     "topic": "Qualitätskosten",
     "type": "chapter",
     "chapter": 10,
-    "q": "Welche Aussage entspricht der modernen Sicht auf Qualitätskosten?",
+    "q": "Ein Betrieb investiert in Prozessverbesserungen und verringert dadurch dauerhaft die Nacharbeit. Welche Aussage entspricht der modernen Betrachtung der Qualitätskosten?",
     "a": [
       "Bessere Qualität kann durch Fehlervermeidung die Gesamtkosten senken.",
-      "Jede Qualitätsverbesserung muss den Gewinn verringern.",
-      "Nur Endkontrollen können die Kosten beeinflussen.",
-      "Fehlerverhütung ist grundsätzlich sinnlos."
+      "Bei höherer Qualität wächst der Anteil der Prüfkosten stets stärker als der Nutzen.",
+      "Die optimale Qualität ergibt sich ausschließlich aus möglichst geringen Fehlerverhütungskosten.",
+      "Qualitätsverbesserung wirkt sich vor allem auf den Verkaufspreis aus, nicht auf die internen Abläufe."
     ],
     "correct": 0,
-    "why": "Die Folien betonen, dass bessere Qualität durch weniger Fehler günstiger sein kann.",
+    "why": "Die moderne Qualitätskostenbetrachtung berücksichtigt den langfristigen Nutzen der Fehlervermeidung.",
     "source": "M10, Folie 2"
   },
   {
@@ -22,15 +22,15 @@ export const module10Questions = [
     "topic": "Qualitätskosten",
     "type": "chapter",
     "chapter": 10,
-    "q": "Welche Wirkung beschreibt die Deming'sche Reaktionskette?",
+    "q": "Welche Abfolge fasst die Deming'sche Reaktionskette zutreffend zusammen?",
     "a": [
-      "Mehr Ausschuss führt zu höherer Produktivität.",
-      "Kürzere Schulungen führen automatisch zu mehr Qualität.",
+      "Produktivität steigt → Qualitätsanforderungen sinken → Kosten sinken.",
+      "Kosten steigen → Preise steigen → Nachfrage nimmt zu.",
       "Bessere Qualität fördert Produktivität und senkt Kosten.",
-      "Eine höhere Reklamationsquote sichert langfristigen Erfolg."
+      "Qualität steigt → Prüfkosten steigen → Gewinnmarge sinkt."
     ],
     "correct": 2,
-    "why": "Die Kette verbindet Qualität, Produktivität, Kosten und Wettbewerbsfähigkeit.",
+    "why": "Deming verbindet Qualitätsverbesserung mit höherer Produktivität, sinkenden Kosten und stärkerer Wettbewerbsfähigkeit.",
     "source": "M10, Folie 4"
   },
   {
@@ -39,15 +39,15 @@ export const module10Questions = [
     "topic": "Qualitätskosten",
     "type": "chapter",
     "chapter": 10,
-    "q": "Wie gliedert DIN 55350-11 die qualitätsbezogenen Kosten?",
+    "q": "Welche Einteilung entspricht der Gliederung nach DIN 55350-11 in den Folien?",
     "a": [
-      "Fixkosten, variable Kosten, Löhne und Zinsen",
+      "Prävention, interne Fehler, Reklamation und Gewährleistung",
       "Verhütungs-, Prüf-, interne und externe Fehlerkosten",
-      "Ausschließlich interne und externe Umsätze",
-      "Nur Prüfung, Werbung, Marketing und Vertrieb"
+      "Prävention, externe Prüfung, interne Prüfung und Dokumentation",
+      "Prüfung, Nacharbeit, Gewährleistung und Produkthaftung"
     ],
     "correct": 1,
-    "why": "Die Folie verwendet vier Qualitätskostenarten nach DIN 55350-11.",
+    "why": "Die Kosten werden in Fehlerverhütungskosten, Prüfkosten sowie interne und externe Fehlerkosten gegliedert.",
     "source": "M10, Folie 6"
   },
   {
@@ -56,15 +56,15 @@ export const module10Questions = [
     "topic": "Qualitätskosten",
     "type": "chapter",
     "chapter": 10,
-    "q": "Ein Unternehmen schult Mitarbeitende vor dem Start eines kritischen Prozesses. Welche Kostengruppe?",
+    "q": "Mitarbeitende werden vor Einführung eines neuen Prüfprozesses geschult, um Fehlbedienungen zu vermeiden. Wie sind die Schulungskosten einzuordnen?",
     "a": [
-      "Externe Fehlerkosten",
-      "Interne Fehlerkosten",
-      "Gewährleistungskosten",
+      "Prüfkosten, da sie vor der Prüfung entstehen",
+      "Interne Fehlerkosten, da ein Fehlerrisiko besteht",
+      "Externe Fehlerkosten, da das Ergebnis die Kundenzufriedenheit beeinflusst",
       "Fehlerverhütungskosten"
     ],
     "correct": 3,
-    "why": "Qualitätsschulungen zur Vorbeugung gehören zu den Fehlerverhütungskosten.",
+    "why": "Vorbeugende Qualitätsschulungen zählen zu Fehlerverhütungskosten; sie sind keine Fehlerfolge.",
     "source": "M10, Folie 7"
   },
   {
@@ -73,15 +73,15 @@ export const module10Questions = [
     "topic": "Qualitätskosten",
     "type": "chapter",
     "chapter": 10,
-    "q": "Eine Fabrik führt routinemäßige Wareneingangsprüfungen durch. Welche Kosten entstehen?",
+    "q": "Im laufenden Prozess wird regelmäßig geprüft, ob Rohmaterial die Annahmekriterien erfüllt. Welche Qualitätskostenart betrifft dies?",
     "a": [
       "Prüfkosten",
-      "Externe Fehlerkosten",
-      "Garantieaufwand",
-      "Vertriebskosten"
+      "Fehlerverhütungskosten durch Lieferantenschulung",
+      "Interne Fehlerkosten durch Nacharbeit am Rohmaterial",
+      "Externe Fehlerkosten nach einem Kundenmangel"
     ],
     "correct": 0,
-    "why": "Wareneingangs-, Fertigungs- und Endprüfungen gehören zu den Prüfkosten.",
+    "why": "Eine reguläre Wareneingangsprüfung zählt zu den Prüfkosten.",
     "source": "M10, Folie 8"
   },
   {
@@ -90,15 +90,15 @@ export const module10Questions = [
     "topic": "Qualitätskosten",
     "type": "chapter",
     "chapter": 10,
-    "q": "Fehlerhafte Teile werden vor der Auslieferung aussortiert. Welche Kostenart ist der Ausschuss?",
+    "q": "In der Fertigung werden fehlerhafte Teile **vor** der Kundenlieferung ausgesondert. Wie werden die Ausschusskosten eingeordnet?",
     "a": [
-      "Kosten der Kundenzufriedenheitsmessung",
-      "Externe Fehlerkosten",
+      "Prüfkosten für das Erkennen des Fehlers",
+      "Externe Fehlerkosten aus einer Kundenreklamation",
       "Interne Fehlerkosten",
-      "Nur Investitionskosten"
+      "Fehlerverhütungskosten aus der Qualitätsplanung"
     ],
     "correct": 2,
-    "why": "Ausschuss vor Auslieferung zählt zu internen Fehlerkosten.",
+    "why": "Der Ausschuss entsteht vor der Auslieferung und zählt daher zu internen Fehlerkosten.",
     "source": "M10, Folie 9"
   },
   {
@@ -107,15 +107,15 @@ export const module10Questions = [
     "topic": "Qualitätskosten",
     "type": "chapter",
     "chapter": 10,
-    "q": "Ein ausgeliefertes Produkt muss wegen eines Mangels auf Garantie repariert werden. Welche Kosten?",
+    "q": "Nach Auslieferung übernimmt das Unternehmen eine notwendige Reparatur im Rahmen der Garantie. Welche Kostenart entsteht?",
     "a": [
-      "Fehlerverhütungskosten",
+      "Interne Fehlerkosten, weil die Ursache in der Fertigung liegen kann",
       "Externe Fehlerkosten",
-      "Reguläre Prüfkosten",
-      "Nur Investitionen"
+      "Prüfkosten, weil die Reparatur mit einer Kontrolle endet",
+      "Fehlerverhütungskosten, weil der Kundenkontakt weitere Fehler verhindert"
     ],
     "correct": 1,
-    "why": "Garantie und Gewährleistung sind Beispiele externer Fehlerkosten.",
+    "why": "Die zeitliche Zuordnung hängt am Auftreten der Fehlerkosten nach Lieferung, nicht an der Fehlerursache.",
     "source": "M10, Folie 10"
   },
   {
@@ -124,15 +124,15 @@ export const module10Questions = [
     "topic": "Qualitätskosten",
     "type": "chapter",
     "chapter": 10,
-    "q": "Welche Strategie empfiehlt die Vorlesung für die langfristige Verringerung von Qualitätskosten?",
+    "q": "Welche langfristige Strategie zur Senkung qualitätsbezogener Kosten wird in den Folien hervorgehoben?",
     "a": [
-      "Mehr Nacharbeit als Dauerlösung",
-      "Verzicht auf präventive Planung",
-      "Nur die Kundenbeschwerden archivieren",
+      "Den Prüfaufwand steigern, ohne Fehlerursachen zu verändern.",
+      "Reklamationen schneller bearbeiten, ohne die Entstehungsursachen zu untersuchen.",
+      "Fehlerkosten durch Nacharbeit als dauerhaft unvermeidbare Position behandeln.",
       "Fehler vorbeugen statt erst nachträglich beseitigen"
     ],
     "correct": 3,
-    "why": "Mittel- bis langfristig steht die präventive Fehlerkostenvermeidung im Mittelpunkt.",
+    "why": "Präventive Planung ist langfristig wirksamer als die ausschließliche Beseitigung aufgetretener Fehler.",
     "source": "M10, Folie 12"
   },
   {
@@ -141,15 +141,15 @@ export const module10Questions = [
     "topic": "Qualitätskosten",
     "type": "chapter",
     "chapter": 10,
-    "q": "Wofür eignet sich Advanced Product Quality Planning (APQP)?",
+    "q": "Ein Team plant die Qualität über die Entwicklung, Industrialisierung und Fertigung eines neuen Produkts hinweg. Welche Methode unterstützt das übergreifend?",
     "a": [
       "Für durchgängige Produkt- und Qualitätsplanung mit Fehlerprävention",
-      "Nur für die Festlegung von Urlaubsplänen",
-      "Für die Berechnung der Körperschaftsteuer",
-      "Nur für den Versand von Reklamationsbriefen"
+      "DVP&R zur Planung einzelner Verifikationsprüfungen",
+      "FMEA zur strukturierten Bewertung möglicher Fehlermodi",
+      "Qualitätskostenkennzahl zur nachträglichen Kostenanalyse"
     ],
     "correct": 0,
-    "why": "APQP unterstützt eine transparente, zentrale Produkt- und Qualitätsplanung.",
+    "why": "APQP betrachtet den Produktentstehungsprozess und integriert Qualitätsplanung und präventive Dokumentation.",
     "source": "M10, Folie 14"
   },
   {
@@ -158,15 +158,15 @@ export const module10Questions = [
     "topic": "Qualitätskosten",
     "type": "chapter",
     "chapter": 10,
-    "q": "Wozu dient der Design Verification Plan & Report (DVP&R)?",
+    "q": "Für einen neuen Bauteilentwurf müssen Versuche mit Anforderungen, Terminen und dokumentierten Resultaten geplant werden. Welches Instrument passt?",
     "a": [
-      "Ausschließlich zur Personalbeurteilung",
-      "Zur Berechnung der Energieeffizienz",
+      "APQP als gesamter Rahmen des Produktentstehungsprozesses",
+      "FMEA als Bewertung möglicher Ausfallarten und Folgen",
       "Zur Planung und Dokumentation von Verifikations- und Versuchsaktivitäten",
-      "Nur zum Erstellen von Einkaufspreislisten"
+      "Qualitätskostenbericht als Trendübersicht der Fehlerkosten"
     ],
     "correct": 2,
-    "why": "DVP&R dokumentiert Prüftätigkeiten zur Erfüllung von Produktanforderungen.",
+    "why": "DVP&R plant und dokumentiert produktbezogene Nachweis- und Versuchsaktivitäten.",
     "source": "M10, Folie 15"
   },
   {
@@ -175,15 +175,15 @@ export const module10Questions = [
     "topic": "Qualitätskosten",
     "type": "chapter",
     "chapter": 10,
-    "q": "Welcher organisatorische Schritt unterstützt eine sinnvolle Qualitätskostenermittlung?",
+    "q": "Welche organisatorische Maßnahme bildet eine geeignete Grundlage für aussagekräftige Qualitätskostenberichte?",
     "a": [
-      "Alle Fehlerkosten geheim halten",
+      "Die Erfassung auf einzelne Prüfkosten beschränken, weil Fehlerkosten nicht ermittelbar sind.",
       "Controlling einbinden und ein geeignetes Berichtswesen festlegen",
-      "Kennzahlen ohne Bezugsgröße veröffentlichen",
-      "Alle Kostenstellen ignorieren"
+      "Die Qualitätserfassung ohne Abstimmung mit dem Controlling gestalten.",
+      "Qualitätskosten ausschließlich als Gesamtsumme ohne Trennung nach Kostenarten berichten."
     ],
     "correct": 1,
-    "why": "Die Folien verlangen Kostenarten, Kostenstellen und eine Entscheidungsgrundlage.",
+    "why": "Controlling, Kostenarten, Kostenstellen, Bezugsgrößen und aussagekräftige Reports gehören zur Kostenermittlung.",
     "source": "M10, Folie 17"
   },
   {
@@ -192,15 +192,15 @@ export const module10Questions = [
     "topic": "Qualitätskosten",
     "type": "chapter",
     "chapter": 10,
-    "q": "Qualitätskosten sind 48.000 € und der Umsatz 1.200.000 €. Wie hoch ist die Qualitätskostenquote zum Umsatz?",
+    "q": "Ein Unternehmen erfasst 48.000 € Qualitätskosten bei 1.200.000 € Jahresumsatz. Welche Qualitätskostenquote zum Umsatz ergibt sich?",
     "a": [
       "0,4 %",
-      "2 %",
-      "25 %",
+      "4,8 %",
+      "2,5 %",
       "4 %"
     ],
     "correct": 3,
-    "why": "48.000 / 1.200.000 × 100 = 4 % Qualitätskostenanteil.",
+    "why": "Die Kennzahl ist Qualitätskosten geteilt durch Umsatz: 48.000 / 1.200.000 × 100 = 4 %.",
     "source": "M10, Folie 19"
   }
 ];
