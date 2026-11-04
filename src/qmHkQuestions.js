@@ -195,16 +195,16 @@ export const hkQuestions = [
     "id": "hk-13",
     "number": 13,
     "topic": "Methoden",
-    "q": "Was ist der erste Schritt D1 der 8D-Methode?",
+    "q": "Welcher Schritt ist in Modul 12, Folie 56, als D1 der 8D-Methode angeführt?",
     "a": [
       "Dauermaßnahmen einführen.",
-      "Das Problem endgültig beschreiben.",
+      "Problembeschreibung",
       "Grundursache beseitigen.",
-      "Ein geeignetes Team zusammenstellen."
+      "Team zusammenstellen"
     ],
-    "correct": 3,
-    "why": "Im 8D-Ablauf ist D1 die Teambildung; die Problembeschreibung folgt in D2.",
-    "source": "M12 · korrigiert: PDF markierte B",
+    "correct": 1,
+    "why": "Die Vorlesungsfolie nennt D1 Problembeschreibung und D2 Teambildung; die verbreitete Standardreihenfolge ordnet diese beiden Schritte um.",
+    "source": "M12, Folie 56 (Vorlesungsreihenfolge)",
     "type": "hk"
   },
   {
