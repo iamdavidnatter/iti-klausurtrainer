@@ -5,15 +5,15 @@ export const module4Questions = [
     "topic": "Zertifizierung",
     "type": "chapter",
     "chapter": 4,
-    "q": "Welche Aussage über eine Norm trifft grundsätzlich zu?",
+    "q": "Ein Unternehmen will eine interne QM-Regel durch eine freiwillig angewandte Norm konkretisieren. Welche Aussage über den rechtlichen Status ist zutreffend?",
     "a": [
-      "Jede Norm ist ein Gesetz.",
-      "Eine Norm ist automatisch für alle Betriebe zwingend.",
+      "Normen werden durch Veröffentlichung immer zu Gesetzen.",
+      "Normen sind ohne Zertifikat automatisch für alle Organisationen verpflichtend.",
       "Normen sind grundsätzlich Regeln oder Anforderungen und nicht automatisch Gesetze.",
-      "Nur Behörden dürfen Normen anwenden."
+      "Normen können nur angewendet werden, wenn jede Bestimmung gesetzlich vorgeschrieben ist."
     ],
     "correct": 2,
-    "why": "Normen sind nicht bereits aufgrund ihrer Existenz allgemein geltende Gesetze.",
+    "why": "Normen sind nicht automatisch Gesetze; sie können zum Beispiel über Verträge rechtlich relevant werden.",
     "source": "M4, Folie 2"
   },
   {
@@ -22,15 +22,15 @@ export const module4Questions = [
     "topic": "Zertifizierung",
     "type": "chapter",
     "chapter": 4,
-    "q": "Was bedeutet die Bezeichnung EN vor einer Norm?",
+    "q": "Auf einem Normdokument steht die Bezeichnung ÖNORM EN ISO. Was sagt der Bestandteil EN aus?",
     "a": [
       "Europäische Norm",
-      "Elektronische Norm",
-      "Einzelne Nationalnorm",
-      "Externe Nachfrage"
+      "Er kennzeichnet eine ausschließlich österreichische Regel ohne europäischen Bezug.",
+      "Er weist auf eine nur internationale, nicht europäisch übernommene Norm hin.",
+      "Er bestätigt die rechtliche Harmonisierung jeder enthaltenen Anforderung."
     ],
     "correct": 0,
-    "why": "EN steht für Europäische Norm; eine Harmonisierung ist eine zusätzliche Eigenschaft.",
+    "why": "EN bedeutet Europäische Norm; eine harmonisierte Norm ist ein spezifischerer Fall.",
     "source": "M4, Folie 3"
   },
   {
@@ -39,15 +39,15 @@ export const module4Questions = [
     "topic": "Zertifizierung",
     "type": "chapter",
     "chapter": 4,
-    "q": "Welche Organisation ist im Bereich internationaler elektrotechnischer Normung tätig?",
+    "q": "Welche Institution ist insbesondere für internationale Normung im elektrotechnischen Bereich zuständig?",
     "a": [
-      "ITU",
-      "ÖNORM",
-      "ISO 9004",
+      "ITU – Telekommunikation und zugehörige Standards",
+      "ISO – branchenübergreifende internationale Normung",
+      "Austrian Standards – nationale österreichische Normungsarbeit",
       "IEC"
     ],
     "correct": 3,
-    "why": "Die International Electrotechnical Commission befasst sich mit elektrotechnischer Normung.",
+    "why": "IEC ist die internationale Organisation für elektrotechnische Normung und von ISO und ITU zu unterscheiden.",
     "source": "M4, Folie 3"
   },
   {
@@ -56,15 +56,15 @@ export const module4Questions = [
     "topic": "Zertifizierung",
     "type": "chapter",
     "chapter": 4,
-    "q": "Welche der folgenden Normen ist ein Anforderungsmodell?",
+    "q": "Eine Organisation sucht eine Norm mit verbindlich formulierten Anforderungen für ein Umweltmanagementsystem. Welche passt?",
     "a": [
-      "ISO 19011",
+      "ISO 19011:2018 – Audit-Leitfaden",
       "ISO 14001",
-      "ISO 9004",
-      "ISO 10002"
+      "ISO 9004:2018 – Leitfaden für nachhaltigen Erfolg",
+      "ISO 10002 – Leitfaden für Reklamationsmanagement"
     ],
     "correct": 1,
-    "why": "ISO 14001 enthält Anforderungen an Umweltmanagementsysteme.",
+    "why": "ISO 14001 ist ein Anforderungsmodell für Umweltmanagementsysteme; die anderen Normen sind Leitfäden.",
     "source": "M4, Folie 4"
   },
   {
@@ -73,15 +73,15 @@ export const module4Questions = [
     "topic": "Zertifizierung",
     "type": "chapter",
     "chapter": 4,
-    "q": "Wie unterscheiden sich Leitfäden von normativen Anforderungsmodellen?",
+    "q": "Ein Auditor unterscheidet zwischen ISO 9001 und ISO 9004. Was ist der zentrale Unterschied zwischen Anforderungsmodell und Leitfaden?",
     "a": [
-      "Leitfäden enthalten immer rechtlich zwingende Anforderungen.",
-      "Nur Leitfäden können zertifiziert werden.",
+      "Leitfäden definieren dieselben Muss-Forderungen, verzichten aber auf Fachbegriffe.",
+      "Anforderungsmodelle beschreiben nur mögliche Vorgehensweisen ohne überprüfbare Vorgaben.",
       "Leitfäden enthalten Empfehlungen statt unmittelbar zertifizierbarer Anforderungen.",
-      "Anforderungsmodelle enthalten grundsätzlich keinerlei Muss-Forderungen."
+      "Leitfäden legen die Auditdauer fest, Anforderungsmodelle beschreiben nur Auditorenkompetenz."
     ],
     "correct": 2,
-    "why": "Leitfäden formulieren Empfehlungen; Anforderungsmodelle stellen überprüfbare Forderungen.",
+    "why": "Ein Anforderungsmodell ist überprüfbar; ein Leitfaden enthält Empfehlungen.",
     "source": "M4, Folie 4"
   },
   {
@@ -90,15 +90,15 @@ export const module4Questions = [
     "topic": "Zertifizierung",
     "type": "chapter",
     "chapter": 4,
-    "q": "Was wird bei einer QMS-Zertifizierung nach ISO 9001 überprüft?",
+    "q": "Bei einem Zertifizierungsaudit nach ISO 9001:2015 steht welche Frage im Zentrum?",
     "a": [
       "Die Erfüllung relevanter QM-Systemanforderungen",
-      "Die persönliche Steuerpflicht aller Beschäftigten",
-      "Nur die Ausstattung des Serverraums",
-      "Ausschließlich die Lieferantenanzahl"
+      "Ob ein konkretes Produkt die gesetzlichen CE-Anforderungen erfüllt",
+      "Ob die Zertifizierungsstelle fachlich akkreditiert werden kann",
+      "Ob die Qualitätskostenquote in jeder Branche denselben Zielwert erreicht"
     ],
     "correct": 0,
-    "why": "Zertifizierung ist eine unabhängige Bestätigung der Konformität mit Anforderungen.",
+    "why": "Eine QMS-Zertifizierung bestätigt die Erfüllung von ISO-9001-Anforderungen, nicht automatisch Produktkonformität oder die Kompetenz der Zertifizierungsstelle.",
     "source": "M4, Folie 5"
   },
   {
@@ -107,15 +107,15 @@ export const module4Questions = [
     "topic": "Zertifizierung",
     "type": "chapter",
     "chapter": 4,
-    "q": "Welcher Gegenstand wird bei einer Akkreditierung beurteilt?",
+    "q": "Was ist der eigentliche Prüfgegenstand einer Akkreditierung?",
     "a": [
-      "Die Kundenzufriedenheit als solche",
-      "Die Produktfarbe",
-      "Der persönliche Lohn des Auditors",
+      "Die Erfüllung der ISO-9001-Anforderungen durch einen einzelnen Kunden",
+      "Die Qualität eines gelieferten Produkts im Rahmen der Endprüfung",
+      "Die Wirtschaftlichkeit des geprüften Managementsystems",
       "Kompetenz und Unparteilichkeit einer Konformitätsbewertungsstelle"
     ],
     "correct": 3,
-    "why": "Eine Akkreditierung bestätigt die Eignung der bewertenden Stelle für definierte Aufgaben.",
+    "why": "Akkreditierung bestätigt die Kompetenz, Unabhängigkeit und Unparteilichkeit von Konformitätsbewertungsstellen.",
     "source": "M4, Folie 6"
   },
   {
@@ -124,15 +124,15 @@ export const module4Questions = [
     "topic": "Zertifizierung",
     "type": "chapter",
     "chapter": 4,
-    "q": "Ein Lieferant hat ein Zertifikat von einer Zertifizierungsstelle. Wer kann die Kompetenz dieser Stelle bestätigen?",
+    "q": "Eine Zertifizierungsstelle will ihre Kompetenz für bestimmte Audit- und Zertifizierungstätigkeiten nachweisen lassen. An welche Art Organisation wendet sie sich?",
     "a": [
-      "Sein größter Kunde allein",
+      "Eine ISO-9001-zertifizierte Kundenorganisation",
       "Eine Akkreditierungsstelle",
-      "Die eigene Buchhaltung",
-      "Eine zufällig ausgewählte Person"
+      "Eine Stelle für Produkt-Endabnahmen",
+      "Eine interne Managementbewertung des Lieferanten"
     ],
     "correct": 1,
-    "why": "Bei Akkreditierung wird die Kompetenz der Zertifizierungsstelle geprüft.",
+    "why": "Die Bestätigung der Kompetenz einer Zertifizierungsstelle ist Aufgabe einer Akkreditierungsstelle.",
     "source": "M4, Folie 6"
   }
 ];
