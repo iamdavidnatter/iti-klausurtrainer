@@ -104,9 +104,9 @@ function App() {
        <button className={exam?'selected':''} onClick={() => {if(!exam)newAttempt(true);}}><Clock size={16}/> Prüfungsmodus</button>
       </div>
       <div className="controlRight">
-       <select aria-label="Thema" disabled={exam&&!submitted} value={topic} onChange={e => {setTopic(e.target.value);setIndex(0);setResultView(false);setOnlyErrors(false);}}>
+       {!catalog.startsWith("m")&&<select aria-label="Thema" disabled={exam&&!submitted} value={topic} onChange={e => {setTopic(e.target.value);setIndex(0);setResultView(false);setOnlyErrors(false);}}>
         <option>Alle</option>{topics.map(t => <option key={t}>{t}</option>)}
-       </select>
+       </select>}
        <button disabled={exam&&!submitted} className={'subtle '+(onlyErrors?'selectedSmall':'')} onClick={() => {setOnlyErrors(x=>!x);setIndex(0);setResultView(false);}}><Filter size={16}/> {onlyErrors?'Fehlerfilter an':'Fehler üben'}</button>
       </div>
     </section>
