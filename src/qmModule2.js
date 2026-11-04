@@ -41,10 +41,10 @@ export const module2Questions = [
     "chapter": 2,
     "q": "Welche Aussage trifft auf das QM-Handbuch nach ISO 9001:2015 zu?",
     "a": [
-      "Jede Organisation muss ein QM-Handbuch mit identischem Aufbau führen.",
+      "Das Handbuch ist für jede Zertifizierung nach ISO 9001:2015 separat einzureichen.",
       "Es ist nicht ausdrücklich gefordert, kann aber als Überblick dienen.",
-      "Ein QM-Handbuch ersetzt grundsätzlich den Nachweis der Normerfüllung.",
-      "Das QM-Handbuch muss alle Betriebsgeheimnisse vollständig enthalten."
+      "Ein Handbuch ist nach ISO 9001:2015 erst ab einer bestimmten Mitarbeiterzahl vorgeschrieben.",
+      "Das Handbuch gilt in ISO 9001:2015 als Ersatz für andere dokumentierte Informationen."
     ],
     "correct": 1,
     "why": "Ein QM-Handbuch ist seit ISO 9001:2015 nicht ausdrücklich vorgeschrieben, kann aber weiterhin als Übersicht dienen.",
