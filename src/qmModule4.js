@@ -7,10 +7,10 @@ export const module4Questions = [
     "chapter": 4,
     "q": "Ein Unternehmen will eine interne QM-Regel durch eine freiwillig angewandte Norm konkretisieren. Welche Aussage über den rechtlichen Status ist zutreffend?",
     "a": [
-      "Normen werden durch Veröffentlichung immer zu Gesetzen.",
-      "Normen sind ohne Zertifikat automatisch für alle Organisationen verpflichtend.",
+      "Eine Norm erhält ihre unmittelbare Verbindlichkeit bereits durch die Veröffentlichung in einem Normenkatalog.",
+      "Die ISO- beziehungsweise EN-Bezeichnung begründet für jedes Unternehmen eine unmittelbare Umsetzungspflicht.",
       "Normen sind grundsätzlich Regeln oder Anforderungen und nicht automatisch Gesetze.",
-      "Normen können nur angewendet werden, wenn jede Bestimmung gesetzlich vorgeschrieben ist."
+      "Eine Norm wird rechtlich relevant, wenn sie ausdrücklich in einem Gesetz genannt ist; Verträge spielen dafür keine Rolle."
     ],
     "correct": 2,
     "why": "Normen sind nicht automatisch Gesetze; sie können zum Beispiel über Verträge rechtlich relevant werden.",
@@ -75,10 +75,10 @@ export const module4Questions = [
     "chapter": 4,
     "q": "Ein Auditor unterscheidet zwischen ISO 9001 und ISO 9004. Was ist der zentrale Unterschied zwischen Anforderungsmodell und Leitfaden?",
     "a": [
-      "Leitfäden definieren dieselben Muss-Forderungen, verzichten aber auf Fachbegriffe.",
-      "Anforderungsmodelle beschreiben nur mögliche Vorgehensweisen ohne überprüfbare Vorgaben.",
+      "Leitfäden enthalten dieselben verbindlichen Anforderungen, ergänzt durch Anwendungsbeispiele.",
+      "Anforderungsmodelle beschreiben im Wesentlichen unverbindliche Umsetzungsvarianten.",
       "Leitfäden enthalten Empfehlungen statt unmittelbar zertifizierbarer Anforderungen.",
-      "Leitfäden legen die Auditdauer fest, Anforderungsmodelle beschreiben nur Auditorenkompetenz."
+      "Leitfäden und Anforderungsmodelle unterscheiden sich nur durch die zugelassene Auditdauer."
     ],
     "correct": 2,
     "why": "Ein Anforderungsmodell ist überprüfbar; ein Leitfaden enthält Empfehlungen.",
