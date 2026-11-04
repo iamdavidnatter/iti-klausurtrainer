@@ -75,10 +75,10 @@ export const module5Questions = [
     "chapter": 5,
     "q": "Ein Unternehmen analysiert interne Stärken und Schwächen sowie externe Chancen und Risiken. Welche Methode ist dafür vorgesehen?",
     "a": [
-      "Risikomatrix aus Wahrscheinlichkeit und Schadenshöhe",
-      "FMEA zur Bewertung von Auftreten, Bedeutung und Entdeckung",
+      "Risikomatrix",
+      "FMEA",
       "SWOT-Analyse",
-      "Turtle-Diagramm mit Input, Output und Ressourcen"
+      "Turtle-Diagramm"
     ],
     "correct": 2,
     "why": "SWOT erfasst gezielt interne und externe positive und negative Faktoren.",
