@@ -8,9 +8,9 @@ export const module3Questions = [
     "q": "Ein Organigramm zeigt Zuständigkeiten; ein Ablaufdiagramm zeigt aufeinanderfolgende Bearbeitungsschritte. Welche Beschreibung trifft den Unterschied?",
     "a": [
       "Ablauforganisation betrachtet Tätigkeiten und ihre Reihenfolge.",
-      "Die Ablauforganisation beschreibt nur disziplinarische Weisungsbeziehungen.",
-      "Die Aufbauorganisation bestimmt die zeitliche Bearbeitungsreihenfolge.",
-      "Aufbau- und Ablauforganisation unterscheiden sich nur durch die grafische Darstellung."
+      "Ablauforganisation legt vorrangig disziplinarische Weisungsbeziehungen fest.",
+      "Aufbauorganisation beschreibt die Reihenfolge von Tätigkeiten zwischen Abteilungen.",
+      "Aufbau- und Ablauforganisation unterscheiden sich vor allem im Detaillierungsgrad der Darstellung."
     ],
     "correct": 0,
     "why": "Ablauforganisation fokussiert die Reihenfolge und Verknüpfung von Tätigkeiten, Aufbauorganisation die Struktur der Zuständigkeiten.",
