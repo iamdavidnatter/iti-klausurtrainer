@@ -7,10 +7,10 @@ export const module8Questions = [
     "chapter": 8,
     "q": "Welcher Abschnitt der ISO 9001:2015 behandelt das organisationale Wissen?",
     "a": [
-      "7.2 – Kompetenz",
+      "7.2",
       "7.1.6",
-      "7.5 – dokumentierte Information",
-      "9.1.2 – Kundenzufriedenheit"
+      "7.5",
+      "9.1.2"
     ],
     "correct": 1,
     "why": "Das Wissen der Organisation ist in ISO 9001:2015 unter 7.1.6 geregelt.",
@@ -126,10 +126,10 @@ export const module8Questions = [
     "chapter": 8,
     "q": "Ein Team entwickelt im Zuge eines Projekts neues Wissen und neue Lösungswege, die es bisher intern nicht gab. Welcher Probst-Baustein passt?",
     "a": [
-      "Wissenserwerb – bereits vorhandenes Wissen von außen übernehmen",
-      "Wissensidentifikation – vorhandene Wissensbestände transparent machen",
+      "Wissenserwerb",
+      "Wissensidentifikation",
       "Wissensentwicklung",
-      "Wissensbewahrung – bestehendes Wissen sichern und aktualisieren"
+      "Wissensbewahrung"
     ],
     "correct": 2,
     "why": "Wissensentwicklung schafft neues internes Wissen, Methoden und Fähigkeiten.",
@@ -143,10 +143,10 @@ export const module8Questions = [
     "chapter": 8,
     "q": "Ein Pensionierungsfall gefährdet das Know-how eines erfahrenen Spezialisten. Welcher Probst-Baustein adressiert das dauerhafte Sichern besonders?",
     "a": [
-      "Wissensidentifikation – Bestände und Fähigkeiten ermitteln",
+      "Wissensidentifikation",
       "Wissensbewahrung",
-      "Wissenserwerb – Kenntnisse von außen hinzuholen",
-      "Wissensnutzung – bereits verfügbares Wissen einsetzen"
+      "Wissenserwerb",
+      "Wissensnutzung"
     ],
     "correct": 1,
     "why": "Wissensbewahrung beinhaltet Auswahl und geeignete Sicherung des relevanten Wissens.",
