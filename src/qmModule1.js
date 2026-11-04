@@ -5,15 +5,15 @@ export const module1Questions = [
     "topic": "Grundlagen",
     "type": "chapter",
     "chapter": 1,
-    "q": "Ein Kundenauftrag wird an mehreren Stellen unterschiedlich bearbeitet. Welcher QMS-Nutzen wirkt dem entgegen?",
+    "q": "Ein Auftrag durchläuft Vertrieb, Leistungserbringung und Abrechnung. Wiederholte Übergabefehler führen zu unterschiedlichen Ergebnissen. Welcher QMS-Ansatz trifft die Ursache am unmittelbarsten?",
     "a": [
-      "Ausschließlich spätere Produktprüfung",
+      "Zusätzliche Endprüfungen bei bereits abgeschlossenen Aufträgen",
       "Nachvollziehbare und standardisierte Abläufe",
-      "Vollständiger Verzicht auf Prozessverantwortliche",
-      "Abschaffung sämtlicher Aufzeichnungen"
+      "Eine höhere Prüfquote ohne Veränderung der Abläufe",
+      "Verlagerung der Qualitätsverantwortung in eine einzige Fachabteilung"
     ],
     "correct": 1,
-    "why": "Ein QMS unterstützt einheitliche, reproduzierbare und nachvollziehbare Prozesse.",
+    "why": "Standardisierte und abgestimmte Abläufe behandeln Schnittstellenfehler ursächlich; Endprüfungen erkennen sie eher nachträglich.",
     "source": "M1, Folie 6"
   },
   {
@@ -22,12 +22,12 @@ export const module1Questions = [
     "topic": "Grundlagen",
     "type": "chapter",
     "chapter": 1,
-    "q": "Was beschreibt das Spannungsdreieck des Qualitätsmanagements?",
+    "q": "Welche drei Zielgrößen bilden in den Folien das Spannungsdreieck?",
     "a": [
-      "Personal, Markt und Technik",
-      "Kunden, Lieferanten und Beschäftigte",
+      "Qualität, Kosten und Risiko",
+      "Qualität, Termintreue und Kundentreue",
       "Qualität, Zeit und Kosten",
-      "Preis, Menge und Umsatz"
+      "Qualität, Prozessfähigkeit und Kundenzufriedenheit"
     ],
     "correct": 2,
     "why": "Die drei Zielgrößen sind Qualität, Zeit und Kosten.",
@@ -39,15 +39,15 @@ export const module1Questions = [
     "topic": "Grundlagen",
     "type": "chapter",
     "chapter": 1,
-    "q": "Ein Betrieb reduziert Nacharbeit durch Fehlerprävention. Welchen Zusammenhang verdeutlicht dies?",
+    "q": "Weniger Nacharbeit führt nach Einführung vorbeugender Prozessmaßnahmen zu kürzerer Durchlaufzeit und geringeren Kosten. Welche Schlussfolgerung passt zur modernen Qualitätsbetrachtung?",
     "a": [
       "Bessere Prozessqualität kann Zeit und Kosten reduzieren.",
-      "Verbesserte Qualität verursacht zwingend mehr Ausschuss.",
-      "Prävention beeinflusst nur Marketingausgaben.",
-      "Die Qualität sinkt bei sinkenden Kosten immer."
+      "Der Nutzen der Fehlerprävention betrifft vor allem externe Garantieansprüche.",
+      "Eine höhere Prüfintensität ist die eigentliche Ursache niedriger Prozesskosten.",
+      "Qualität und Wirtschaftlichkeit lassen sich nur über unterschiedliche Produkte beurteilen."
     ],
     "correct": 0,
-    "why": "Die moderne Betrachtung begreift Fehlervermeidung als wirtschaftlichen Nutzen.",
+    "why": "Fehlerprävention kann gleichzeitig Qualität, Durchlaufzeit und Kosten verbessern; das löst den vermeintlich zwingenden Zielkonflikt teilweise auf.",
     "source": "M1, Folie 8"
   },
   {
@@ -56,15 +56,15 @@ export const module1Questions = [
     "topic": "Grundlagen",
     "type": "chapter",
     "chapter": 1,
-    "q": "Warum ist das Eisbergmodell bei Qualitätskosten hilfreich?",
+    "q": "Was ist die zentrale Aussage des Eisbergmodells zu Verbesserungspotenzialen?",
     "a": [
-      "Es zeigt nur Prüfkosten.",
-      "Es schließt Verzögerungen aus.",
-      "Es ist eine Methode der Temperaturmessung.",
+      "Es stellt den optimalen Anteil der Präventionskosten am Umsatz dar.",
+      "Es ordnet sämtliche Fehlerkosten nach dem Zeitpunkt der Kundenreklamation.",
+      "Es bildet die Entwicklung von Prüf- und Fehlerkosten mit zunehmender Qualitätsreife ab.",
       "Es weist auf oft verdeckte Folgekosten von Fehlern hin."
     ],
     "correct": 3,
-    "why": "Neben sichtbarem Ausschuss können versteckte Zusatzaufwände und Terminfolgen entstehen.",
+    "why": "Das Eisbergmodell verdeutlicht vor allem schwer erkennbare Folgen schlechter Qualität unterhalb der sichtbaren Kosten.",
     "source": "M1, Folie 9"
   },
   {
@@ -73,15 +73,15 @@ export const module1Questions = [
     "topic": "Grundlagen",
     "type": "chapter",
     "chapter": 1,
-    "q": "Welcher Punkt ist vor allem ein externer Nutzen eines QM-Systems?",
+    "q": "Welcher Vorteil eines QM-Systems wirkt vor allem nach außen und nicht primär innerhalb der Organisation?",
     "a": [
-      "Verschlüsselung interner Dateien",
+      "Geringere Suchzeiten durch eindeutige Dokumentation",
       "Erhöhtes Vertrauen der Kunden",
-      "Höherer Materialverbrauch",
-      "Zusätzliche unnötige Freigabestufen"
+      "Höhere Transparenz von Prozessschnittstellen",
+      "Kürzere interne Nacharbeits- und Korrekturschleifen"
     ],
     "correct": 1,
-    "why": "Erfüllte Anforderungen und nachgewiesene Prozesse können Kundenvertrauen stärken.",
+    "why": "Vertrauen der Kunden ist ein externer Nutzen; die anderen Optionen betreffen interne Prozessverbesserungen.",
     "source": "M1, Folie 11"
   },
   {
@@ -90,15 +90,15 @@ export const module1Questions = [
     "topic": "Grundlagen",
     "type": "chapter",
     "chapter": 1,
-    "q": "Welche Aussage beschreibt ISO 9000:2015 am besten?",
+    "q": "Eine Mitarbeiterin benötigt normierte Fachbegriffe für ein QMS. Welches Dokument ist dafür vorrangig gedacht?",
     "a": [
-      "Sie definiert nur Prüflabormethoden.",
-      "Sie enthält den Zertifizierungsauditablauf.",
+      "ISO 9001:2015 als Anforderungskatalog",
+      "ISO 9004:2018 als Leitfaden zum nachhaltigen Erfolg",
       "Sie behandelt Grundlagen und Begriffe des QM.",
-      "Sie regelt die Entlohnung von Qualitätsbeauftragten."
+      "ISO 19011:2018 als Leitfaden für Audits"
     ],
     "correct": 2,
-    "why": "ISO 9000:2015 schafft ein gemeinsames Begriffsverständnis im Qualitätsmanagement.",
+    "why": "ISO 9000:2015 erläutert Grundlagen und Begriffe; die anderen Normen haben andere Aufgaben.",
     "source": "M1, Folie 16"
   },
   {
@@ -110,9 +110,9 @@ export const module1Questions = [
     "q": "Welche Norm enthält zertifizierbare Anforderungen an ein Qualitätsmanagementsystem?",
     "a": [
       "ISO 9001:2015",
-      "ISO 9004:2018",
-      "ISO 19011:2018",
-      "ISO 10005"
+      "ISO 9000:2015 (Grundlagen und Begriffe)",
+      "ISO 10002 (Reklamationsleitlinie)",
+      "ISO 19011:2018 (Audit-Leitfaden)"
     ],
     "correct": 0,
     "why": "ISO 9001:2015 legt verbindlich formulierte QMS-Anforderungen fest.",
@@ -124,7 +124,7 @@ export const module1Questions = [
     "topic": "Grundlagen",
     "type": "chapter",
     "chapter": 1,
-    "q": "Ein Unternehmen sucht Hinweise für die Behandlung von Reklamationen. Welche Leitlinie ist einschlägig?",
+    "q": "Welche ISO-Leitlinie unterstützt insbesondere die Gestaltung des Umgangs mit Kundenreklamationen?",
     "a": [
       "ISO 9000",
       "ISO 9004",
@@ -141,15 +141,15 @@ export const module1Questions = [
     "topic": "Grundlagen",
     "type": "chapter",
     "chapter": 1,
-    "q": "Welche Formulierung kennzeichnet in ISO 9001 eine verbindliche Anforderung?",
+    "q": "Welches Signal weist in einer ISO-9001-Anforderung auf normative Verbindlichkeit hin?",
     "a": [
-      "Die Organisation könnte …",
+      "Eine Organisation sollte …",
       "Die Organisation muss …",
-      "Die Organisation dürfte gelegentlich …",
-      "Eine Umsetzung wäre eventuell hilfreich …"
+      "Eine Organisation kann …",
+      "Eine Organisation wird ermutigt, …"
     ],
     "correct": 1,
-    "why": "Die Formulierung 'muss' kennzeichnet verbindlich formulierte Normanforderungen.",
+    "why": "Muss bezeichnet eine Anforderung; sollte und kann kennzeichnen andere Normtextarten.",
     "source": "M1, Folie 18"
   },
   {
@@ -158,15 +158,15 @@ export const module1Questions = [
     "topic": "Grundlagen",
     "type": "chapter",
     "chapter": 1,
-    "q": "Welcher Grundgedanke gehört zum Fokus der ISO 9001:2015?",
+    "q": "Welche Kombination von Grundsätzen gehört zum in den Vorlesungsfolien dargestellten Schwerpunkt der ISO 9001:2015?",
     "a": [
-      "Vertrauen ausschließlich auf Endkontrollen",
-      "Qualität nur durch externe Berater",
+      "Produktprüfung und Freigabe statt Prozessüberwachung",
+      "Dokumentenzahl und Zertifikatsbesitz als alleinige Wirksamkeitsmerkmale",
       "Kundenorientierung und risikobasiertes Denken",
-      "Vermeidung jeglicher Messungen"
+      "Trennung von Prozesssteuerung und Verbesserungsmaßnahmen"
     ],
     "correct": 2,
-    "why": "ISO 9001 stellt Kundenorientierung, Prozesse, PDCA und risikobasiertes Denken in den Mittelpunkt.",
+    "why": "ISO 9001 verbindet Kundenorientierung mit Prozessorientierung, PDCA, Risiken und sachlicher Entscheidungsfindung.",
     "source": "M1, Folie 20"
   },
   {
@@ -175,7 +175,7 @@ export const module1Questions = [
     "topic": "Grundlagen",
     "type": "chapter",
     "chapter": 1,
-    "q": "Im PDCA-Zyklus werden Ergebnisse einer Erprobung mit Zielen verglichen. Welcher Schritt ist das?",
+    "q": "Eine Pilotmaßnahme ist umgesetzt; die gemessenen Ergebnisse werden jetzt mit dem festgelegten Ziel verglichen. Welcher PDCA-Schritt ist das?",
     "a": [
       "Check",
       "Do",
@@ -183,7 +183,7 @@ export const module1Questions = [
       "Plan"
     ],
     "correct": 0,
-    "why": "Bei Check werden Ergebnisse beurteilt und Veränderungen dokumentiert.",
+    "why": "Check untersucht die Wirksamkeit der erprobten Maßnahme anhand der Ergebnisse.",
     "source": "M1, Folie 23"
   },
   {
@@ -192,15 +192,15 @@ export const module1Questions = [
     "topic": "Grundlagen",
     "type": "chapter",
     "chapter": 1,
-    "q": "Eine Verbesserung hat ihr Ziel nicht erreicht. Welche Reaktion entspricht 'Act'?",
+    "q": "Die Erprobung einer Prozessänderung hat die vereinbarten Ziele verfehlt. Was passt zur Phase Act?",
     "a": [
-      "Trotzdem unverändert als Standard übernehmen.",
-      "Alle Messungen löschen.",
-      "Mitarbeitende nicht informieren.",
+      "Die Änderung als Standard freigeben, weil Do abgeschlossen wurde.",
+      "Die geprüften Messwerte als neue Zielwerte verwenden.",
+      "Die Pilotmaßnahme bei unveränderten Rahmenbedingungen endlos wiederholen.",
       "Maßnahme anpassen und den Zyklus erneut durchlaufen."
     ],
     "correct": 3,
-    "why": "Act beinhaltet die Standardisierung bei Erfolg oder erneute Anpassung bei Misserfolg.",
+    "why": "Wenn die Ergebnisse nicht passen, folgt eine Anpassung oder Verwerfung und gegebenenfalls ein neuer PDCA-Durchlauf.",
     "source": "M1, Folie 23"
   }
 ];

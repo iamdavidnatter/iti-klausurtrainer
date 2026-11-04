@@ -5,15 +5,15 @@ export const module3Questions = [
     "topic": "Prozesse",
     "type": "chapter",
     "chapter": 3,
-    "q": "Was unterscheidet die Ablauforganisation von der Aufbauorganisation?",
+    "q": "Ein Organigramm zeigt Zuständigkeiten; ein Ablaufdiagramm zeigt aufeinanderfolgende Bearbeitungsschritte. Welche Beschreibung trifft den Unterschied?",
     "a": [
       "Ablauforganisation betrachtet Tätigkeiten und ihre Reihenfolge.",
-      "Ablauforganisation betrachtet nur Hierarchien.",
-      "Aufbauorganisation bildet nur Kennzahlen ab.",
-      "Beide Begriffe sind identisch."
+      "Ablauforganisation legt vorrangig disziplinarische Weisungsbeziehungen fest.",
+      "Aufbauorganisation beschreibt die Reihenfolge von Tätigkeiten zwischen Abteilungen.",
+      "Aufbau- und Ablauforganisation unterscheiden sich vor allem im Detaillierungsgrad der Darstellung."
     ],
     "correct": 0,
-    "why": "Die Aufbauorganisation betrachtet Strukturen, die Ablauforganisation Arbeitsabläufe.",
+    "why": "Ablauforganisation fokussiert die Reihenfolge und Verknüpfung von Tätigkeiten, Aufbauorganisation die Struktur der Zuständigkeiten.",
     "source": "M3, Folie 2"
   },
   {
@@ -22,15 +22,15 @@ export const module3Questions = [
     "topic": "Prozesse",
     "type": "chapter",
     "chapter": 3,
-    "q": "Was zeigt eine Prozesslandkarte in erster Linie?",
+    "q": "Ein Unternehmen will seine Führungs-, wertschöpfenden und unterstützenden Abläufe gemeinsam überblicken. Welche Darstellung ist geeignet?",
     "a": [
-      "Private Managementkontakte",
-      "Nur Beschwerden eines Tages",
+      "Organigramm mit allen disziplinarischen Berichtslinien",
+      "RACI-Matrix zur Verantwortungsverteilung in einem Einzelprozess",
       "Wesentliche Prozesse und ihre Zusammenhänge",
-      "Die jährliche Bilanz"
+      "Turtle-Diagramm zur Detailanalyse eines Einzelprozesses"
     ],
     "correct": 2,
-    "why": "Eine Prozesslandkarte macht die Prozessstruktur der Organisation sichtbar.",
+    "why": "Die Prozesslandkarte macht wesentliche Prozesse und deren Zusammenhänge überblickbar.",
     "source": "M3, Folie 3"
   },
   {
@@ -39,15 +39,15 @@ export const module3Questions = [
     "topic": "Prozesse",
     "type": "chapter",
     "chapter": 3,
-    "q": "Welche Turtle-Frage bezieht sich auf die für einen Prozess benötigten Ressourcen?",
+    "q": "Im Turtle-Diagramm soll erfasst werden, welche Maschinen, Werkzeuge und Hilfsmittel eingesetzt werden. Welche Frage ist maßgeblich?",
     "a": [
-      "Wofür?",
+      "Wer?",
       "Womit?",
-      "Wohin?",
-      "Woher?"
+      "Wofür?",
+      "Wie?"
     ],
     "correct": 1,
-    "why": "Womit? ermittelt Werkzeuge, Ressourcen und Ausstattung.",
+    "why": "Womit? fragt nach benötigten Ressourcen und Betriebsmitteln.",
     "source": "M3, Folie 5"
   },
   {
@@ -56,15 +56,15 @@ export const module3Questions = [
     "topic": "Prozesse",
     "type": "chapter",
     "chapter": 3,
-    "q": "Welche Angaben gehören zum Turtle-Bereich Wer?",
+    "q": "Eine Prozessanalyse soll Schulungsbedarf und verantwortliche Personen identifizieren. Welcher Turtle-Bereich passt?",
     "a": [
-      "Umsatz",
-      "Werbeanzeigen",
-      "Anzahl Reklamationen",
+      "Womit? – Werkzeuge und Ressourcen",
+      "Wie? – Verfahren und Methoden",
+      "Wofür? – Ziele und Kennzahlen",
       "Verantwortlichkeiten und Kompetenzen"
     ],
     "correct": 3,
-    "why": "Wer? erfasst Beteiligte, Verantwortungen und Qualifikationen.",
+    "why": "Die Frage Wer? untersucht Verantwortliche, Qualifikationen und Beteiligte.",
     "source": "M3, Folie 5"
   },
   {
@@ -73,15 +73,15 @@ export const module3Questions = [
     "topic": "Prozesse",
     "type": "chapter",
     "chapter": 3,
-    "q": "Wozu dient die Turtle-Frage Wofür beziehungsweise wie gut?",
+    "q": "Für einen Prozess werden Messgrößen und Zielwerte festgelegt. Welche Turtle-Frage adressiert genau diese Aspekte?",
     "a": [
       "Sie ermittelt Ziele und Kennzahlen.",
-      "Sie gibt die Lieferadresse an.",
-      "Sie ersetzt die Tätigkeiten.",
-      "Sie zeigt ausschließlich die Hierarchie."
+      "Wie? – Methoden und Vorgaben",
+      "Woher? – Quelle des Inputs",
+      "Wohin? – Empfänger des Outputs"
     ],
     "correct": 0,
-    "why": "Mit dieser Frage werden Prozessziele und Leistungsindikatoren bestimmt.",
+    "why": "Wofür beziehungsweise wie gut? fragt nach Prozessleistung, Zielen und Kennzahlen.",
     "source": "M3, Folie 6"
   },
   {
@@ -90,15 +90,15 @@ export const module3Questions = [
     "topic": "Prozesse",
     "type": "chapter",
     "chapter": 3,
-    "q": "Was ist im Gegensatz zum Prozess vor allem ein Verfahren?",
+    "q": "Was kennzeichnet ein Verfahren im Unterschied zu einem Prozess?",
     "a": [
-      "Die Unternehmensstruktur",
-      "Ein Umsatzbericht",
+      "Die Festlegung von Input, Output und Schnittstellen zwischen Aktivitäten",
+      "Die Beurteilung der Zielerreichung über Prozesskennzahlen",
       "Eine Festlegung, wie Tätigkeiten durchzuführen sind",
-      "Ein immer unabhängiger Kundenvertrag"
+      "Die Abfolge wertschöpfender Tätigkeiten mit einem definierten Ergebnis"
     ],
     "correct": 2,
-    "why": "Ein Verfahren beschreibt die Durchführung, ein Prozess wandelt Eingaben in Ergebnisse um.",
+    "why": "Das Verfahren beschreibt das Wie; der Prozess wird gesteuert und hinsichtlich seiner Ergebnisse beurteilt.",
     "source": "M3, Folie 8"
   },
   {
@@ -107,15 +107,15 @@ export const module3Questions = [
     "topic": "Prozesse",
     "type": "chapter",
     "chapter": 3,
-    "q": "Welche Wirkung kann Prozessorientierung laut Folien erzielen?",
+    "q": "Welcher Nutzen ist einer wirksamen Prozessorientierung zuzuordnen?",
     "a": [
-      "Zwingend höhere Kosten",
+      "Die Abgrenzung einzelner Abteilungen unabhängig von Kundenanforderungen",
       "Kürzere Durchlaufzeiten und bessere Qualität",
-      "Absichtlich sinkende Kundenorientierung",
-      "Wegfall aller Ziele"
+      "Das Vermeiden bereichsübergreifender Verantwortung durch strenge Funktionsgrenzen",
+      "Die Beurteilung von Qualität ausschließlich anhand der Endprüfung"
     ],
     "correct": 1,
-    "why": "Prozessorientierung kann Qualität steigern und Durchlaufzeiten senken.",
+    "why": "Geklärte Abläufe und Schnittstellen können die Qualität erhöhen und Durchlaufzeiten verkürzen.",
     "source": "M3, Folie 9"
   },
   {
@@ -124,15 +124,15 @@ export const module3Questions = [
     "topic": "Prozesse",
     "type": "chapter",
     "chapter": 3,
-    "q": "Was ist der wichtigste Zweck des Prozessmonitorings?",
+    "q": "Ein Prozessverantwortlicher verfolgt den Verlauf einer Durchlaufzeitkennzahl über sechs Monate. Was ist die primäre Tätigkeit?",
     "a": [
-      "Historische Abweichungen ignorieren",
-      "Organigramme verändern",
-      "Nur Unterlagen erstellen",
+      "Eine einmalige Prozessidentifikation",
+      "Die Erstellung einer neuen Aufbauorganisation",
+      "Die endgültige Zertifizierung des Prozesses",
       "Veränderungen der Prozessleistung über die Zeit erkennen"
     ],
     "correct": 3,
-    "why": "Monitoring bezeichnet die systematische Beobachtung oder Überwachung von Prozessen.",
+    "why": "Das kontinuierliche Beobachten von Kennzahlen über Zeit ist Prozessmonitoring.",
     "source": "M3, Folie 10"
   },
   {
@@ -141,15 +141,15 @@ export const module3Questions = [
     "topic": "Prozesse",
     "type": "chapter",
     "chapter": 3,
-    "q": "Eine Prozesskennzahl unterschreitet die festgelegte Eingriffsgrenze. Was folgt?",
+    "q": "Eine Kennzahl überschreitet die für den Prozess festgelegte Eingriffsgrenze. Welcher nächste Steuerungsschritt passt am besten?",
     "a": [
       "Maßnahmen ableiten, nachverfolgen und bewerten.",
-      "Grenzen ohne Grund löschen.",
-      "Nur Mitarbeitende bestrafen.",
-      "Abweichungen nicht mehr dokumentieren."
+      "Den Mittelwert ohne Ursachenanalyse als neues Ziel übernehmen.",
+      "Erst die jährliche Managementbewertung abwarten, bevor reagiert wird.",
+      "Die Grenzwerte rückwirkend auf die bereits gemessenen Daten anpassen."
     ],
     "correct": 0,
-    "why": "Die Folien verlangen Maßnahmen sowie die Bewertung ihrer Wirksamkeit.",
+    "why": "Eingriffsgrenzen sollen Ursachenanalyse und geeignete Maßnahmen sowie deren Nachverfolgung auslösen.",
     "source": "M3, Folie 11"
   },
   {
@@ -158,15 +158,15 @@ export const module3Questions = [
     "topic": "Prozesse",
     "type": "chapter",
     "chapter": 3,
-    "q": "Welche Aussage zur Prozessbewertung ist richtig?",
+    "q": "Welche Aussage verbindet Prozessmonitoring und Prozessbewertung korrekt?",
     "a": [
-      "Sie darf nur einmal erfolgen.",
-      "Sie ist reine Dekoration.",
+      "Die Bewertung ist abgeschlossen, sobald eine Prozessbeschreibung vorhanden ist.",
+      "Qualitative Auditergebnisse dürfen niemals mit Kennzahlen betrachtet werden.",
       "Sie sollte periodisch anhand qualitativer und quantitativer Indikatoren stattfinden.",
-      "Sie ersetzt jede Prozessbeschreibung."
+      "Prozessbewertung ist ausschließlich eine einmalige Entscheidung bei Prozessstart."
     ],
     "correct": 2,
-    "why": "Die Folien nennen periodische Bewertung, Auditergebnisse, Kennzahlen und Zielerreichung.",
+    "why": "Monitoring liefert Beobachtungsdaten; die Bewertung vergleicht Prozessleistung und qualitative Befunde mit den Zielen.",
     "source": "M3, Folie 10"
   }
 ];

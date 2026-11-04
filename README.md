@@ -21,7 +21,9 @@ Die Altklausuren wurden inhaltlich überarbeitet, sind also keine unveränderten
 - Lernmodus: Sofortiges Feedback mit Musterlösung, kurzer Erklärung und Modulbezug.
 - Prüfungsmodus: Erst nach der Abgabe werden Lösungen angezeigt. Antworten bleiben bis zur Abgabe veränderbar, fehlende Antworten sind falsch.
 - Drei Prüfungskataloge, **zwölf eigene Kapitelkataloge** und Gesamtmodus.
-- Kapitelkataloge mit insgesamt **180 neuen, quellenbezogenen Fragen**; Antwortpositionen werden stabil und reproduzierbar gemischt.
+- Kapitelkataloge mit insgesamt **180 quellenbezogenen, überarbeiteten Fragen**; Antwortpositionen werden stabil und reproduzierbar gemischt.
+- Plausible fachnahe Distraktoren statt offensichtlicher Unsinnsoptionen; Beispiele verwenden Verwechslungen zwischen Methoden, benachbarten Normkapiteln und typischen Rechenfehlern.
+- Die automatische Validierung warnt bei verdächtigen Antwortlängen und mehreren auffälligen absoluten Aussagen. Eine inhaltliche Prüfung bleibt trotzdem notwendig.
 - Themenfilter für gemischte Kataloge und Fehlerfilter nach Beantwortung.
 - Lokaler Lernfortschritt im Browser, getrennt von alten ITI-Daten.
 - Bestehensgrenze aus den Vorlesungsfolien: **über 50 %**, d. h. mindestens 21/40 bzw. 16/30.

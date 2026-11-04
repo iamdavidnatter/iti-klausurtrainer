@@ -5,15 +5,15 @@ export const module9Questions = [
     "topic": "Führung",
     "type": "chapter",
     "chapter": 9,
-    "q": "Welche drei Bestandteile enthält die Motivationsformel der Vorlesung?",
+    "q": "Welche drei Faktoren bilden in der Vorlesung gemeinsam die Voraussetzung für motiviertes und wirksames Handeln?",
     "a": [
-      "Preis, Leistung und Zeit",
+      "Fähigkeiten, Anerkennung und Entlohnung",
       "Können, Wollen und Dürfen",
-      "Mensch, Material und Maschine",
-      "Qualität, Risiko und Umsatz"
+      "Wissen, Ziele und Unternehmensführung",
+      "Kompetenz, Motivation und Erfolg"
     ],
     "correct": 1,
-    "why": "Die Vorlesung verwendet die Formel Motivation = Können × Wollen × Dürfen.",
+    "why": "Die Formel der Vorlesung lautet Können × Wollen × Dürfen.",
     "source": "M9, Folie 2"
   },
   {
@@ -22,15 +22,15 @@ export const module9Questions = [
     "topic": "Führung",
     "type": "chapter",
     "chapter": 9,
-    "q": "Eine Mitarbeiterin verfügt über Fachwissen und Motivation, erhält aber keine Entscheidungsbefugnis. Welcher Faktor ist betroffen?",
+    "q": "Eine Fachkraft besitzt die benötigte Kompetenz und ist motiviert, darf aber die erforderliche Entscheidung nicht treffen. Welcher Faktor der Formel fehlt?",
     "a": [
       "Können",
       "Wollen",
-      "Entlohnung",
+      "Motivator",
       "Dürfen"
     ],
     "correct": 3,
-    "why": "Dürfen umfasst Möglichkeiten und Befugnisse zur Umsetzung der Tätigkeit.",
+    "why": "Der fehlende Handlungsspielraum betrifft 'Dürfen', nicht Fähigkeiten oder Motivation.",
     "source": "M9, Folie 2"
   },
   {
@@ -39,15 +39,15 @@ export const module9Questions = [
     "topic": "Führung",
     "type": "chapter",
     "chapter": 9,
-    "q": "Welche Situation fördert nach den Folien die Akzeptanz einer Veränderung?",
+    "q": "Ein Führungsteam will Akzeptanz für einen geänderten Prozess aufbauen. Was gehört laut den Folien zu den zentralen Akzeptanzkriterien?",
     "a": [
       "Die Sinnhaftigkeit und den Vorteil verständlich erklären.",
-      "Den Nutzen der Veränderung verheimlichen.",
-      "Alle betroffenen Personen ausschließen.",
-      "Die Ziele grundsätzlich offenlassen."
+      "Zunächst ausschließlich die finanziellen Anreize erhöhen",
+      "Zuerst die Aufgaben verteilen, ohne Ziele zu erklären",
+      "Den Nutzen erst nach Abschluss der Umsetzung vermitteln"
     ],
     "correct": 0,
-    "why": "Bekannte Sinnzusammenhänge und nachvollziehbare Ziele fördern Akzeptanz.",
+    "why": "Akzeptanz setzt voraus, dass Sinn und Ziel einer Veränderung nachvollziehbar sind.",
     "source": "M9, Folie 4"
   },
   {
@@ -56,15 +56,15 @@ export const module9Questions = [
     "topic": "Führung",
     "type": "chapter",
     "chapter": 9,
-    "q": "Ein Mitarbeiter arbeitet aus Interesse und Überzeugung an einer Verbesserung. Welche Motivation?",
+    "q": "Eine Person verbessert freiwillig einen Ablauf, weil sie die Aufgabe selbst interessant und sinnvoll findet. Welche Motivationsform überwiegt?",
     "a": [
-      "Nur externer Zwang",
-      "Ausschließlich Prämienabhängigkeit",
+      "Extrinsische Motivation durch Prämien",
+      "Extrinsische Motivation durch Anerkennung der Führungskraft",
       "Intrinsische Motivation",
-      "Organisatorische Barriere"
+      "Extrinsische Motivation durch Vermeidung von Sanktionen"
     ],
     "correct": 2,
-    "why": "Intrinsische Motivation beruht auf innerem Interesse beziehungsweise Sinnhaftigkeit.",
+    "why": "Die Motivation entspringt dem inneren Interesse an der Aufgabe selbst.",
     "source": "M9, Folie 5"
   },
   {
@@ -73,15 +73,15 @@ export const module9Questions = [
     "topic": "Führung",
     "type": "chapter",
     "chapter": 9,
-    "q": "Welche Maßnahme ist ein typischer extrinsischer Anreiz?",
+    "q": "Ein Unternehmen führt eine leistungsabhängige Bonuszahlung ein. Welche Art von Anreiz wird damit vorwiegend gesetzt?",
     "a": [
-      "Persönliche Begeisterung für eine Aufgabe",
+      "Intrinsischer Antrieb durch fachliches Interesse",
       "Eine zusätzliche Leistungsprämie",
-      "Das Erkennen des tieferen Sinnes",
-      "Die Freude am Problemlösen selbst"
+      "Intrinsischer Antrieb durch subjektiven Sinn",
+      "Intrinsischer Antrieb durch Freude an der Tätigkeit"
     ],
     "correct": 1,
-    "why": "Prämien und Belohnungen sind äußere Anreize und damit extrinsische Motivation.",
+    "why": "Eine Prämie ist ein äußerer Anreiz und zählt zur extrinsischen Motivation.",
     "source": "M9, Folie 5"
   },
   {
@@ -90,15 +90,15 @@ export const module9Questions = [
     "topic": "Führung",
     "type": "chapter",
     "chapter": 9,
-    "q": "Was gehört laut Folien zur wirksamen Führungskompetenz?",
+    "q": "Welche Kombination deckt die wesentlichen Kompetenzbereiche wirksamer Führung nach den Folien ab?",
     "a": [
-      "Ausschließlich fachliche Detailkenntnis",
-      "Nur hierarchische Macht",
-      "Keine Beteiligung Betroffener",
+      "Fachkompetenz und Führungsposition ohne soziale Kommunikation",
+      "Emotionale Kompetenz ohne Fachwissen und Beteiligung",
+      "Durchsetzungskraft und Kontrolle ohne nachvollziehbare Sinnvermittlung",
       "Vorbild, Fachkompetenz, Zuhören und wirksame Kommunikation"
     ],
     "correct": 3,
-    "why": "Führung verbindet personale, soziale, fachliche und emotionale Kompetenzen.",
+    "why": "Wirksame Führung verbindet Fach-, Methoden-, soziale, emotionale und personale Kompetenz.",
     "source": "M9, Folie 6"
   },
   {
@@ -107,15 +107,15 @@ export const module9Questions = [
     "topic": "Führung",
     "type": "chapter",
     "chapter": 9,
-    "q": "Was ist die oberste Ebene der Maslowschen Bedürfnispyramide?",
+    "q": "Welche Bedürfnisebene steht in Maslows Modell in den Vorlesungsfolien an oberster Stelle?",
     "a": [
       "Selbstverwirklichung",
-      "Sicherheitsbedürfnisse",
+      "Anerkennung und Geltung",
       "Soziale Zugehörigkeit",
-      "Physiologische Bedürfnisse"
+      "Sicherheit und Stabilität"
     ],
     "correct": 0,
-    "why": "Das dargestellte Maslow-Modell setzt Selbstverwirklichung an die Spitze.",
+    "why": "Selbstverwirklichung bildet die höchste Ebene der dargestellten Bedürfnispyramide.",
     "source": "M9, Folie 8"
   },
   {
@@ -124,15 +124,15 @@ export const module9Questions = [
     "topic": "Führung",
     "type": "chapter",
     "chapter": 9,
-    "q": "Welche Aussage zu Herzbergs Hygienefaktoren ist richtig?",
+    "q": "Welche Wirkung haben Hygienefaktoren im Zwei-Faktoren-Modell nach Herzberg?",
     "a": [
-      "Ihr Fehlen steigert stets die Motivation.",
-      "Sie sind ausschließlich private Interessen.",
+      "Sie sind identisch mit den aus der Aufgabe entstehenden Motivatoren.",
+      "Ihre Erhöhung ist laut Modell der direkte Haupttreiber der Arbeitszufriedenheit.",
       "Sie verhindern bei positiver Ausprägung Unzufriedenheit.",
-      "Sie sind mit beruflicher Anerkennung immer identisch."
+      "Sie wirken vor allem über Leistungserfolg und Anerkennung."
     ],
     "correct": 2,
-    "why": "Hygienefaktoren verhindern Unzufriedenheit, erzeugen aber nicht zwingend Zufriedenheit.",
+    "why": "Gute Hygienefaktoren verhindern Unzufriedenheit, während Motivatoren positive Zufriedenheit unterstützen.",
     "source": "M9, Folie 10"
   },
   {
@@ -141,15 +141,15 @@ export const module9Questions = [
     "topic": "Führung",
     "type": "chapter",
     "chapter": 9,
-    "q": "Welche Zuordnung enthält einen Motivator nach Herzberg?",
+    "q": "Welche Kombination enthält bei Herzberg **Motivatoren** und nicht bloß Hygienefaktoren?",
     "a": [
-      "Unzureichende Firmenparkplätze",
+      "Entlohnung und Arbeitsplatzsicherheit",
       "Verantwortungsübernahme und Anerkennung",
-      "Fehlende Arbeitsplatzsicherheit",
-      "Unzureichende Bürotemperatur"
+      "Arbeitsbedingungen und Führungsstil",
+      "Kollegiale Beziehungen und Arbeitsplatzausstattung"
     ],
     "correct": 1,
-    "why": "Verantwortung und Anerkennung gehören zu den Motivatoren des Herzberg-Modells.",
+    "why": "Verantwortung und Anerkennung gehören zu Herzbergs Motivatoren; die anderen Kombinationen sind Hygienefaktoren.",
     "source": "M9, Folie 11"
   },
   {
@@ -158,15 +158,15 @@ export const module9Questions = [
     "topic": "Führung",
     "type": "chapter",
     "chapter": 9,
-    "q": "Was kann eine extrinsische Ursache von Demotivation sein?",
+    "q": "Welche Zusammenstellung wird in den Folien unter Ursachen von Demotivation ausdrücklich genannt?",
     "a": [
-      "Sinnvoller Handlungsspielraum",
-      "Anerkennung von Leistungen",
-      "Eine gute Teamintegration",
+      "Mangelnde Fachkenntnis und fehlende Prüfdokumentation",
+      "Interessante Aufgaben und persönliche Weiterentwicklung",
+      "Sinnverständnis und Selbstverwirklichung",
       "Unsicherheit und persönliche Zurücksetzung"
     ],
     "correct": 3,
-    "why": "Die Folien führen Unsicherheit, Isolation und persönliche Zurücksetzung als Demotivationsursachen auf.",
+    "why": "Die Folien nennen unter anderem Unsicherheit, Isolation und persönliche Zurücksetzung als Demotivationsursachen.",
     "source": "M9, Folie 12"
   }
 ];

@@ -5,15 +5,15 @@ export const module8Questions = [
     "topic": "Wissen",
     "type": "chapter",
     "chapter": 8,
-    "q": "Welche ISO-9001:2015-Anforderung betrifft das Wissen der Organisation?",
+    "q": "Welcher Abschnitt der ISO 9001:2015 behandelt das organisationale Wissen?",
     "a": [
-      "8.5.5",
+      "7.2",
       "7.1.6",
-      "9.1.2",
-      "10.3"
+      "7.5",
+      "9.1.2"
     ],
     "correct": 1,
-    "why": "In Abschnitt 7.1.6 wird das für Prozesse nötige Wissen der Organisation behandelt.",
+    "why": "Das Wissen der Organisation ist in ISO 9001:2015 unter 7.1.6 geregelt.",
     "source": "M8, Folie 2"
   },
   {
@@ -22,15 +22,15 @@ export const module8Questions = [
     "topic": "Wissen",
     "type": "chapter",
     "chapter": 8,
-    "q": "Was ist beim organisationsspezifischen Wissen besonders zu beachten?",
+    "q": "Eine Organisation ermittelt erfolgskritisches Erfahrungswissen für ihre Prozesse. Was folgt aus ISO 9001:2015, 7.1.6?",
     "a": [
-      "Es entsteht nur durch gesetzliche Vorgaben.",
-      "Es wird grundsätzlich nie geändert.",
-      "Es kann nicht intern erworben werden.",
+      "Das Wissen ist allein durch eine einmalige Liste ausreichend berücksichtigt.",
+      "Für das Wissen gelten nur Regeln der technischen Datensicherung.",
+      "Eine Weitergabe ist erst erforderlich, nachdem ein Mitarbeiter ausgeschieden ist.",
       "Es muss für die Erfüllung von Prozessanforderungen verfügbar sein."
     ],
     "correct": 3,
-    "why": "Erforderliches Wissen soll aufrechterhalten und zur Verfügung gestellt werden.",
+    "why": "Erforderliches Organisationswissen soll bestimmt, aufrechterhalten und in geeigneter Weise verfügbar sein.",
     "source": "M8, Folie 2"
   },
   {
@@ -39,15 +39,15 @@ export const module8Questions = [
     "topic": "Wissen",
     "type": "chapter",
     "chapter": 8,
-    "q": "Was macht eine Qualifikations- oder Kompetenzmatrix sichtbar?",
+    "q": "Welche Information liefert eine Kompetenzmatrix im Qualitätsmanagement besonders?",
     "a": [
       "Vorhandene und benötigte Fähigkeiten von Personen",
-      "Nur die aktuelle Kapitalstruktur",
-      "Ausschließlich Kundenumsätze",
-      "Nur das Produktsortiment"
+      "Die nach RACI zugewiesenen Ausführungs- und Ergebnisverantwortlichkeiten",
+      "Die räumliche Zuordnung von Betriebsmitteln auf einen Arbeitsplatz",
+      "Die Abfolge aller Prozessschritte vom Input bis zum Output"
     ],
     "correct": 0,
-    "why": "Solche Matrizen unterstützen die Zuordnung und Planung erforderlicher Kompetenzen.",
+    "why": "Eine Kompetenzmatrix zeigt, welche Qualifikationen vorhanden sind und welche für Aufgaben benötigt werden.",
     "source": "M8, Folie 4"
   },
   {
@@ -56,15 +56,15 @@ export const module8Questions = [
     "topic": "Wissen",
     "type": "chapter",
     "chapter": 8,
-    "q": "Wodurch zeichnet sich explizites Wissen aus?",
+    "q": "Welches Merkmal trifft vorrangig auf **explizites** Wissen zu?",
     "a": [
-      "Es kann grundsätzlich nicht ausgedrückt werden.",
-      "Es steckt ausschließlich in Bauchgefühl.",
+      "Es entsteht vorwiegend durch gemeinsame Erfahrung und bleibt an Personen gebunden.",
+      "Es beruht auf Intuition und ist schwer vollständig auszudrücken.",
       "Es ist formulierbar und dokumentierbar.",
-      "Es entsteht nur durch gemeinsame körperliche Arbeit."
+      "Es wird vorwiegend durch Beobachtung und Nachahmung praktischer Tätigkeiten weitergegeben."
     ],
     "correct": 2,
-    "why": "Explizites Wissen lässt sich in Sprache, Dokumenten oder kodierten Daten festhalten.",
+    "why": "Explizites Wissen ist artikulierbar, reproduzierbar und in Dokumenten oder Daten kodierbar.",
     "source": "M8, Folie 7"
   },
   {
@@ -73,15 +73,15 @@ export const module8Questions = [
     "topic": "Wissen",
     "type": "chapter",
     "chapter": 8,
-    "q": "Ein erfahrener Servicetechniker erkennt einen Fehler an einem Geräusch. Welche Wissensform ist besonders beteiligt?",
+    "q": "Ein langjähriger Techniker erkennt einen Defekt anhand von Erfahrung und Intuition, kann seine Entscheidung aber nur schwer beschreiben. Welche Wissensform überwiegt?",
     "a": [
-      "Reine Unternehmensbilanz",
+      "Explizites Wissen in schriftlich festgehaltenen Prozessanweisungen",
       "Implizites Erfahrungswissen",
-      "Ausschließlich ein Lexikontext",
-      "Automatisch ein Auditnachweis"
+      "Kodiertes Wissen in technischen Datenbanken",
+      "Formalisierte Informationen in einer Prüfanweisung"
     ],
     "correct": 1,
-    "why": "Erfahrung und Intuition gelten als typische Anteile impliziten Wissens.",
+    "why": "Erfahrungsgebundene Intuition ohne vollständige Artikulierbarkeit gilt als implizites Wissen.",
     "source": "M8, Folie 9"
   },
   {
@@ -90,15 +90,15 @@ export const module8Questions = [
     "topic": "Wissen",
     "type": "chapter",
     "chapter": 8,
-    "q": "Welche Aussage beschreibt die Wissenstreppe nach North?",
+    "q": "Welche Entwicklung beschreibt die Wissenstreppe nach North?",
     "a": [
-      "Sie ersetzt jede praktische Anwendung durch Daten.",
-      "Sie beschäftigt sich nur mit Einkaufspreisen.",
-      "Sie dient ausschließlich der Einschätzung von Berufsabschlüssen.",
+      "Direkter Übergang von Rohdaten zu Handlungskompetenz ohne Interpretation",
+      "Entwicklung von dokumentiertem Wissen zu Daten durch mehr Aufzeichnungen",
+      "Abfolge von Wissensbewahrung zu Wissensidentifikation und Wissensbewertung",
       "Sie unterscheidet Daten, Informationen und anwendungsbezogenes Wissen beziehungsweise Kompetenz."
     ],
     "correct": 3,
-    "why": "Die Wissenstreppe zeigt die qualitative Weiterentwicklung von Daten zu Wissen und Kompetenz.",
+    "why": "Die Wissenstreppe verdeutlicht die Entwicklung von Daten zu Information, Wissen und anwendungsbezogener Kompetenz.",
     "source": "M8, Folie 6"
   },
   {
@@ -107,15 +107,15 @@ export const module8Questions = [
     "topic": "Wissen",
     "type": "chapter",
     "chapter": 8,
-    "q": "Welche zwei zusätzlichen Elemente bilden bei Probst den strategischen äußeren Kreislauf?",
+    "q": "Welche Bausteine ergänzen bei Probst die operativen Wissensaktivitäten um einen **strategischen äußeren Kreislauf**?",
     "a": [
       "Wissensziele und Wissensbewertung",
-      "Nur Wissensnutzung und Wissenserwerb",
-      "Ausschließlich Arbeitsanweisungen",
-      "Personalplanung und Auditbericht"
+      "Wissensidentifikation und Wissenserwerb",
+      "Wissensentwicklung und Wissensverteilung",
+      "Wissensnutzung und Wissensbewahrung"
     ],
     "correct": 0,
-    "why": "Der äußere Kreislauf ergänzt die operativen Wissensbausteine um Ziele und Bewertung.",
+    "why": "Die Wissensziele und deren Bewertung bilden den strategischen Kreislauf des Probst-Modells.",
     "source": "M8, Folie 12"
   },
   {
@@ -124,15 +124,15 @@ export const module8Questions = [
     "topic": "Wissen",
     "type": "chapter",
     "chapter": 8,
-    "q": "Ein Unternehmen baut neues Know-how durch Forschung und gemeinsame Problemlösung auf. Welcher Probst-Baustein passt?",
+    "q": "Ein Team entwickelt im Zuge eines Projekts neues Wissen und neue Lösungswege, die es bisher intern nicht gab. Welcher Probst-Baustein passt?",
     "a": [
-      "Wissensbewahrung",
+      "Wissenserwerb",
       "Wissensidentifikation",
       "Wissensentwicklung",
-      "Wissensbewertung"
+      "Wissensbewahrung"
     ],
     "correct": 2,
-    "why": "Wissensentwicklung bezeichnet die Schaffung neuer Fähigkeiten, Ideen und Prozesse.",
+    "why": "Wissensentwicklung schafft neues internes Wissen, Methoden und Fähigkeiten.",
     "source": "M8, Folie 14"
   },
   {
@@ -141,15 +141,15 @@ export const module8Questions = [
     "topic": "Wissen",
     "type": "chapter",
     "chapter": 8,
-    "q": "Welche Probst-Aktivität verhindert, dass wichtiges Wissen nach einem Mitarbeiteraustritt vollständig verloren geht?",
+    "q": "Ein Pensionierungsfall gefährdet das Know-how eines erfahrenen Spezialisten. Welcher Probst-Baustein adressiert das dauerhafte Sichern besonders?",
     "a": [
-      "Wissenserwerb",
-      "Wissensbewahrung",
       "Wissensidentifikation",
-      "Wissensziele"
+      "Wissensbewahrung",
+      "Wissenserwerb",
+      "Wissensnutzung"
     ],
     "correct": 1,
-    "why": "Wissensbewahrung umfasst die Auswahl und geeignete Speicherung wichtigen Wissens.",
+    "why": "Wissensbewahrung beinhaltet Auswahl und geeignete Sicherung des relevanten Wissens.",
     "source": "M8, Folie 14"
   },
   {
@@ -158,15 +158,15 @@ export const module8Questions = [
     "topic": "Wissen",
     "type": "chapter",
     "chapter": 8,
-    "q": "In der Wissensspirale wird persönliche Erfahrung in eine verständliche Anleitung übertragen. Welcher Schritt?",
+    "q": "Ein erfahrener Mitarbeiter überführt sein bisher nicht dokumentiertes Vorgehen in eine verständliche Anleitung. Wie heißt dieser SECI-Schritt?",
     "a": [
-      "Sozialisation",
-      "Internalisierung",
-      "Kombination",
+      "Sozialisation – implizit zu implizit",
+      "Kombination – explizit zu explizit",
+      "Internalisierung – explizit zu implizit",
       "Externalisierung"
     ],
     "correct": 3,
-    "why": "Externalisierung wandelt implizites in explizites Wissen um.",
+    "why": "Externalisierung ist die Umwandlung von implizitem in explizites Wissen.",
     "source": "M8, Folie 15"
   },
   {
@@ -175,15 +175,15 @@ export const module8Questions = [
     "topic": "Wissen",
     "type": "chapter",
     "chapter": 8,
-    "q": "Zwei vorhandene Dokumentationen werden zu einer neuen gemeinsamen Arbeitsanweisung zusammengeführt. Welche Wissensumwandlung?",
+    "q": "Zwei bestehende technische Handbücher werden zu einem neuen Prozessdokument zusammengeführt. Welche Wissensumwandlung ist dies?",
     "a": [
       "Kombination expliziten Wissens",
-      "Sozialisation impliziten Wissens",
-      "Nur Wertschöpfungskontrolle",
-      "Eine Risikoakzeptanzentscheidung"
+      "Sozialisation – implizit zu implizit",
+      "Externalisierung – implizit zu explizit",
+      "Internalisierung – explizit zu implizit"
     ],
     "correct": 0,
-    "why": "Kombination verknüpft explizite Wissensbestände miteinander.",
+    "why": "Kombination verknüpft bereits explizite Wissensbestände miteinander.",
     "source": "M8, Folie 15"
   },
   {
@@ -192,15 +192,15 @@ export const module8Questions = [
     "topic": "Wissen",
     "type": "chapter",
     "chapter": 8,
-    "q": "Welche Situation ist eine technische Barriere des Wissensmanagements?",
+    "q": "Ein Wissensportal ist in die bestehende IT-Landschaft schlecht eingebunden und wird deshalb kaum verwendet. Welche Barrierenklasse passt?",
     "a": [
-      "Die Überzeugung 'Wissen ist Macht'",
-      "Fehlende Zeit für Schulungen",
+      "Menschlich: geringe Bereitschaft zur Weitergabe von Wissen",
+      "Organisatorisch: unklare Zuständigkeit für Wissensziele",
       "Schlecht in die IT eingebundene Wissenssysteme",
-      "Geringe Wertschätzung von jüngeren Mitarbeitenden"
+      "Menschlich: unzureichende Anerkennung von Ideen anderer Hierarchiestufen"
     ],
     "correct": 2,
-    "why": "Unzureichende technische Integration ist als technische Barriere genannt.",
+    "why": "Die unzureichende Einbindung von Wissenssystemen in die IT-Infrastruktur ist eine technische Barriere.",
     "source": "M8, Folie 19"
   }
 ];

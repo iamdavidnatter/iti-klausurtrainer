@@ -5,15 +5,15 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Was ist die statistische Grundgesamtheit einer Untersuchung?",
+    "q": "Ein Hersteller will Aussagen über **alle im Oktober produzierten Teile** treffen. Was bezeichnet in dieser Untersuchung die Grundgesamtheit?",
     "a": [
-      "Nur die fünf zuletzt geprüften Stücke",
+      "Die zufällig ausgewählten 200 gemessenen Teile",
       "Die Gesamtheit aller relevanten Untersuchungseinheiten",
-      "Ein einzelner Ausreißer",
-      "Der ausgerechnete Mittelwert"
+      "Die Menge aller möglichen Messwerte der Länge",
+      "Den errechneten durchschnittlichen Messwert"
     ],
     "correct": 1,
-    "why": "Die Grundgesamtheit umfasst alle definierten Einheiten, über die eine Aussage getroffen werden soll.",
+    "why": "Die Grundgesamtheit umfasst alle durch die Fragestellung abgegrenzten Untersuchungseinheiten, hier alle im Oktober produzierten Teile.",
     "source": "M11, Folie 3"
   },
   {
@@ -22,15 +22,15 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Was bezeichnet eine Stichprobe?",
+    "q": "Aus einer Fertigung mit 12.000 Produkten werden 250 zufällig für eine Messung ausgewählt. Was ist die Stichprobe?",
     "a": [
-      "Immer die gesamte Grundgesamtheit",
-      "Nur einen Rechenfehler",
-      "Den statistischen Zielwert",
+      "Die Gesamtheit der 12.000 hergestellten Produkte",
+      "Die Häufigkeitsverteilung der 250 Messwerte",
+      "Der Mittelwert der insgesamt 12.000 Produkte",
       "Einen ausgewählten Teil der Grundgesamtheit"
     ],
     "correct": 3,
-    "why": "Eine Stichprobe enthält untersuchte Einheiten aus der Grundgesamtheit.",
+    "why": "Eine Stichprobe ist die Auswahl von Untersuchungseinheiten aus einer Grundgesamtheit.",
     "source": "M11, Folie 3"
   },
   {
@@ -39,15 +39,15 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Von 400 geprüften Produkten sind 16 fehlerhaft. Wie groß ist die relative Häufigkeit fehlerhafter Produkte?",
+    "q": "Bei einer Stichprobenprüfung sind 16 von 400 Teilen fehlerhaft. Welcher Anteil ist relativ fehlerhaft?",
     "a": [
       "4 %",
+      "0,04 %",
       "0,4 %",
-      "16 %",
-      "40 %"
+      "4,16 %"
     ],
     "correct": 0,
-    "why": "16/400 = 0,04 und entspricht 4 % relativer Häufigkeit.",
+    "why": "Der relative Anteil ist 16 ÷ 400 = 0,04 = 4 %.",
     "source": "M11, Folie 6"
   },
   {
@@ -56,15 +56,15 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Bei 50.000 Teilen sind 25 fehlerhaft. Wie viel ppm entspricht dies?",
+    "q": "Ein Produktionslauf umfasst 50.000 Teile, darunter 25 fehlerhafte Teile. Wie hoch ist der Anteil in ppm?",
     "a": [
-      "25 ppm",
       "250 ppm",
+      "2.000 ppm",
       "500 ppm",
-      "5.000 ppm"
+      "50 ppm"
     ],
     "correct": 2,
-    "why": "25/50.000 × 1.000.000 = 500 ppm.",
+    "why": "25/50.000 × 1.000.000 ergibt 500 ppm fehlerhafter Teile.",
     "source": "M11, Folie 7"
   },
   {
@@ -73,15 +73,15 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "In einer Urne sind 3 rote unter insgesamt 12 gleichwahrscheinlich gezogenen Kugeln. Wie groß ist P(rot)?",
+    "q": "In einem Behälter liegen zwölf gleichwahrscheinlich ziehbare Kugeln, davon drei rot. Wie groß ist die Wahrscheinlichkeit einer roten Kugel?",
     "a": [
-      "12 %",
+      "20 %",
       "25 %",
-      "33,3 %",
-      "75 %"
+      "30 %",
+      "33,3 %"
     ],
     "correct": 1,
-    "why": "Nach Laplace sind 3 von 12 gleichwahrscheinlichen Ergebnissen günstig.",
+    "why": "Bei gleichwahrscheinlichen Ergebnissen gilt P(rot)=3/12=25 %.",
     "source": "M11, Folie 8"
   },
   {
@@ -90,15 +90,15 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Zwei Ereignisse A und B schließen einander aus; P(A)=0,2 und P(B)=0,3. Wie hoch ist P(A oder B)?",
+    "q": "Bei zwei **disjunkten** Ereignissen gilt P(A)=0,2 und P(B)=0,3. Welcher Wert ergibt sich für P(A ∪ B)?",
     "a": [
       "0,06",
-      "0,10",
-      "0,90",
+      "0,44",
+      "0,56",
       "0,50"
     ],
     "correct": 3,
-    "why": "Bei disjunkten Ereignissen addieren sich die Wahrscheinlichkeiten: 0,2 + 0,3.",
+    "why": "Weil beide Ereignisse einander ausschließen, werden 0,2 und 0,3 addiert.",
     "source": "M11, Folie 9"
   },
   {
@@ -107,15 +107,15 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Zwei unabhängige Fehler treten mit 10 % bzw. 20 % Wahrscheinlichkeit auf. Wie hoch ist P(beide Fehler)?",
+    "q": "Zwei voneinander unabhängige Fehlermöglichkeiten treten mit Wahrscheinlichkeiten 0,10 und 0,20 auf. Wie hoch ist die Wahrscheinlichkeit, dass **beide** auftreten?",
     "a": [
       "2 %",
-      "10 %",
-      "20 %",
+      "8 %",
+      "18 %",
       "30 %"
     ],
     "correct": 0,
-    "why": "Unabhängige Ereignisse werden multipliziert: 0,1 × 0,2 = 0,02.",
+    "why": "Nach dem Multiplikationssatz für unabhängige Ereignisse gilt 0,10 × 0,20 = 0,02.",
     "source": "M11, Folie 11"
   },
   {
@@ -124,15 +124,15 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Zwei unabhängige Fehlermöglichkeiten haben je 10 % Wahrscheinlichkeit. Wie wahrscheinlich ist es, dass beide ausbleiben?",
+    "q": "Bei zwei unabhängigen Fehlermöglichkeiten beträgt die Auftretenswahrscheinlichkeit jeweils 10 %. Wie wahrscheinlich ist es, dass **keiner** auftritt?",
     "a": [
-      "10 %",
-      "18 %",
+      "80 %",
+      "90 %",
       "81 %",
-      "90 %"
+      "99 %"
     ],
     "correct": 2,
-    "why": "P(kein A und kein B) = 0,9 × 0,9 = 0,81.",
+    "why": "Für zwei unabhängige Nicht-Ereignisse gilt (1−0,1)² = 0,81.",
     "source": "M11, Folie 12"
   },
   {
@@ -141,15 +141,15 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Welches Diagramm stellt eine Häufigkeitsverteilung metrischer Messwerte in Klassen dar?",
+    "q": "Die Verteilung gemessener Teilelängen soll in Klassen eingeteilt dargestellt werden. Welche Visualisierung ist dafür vorgesehen?",
     "a": [
-      "Ishikawa-Diagramm",
+      "Pareto-Diagramm",
       "Histogramm",
-      "Turtle-Diagramm",
-      "SWOT-Matrix"
+      "Regelkarte",
+      "Streudiagramm"
     ],
     "correct": 1,
-    "why": "Histogramme stellen Merkmalsausprägungen auf der X-Achse und Häufigkeiten auf der Y-Achse dar.",
+    "why": "Histogramme bilden eine Häufigkeitsverteilung von Merkmalsausprägungen nach Klassen ab.",
     "source": "M11, Folie 15"
   },
   {
@@ -158,15 +158,15 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Die Werte sind 1, 3, 5 und 7. Wie groß ist das arithmetische Mittel?",
+    "q": "Vier Messwerte betragen 1, 3, 5 und 7. Wie groß ist ihr arithmetischer Mittelwert?",
     "a": [
-      "3",
       "3,5",
+      "4,5",
       "5",
       "4"
     ],
     "correct": 3,
-    "why": "(1+3+5+7)/4 ergibt den Mittelwert 4.",
+    "why": "Der Mittelwert ist die Summe der Werte geteilt durch ihre Anzahl: 16/4=4.",
     "source": "M11, Folie 16"
   },
   {
@@ -175,15 +175,15 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Wie lautet der Median der sortierten Werte 2, 4, 9, 11, 18?",
+    "q": "Welche Zahl ist der Median der bereits sortierten Stichprobe 2, 4, 9, 11 und 18?",
     "a": [
       "9",
+      "8,8",
       "4",
-      "11",
-      "8,8"
+      "11"
     ],
     "correct": 0,
-    "why": "Der mittlere Wert der fünf sortierten Zahlen ist 9.",
+    "why": "Der Median ist bei fünf sortierten Werten der dritte Wert, also 9.",
     "source": "M11, Folie 16"
   },
   {
@@ -192,7 +192,7 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Die Werte 2, 3, 3, 3 und 7 werden betrachtet. Was ist ihr Modus?",
+    "q": "Gegeben sind die Werte 2, 3, 3, 3 und 7. Welcher Modalwert ergibt sich?",
     "a": [
       "2",
       "7",
@@ -200,7 +200,7 @@ export const module11Questions = [
       "3,6"
     ],
     "correct": 2,
-    "why": "Der Modus ist die am häufigsten vorkommende Ausprägung, hier 3.",
+    "why": "Der Wert 3 kommt am häufigsten vor und ist daher der Modalwert.",
     "source": "M11, Folie 16"
   },
   {
@@ -209,15 +209,15 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Welche Aussage zur Standardabweichung ist korrekt?",
+    "q": "Was erfasst die Standardabweichung einer metrischen Messreihe?",
     "a": [
-      "Sie entspricht immer dem größten Messwert.",
+      "Die Differenz zwischen größtem und kleinstem Wert",
       "Sie beschreibt die Streuung der Messwerte um den Mittelwert.",
-      "Sie ist immer gleich null.",
-      "Sie ist ein Synonym für die Stichprobengröße."
+      "Die durchschnittliche Entfernung des mittleren Messwerts vom Median",
+      "Den Abstand von oberem und unterem Quartil"
     ],
     "correct": 1,
-    "why": "Eine höhere Standardabweichung bedeutet bei vergleichbarem Maßstab größere Streuung.",
+    "why": "Standardabweichung beschreibt die Streuung der Daten um den arithmetischen Mittelwert, nicht Spannweite oder Quartilsabstand.",
     "source": "M11, Folie 17"
   },
   {
@@ -226,15 +226,15 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Die Quartile Q1 und Q3 sind 8 und 20. Wie groß ist der Interquartilsabstand?",
+    "q": "Die Quartile einer Verteilung liegen bei Q1 = 8 und Q3 = 20. Wie groß ist der Quartilsabstand?",
     "a": [
       "8",
-      "10",
       "20",
+      "28",
       "12"
     ],
     "correct": 3,
-    "why": "Der Interquartilsabstand beträgt Q3−Q1 = 20−8 = 12.",
+    "why": "Der Interquartilsabstand ist Q3−Q1=20−8=12.",
     "source": "M11, Folie 18"
   },
   {
@@ -243,15 +243,15 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Welche Beschreibung trifft auf die ideale Normalverteilung zu?",
+    "q": "Welche Beziehung gilt für die theoretische symmetrische Normalverteilung?",
     "a": [
       "Sie ist symmetrisch mit identischem Median und Mittelwert.",
-      "Sie besitzt immer zwei unterschiedliche Mittelwerte.",
-      "Ihre Fläche unter der Kurve beträgt null.",
-      "Sie ist grundsätzlich stark rechtsschief."
+      "Mittelwert und Median sind verschieden, die Verteilung ist aber symmetrisch.",
+      "Mittelwert und Modus liegen links vom Median.",
+      "Die Normalverteilung ist im Allgemeinen durch ihre Schiefe nach rechts bestimmt."
     ],
     "correct": 0,
-    "why": "Die Normalverteilung ist symmetrisch; Mittelwert und Median stimmen überein.",
+    "why": "Bei einer theoretischen Normalverteilung fallen Mittelwert, Median und Modus zusammen.",
     "source": "M11, Folie 20"
   },
   {
@@ -260,15 +260,15 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Wie viel Prozent liegen bei einer idealen Normalverteilung ungefähr innerhalb von µ ± 2σ?",
+    "q": "Welcher Anteil einer idealen Normalverteilung liegt näherungsweise zwischen μ−2σ und μ+2σ?",
     "a": [
       "68,27 %",
       "99,73 %",
       "95,45 %",
-      "50 %"
+      "99,99 %"
     ],
     "correct": 2,
-    "why": "Innerhalb von zwei Standardabweichungen liegen näherungsweise 95,45 %.",
+    "why": "Für die Zwei-Sigma-Umgebung gilt näherungsweise 95,45 %.",
     "source": "M11, Folie 20"
   },
   {
@@ -277,15 +277,15 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Bei einer normalverteilten Größe liegen Spezifikationsgrenzen exakt bei µ ± 3σ. Welcher Anteil liegt ungefähr außerhalb?",
+    "q": "Ein zentrierter normalverteilter Prozess besitzt Spezifikationsgrenzen bei μ ± 3σ. Wie viele Prozent der Werte liegen näherungsweise **außerhalb beider Grenzen zusammen**?",
     "a": [
-      "4,55 %",
+      "0,135 %",
       "0,27 %",
-      "31,73 %",
-      "9,99 %"
+      "2,7 %",
+      "4,55 %"
     ],
     "correct": 1,
-    "why": "Außerhalb des Bereichs von drei Standardabweichungen liegen ungefähr 0,27 %.",
+    "why": "Bei ±3σ liegen etwa 99,73 % innerhalb und 0,27 % außerhalb, verteilt auf beide Enden.",
     "source": "M11, Folie 40"
   },
   {
@@ -294,15 +294,15 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Was ist das Hauptziel der Shewhart-Regelkarte?",
+    "q": "Messwerte sollen über die Zeit beobachtet werden, um systematische Veränderungen im laufenden Prozess zu erkennen. Welches Instrument passt?",
     "a": [
-      "Jeden Fehler erst nach der Auslieferung zu erkennen",
-      "Nur die Anzahl der Lieferanten zu erfassen",
-      "Einmalig den Verkaufspreis festzulegen",
+      "Histogramm zur Verteilung über Klassen",
+      "Pareto-Analyse zur Rangfolge von Fehlerarten",
+      "Prozessfähigkeitsindex zum Vergleich von Streuung und Spezifikationsbreite",
       "Prozessverläufe zu überwachen und besondere Ursachen zu erkennen"
     ],
     "correct": 3,
-    "why": "Die Qualitätsregelkarte unterstützt das Beobachten und Regeln von Prozessen.",
+    "why": "Die Shewhart-Regelkarte betrachtet den zeitlichen Verlauf und ermöglicht Hinweise auf besondere Ursachen.",
     "source": "M11, Folie 27"
   },
   {
@@ -311,15 +311,15 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Sieben aufeinanderfolgende Messpunkte steigen fortlaufend an. Welches Regelkartenmuster passt?",
+    "q": "Auf einer Regelkarte folgen sieben stetig ansteigende Messpunkte aufeinander. Wie wird dieses Muster in der Vorlesung bezeichnet?",
     "a": [
       "Trend",
-      "Zufällige Normalstreuung ohne Hinweis",
-      "Histogramm",
-      "Quartil"
+      "Run",
+      "Stufenverlagerung",
+      "Ausreißer"
     ],
     "correct": 0,
-    "why": "Die Vorlesungsfolie nennt einen Trend bei mindestens sieben aufsteigenden beziehungsweise absteigenden Messwerten.",
+    "why": "Die Folie benennt mindestens sieben aufeinanderfolgend steigende oder fallende Werte als Trend.",
     "source": "M11, Folie 32"
   },
   {
@@ -328,15 +328,15 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Sieben aufeinanderfolgende Punkte liegen auf derselben Seite der Mittellinie. Welches Muster liegt vor?",
+    "q": "Sieben Messpunkte liegen ohne Wechsel **oberhalb** der Mittellinie. Welche Auffälligkeit der Regelkarte ist beschrieben?",
     "a": [
-      "Immer ein fehlerfreier Prozess",
-      "Ein Messbereich ohne Abweichungen",
+      "Trend",
+      "Ausreißer",
       "Run",
-      "Eine Normalverteilung mit σ=0"
+      "Zyklisches Muster"
     ],
     "correct": 2,
-    "why": "Die Vorlesungsfolie kennzeichnet mindestens sieben Punkte auf einer Seite der Mittellinie als Run.",
+    "why": "Ein Run beschreibt mehrere Werte auf derselben Seite der Mittellinie.",
     "source": "M11, Folie 32"
   },
   {
@@ -345,12 +345,12 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Bei USG=20, OSG=32 und σ=2: Wie groß ist Cp?",
+    "q": "Ein normalverteilter Prozess hat USG=20, OSG=32 und σ=2. Berechne Cp.",
     "a": [
       "0,5",
       "1",
-      "2",
-      "3"
+      "1,5",
+      "2"
     ],
     "correct": 1,
     "why": "Cp=(32−20)/(6×2)=12/12=1.",
@@ -362,15 +362,15 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Gegeben: USG=6, OSG=18, µ=15, σ=1. Wie groß ist Cpk?",
+    "q": "Ein Prozess hat USG=6, OSG=18, Mittelwert μ=15 und σ=1. Welche Cpk-Zahl folgt?",
     "a": [
-      "4",
-      "3",
+      "1,5",
       "2",
+      "3",
       "1"
     ],
     "correct": 3,
-    "why": "Cpk=min((18−15)/(3×1),(15−6)/(3×1))=min(1,3)=1.",
+    "why": "Cpk=min((18−15)/3,(15−6)/3)=min(1,3)=1.",
     "source": "M11, Folie 38"
   },
   {
@@ -379,15 +379,15 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Welche Zielwerte für Prozessfähigkeitskennzahlen nennt die Vorlesung?",
+    "q": "Welche Zielwertkombination für Ppk und Cpk ist in Modul 11 ausdrücklich genannt?",
     "a": [
       "Ppk ≥ 1,67 und Cpk ≥ 1,33",
-      "Ppk ≥ 0,33 und Cpk ≥ 0,67",
-      "Ppk ≥ 1,00 und Cpk ≥ 0,50",
-      "Ppk ≥ 5 und Cpk ≥ 10"
+      "Ppk ≥ 1,33 und Cpk ≥ 1,67",
+      "Ppk ≥ 1,33 und Cpk ≥ 1,33",
+      "Ppk ≥ 1,67 und Cpk ≥ 1,67"
     ],
     "correct": 0,
-    "why": "Modul 11, Folie 39, gibt Ppk mindestens 1,67 und Cpk mindestens 1,33 an.",
+    "why": "Die Vorlesung nennt Ppk ≥ 1,67 sowie Cpk ≥ 1,33.",
     "source": "M11, Folie 39"
   },
   {
@@ -396,15 +396,15 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Welche Interpretation einer starken Korrelation ist zulässig?",
+    "q": "Bei zwei Qualitätsmerkmalen ergibt sich eine hohe positive Korrelation. Welche Aussage ist fachlich zulässig?",
     "a": [
-      "Der eine Messwert verursacht zwingend den anderen.",
-      "Die Variablen sind identisch.",
+      "Der Zusammenhang beweist die direkte Ursache-Wirkung-Beziehung.",
+      "Alle Einzelwerte der beiden Merkmale steigen in jeder Stichprobe gemeinsam.",
       "Die Größen hängen statistisch zusammen; eine Ursache ist damit nicht bewiesen.",
-      "Jede Korrelation bedeutet, dass die Daten normalverteilt sind."
+      "Ein dritter Einflussfaktor kann bei einer hohen Korrelation ausgeschlossen werden."
     ],
     "correct": 2,
-    "why": "Ein statistischer Zusammenhang alleine ist kein kausaler Nachweis.",
+    "why": "Korrelation zeigt einen statistischen Zusammenhang, aber ohne weitere Untersuchung keinen kausalen Mechanismus.",
     "source": "M11, Folie 46"
   },
   {
@@ -413,15 +413,15 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Ein Prozess liefert Messwerte für die Länge von Bauteilen. Welche Regelkartenart kann bei kleinen konstanten Stichproben laut Folie verwendet werden?",
+    "q": "Für eine Teilelänge werden Messwerte in kleinen, gleich großen Untergruppen erfasst. Welche Regelkarte nennt die Vorlesung dafür?",
     "a": [
       "X-quer-/R-Regelkarte",
-      "Nur eine C-Karte",
-      "Nur eine NP-Karte",
-      "Nur eine U-Karte"
+      "p-Regelkarte für fehlerhafte Anteile",
+      "np-Regelkarte für die Anzahl fehlerhafter Einheiten",
+      "c-Regelkarte für Fehlerzahlen pro konstanter Einheit"
     ],
     "correct": 0,
-    "why": "Bei stetigen Messdaten und kleinen konstanten Stichproben nennt die Folie X-quer-/R-Regelkarten.",
+    "why": "Für stetige Merkmale und kleine konstante Untergruppen kommt eine X-quer-/R-Regelkarte infrage.",
     "source": "M11, Folie 26"
   },
   {
@@ -430,15 +430,15 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Ein Stichprobenwert liegt zwischen Warn- und Eingriffsgrenze. Welche Interpretation nennt die Shewhart-Folie?",
+    "q": "Eine Beobachtung liegt **oberhalb der Warngrenze**, jedoch noch **unterhalb der Eingriffsgrenze**. Welche Folgerung ist bei der Prozessüberwachung angemessen?",
     "a": [
-      "Der Prozess ist sicher fehlerfrei.",
+      "Statistische Beherrschung ist damit endgültig widerlegt und die Produktion muss ohne weitere Prüfung beendet werden.",
       "Es besteht Verdacht auf eine Störung; erhöhte Aufmerksamkeit ist nötig.",
-      "Der gesamte Prozess muss sofort endgültig stillgelegt werden.",
-      "Die Warngrenze ist für diesen Wert bedeutungslos."
+      "Solange die Eingriffsgrenze nicht überschritten ist, ist das Signal ohne Bedeutung.",
+      "Ein solcher Wert beweist die Prozessfähigkeit trotz möglicherweise erhöhter Streuung."
     ],
     "correct": 1,
-    "why": "Zwischen Warn- und Eingriffsgrenzen besteht ein Verdacht, dem nachzugehen ist.",
+    "why": "Im Warnbereich ist erhöhte Aufmerksamkeit beziehungsweise eine Ursachenprüfung angebracht.",
     "source": "M11, Folie 28"
   },
   {
@@ -447,15 +447,15 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Ein Prozess weist einen statistisch stabilen Verlauf auf, erfüllt die Spezifikationsgrenzen aber nicht ausreichend. Was trifft zu?",
+    "q": "Eine Regelkarte zeigt statistisch stabile Werte; die Prozessstreuung überschreitet jedoch die erlaubte Toleranz. Wie ist das einzuordnen?",
     "a": [
-      "Der Prozess ist gleichzeitig fähig.",
-      "Ein stabiler Prozess kann niemals fehlerhafte Teile liefern.",
-      "Stabilität beweist automatisch Cpk ≥ 1,67.",
+      "Fähig und beherrscht",
+      "Fähig, aber nicht beherrscht",
+      "Weder beherrscht noch fähig",
       "Der Prozess ist beherrscht, aber nicht fähig."
     ],
     "correct": 3,
-    "why": "Die Folie unterscheidet stabile, aber nicht fähige Prozesse von stabilen und fähigen Prozessen.",
+    "why": "Stabilität bezeichnet Prozessbeherrschung; die unzureichende Toleranzeinhaltung bedeutet fehlende Fähigkeit.",
     "source": "M11, Folie 42"
   },
   {
@@ -464,15 +464,15 @@ export const module11Questions = [
     "topic": "Statistik",
     "type": "chapter",
     "chapter": 11,
-    "q": "Was kennzeichnet einen Prävalenz- beziehungsweise Basisratenfehler?",
+    "q": "Bei der Interpretation eines positiven Tests wird die sehr geringe Häufigkeit des betrachteten Ereignisses in der Grundgesamtheit übersehen. Welcher Denkfehler liegt vor?",
     "a": [
-      "Bewusstes Erhöhen des Stichprobenumfangs",
-      "Einfaches Addieren disjunkter Ereignisse",
+      "Der Additionssatz wird bei überlappenden Ereignissen ohne Abzug verwendet.",
+      "Für voneinander abhängige Ereignisse wird die Multiplikationsregel der Unabhängigkeit verwendet.",
       "Missachtung der Häufigkeit eines Ereignisses in der Grundgesamtheit bei der Interpretation bedingter Wahrscheinlichkeiten",
-      "Die Berechnung des Mittelwerts aus einer Stichprobe"
+      "Eine Stichprobe ist nicht zufällig gewählt und verzerrt deshalb die Erhebung."
     ],
     "correct": 2,
-    "why": "Der Prävalenzfehler entsteht, wenn die Basisrate bei der Interpretation bedingter Wahrscheinlichkeiten ignoriert wird.",
+    "why": "Der Basisratenfehler ignoriert die Ausgangshäufigkeit eines Ereignisses bei der Interpretation bedingter Wahrscheinlichkeiten.",
     "source": "M11, Folie 47"
   }
 ];

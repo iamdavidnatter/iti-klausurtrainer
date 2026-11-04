@@ -5,15 +5,15 @@ export const module2Questions = [
     "topic": "Dokumentation",
     "type": "chapter",
     "chapter": 2,
-    "q": "Welche Anforderung gehört zur Erstellung dokumentierter Information gemäß ISO 9001:2015?",
+    "q": "Welche Anforderung gehört speziell zu Erstellen und Aktualisieren dokumentierter Information (ISO 9001:2015, 7.5.2), statt vorrangig zu deren Lenkung?",
     "a": [
       "Angemessene Kennzeichnung und Beschreibung",
-      "Veröffentlichung im Internet",
-      "Ein Video zu jeder Anweisung",
-      "Ausschließlich handschriftliche Erstellung"
+      "Bereitstellung dokumentierter Informationen am Ort ihrer Verwendung",
+      "Schutz dokumentierter Informationen vor unbeabsichtigten Änderungen",
+      "Regelung von Verteilung, Zugriff und Wiederauffindbarkeit"
     ],
     "correct": 0,
-    "why": "Abschnitt 7.5.2 fordert unter anderem angemessene Identifikation und Beschreibung.",
+    "why": "Identifikation und Beschreibung sind Bestandteil von 7.5.2. Verfügbarkeit und Schutz betreffen die Lenkung nach 7.5.3.",
     "source": "M2, Folie 3"
   },
   {
@@ -22,15 +22,15 @@ export const module2Questions = [
     "topic": "Dokumentation",
     "type": "chapter",
     "chapter": 2,
-    "q": "Was ist eine Aufgabe der Systemdokumentation?",
+    "q": "Welche Kombination trifft den Zweck der Systemdokumentation nach den Folien?",
     "a": [
-      "Behördliche Anforderungen ausschließen",
-      "Kundenanforderungen ignorieren",
+      "Möglichst viele Dokumente als eigenständigen Qualitätsnachweis erzeugen",
+      "Anweisungen unabhängig von Kunden- und Normanforderungen führen",
       "Abläufe standardisieren und notwendige Nachweise sicherstellen",
-      "Prozessziele abschaffen"
+      "Aufzeichnungen zur Prozesskontrolle durch reine Strategieerklärungen ersetzen"
     ],
     "correct": 2,
-    "why": "Systemdokumentation unterstützt Normkonformität und nachvollziehbare Abläufe.",
+    "why": "Dokumentation soll Anforderungen sichern, Abläufe vereinheitlichen und geeignete Nachweise ermöglichen.",
     "source": "M2, Folie 4"
   },
   {
@@ -39,15 +39,15 @@ export const module2Questions = [
     "topic": "Dokumentation",
     "type": "chapter",
     "chapter": 2,
-    "q": "Welche Aussage zum QM-Handbuch ist für ISO 9001:2015 zutreffend?",
+    "q": "Welche Aussage trifft auf das QM-Handbuch nach ISO 9001:2015 zu?",
     "a": [
-      "Es ist verpflichtend und muss alles enthalten.",
+      "Das Handbuch ist für jede Zertifizierung nach ISO 9001:2015 separat einzureichen.",
       "Es ist nicht ausdrücklich gefordert, kann aber als Überblick dienen.",
-      "Es darf niemals verwendet werden.",
-      "Es ersetzt jedes Prüfprotokoll."
+      "Ein Handbuch ist nach ISO 9001:2015 erst ab einer bestimmten Mitarbeiterzahl vorgeschrieben.",
+      "Das Handbuch gilt in ISO 9001:2015 als Ersatz für andere dokumentierte Informationen."
     ],
     "correct": 1,
-    "why": "Das QM-Handbuch ist keine ausdrückliche Pflicht mehr, bleibt aber freiwillig üblich.",
+    "why": "Ein QM-Handbuch ist seit ISO 9001:2015 nicht ausdrücklich vorgeschrieben, kann aber weiterhin als Übersicht dienen.",
     "source": "M2, Folie 5"
   },
   {
@@ -56,15 +56,15 @@ export const module2Questions = [
     "topic": "Dokumentation",
     "type": "chapter",
     "chapter": 2,
-    "q": "Ein Dokument soll Input, Tätigkeiten und Output eines Gesamtprozesses zeigen. Welcher Dokumenttyp passt?",
+    "q": "Die Organisation will Eingaben, Abfolge von Tätigkeiten und Ergebnisse eines übergreifenden Ablaufs darstellen. Welcher Dokumenttyp passt vorrangig?",
     "a": [
-      "Gehaltsblatt",
-      "Reklamationsstatistik",
-      "Zeitnachweis",
+      "Verfahrensanweisung zur detaillierten Durchführung",
+      "Arbeitsanweisung für einen einzelnen Handgriff",
+      "Prüfprotokoll als Aufzeichnung eines Ergebnisses",
       "Prozessbeschreibung"
     ],
     "correct": 3,
-    "why": "Eine Prozessbeschreibung zeigt die Abfolge und Ergebnisse zusammenhängender Tätigkeiten.",
+    "why": "Eine Prozessbeschreibung stellt den Zusammenhang von Input, Tätigkeiten und Output dar.",
     "source": "M2, Folie 7"
   },
   {
@@ -73,15 +73,15 @@ export const module2Questions = [
     "topic": "Dokumentation",
     "type": "chapter",
     "chapter": 2,
-    "q": "Welcher Satz trifft den Kern einer Verfahrensanweisung?",
+    "q": "Ein Dokument beantwortet die Frage: 'Wie wird dieser betriebliche Ablauf ausgeführt?' Welche Dokumentart trifft den Schwerpunkt?",
     "a": [
       "Sie legt fest, wie ein betrieblicher Ablauf ausgeführt wird.",
-      "Sie enthält nur das Organigramm.",
-      "Sie ist immer eine Behördenmitteilung.",
-      "Sie beschreibt nur den Umsatz."
+      "Prozesslandkarte mit Prozessübersicht und Schnittstellen",
+      "Arbeitsanweisung für die Bedienung eines konkreten Geräts",
+      "Prüfprotokoll mit Ergebnissen einer bereits durchgeführten Kontrolle"
     ],
     "correct": 0,
-    "why": "Verfahrensanweisungen konkretisieren die Durchführung betrieblicher Abläufe.",
+    "why": "Eine Verfahrensanweisung legt die konkrete Durchführung eines betrieblichen Ablaufs fest.",
     "source": "M2, Folie 8"
   },
   {
@@ -90,15 +90,15 @@ export const module2Questions = [
     "topic": "Dokumentation",
     "type": "chapter",
     "chapter": 2,
-    "q": "Was sollte in einer Verfahrensanweisung zur Nachvollziehbarkeit von Änderungen enthalten sein?",
+    "q": "Welche Angabe ist insbesondere notwendig, um überarbeitete Verfahrensanweisungen eindeutig von früheren Ständen abzugrenzen?",
     "a": [
-      "Farbe der Firmenfahrzeuge",
-      "Private Arbeitszeiten",
+      "Verteiler beziehungsweise betroffene Personen",
+      "Mitgeltende Unterlagen und Querverweise",
       "Änderungs- und Versionsmanagement",
-      "Ausschließlich die gesamte Kundenzahl"
+      "Auflistung der Prozessbeteiligten"
     ],
     "correct": 2,
-    "why": "Die Folien nennen Änderungs- und Versionsmanagement als Bestandteil einer Verfahrensanweisung.",
+    "why": "Änderungs- und Versionsmanagement macht den jeweiligen Bearbeitungsstand nachvollziehbar.",
     "source": "M2, Folie 9"
   },
   {
@@ -107,15 +107,15 @@ export const module2Questions = [
     "topic": "Dokumentation",
     "type": "chapter",
     "chapter": 2,
-    "q": "Was bedeutet Responsible in der RACI-Zuordnung?",
+    "q": "In einer RACI-Matrix führt jemand einen definierten Arbeitsschritt selbst aus. Welche Zuordnung ist dafür vorgesehen?",
     "a": [
-      "Gesamtverantwortung ohne Durchführung",
+      "Accountable: Ergebnis- oder Gesamtverantwortung",
       "Durchführungsverantwortung",
-      "Nur zu informieren",
-      "Nur zur Beratung beizuziehen"
+      "Consulted: fachlich zurate gezogene Person",
+      "Informed: über das Ergebnis zu benachrichtigende Person"
     ],
     "correct": 1,
-    "why": "R steht für Responsible und kennzeichnet die Durchführungsverantwortung.",
+    "why": "Responsible kennzeichnet die unmittelbare Durchführungsverantwortung und ist von Accountable zu unterscheiden.",
     "source": "M2, Folie 10"
   },
   {
@@ -124,15 +124,15 @@ export const module2Questions = [
     "topic": "Dokumentation",
     "type": "chapter",
     "chapter": 2,
-    "q": "Wofür steht Informed innerhalb der RACI-Matrix?",
+    "q": "Eine Teamleitung erhält den Prozessstatus zur Kenntnis, führt ihn jedoch nicht aus und wird nicht um fachlichen Rat gefragt. Welcher RACI-Eintrag passt?",
     "a": [
-      "Für die Freigabestelle",
-      "Für die Audit-Leitung",
-      "Für den Materiallieferanten",
+      "Responsible: Durchführung des Arbeitsschritts",
+      "Accountable: Gesamtverantwortung für das Ergebnis",
+      "Consulted: fachlicher Beitrag vor der Entscheidung",
       "Für die zu informierende Person"
     ],
     "correct": 3,
-    "why": "I bedeutet Informed: Beteiligte erhalten erforderliche Informationen.",
+    "why": "Informed beschreibt die Information ohne notwendige Durchführung oder Beratung.",
     "source": "M2, Folie 10"
   },
   {
@@ -141,15 +141,15 @@ export const module2Questions = [
     "topic": "Dokumentation",
     "type": "chapter",
     "chapter": 2,
-    "q": "Wann ist eine Arbeitsanweisung besonders sinnvoll?",
+    "q": "Welche Situation spricht am ehesten für eine zusätzliche arbeitsplatzbezogene Arbeitsanweisung?",
     "a": [
       "Wenn ein konkreter Arbeitsschritt genau nachvollziehbar beschrieben werden muss.",
-      "Wenn nur eine abstrakte Vision formuliert wird.",
-      "Wenn ein Zertifikat ersetzt werden soll.",
-      "Wenn der Name des Unternehmens geändert wird."
+      "Abteilungsübergreifende Prozesse und ihre Wechselwirkungen werden dargestellt.",
+      "Die prinzipielle Verantwortung für einen Managementprozess wird verteilt.",
+      "Die Ergebnisse einer abgeschlossenen Prüfung müssen nachgewiesen werden."
     ],
     "correct": 0,
-    "why": "Arbeitsanweisungen beschreiben arbeitsplatzbezogene Einzel- und Detailfragen.",
+    "why": "Eine Arbeitsanweisung legt einen konkreten Arbeitsschritt detailliert und nachvollziehbar fest.",
     "source": "M2, Folie 11"
   },
   {
@@ -158,15 +158,15 @@ export const module2Questions = [
     "topic": "Dokumentation",
     "type": "chapter",
     "chapter": 2,
-    "q": "Welche Dokumente sind in der Dokumentenpyramide besonders ausführungsnah?",
+    "q": "Welche Dokumentengruppe liegt in der Dokumentenpyramide besonders nahe an der operativen Ausführung?",
     "a": [
-      "Unternehmensvision und Strategie",
-      "Allgemeine Qualitätspolitik",
+      "Qualitätspolitik und Unternehmensstrategie",
+      "Prozesslandkarte und strategische Zielsetzung",
       "Arbeitsanweisungen und Checklisten",
-      "Externe Normen"
+      "Prozessbeschreibung und allgemeine Prozessziele"
     ],
     "correct": 2,
-    "why": "Der untere Bereich umfasst detaillierte, praxisnahe Anweisungen und Formulare.",
+    "why": "Arbeitsanweisungen und Checklisten unterstützen konkrete Tätigkeiten und stehen unterhalb strategischer Dokumente.",
     "source": "M2, Folie 13"
   },
   {
@@ -175,15 +175,15 @@ export const module2Questions = [
     "topic": "Dokumentation",
     "type": "chapter",
     "chapter": 2,
-    "q": "Ein Prüfprotokoll hält durchgeführte Messungen fest. Wie ist es einzuordnen?",
+    "q": "Ein Mitarbeiter füllt nach der Endkontrolle ein Formular mit den gemessenen Ergebnissen aus. Wie ist dieses ausgefüllte Formular einzuordnen?",
     "a": [
-      "Vorausschauender Qualitätsplan",
+      "Prüfplan als Vorgabe für zukünftige Kontrollen",
       "Nachweis dokumentierter Information",
-      "Kooperationsvertrag",
-      "Strategische Vision"
+      "Arbeitsanweisung zur Durchführung der Prüfung",
+      "Verfahrensanweisung zur Organisation der Messprozesse"
     ],
     "correct": 1,
-    "why": "Prüfprotokolle belegen ausgeführte Prüfungen und deren Ergebnisse.",
+    "why": "Ein ausgefülltes Prüfprotokoll belegt die tatsächlich durchgeführte Prüfung und ist Nachweisdokument.",
     "source": "M2, Folie 4"
   },
   {
@@ -192,15 +192,15 @@ export const module2Questions = [
     "topic": "Dokumentation",
     "type": "chapter",
     "chapter": 2,
-    "q": "Ein Dokument bringt keinen sachlich begründbaren Nutzen und ist nicht gefordert. Was entspricht den Folien?",
+    "q": "Ein Dokument wird weder normativ benötigt noch unterstützt es einen nachvollziehbaren betrieblichen Zweck. Was folgt aus dem Dokumentationsgrundsatz der Folien?",
     "a": [
-      "Weitere Formulare ergänzen",
-      "Das Dokument allen Kunden zuschicken",
-      "Zehn Kopien anfertigen",
+      "Es bleibt als Sicherheitsreserve dauerhaft unverändert bestehen.",
+      "Es muss vor der Abschaffung durch ein neues Pflichtformular ersetzt werden.",
+      "Es soll zumindest weiterhin für alle Beteiligten verpflichtend verteilt werden.",
       "Unnötige Dokumentation vermeiden"
     ],
     "correct": 3,
-    "why": "Jedes Dokument soll ein Sachargument für seine Existenz haben.",
+    "why": "Dokumentation braucht einen sachlichen Grund; redundante oder zwecklose Dokumente sollen vermieden werden.",
     "source": "M2, Folie 14"
   }
 ];

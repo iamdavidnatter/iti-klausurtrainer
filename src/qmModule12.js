@@ -5,15 +5,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Welche Tätigkeit gehört zum ersten Schritt Seiri der 5S-Methode?",
+    "q": "In einem Montagebereich werden zuerst alle nicht benötigten Werkzeuge aussortiert. Welchem Schritt der 5S-Methode entspricht das?",
     "a": [
-      "Arbeitsplätze abschließen",
-      "Ausschließlich Schulungen planen",
+      "Seiton – benötigte Werkzeuge systematisch anordnen",
+      "Seiso – Arbeitsplätze und Hilfsmittel reinigen",
       "Unnötige Gegenstände aussortieren",
-      "Die fertigen Produkte reklamieren"
+      "Seiketsu – Ordnung und Reinigung standardisieren"
     ],
     "correct": 2,
-    "why": "Seiri beziehungsweise Separieren entfernt nicht benötigte Gegenstände vom Arbeitsplatz.",
+    "why": "Seiri ist der erste 5S-Schritt und trennt Benötigtes von Überflüssigem.",
     "source": "M12, Folie 3"
   },
   {
@@ -22,15 +22,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Was steht bei Seiton, dem zweiten 5S-Schritt, im Vordergrund?",
+    "q": "Ein Betrieb kennzeichnet feste Ablageplätze für alle notwendigen Werkzeuge. Welchem 5S-Schritt entspricht das?",
     "a": [
       "Benötigten Gegenständen feste, gekennzeichnete Plätze geben.",
-      "Nur das Auditprogramm ändern.",
-      "Die Qualitätskosten zusammenrechnen.",
-      "Ausschließlich neue Materialien einkaufen."
+      "Seiri – Unnötiges entfernen",
+      "Seiso – Verschmutzungen beseitigen",
+      "Seiketsu – einheitliche Standards festlegen"
     ],
     "correct": 0,
-    "why": "Seiton ordnet erforderliche Gegenstände ergonomisch und eindeutig zu.",
+    "why": "Seiton ordnet die benötigten Gegenstände systematisch an ihren Plätzen.",
     "source": "M12, Folie 4"
   },
   {
@@ -39,15 +39,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Was soll im fünften 5S-Schritt Shitsuke dauerhaft erreicht werden?",
+    "q": "Eine nach 5S neu gestaltete Werkstatt soll dauerhaft in diesem Zustand bleiben. Welchen Schwerpunkt hat Shitsuke?",
     "a": [
-      "Nur einmalige Grundreinigung",
-      "Nur eine neue Prozessbeschreibung",
-      "Ausschließlich mehr Lagerfläche",
+      "Seiso – eine gründliche Reinigung durchführen",
+      "Seiton – Arbeitsmittel erstmalig sortieren",
+      "Seiketsu – einzelne Standards zunächst dokumentieren",
       "Disziplinierte Einhaltung und Weiterentwicklung der Standards"
     ],
     "correct": 3,
-    "why": "Selbstdisziplin soll die festgelegten Standards langfristig sichern.",
+    "why": "Selbstdisziplin und gelebte Standards stellen die langfristige Wirkung von 5S sicher.",
     "source": "M12, Folie 7"
   },
   {
@@ -56,15 +56,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Wofür steht FMEA?",
+    "q": "Wofür steht das Kürzel FMEA im behandelten Qualitätsmanagementkontext?",
     "a": [
-      "Fehlerspeicher- und Messanalyse",
+      "Fehlermodus- und Messwertanalyse",
       "Fehlermöglichkeits- und Einflussanalyse",
-      "Fertigungsmaschinen-Energieanalyse",
-      "Finanzmanagement-Effizienzabschätzung"
+      "Fehlermaßnahmen- und Einflussbewertung",
+      "Fertigungsrisiko- und Materialeinflussanalyse"
     ],
     "correct": 1,
-    "why": "FMEA analysiert mögliche Fehler, Ursachen und Auswirkungen vorbeugend.",
+    "why": "Die Abkürzung FMEA steht für Fehlermöglichkeits- und Einflussanalyse.",
     "source": "M12, Folie 11"
   },
   {
@@ -73,15 +73,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Was verdeutlicht die Fehlerkosten-10er-Regel?",
+    "q": "Was ist die Kernaussage der Fehlerkosten-10er-Regel?",
     "a": [
-      "Nach zehn Prüfungen entstehen keine Fehler.",
-      "Jede Reparatur kostet immer genau zehn Euro.",
+      "Eine FMEA mit RPZ über 10 verursacht die zehnfachen Prüfkosten.",
+      "Fehler können nur durch zehn aufeinanderfolgende Prüfungen verhindert werden.",
       "Spät entdeckte Fehler verursachen häufig erheblich höhere Behebungskosten.",
-      "Alle Fehlerkosten sind unabhängig vom Entdeckungszeitpunkt."
+      "Die Anzahl entdeckter Fehler steigt unabhängig von der Entwicklungsphase mit jeder Stufe um den Faktor zehn."
     ],
     "correct": 2,
-    "why": "Je später ein Fehler erkannt wird, desto höher kann der Aufwand seiner Behebung werden.",
+    "why": "Die Regel verdeutlicht das häufig starke Anwachsen von Korrekturkosten bei später Entdeckung eines Fehlers.",
     "source": "M12, Folie 12"
   },
   {
@@ -90,15 +90,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Warum soll ein FMEA-Team interdisziplinär zusammengesetzt sein?",
+    "q": "Ein Produkt wird mit einer FMEA untersucht. Warum sollen Entwicklung, Produktion und Qualität gemeinsam beteiligt sein?",
     "a": [
       "Unterschiedliche Fachbereiche bringen Wissen über mögliche Fehler ein.",
-      "Nur um mehr Hierarchiestufen einzubauen.",
-      "Weil Kundenreklamationen verboten werden.",
-      "Damit jede Berechnung ohne Sachwissen gelingt."
+      "Damit jede Abteilung dieselben Fehlermöglichkeiten mehrfach unabhängig bewertet.",
+      "Damit die FMEA die spätere Produktprüfung vollständig ersetzen kann.",
+      "Damit Risikoprioritätszahlen ohne Bezug zu Fehlerursachen bestimmt werden."
     ],
     "correct": 0,
-    "why": "Die Folien empfehlen die Beteiligung von Konstruktion, Qualität, Produktion und weiteren Bereichen.",
+    "why": "Ein interdisziplinäres Team bringt verschiedene Perspektiven und Fachkenntnisse zur Bewertung möglicher Fehler zusammen.",
     "source": "M12, Folie 13"
   },
   {
@@ -107,15 +107,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Welche Aufgabe hat die System-FMEA Produkt?",
+    "q": "Bei welcher Fragestellung ist die System-FMEA **Produkt** vorrangig geeignet?",
     "a": [
-      "Die Anzahl der Urlaubstage optimieren",
-      "Den Marktanteil exakt prognostizieren",
-      "Nur Lohnkosten abschätzen",
+      "Wo kann im Fertigungsablauf eine Arbeitsanweisung missverstanden werden?",
+      "Welche Prüfstation erkennt ein falsch montiertes Teil zu spät?",
+      "Welche Rüstabweichung verursacht einen Montagefehler?",
       "Schwachstellen der Produktauslegung erkennen"
     ],
     "correct": 3,
-    "why": "Die Produkt-FMEA sucht Risiken und Schwächen im Produktentwurf.",
+    "why": "Die Produkt-FMEA befasst sich mit Schwachstellen des Produktentwurfs und der Produktauslegung.",
     "source": "M12, Folie 18"
   },
   {
@@ -124,15 +124,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Worauf fokussiert eine System-FMEA Prozess?",
+    "q": "Welche Aufgabenstellung gehört in erster Linie zur System-FMEA **Prozess**?",
     "a": [
-      "Ausschließlich die Produktwerbung",
+      "Kann die vorgesehene Werkstoffgeometrie im fertigen Design versagen?",
       "Mögliche Fehler und Schwachstellen in der Prozessauslegung",
-      "Die persönliche Bewertung des CEO",
-      "Nur das Erscheinungsbild des Produkts"
+      "Erfüllt eine Produkteigenschaft die spezifizierten Kundenanforderungen?",
+      "Welche Bauteilfunktion könnte wegen einer Konstruktionsschwäche ausfallen?"
     ],
     "correct": 1,
-    "why": "Die Prozess-FMEA betrachtet potenzielle Abweichungen und deren Ursachen in Prozessen.",
+    "why": "Die Prozess-FMEA betrachtet Risiken der Prozessauslegung und Prozessrealisierung, nicht vorrangig die Produktauslegung.",
     "source": "M12, Folie 20"
   },
   {
@@ -141,15 +141,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Ein Fehler hat die Werte A=3, B=9 und E=4. Welche klassische RPZ ergibt sich?",
+    "q": "In einer FMEA sind Auftreten A=3, Bedeutung B=9 und Entdeckung E=4 bewertet. Welche RPZ folgt aus der Folienformel?",
     "a": [
       "16",
-      "36",
+      "27",
       "108",
-      "120"
+      "36"
     ],
     "correct": 2,
-    "why": "RPZ = Auftreten × Bedeutung × Entdeckung = 3 × 9 × 4 = 108.",
+    "why": "RPZ wird aus A×B×E berechnet: 3×9×4=108.",
     "source": "M12, Folie 24"
   },
   {
@@ -158,15 +158,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Welche geplante Entwicklung der ISO 9001:2026 nennen die Vorlesungsfolien?",
+    "q": "Welche in den Vorlesungsfolien als **geplant** gekennzeichnete Richtung wird bei der Revision der ISO 9001 genannt?",
     "a": [
-      "Ausschließliche Konzentration auf die Endprüfung",
-      "Abschaffung des Risikomanagements",
+      "Verbindliche Einführung eines eigenständigen ESG-Zertifikats für jedes QMS",
+      "Vollständiges Ersetzen des risikobasierten Denkens durch reine Klimaziele",
       "Stärkere Berücksichtigung von Nachhaltigkeit und Klimabezug",
-      "Vollständige Streichung der Kundenorientierung"
+      "Feste Grenzwerte für den CO₂-Ausstoß jeder zertifizierten Organisation"
     ],
     "correct": 2,
-    "why": "Der als Ausblick gekennzeichnete Folienteil nennt Nachhaltigkeit, Klima, Ethik und Qualitätskultur als geplante Schwerpunkte.",
+    "why": "Die Folien nennen eine stärkere Berücksichtigung von Nachhaltigkeit, Klima, Ethik und Qualitätskultur; sie geben keine solchen allgemeinen Grenzwerte vor.",
     "source": "M12, Folie 69–72 (Ausblick, geplanter Stand)"
   },
   {
@@ -175,15 +175,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Was bedeutet bei der FMEA eine Entdeckungsbewertung E=10?",
+    "q": "Ein FMEA-Team bewertet die Entdeckbarkeit einer Fehlermöglichkeit mit E=10. Was drückt der hohe E-Wert aus?",
     "a": [
-      "Garantiert automatische Erkennung",
-      "Sehr hoher Qualitätsgewinn",
-      "Eine immer geringe Eintrittswahrscheinlichkeit",
+      "Die Fehlerfolge besitzt die höchste Bedeutung B.",
+      "Die Auftretenswahrscheinlichkeit ist sehr hoch (A=10).",
+      "Der Fehler wird durch eine nahezu sichere Prüfung erkannt (E=1).",
       "Fehlerentdeckung ist unwahrscheinlich"
     ],
     "correct": 3,
-    "why": "In der Folienbewertung bedeutet eine hohe E-Zahl schlechte Entdeckbarkeit.",
+    "why": "Bei FMEA bedeutet eine große E-Zahl schlechte Entdeckbarkeit; A und B bewerten andere Aspekte.",
     "source": "M12, Folie 23"
   },
   {
@@ -192,15 +192,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Welche Maßnahme soll laut Folien bei einer hohen RPZ bevorzugt werden?",
+    "q": "Drei Maßnahmen sind vorgeschlagen: eine Konstruktionsänderung, eine zusätzliche Prüfung und eine Warnanzeige. Was soll laut Folien zuerst bevorzugt werden?",
     "a": [
-      "Nur die Abschlussprüfung verlängern",
+      "Zusätzliche Prüfungen zur besseren Entdeckung des Fehlers",
       "Entstehung des Fehlers vermeiden",
-      "Nur Folgekosten neu zuordnen",
-      "Ausschließlich Kundenschäden entschädigen"
+      "Warnsignale zur Begrenzung möglicher Folgen",
+      "Nachträgliche Sortierung fehlerhafter Produkte"
     ],
     "correct": 1,
-    "why": "Vermeidende Maßnahmen zur Reduktion von A haben die erste Priorität.",
+    "why": "Vermeidende Maßnahmen sollen die Fehlereintrittswahrscheinlichkeit reduzieren und haben in den Folien Vorrang.",
     "source": "M12, Folie 25"
   },
   {
@@ -209,15 +209,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Worauf zielt Poka-Yoke unmittelbar?",
+    "q": "Ein Fertigungsprozess soll gegen unbeabsichtigtes Vertauschen ähnlicher Bauteile gesichert werden. Welcher Grundgedanke gehört zu Poka-Yoke?",
     "a": [
-      "Auf die Erhöhung der Marketingreichweite",
-      "Nur auf den Gewinnbericht",
+      "Fehler nach ihrer Entstehung mit einem Ishikawa-Diagramm strukturieren",
+      "Fehlerursachen im Team per FMEA priorisieren",
       "Auf das Verhindern oder sofortige Erkennen unbeabsichtigter menschlicher Fehlhandlungen",
-      "Auf die Festlegung von Urlaubstagen"
+      "Fehlerzahlen langfristig mittels Regelkarten überwachen"
     ],
     "correct": 2,
-    "why": "Poka-Yoke setzt bei möglichen menschlichen Fehlhandlungen an.",
+    "why": "Poka-Yoke verhindert Fehlhandlungen oder erkennt sie unmittelbar am Entstehungsort.",
     "source": "M12, Folie 29"
   },
   {
@@ -226,15 +226,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Eine Eingabemaske verhindert das Absenden, solange Pflichtfelder fehlen. Welche Poka-Yoke-Lösung liegt vor?",
+    "q": "Ein Onlineformular blockiert das Absenden, wenn eine Pflichtangabe fehlt. Welche Poka-Yoke-Variante ist umgesetzt?",
     "a": [
       "Harte Poka-Yoke-Lösung",
-      "Weiche Poka-Yoke-Lösung",
-      "Nur eine zufällige Stichprobe",
-      "Ausschließlich eine Selbstbewertung"
+      "Weiche Sicherung durch Warnhinweis ohne Sperre",
+      "Prüfung nach Abschluss ohne unmittelbaren Eingriff",
+      "Statistische Überwachung anhand von Stichproben"
     ],
     "correct": 0,
-    "why": "Harte Lösungen greifen ein und blockieren die fehlerhafte Weiterführung.",
+    "why": "Eine harte Poka-Yoke-Lösung verhindert den fehlerhaften nächsten Handlungsschritt.",
     "source": "M12, Folie 32"
   },
   {
@@ -243,15 +243,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Eine Eingabemaske warnt bei fehlenden Pflichtfeldern, erlaubt aber trotzdem das Senden. Welche Lösung?",
+    "q": "Ein Formular meldet eine fehlende Angabe, lässt den Nutzer aber trotzdem fortfahren. Welche Einordnung passt?",
     "a": [
-      "Ein zwingender Stopp",
-      "Ein Systemaudit",
-      "Eine RPZ-Berechnung",
+      "Harte Fehlersperre, die eine Weiterführung verhindert",
+      "Automatische vollständige Korrektur vor der Übermittlung",
+      "Fehlerverhinderung durch zwingend eindeutige mechanische Führung",
       "Eine weiche Poka-Yoke-Lösung"
     ],
     "correct": 3,
-    "why": "Weiche Poka-Yoke-Lösungen weisen durch Warnungen auf mögliche Fehler hin.",
+    "why": "Weiche Poka-Yoke-Lösungen machen auf mögliche Fehler aufmerksam, ohne den Ablauf zwingend zu sperren.",
     "source": "M12, Folie 32"
   },
   {
@@ -260,15 +260,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Welche drei Hauptbestandteile nennt die Vorlesung für ein Poka-Yoke-System?",
+    "q": "Welche drei **übergeordneten Bestandteile** nennt die Vorlesung zur Struktur eines Poka-Yoke-Systems?",
     "a": [
-      "Qualität, Zeit und Kosten",
+      "Kontakt-, Festwert- und Bewegungsschrittmethode als Auslösemechanismen",
       "Inspektionsmethode, Fehlerauslösemechanismen und Regulierungsmechanismen",
-      "Kostenstellen, Umsatz und Gewinn",
-      "Kundensegmente, Produktpreise und Lieferwege"
+      "Warnung, Abschaltung und Nacharbeit als alleinige Gesamtstruktur",
+      "Vorbeugungs-, Prüf- und externe Fehlerkosten als Systemkomponenten"
     ],
     "correct": 1,
-    "why": "Das Poka-Yoke-System wird aus Inspektion, Auslösung und Regulierung beschrieben.",
+    "why": "Inspektions-, Fehlerauslöse- und Regulierungsmechanismen sind die in den Folien dargestellten Bestandteile.",
     "source": "M12, Folie 35"
   },
   {
@@ -277,15 +277,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Welches Ziel hat direktes Feedback bei einer Poka-Yoke-Inspektionsmethode?",
+    "q": "Eine technische Kontrolle soll einen Bedienfehler frühzeitig melden. Welchen Vorteil bietet unmittelbares Poka-Yoke-Feedback?",
     "a": [
-      "Mängel erst nach dem Versand erfassen",
-      "Rückmeldungen grundsätzlich unterdrücken",
+      "Fehlerursachen lassen sich erst in einem nachgelagerten Audit betrachten.",
+      "Die Qualitätsfähigkeit wird unabhängig von der tatsächlichen Fehlerrate nachgewiesen.",
       "Eine Fehlhandlung möglichst sofort erkennbar und korrigierbar machen",
-      "Nur den Produktionsstandort bestimmen"
+      "Fehlerfolgen werden ausschließlich durch spätere Garantieprüfungen begrenzt."
     ],
     "correct": 2,
-    "why": "Die Inspektionsmethode soll möglichst schnell auf eine Fehlhandlung aufmerksam machen.",
+    "why": "Direkte Rückmeldung ermöglicht ein rechtzeitiges Erkennen und Korrigieren.",
     "source": "M12, Folie 36"
   },
   {
@@ -294,15 +294,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Welche Regel ist typisch für Brainstorming während der Ideensammlung?",
+    "q": "Eine Gruppe beginnt eine kreative Ideensammlung zu einem Qualitätsproblem. Welche Regel entspricht Brainstorming?",
     "a": [
       "Ideen zunächst ohne sofortige Kritik sammeln",
-      "Jeden Einfall sofort verwerfen",
-      "Nur die erste Idee dokumentieren",
-      "Ausschließlich schriftliche Prüfprotokolle vergleichen"
+      "Jede Idee unmittelbar nach ihrer Nennung nach Aufwand bewerten",
+      "Nur Vorschläge zulassen, deren Umsetzung bereits gesichert ist",
+      "Ideen vorab nach RPZ sortieren und dann einzeln vortragen"
     ],
     "correct": 0,
-    "why": "Brainstorming soll viele Ideen ohne unmittelbare Wertung hervorbringen.",
+    "why": "Brainstorming trennt freie Ideensammlung von der späteren Bewertung.",
     "source": "M12, Folie 40"
   },
   {
@@ -311,15 +311,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Wie viele Ideen können laut Folie bei der Methode 635 maximal aus sechs Durchläufen entstehen?",
+    "q": "Bei einer Methode-635-Sitzung mit sechs Personen werden pro Runde drei Ideen aufgeschrieben und insgesamt sechs Runden durchgeführt. Welche maximale Zahl an Ideenfeldern ergibt sich?",
     "a": [
-      "18",
-      "36",
+      "90",
+      "1080",
       "63",
       "108"
     ],
     "correct": 3,
-    "why": "Sechs Teilnehmende mal drei Ideen mal sechs Durchläufe ergeben bis zu 108 Ideen.",
+    "why": "Sechs Personen mal drei Ideen mal sechs Durchgänge ergeben 108 Einträge.",
     "source": "M12, Folie 43"
   },
   {
@@ -328,15 +328,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Wofür eignet sich ein Mindmap besonders?",
+    "q": "Ein Team sammelt und gliedert Ideen rund um ein zentrales Thema in Haupt- und Unterästen. Welche Methode eignet sich dafür?",
     "a": [
-      "Für die Berechnung von Cpk",
+      "Ishikawa-Diagramm für die Ursachen einer bestimmten Wirkung",
       "Für die grafische Sammlung und Strukturierung von Gedanken",
-      "Für die Feststellung von Produkthaftung",
-      "Für die Akkreditierung einer Zertifizierungsstelle"
+      "Pareto-Diagramm zur Sortierung nach beobachteter Fehlerhäufigkeit",
+      "Ablaufdiagramm für zeitlich aufeinanderfolgende Prozessschritte"
     ],
     "correct": 1,
-    "why": "Mindmapping ordnet Ideen um ein zentrales Thema in Haupt- und Unterzweigen.",
+    "why": "Mindmapping ordnet Ideen assoziativ und hierarchisch rund um ein zentrales Thema.",
     "source": "M12, Folie 44"
   },
   {
@@ -345,15 +345,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Wozu dient ein Ishikawa-Diagramm?",
+    "q": "Für eine Reklamation sollen mögliche Ursachen nach Mensch, Maschine, Methode und Material systematisch geordnet werden. Welches Werkzeug ist das?",
     "a": [
-      "Zum Überwachen einer Zeitreihe",
-      "Zum Berechnen des NPS",
+      "Pareto-Diagramm zur Rangfolge bereits quantifizierter Fehlerarten",
+      "5-Why-Fragetechnik zur schrittweisen Ursachenvertiefung",
       "Zum Strukturieren möglicher Ursachen einer betrachteten Wirkung",
-      "Nur zum Vergleichen von Preisen"
+      "Regelkarte zur zeitlichen Prozessüberwachung"
     ],
     "correct": 2,
-    "why": "Das Fischgrätenmodell ordnet mögliche Einflussfaktoren für ein Problem.",
+    "why": "Das Ishikawa-Diagramm stellt Ursachen in Kategorien einer Wirkung gegenüber.",
     "source": "M12, Folie 46"
   },
   {
@@ -362,15 +362,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Wodurch zeichnet sich die 5-Why-Technik aus?",
+    "q": "Eine Fehleranalyse fragt wiederholt, warum ein Problem auftritt, bis eine tieferliegende Ursache greifbar wird. Welche Methode entspricht diesem Vorgehen?",
     "a": [
       "Wiederholtes Hinterfragen, um tiefere Problemursachen zu finden",
-      "Die genau fünf erforderlichen Unterschriften",
-      "Die bloße Berechnung einer Fehlerquote",
-      "Das Durchführen von fünf gleichen Endprüfungen"
+      "Brainstorming zur ungefilterten Ideensammlung",
+      "Ishikawa zur Gliederung verschiedener Ursachenfelder",
+      "FMEA zur Bewertung potenzieller Fehlerarten mit A, B und E"
     ],
     "correct": 0,
-    "why": "Die Zahl der Warum-Fragen ist nicht strikt auf fünf beschränkt.",
+    "why": "5 Why sucht durch wiederholtes Nachfragen nach der zugrunde liegenden Ursache.",
     "source": "M12, Folie 50"
   },
   {
@@ -379,15 +379,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Welchen ersten Schritt D1 zeigt ausdrücklich Modul 12, Folie 56, für den 8D-Ablauf?",
+    "q": "Welche Tätigkeit ist in der **konkreten 8D-Folie 56** als D1 dargestellt?",
     "a": [
-      "Maßnahmen einführen",
+      "Teambildung",
+      "Sofortmaßnahmen",
       "Ursachenanalyse",
-      "Team würdigen",
       "Problembeschreibung"
     ],
     "correct": 3,
-    "why": "Die konkrete Vorlesungsfolie setzt D1 auf Problembeschreibung und D2 auf Teambildung; andere 8D-Darstellungen können abweichen.",
+    "why": "Die Vorlesungsfolie nennt D1 Problembeschreibung; andere 8D-Darstellungen beginnen mit der Teambildung.",
     "source": "M12, Folie 56"
   },
   {
@@ -396,15 +396,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "In welchem Schritt des 8D-Modells aus den Folien werden Maßnahmen eingeführt und auf Wirksamkeit geprüft?",
+    "q": "Ein 8D-Team hat langfristige Maßnahmen ausgewählt und prüft nun deren Einführung und Wirksamkeit. Welche Disziplin nennt Folie 56?",
     "a": [
-      "D3",
+      "D4",
       "D6",
-      "D1",
-      "D8"
+      "D5",
+      "D7"
     ],
     "correct": 1,
-    "why": "D6 ist laut Folie 56 die Einführung und Wirksamkeitsüberprüfung von Maßnahmen.",
+    "why": "In der dargestellten Reihenfolge behandelt D6 die Einführung und Wirksamkeitsprüfung der Maßnahmen.",
     "source": "M12, Folie 56"
   },
   {
@@ -413,15 +413,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Welche Aussage zur 4D-Methode ist in den Folien durch die Schrittfolge belegt?",
+    "q": "Welcher Ablauf entspricht der in Modul 12 gezeigten **4D-Fassung**?",
     "a": [
-      "Sie besteht aus exakt acht abgebildeten Schritten.",
-      "Sie ist ein vollständiger Ersatz jeder technischen Analyse.",
+      "D1 Team bilden → D2 Problem beschreiben → D3 Sofortmaßnahmen → D4 Ursachenanalyse",
+      "D1 Problem beschreiben → D2 Ursachenanalyse → D3 Team würdigen → D4 Abschluss",
       "Sie behandelt vier Schritte von Problembeschreibung bis Langfristmaßnahmen.",
-      "Sie beginnt mit der Akkreditierung."
+      "D1 Sofortmaßnahmen → D2 Team bilden → D3 Langfristmaßnahmen → D4 Auditbericht"
     ],
     "correct": 2,
-    "why": "Die Folie zeigt D1 Problembeschreibung bis D4 Langfristmaßnahmen; die Erwähnung von acht Schritten ist widersprüchlich.",
+    "why": "Die Folie 58 zeigt die vier Schritte Problembeschreibung, Sofortmaßnahmen, Ursachenanalyse und Langfristmaßnahmen.",
     "source": "M12, Folie 58"
   },
   {
@@ -430,15 +430,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Was ist ein Audit nach ISO 9000 im Kern?",
+    "q": "Ein internes Audit prüft systematisch dokumentierte Nachweise gegen vorab festgelegte Auditkriterien. Welche Definition passt?",
     "a": [
       "Ein systematischer unabhängiger dokumentierter Prozess zur Prüfung objektiver Nachweise",
-      "Eine ausschließlich persönliche Leistungsbeurteilung",
-      "Nur ein Finanzbericht",
-      "Eine ungeplante Beobachtung ohne Kriterien"
+      "Eine Prozessüberwachung, die fortlaufend Messwerte mit Eingriffsgrenzen vergleicht",
+      "Eine periodische Managementbewertung, die primär strategische Ziele festlegt",
+      "Eine Produktprüfung, bei der nur Einzelteile auf geometrische Konformität kontrolliert werden"
     ],
     "correct": 0,
-    "why": "Audits bewerten objektive Nachweise im Verhältnis zu definierten Auditkriterien.",
+    "why": "Audits sind unabhängige, dokumentierte und systematische Prozesse zur objektiven Bewertung von Nachweisen gegen Kriterien.",
     "source": "M12, Folie 61"
   },
   {
@@ -447,15 +447,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Welche Aussage zu ISO 19011:2018 ist richtig?",
+    "q": "Eine Organisation möchte ihr Auditprogramm und die Auditdurchführung anhand einer ISO-Leitlinie planen. Welche Aussage über ISO 19011:2018 ist richtig?",
     "a": [
-      "Sie legt die Pflicht zur Erstellung eines QM-Handbuchs fest.",
-      "Sie ist eine eigenständige QMS-Zertifizierungsnorm.",
-      "Sie regelt nur Produktpreise.",
+      "Sie enthält die verbindlichen QMS-Anforderungen für eine Zertifizierung nach ISO 9001.",
+      "Sie definiert primär Begriffe und Grundlagen des Qualitätsmanagements wie ISO 9000.",
+      "Sie gibt hauptsächlich Empfehlungen zum nachhaltigen Erfolg einer Organisation wie ISO 9004.",
       "Sie enthält Leitlinien für die Auditierung von Managementsystemen."
     ],
     "correct": 3,
-    "why": "ISO 19011 behandelt Auditprinzipien, Auditprogramme und die Auditdurchführung.",
+    "why": "ISO 19011 enthält Leitlinien zu Auditprinzipien, Auditprogrammen, Durchführung und Auditorenkompetenz.",
     "source": "M12, Folie 62"
   },
   {
@@ -464,15 +464,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Ein Kunde auditiert seinen Lieferanten. Welche Auditpartei trifft zu?",
+    "q": "Ein Automobilhersteller überprüft als Kunde die Prozesse seines Zulieferers. Welche Auditpartei trifft zu?",
     "a": [
       "Erstpartei",
       "Zweitpartei",
       "Drittpartei",
-      "Keine der genannten Parteien"
+      "Kombiniertes Audit"
     ],
     "correct": 1,
-    "why": "Kunden führen als interessierte Partei beim Lieferanten Zweitparteien-Audits durch.",
+    "why": "Ein Kunde prüft einen Lieferanten als interessierte Partei und führt ein Zweitparteiaudit durch.",
     "source": "M12, Folie 64"
   },
   {
@@ -481,15 +481,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Wann ist eine FMEA laut Würdigkeitsanalyse besonders sinnvoll?",
+    "q": "Bei welcher Ausgangslage sprechen die Folien im Rahmen der FMEA-Würdigkeitsanalyse besonders für die Anwendung?",
     "a": [
       "Bei neuen Einsatzbedingungen oder besonderen Sicherheitsanforderungen",
-      "Nur wenn keine technischen Änderungen vorkommen",
-      "Nur für die Gehaltsabrechnung",
-      "Ausschließlich bei alten Formularen"
+      "Produkt unverändert, Nutzung vollständig bekannt und Risiken bereits stabil bewertet",
+      "Wiederholte Routineprüfung ohne Änderung der Einsatzbedingungen",
+      "Unveränderte Konstruktion mit abgeschlossenen, wirksamen Schutzmaßnahmen"
     ],
     "correct": 0,
-    "why": "Innovationsgrad, Sicherheitsaspekte, spezielle Kundenanforderungen und neue Einsatzbedingungen sprechen für FMEA.",
+    "why": "Neue Einsatzbedingungen, Sicherheitsanforderungen und innovative Produkte sind typische Auslöser für eine FMEA.",
     "source": "M12, Folie 22"
   },
   {
@@ -498,15 +498,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Ein Bauteil lässt sich wegen seiner Geometrie nur richtig montieren. Welcher Poka-Yoke-Auslösemechanismus passt?",
+    "q": "Ein Teil ist durch seine Form nur in der korrekten Richtung einsetzbar. Welche Poka-Yoke-Auslöseart trifft zu?",
     "a": [
-      "Ausschließlich akustischer Alarm",
-      "Externe Mitarbeiterbefragung",
+      "Festwertmethode",
+      "Bewegungsschrittmethode",
       "Kontaktmethode",
-      "Nur eine Kostenstellenrechnung"
+      "Warnmethode"
     ],
     "correct": 2,
-    "why": "Die Kontaktmethode nutzt etwa eindeutige geometrische Formen oder Aufnahmen.",
+    "why": "Die Kontaktmethode nutzt Form, Lage oder Abmessungen zur unmittelbaren Fehlerverhinderung.",
     "source": "M12, Folie 37"
   },
   {
@@ -515,15 +515,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Wozu dient ein paarweiser Vergleich guter und fehlerhafter Teile in den Folien?",
+    "q": "Ein Team vergleicht fehlerhafte und fehlerfreie Produkte bei möglichst vergleichbaren Bedingungen. Was soll der paarweise Vergleich erreichen?",
     "a": [
-      "Nur zur Berechnung des Net Promoter Score",
+      "Fehlerarten entsprechend ihrer gesamten Auftretenshäufigkeit priorisieren",
       "Zur Eingrenzung möglicher Ursachen anhand wiederkehrender Unterschiede",
-      "Zur Planung von Urlaubszeiten",
-      "Nur zum Aufbau eines Organigramms"
+      "Mögliche Ursachen als Oberbegriffe in einem Fischgrätendiagramm sortieren",
+      "Das potenzielle Risiko mittels A×B×E bewerten"
     ],
     "correct": 1,
-    "why": "Beim Paarvergleich werden gleiche Einsatzbedingungen genutzt, um Unterschiede zu erkennen.",
+    "why": "Beim Paarvergleich wird nach systematischen Unterschieden zwischen guten und fehlerhaften Fällen gesucht.",
     "source": "M12, Folie 49"
   },
   {
@@ -532,15 +532,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Bei welcher Situation ist die 8D-Methode besonders geeignet?",
+    "q": "Für eine schwerwiegende Kundenreklamation müssen mehrere Abteilungen eine Ursache finden und dauerhaft abstellen. Welches Vorgehen ist geeignet?",
     "a": [
-      "Bei einer einfachen Speisekartenänderung",
-      "Für eine einmalige kreative Ideensammlung ohne Problem",
-      "Nur zur Anpassung von Logos",
+      "Kurzes Brainstorming als abschließender Fehlernachweis",
+      "5S-Arbeitsplatzorganisation als vollständige Reklamationsbearbeitung",
+      "Eine isolierte Produkt-Endprüfung ohne Maßnahmen zur Wiederholungsvermeidung",
       "Bei schwer nachvollziehbaren Reklamationen oder bereichsübergreifenden Problemen"
     ],
     "correct": 3,
-    "why": "Die Folien nennen Kundenreklamationen und bereichsübergreifende komplexe Probleme.",
+    "why": "8D ist ein strukturierter, teamorientierter Prozess für nachhaltige Problem- und Reklamationslösung.",
     "source": "M12, Folie 54"
   },
   {
@@ -549,15 +549,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Welche Auditart betrachtet die Wirksamkeit des gesamten Managementsystems?",
+    "q": "Ein Unternehmen untersucht die Wirksamkeit **des gesamten Qualitätsmanagementsystems**. Welche Auditart entspricht dem Prüfgegenstand?",
     "a": [
       "Systemaudit",
+      "Prozessaudit",
       "Produktaudit",
-      "Einkaufskontrolle ohne Auditkriterien",
-      "Nur eine Abnahmeprüfung"
+      "Zweitparteiaudit"
     ],
     "correct": 0,
-    "why": "Ein Systemaudit beurteilt Anwendung und Wirksamkeit des gesamten Managementsystems.",
+    "why": "Ein Systemaudit betrachtet Anwendung und Wirksamkeit des Managementsystems als Ganzes.",
     "source": "M12, Folie 63"
   },
   {
@@ -566,15 +566,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Welche Auditart untersucht ausgewählte fertige Produkte anhand festgelegter Anforderungen?",
+    "q": "Eine Stichprobe fertiger Erzeugnisse wird mit den dokumentierten Produktspezifikationen verglichen. Welche Auditart liegt vor?",
     "a": [
-      "Managementreview",
-      "Strategieaudit",
+      "Systemaudit",
+      "Prozessaudit",
       "Produktaudit",
-      "Personalentwicklungsgespräch"
+      "Zweitparteiaudit"
     ],
     "correct": 2,
-    "why": "Das Produktaudit betrachtet Produkte, häufig an einem geeigneten Stichprobenpunkt.",
+    "why": "Beim Produktaudit wird die Konformität konkreter Produkte mit den festgelegten Anforderungen geprüft.",
     "source": "M12, Folie 63"
   },
   {
@@ -583,15 +583,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Ein Unternehmen prüft sein eigenes Managementsystem durch eigene Auditoren. Welche Auditpartei?",
+    "q": "Eine Organisation lässt ihre eigenen internen Auditoren das eigene QMS prüfen. Wie wird das nach der Beteiligung klassifiziert?",
     "a": [
       "Drittpartei",
       "Erstpartei",
       "Zweitpartei",
-      "Akkreditierungsstelle als einzige Möglichkeit"
+      "Externes Kundenaudit"
     ],
     "correct": 1,
-    "why": "Ein internes Audit der Organisation ist ein Erstparteienaudit.",
+    "why": "Die Prüfung des eigenen Systems durch die Organisation ist ein Erstparteiaudit.",
     "source": "M12, Folie 64"
   },
   {
@@ -600,15 +600,15 @@ export const module12Questions = [
     "topic": "Methoden",
     "type": "chapter",
     "chapter": 12,
-    "q": "Welche Eigenschaft gehört nach den Folien zur Kompetenz eines Auditors?",
+    "q": "Welches Eigenschaftsprofil unterstützt die professionelle Durchführung eines Audits?",
     "a": [
-      "Fehlende Fachkenntnisse",
-      "Unangemeldete Manipulation von Nachweisen",
-      "Ausschließliche Abhängigkeit von der geprüften Stelle",
+      "Gute Normkenntnisse bei gleichzeitig geringer Bereitschaft zum Zuhören",
+      "Entscheidungsfähigkeit auch ohne ausreichende objektive Nachweise",
+      "Kenntnis der Audittechnik ohne Unparteilichkeit gegenüber der geprüften Stelle",
       "Objektivität, Fachkompetenz und faire Kommunikation"
     ],
     "correct": 3,
-    "why": "Auditoren benötigen fachliche und soziale Kompetenz sowie Objektivität und Fairness.",
+    "why": "Die Vorlesung betont Fach- und Sozialkompetenz, faire Gesprächsführung, Aufmerksamkeit und Objektivität.",
     "source": "M12, Folie 67"
   }
 ];

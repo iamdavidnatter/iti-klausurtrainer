@@ -5,15 +5,15 @@ export const module5Questions = [
     "topic": "Risiko",
     "type": "chapter",
     "chapter": 5,
-    "q": "Woran erkennt man einen systematischen Risikomanagementprozess?",
+    "q": "Ein Unternehmen entwickelt ein Verfahren zur Behandlung möglicher Lieferausfälle. Welche Abfolge beschreibt Risikomanagement am vollständigsten?",
     "a": [
-      "Er untersucht nur bereits eingetretene Schäden.",
-      "Er endet nach der ersten Liste.",
+      "Risiken ermitteln und danach ohne erneute Bewertung archivieren",
+      "Risiken kategorisieren und nach der ersten Bewertung endgültig schließen",
       "Er umfasst Identifikation, Analyse, Bewertung und Steuerung.",
-      "Er verzichtet auf Überwachung."
+      "Risiken identifizieren, Maßnahmen umsetzen und die Wirksamkeit nicht weiter überwachen"
     ],
     "correct": 2,
-    "why": "Risikomanagement ist ein fortlaufender strukturierter Prozess.",
+    "why": "Risikomanagement umfasst Identifizieren, Analysieren, Bewerten, Bewältigen und Überwachen.",
     "source": "M5, Folie 3"
   },
   {
@@ -22,15 +22,15 @@ export const module5Questions = [
     "topic": "Risiko",
     "type": "chapter",
     "chapter": 5,
-    "q": "Welchen Nutzen hat Risikomanagement für eine Organisation?",
+    "q": "Worin liegt der wesentliche Beitrag eines wirksamen Risikomanagements zur Unternehmensführung?",
     "a": [
       "Bessere und bewusstere Zielerreichung",
-      "Zwingende Erhöhung jedes Risikos",
-      "Verzicht auf Schutzmaßnahmen",
-      "Ausschließliche Betrachtung vergangener Umsätze"
+      "In der nachträglichen Zuordnung bereits entstandener Fehlerkosten",
+      "Im Ersetzen der Prozessziele durch eine allgemeine Risikoliste",
+      "Im vollständigen Ausschließen jedes unternehmerischen Risikos"
     ],
     "correct": 0,
-    "why": "Frühe Risikoerkennung und Priorisierung unterstützen die Erreichung von Zielen.",
+    "why": "Risikomanagement verbessert Entscheidungen und unterstützt die Zielerreichung mit bewusster Risikoabwägung.",
     "source": "M5, Folie 4"
   },
   {
@@ -39,15 +39,15 @@ export const module5Questions = [
     "topic": "Risiko",
     "type": "chapter",
     "chapter": 5,
-    "q": "Welche Reihenfolge beschreibt die Risikobeurteilung aus den Folien?",
+    "q": "Ein Team führt ausdrücklich eine Risikobeurteilung durch. Welche Reihenfolge entspricht den drei Teilprozessen der Folien?",
     "a": [
-      "Analyse – Bewertung – Identifikation",
-      "Bewertung – Identifikation – Analyse",
-      "Bewältigung – Zertifizierung – Audit",
+      "Risikoanalyse – Risikoidentifikation – Risikobewertung",
+      "Risikoidentifikation – Risikobewältigung – Risikobewertung",
+      "Risikobewertung – Risikoanalyse – Risikoidentifikation",
       "Identifikation – Analyse – Bewertung"
     ],
     "correct": 3,
-    "why": "Die Risikobeurteilung wird als Identifikation, Analyse und Bewertung dargestellt.",
+    "why": "Die Risikobeurteilung erfolgt in der Reihenfolge Identifikation, Analyse und Bewertung.",
     "source": "M5, Folie 6"
   },
   {
@@ -56,15 +56,15 @@ export const module5Questions = [
     "topic": "Risiko",
     "type": "chapter",
     "chapter": 5,
-    "q": "Was ist das Ergebnis einer Risikoidentifikation?",
+    "q": "Ein Team beginnt die Risikobeurteilung mit Workshops. Was soll in dieser Phase vorliegen, bevor Risiken priorisiert werden?",
     "a": [
-      "Ein automatisch ausgestelltes Zertifikat",
+      "Eine gewichtete Rangfolge einschließlich genehmigter Maßnahmen",
       "Eine möglichst umfassende Liste von Gefährdungen und Chancen",
-      "Nur ein statistischer Mittelwert",
-      "Ein unmittelbar fertiger Sanierungsplan"
+      "Ein vollständig berechnetes Restrisiko nach Umsetzung",
+      "Ein verbindlicher Auditbericht über den Risikoerfolg"
     ],
     "correct": 1,
-    "why": "Die Risikoidentifikation erfasst relevante Risiken und Chancen.",
+    "why": "Bei der Risikoidentifikation geht es zunächst um eine möglichst vollständige Sammlung potenzieller Risiken und Chancen.",
     "source": "M5, Folie 7"
   },
   {
@@ -73,15 +73,15 @@ export const module5Questions = [
     "topic": "Risiko",
     "type": "chapter",
     "chapter": 5,
-    "q": "Welche Technik dient ausdrücklich der Ermittlung von Chancen und Risiken?",
+    "q": "Ein Unternehmen analysiert interne Stärken und Schwächen sowie externe Chancen und Risiken. Welche Methode ist dafür vorgesehen?",
     "a": [
-      "Alleinige Gewinnmaximierung",
-      "Berechnung von Cp",
+      "Risikomatrix",
+      "FMEA",
       "SWOT-Analyse",
-      "Bewertung durch Kundensterne"
+      "Turtle-Diagramm"
     ],
     "correct": 2,
-    "why": "SWOT untersucht interne Stärken/Schwächen und externe Chancen/Risiken.",
+    "why": "SWOT erfasst gezielt interne und externe positive und negative Faktoren.",
     "source": "M5, Folie 8"
   },
   {
@@ -90,15 +90,15 @@ export const module5Questions = [
     "topic": "Risiko",
     "type": "chapter",
     "chapter": 5,
-    "q": "Ein Unternehmen besitzt eine besondere Softwarekompetenz. Welches SWOT-Feld passt?",
+    "q": "Ein IT-Dienstleister verfügt über erfahrene Automatisierungsspezialisten, die nicht ohne Weiteres verfügbar sind. Wie ist dieser interne Faktor in SWOT einzuordnen?",
     "a": [
       "Strengths – interne Stärken",
-      "Threats – externe Risiken",
       "Weaknesses – interne Schwächen",
-      "Opportunities – externe Chancen"
+      "Opportunities – externe Chancen",
+      "Threats – externe Bedrohungen"
     ],
     "correct": 0,
-    "why": "Eigene Kompetenzen sind interne Stärken.",
+    "why": "Eine intern vorhandene besondere Kompetenz gehört zu Strengths.",
     "source": "M5, Folie 8"
   },
   {
@@ -107,15 +107,15 @@ export const module5Questions = [
     "topic": "Risiko",
     "type": "chapter",
     "chapter": 5,
-    "q": "Welches Paar ist eine Grundlage der Risikoanalyse?",
+    "q": "Ein Risiko wird quantitativ nach zwei Größen beurteilt. Welche Kombination beschreibt die Risikohöhe?",
     "a": [
-      "Alter und Branche der Geschäftsführung",
-      "Marketingbudget und Bürofläche",
-      "Corporate Design und Gehalt",
+      "Risikotoleranz und Zahl der geplanten Maßnahmen",
+      "Häufigkeit der Audits und Prozessdurchlaufzeit",
+      "Entdeckungswahrscheinlichkeit und Kundenempfehlung",
       "Wahrscheinlichkeit und mögliche Auswirkungen"
     ],
     "correct": 3,
-    "why": "Risikoanalyse benötigt Einschätzungen von Eintrittswahrscheinlichkeit und Ausmaß.",
+    "why": "Bei der Risikoanalyse stehen die Eintrittswahrscheinlichkeit und das mögliche Schadensausmaß im Vordergrund.",
     "source": "M5, Folie 9"
   },
   {
@@ -124,15 +124,15 @@ export const module5Questions = [
     "topic": "Risiko",
     "type": "chapter",
     "chapter": 5,
-    "q": "Was bewirkt der Vergleich eines Risikos mit der Risikotoleranz?",
+    "q": "Der Risikowert eines Prozessausfalls wurde ermittelt. Welcher Zweck hat der anschließende Abgleich mit der Risikotoleranz?",
     "a": [
-      "Er ersetzt den Prozess durch einen Werbeplan.",
+      "Die nachträgliche Festlegung der Eintrittswahrscheinlichkeit",
       "Er zeigt den möglichen Handlungsbedarf.",
-      "Er garantiert, dass alle Risiken verschwinden.",
-      "Er liefert die Qualität eines Produkts ohne Prüfung."
+      "Die Berechnung des Net Promoter Score",
+      "Die Erstellung einer neuen Prozesslandkarte"
     ],
     "correct": 1,
-    "why": "Die Risikobewertung vergleicht ermittelte Risiken mit der festgelegten Toleranz.",
+    "why": "Die Risikobewertung entscheidet, ob das Risiko akzeptabel ist oder weitere Behandlung erfordert.",
     "source": "M5, Folie 10"
   },
   {
@@ -141,15 +141,15 @@ export const module5Questions = [
     "topic": "Risiko",
     "type": "chapter",
     "chapter": 5,
-    "q": "Eine Gegenmaßnahme verringert die Schadenshöhe bei unveränderter Eintrittswahrscheinlichkeit. Was ist anschließend zu tun?",
+    "q": "Eine Maßnahme reduziert die möglichen Folgen eines Fehlers, nicht aber seine Eintrittswahrscheinlichkeit. Wie ist die Wirksamkeit zu beurteilen?",
     "a": [
-      "Die alten Bewertungen unverändert übernehmen.",
-      "Die Risikobeurteilung künftig verbieten.",
+      "Das alte Risikoprofil bleibt unabhängig von den Maßnahmen gültig.",
+      "Es genügt, die Maßnahmen lediglich schriftlich freizugeben.",
       "Das Restrisiko neu bewerten.",
-      "Alle Chancen aus der Liste löschen."
+      "Nach einer Maßnahme ist ausschließlich die Eintrittswahrscheinlichkeit erneut zu beurteilen."
     ],
     "correct": 2,
-    "why": "Nach Risikobewältigung werden Wahrscheinlichkeit und Auswirkung erneut geprüft.",
+    "why": "Für das Restrisiko sind die geänderten Faktoren zu berücksichtigen und nach der Behandlung neu zu bewerten.",
     "source": "M5, Folie 10"
   },
   {
@@ -158,15 +158,15 @@ export const module5Questions = [
     "topic": "Risiko",
     "type": "chapter",
     "chapter": 5,
-    "q": "Was bedeutet risikobasiertes Denken im Qualitätsmanagement?",
+    "q": "Wie wird risikobasiertes Denken im Sinn der ISO-9001-orientierten Vorlesung verstanden?",
     "a": [
       "Sowohl negative Auswirkungen vorbeugen als auch Chancen erkennen und nutzen",
-      "Nur die schlimmsten Fehler nach ihrer Entstehung dokumentieren",
-      "Chancen grundsätzlich ausschließen",
-      "Ausschließlich die Liquidität des Unternehmens betrachten"
+      "Ausschließliche Bewertung negativer Ereignisse vor Projektbeginn",
+      "Erkennen von Chancen erst nach Abschluss aller Risikomaßnahmen",
+      "Gleichsetzung von Risiken mit bereits entstandenen Fehlerkosten"
     ],
     "correct": 0,
-    "why": "Die Folie nennt die frühe Vorbeugung von Schäden und die Nutzung von Chancen.",
+    "why": "Risikobasiertes Denken berücksichtigt Risiken und Chancen zur Sicherung und Verbesserung von Ergebnissen.",
     "source": "M5, Folie 11"
   }
 ];

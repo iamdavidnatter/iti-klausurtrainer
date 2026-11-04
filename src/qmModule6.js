@@ -5,7 +5,7 @@ export const module6Questions = [
     "topic": "Service",
     "type": "chapter",
     "chapter": 6,
-    "q": "Welcher Abschnitt von ISO 9001:2015 behandelt Tätigkeiten nach der Lieferung?",
+    "q": "Ein Hersteller unterstützt seine Kunden durch Wartung nach Übergabe. Welcher ISO-9001:2015-Abschnitt ist dafür besonders einschlägig?",
     "a": [
       "7.1.6",
       "8.5.5",
@@ -13,7 +13,7 @@ export const module6Questions = [
       "10.3"
     ],
     "correct": 1,
-    "why": "Abschnitt 8.5.5 regelt Anforderungen an Tätigkeiten nach Lieferung.",
+    "why": "Tätigkeiten nach der Lieferung sind in ISO 9001:2015 Abschnitt 8.5.5 behandelt.",
     "source": "M6, Folie 6"
   },
   {
@@ -22,15 +22,15 @@ export const module6Questions = [
     "topic": "Service",
     "type": "chapter",
     "chapter": 6,
-    "q": "Welche Situation ist eine typische Tätigkeit nach der Lieferung?",
+    "q": "Ein Servicevertrag verpflichtet zur Reparatur mangelhafter Geräte nach der Auslieferung. Welchem Prozessbestandteil entspricht das?",
     "a": [
-      "Erstellen einer internen Urlaubsübersicht",
-      "Wahl eines Firmenlogos",
+      "Prüfung und Freigabe vor der Übergabe",
+      "Festlegung von Annahmekriterien bei der Entwicklung",
       "Gewährleistungsbearbeitung beim Kunden",
-      "Neugestaltung eines Organigramms"
+      "Ermittlung des Kundenbedarfs vor Angebotslegung"
     ],
     "correct": 2,
-    "why": "Zu Tätigkeiten nach Lieferung zählen etwa Gewährleistung, Wartung und Reparatur.",
+    "why": "Gewährleistung, Wartung oder Nachbesserung nach der Übergabe gehören zu Tätigkeiten nach Lieferung.",
     "source": "M6, Folie 9"
   },
   {
@@ -39,15 +39,15 @@ export const module6Questions = [
     "topic": "Service",
     "type": "chapter",
     "chapter": 6,
-    "q": "Was soll laut ISO 9001:2015 Abschnitt 9.1.2 überwacht werden?",
+    "q": "Ein Unternehmen will die Erfüllung von Kundenanforderungen aus Kundensicht überprüfen. Was fordert ISO 9001:2015 Abschnitt 9.1.2?",
     "a": [
       "Die Wahrnehmung des Kunden zur Erfüllung seiner Anforderungen",
-      "Nur die Zahl interner Meetings",
-      "Ausschließlich Stromkosten",
-      "Nur die private Internetnutzung"
+      "Erfassung der internen Prozessfähigkeit anhand von Cp und Cpk",
+      "Feststellung der Zahl der normkonformen Dokumente je Prozess",
+      "Ermittlung der Zufriedenheit ausschließlich über die Reklamationsquote"
     ],
     "correct": 0,
-    "why": "Der Abschnitt betrifft die Überwachung der Kundenwahrnehmung.",
+    "why": "Abschnitt 9.1.2 verlangt die Überwachung der Kundenwahrnehmung und geeignete Methoden dafür.",
     "source": "M6, Folie 10"
   },
   {
@@ -56,15 +56,15 @@ export const module6Questions = [
     "topic": "Service",
     "type": "chapter",
     "chapter": 6,
-    "q": "Welche Methode eignet sich zur Erhebung von Kundenzufriedenheit?",
+    "q": "Welche Vorgehensweise ermöglicht eine direkte Erhebung der Wahrnehmung durch Kunden?",
     "a": [
-      "Nur interne Lagerzählung",
-      "Nur Besprechung mit dem Steuerberater",
-      "Nur die Zahl der Büroflächen",
+      "Auswertung der internen Prüfkosten ohne Kundenkontakt",
+      "Messung der Bearbeitungszeit von Reklamationen ohne Kundenrückmeldung",
+      "Analyse der Anzahl interner Prozessanweisungen",
       "Kundenbefragungen und Kundenfeedback"
     ],
     "correct": 3,
-    "why": "Die Folien nennen Kundenbefragungen und Feedback als Möglichkeiten der Erhebung.",
+    "why": "Kundenbefragung und Feedback erfassen Kundenäußerungen unmittelbar.",
     "source": "M6, Folie 11"
   },
   {
@@ -73,15 +73,15 @@ export const module6Questions = [
     "topic": "Service",
     "type": "chapter",
     "chapter": 6,
-    "q": "Welches Ziel hat ISO 9001:2015 Abschnitt 10.3?",
+    "q": "Welcher Schwerpunkt entspricht ISO 9001:2015 Abschnitt 10.3?",
     "a": [
-      "Einstellung aller Prozessprüfungen",
+      "Vereinbarung aller einzelnen Kundenanforderungen im Vertrag",
       "Fortlaufende Verbesserung der Eignung, Angemessenheit und Wirksamkeit des QMS",
-      "Verbot von Innovation",
-      "Abschaffung sämtlicher Verbesserungsmaßnahmen"
+      "Kontrolle der dokumentierten Informationen nach 7.5.3",
+      "Messung der Kundenzufriedenheit nach 9.1.2"
     ],
     "correct": 1,
-    "why": "Abschnitt 10.3 verlangt eine fortlaufende Verbesserung des QM-Systems.",
+    "why": "Abschnitt 10.3 fordert die fortlaufende Verbesserung des QMS.",
     "source": "M6, Folie 13"
   },
   {
@@ -90,15 +90,15 @@ export const module6Questions = [
     "topic": "Service",
     "type": "chapter",
     "chapter": 6,
-    "q": "Warum ist ein Basismerkmal im Kano-Modell besonders kritisch?",
+    "q": "Warum führt die Nichterfüllung von Basismerkmalen im Kano-Modell regelmäßig zu starker Unzufriedenheit?",
     "a": [
-      "Weil es grundsätzlich unerwartet ist.",
-      "Weil seine Erfüllung immer Begeisterung auslöst.",
+      "Weil diese Merkmale typischerweise nicht erwartet werden.",
+      "Weil Basismerkmale proportional zur Leistung Begeisterung erzeugen.",
       "Weil sein Fehlen starke Unzufriedenheit auslösen kann.",
-      "Weil es ausschließlich freiwillige Extras betrifft."
+      "Weil Basismerkmale nur bei erstmaliger Markteinführung relevant sind."
     ],
     "correct": 2,
-    "why": "Basisanforderungen werden vorausgesetzt; ihre Nichterfüllung senkt die Zufriedenheit stark.",
+    "why": "Basismerkmale werden als selbstverständlich vorausgesetzt und erzeugen bei Nichterfüllung deutliche Unzufriedenheit.",
     "source": "M6, Folie 18"
   },
   {
@@ -107,15 +107,15 @@ export const module6Questions = [
     "topic": "Service",
     "type": "chapter",
     "chapter": 6,
-    "q": "Ein Lieferdienst liefert zuverlässig binnen der zugesagten Zeit. Die Zufriedenheit steigt mit kürzerer Lieferzeit. Welche Kano-Kategorie?",
+    "q": "Die Zufriedenheit mit einem Lieferdienst steigt mit jeder Verkürzung der Lieferzeit; bei längerer Lieferzeit sinkt sie. Welche Kano-Einordnung passt?",
     "a": [
       "Leistungsmerkmal",
-      "Basismerkmal ohne Zufriedenheitseffekt",
-      "Begeisterungsmerkmal ohne Vergleichbarkeit",
-      "Hygienefaktor nach Herzberg"
+      "Basismerkmal",
+      "Begeisterungsmerkmal",
+      "Indifferentes Merkmal"
     ],
     "correct": 0,
-    "why": "Bei Leistungsmerkmalen steigt die Zufriedenheit mit dem Erfüllungsgrad.",
+    "why": "Leistungsmerkmale beeinflussen die Zufriedenheit abhängig vom Erfüllungsgrad.",
     "source": "M6, Folie 18"
   },
   {
@@ -124,15 +124,15 @@ export const module6Questions = [
     "topic": "Service",
     "type": "chapter",
     "chapter": 6,
-    "q": "Ein Kunde erhält unerwartet kostenlos ein hochwertiges Zusatzfeature. Wie ordnet Kano dies ein?",
+    "q": "Ein Kunde erhält eine unerwartete und nützliche Zusatzleistung, die nicht Teil seiner ursprünglichen Anforderungen war. Welche Kano-Kategorie passt am besten?",
     "a": [
       "Basismerkmal",
-      "Prüfkosten",
-      "Externe Fehlerkosten",
+      "Leistungsmerkmal",
+      "Indifferentes Merkmal",
       "Begeisterungsmerkmal"
     ],
     "correct": 3,
-    "why": "Unerwartete positive Eigenschaften sind typische Begeisterungsmerkmale.",
+    "why": "Ein überraschendes, positiv aufgenommenes Zusatzmerkmal entspricht einem Begeisterungsmerkmal.",
     "source": "M6, Folie 18"
   },
   {
@@ -141,15 +141,15 @@ export const module6Questions = [
     "topic": "Service",
     "type": "chapter",
     "chapter": 6,
-    "q": "Wozu dient die Einteilung der Kundenmerkmale nach dem Kano-Modell?",
+    "q": "Wozu werden Anforderungen im Kano-Modell differenziert?",
     "a": [
-      "Nur zur Berechnung der Prozessstreuung",
+      "Zur Schätzung des statistischen Prozessmittelwerts und seiner Streuung",
       "Zum Verständnis unterschiedlicher Wirkungen auf die Kundenzufriedenheit",
-      "Nur zum Aufbau des Organigramms",
-      "Zur Ermittlung des monatlichen Umsatzes"
+      "Zur Berechnung des Anteils von Promotoren an einer Kundenbefragung",
+      "Zur Klassifikation von Kosten in Präventions-, Prüf- und Fehlerkosten"
     ],
     "correct": 1,
-    "why": "Kano ordnet Anforderungen nach ihren Zufriedenheitseffekten ein.",
+    "why": "Das Kano-Modell beschreibt, wie unterschiedliche Erfüllungsgrade von Merkmalen die Zufriedenheit beeinflussen.",
     "source": "M6, Folie 17"
   },
   {
@@ -158,15 +158,15 @@ export const module6Questions = [
     "topic": "Service",
     "type": "chapter",
     "chapter": 6,
-    "q": "Bei einer NPS-Befragung antwortet ein Kunde mit 8. Zu welcher Gruppe zählt er?",
+    "q": "Ein Kunde vergibt bei der Weiterempfehlungsfrage den Wert 8 auf einer Skala von 0 bis 10. Wie wird er beim NPS gewertet?",
     "a": [
       "Promotor",
       "Detraktor",
       "Passiv",
-      "Nicht teilnahmeberechtigt"
+      "Unklassifizierter Kunde"
     ],
     "correct": 2,
-    "why": "Im NPS gehören Bewertungen 7–8 zu den Passiven.",
+    "why": "Ein NPS-Wert von 8 zählt zu den Passiven und geht weder in den Promotoren- noch in den Detraktorenanteil ein.",
     "source": "M6, Folie 21"
   },
   {
@@ -175,15 +175,15 @@ export const module6Questions = [
     "topic": "Service",
     "type": "chapter",
     "chapter": 6,
-    "q": "50 % Promotoren, 30 % Passive, 20 % Detraktoren: Wie hoch ist der NPS?",
+    "q": "NPS: 50 % Promotoren, 30 % Passive, 20 % Detraktoren. Welcher Wert ergibt sich?",
     "a": [
       "+30",
       "+50",
-      "−30",
+      "+20",
       "+70"
     ],
     "correct": 0,
-    "why": "NPS = 50 − 20 = +30; Passive werden nicht direkt verrechnet.",
+    "why": "Der NPS ergibt sich als Promotoren minus Detraktoren: 50−20=+30.",
     "source": "M6, Folie 21"
   },
   {
@@ -192,15 +192,15 @@ export const module6Questions = [
     "topic": "Service",
     "type": "chapter",
     "chapter": 6,
-    "q": "25 von 100 Kunden geben 9 oder 10, 45 geben 7 oder 8 und 30 geben 0 bis 6. Welcher NPS ergibt sich?",
+    "q": "100 Kunden antworten: 25 als Promotoren, 45 als Passive und 30 als Detraktoren. Welcher NPS ergibt sich?",
     "a": [
-      "+55",
       "+25",
-      "+15",
+      "+55",
+      "+5",
       "−5"
     ],
     "correct": 3,
-    "why": "NPS = 25 % Promotoren − 30 % Detraktoren = −5.",
+    "why": "Der NPS ist 25−30=−5 Punkte; Passive werden nicht abgezogen.",
     "source": "M6, Folie 21"
   },
   {
@@ -209,15 +209,15 @@ export const module6Questions = [
     "topic": "Service",
     "type": "chapter",
     "chapter": 6,
-    "q": "Wodurch zeichnet sich ein CTQ aus?",
+    "q": "Was macht eine Anforderung zu einem CTQ?",
     "a": [
-      "Es bezeichnet nur eine Marketing-Kampagne.",
+      "Sie entspricht einer ausschließlich internen Zielgröße ohne Kundenbezug.",
       "Es übersetzt wichtige Kundenanforderungen in überprüfbare Outputmerkmale.",
-      "Es gibt die Firmenanschrift an.",
-      "Es ersetzt die rechtlichen Anforderungen."
+      "Sie ist eine allgemeine Kundenaussage ohne messbares Annahmekriterium.",
+      "Sie beschreibt den beobachteten NPS des gesamten Unternehmens."
     ],
     "correct": 1,
-    "why": "CTQ macht kundenrelevante Eigenschaften konkret messbar.",
+    "why": "CTQ konkretisiert für Kunden entscheidende Merkmale des Ergebnisses und macht sie überprüfbar.",
     "source": "M6, Folie 24"
   },
   {
@@ -226,15 +226,15 @@ export const module6Questions = [
     "topic": "Service",
     "type": "chapter",
     "chapter": 6,
-    "q": "Ein Kunde verlangt hohe Erreichbarkeit eines Serviceportals. Welches CTQ ist geeignet?",
+    "q": "Für ein Serviceportal fordert ein Kunde 'hohe Erreichbarkeit'. Welche der Kennzahlen bildet diesen Wunsch als CTQ am direktesten ab?",
     "a": [
-      "Größe des Besprechungsraums",
-      "Farbe des Schreibtisches",
+      "Mittlere Bearbeitungsdauer pro Supportticket von höchstens zwei Stunden",
+      "Anteil der Kunden mit einer Weiterempfehlungsbewertung von 9 oder 10",
       "Portalverfügbarkeit von mindestens 99,5 % im Monat",
-      "Anzahl der Abteilungskürzel"
+      "Kosten für die Behebung von Systemausfällen je Quartal"
     ],
     "correct": 2,
-    "why": "Ein konkreter Verfügbarkeitszielwert macht den Kundenwunsch messbar.",
+    "why": "Die Verfügbarkeit des Portals in Prozent misst direkt die geforderte Erreichbarkeit; andere Kennzahlen sind nur indirekt verbunden.",
     "source": "M6, Folie 25"
   }
 ];
