@@ -406,5 +406,73 @@ export const module11Questions = [
     "correct": 2,
     "why": "Ein statistischer Zusammenhang alleine ist kein kausaler Nachweis.",
     "source": "M11, Folie 46"
+  },
+  {
+    "id": "chapter-11-25",
+    "number": 25,
+    "topic": "Statistik",
+    "type": "chapter",
+    "chapter": 11,
+    "q": "Ein Prozess liefert Messwerte für die Länge von Bauteilen. Welche Regelkartenart kann bei kleinen konstanten Stichproben laut Folie verwendet werden?",
+    "a": [
+      "X-quer-/R-Regelkarte",
+      "Nur eine C-Karte",
+      "Nur eine NP-Karte",
+      "Nur eine U-Karte"
+    ],
+    "correct": 0,
+    "why": "Bei stetigen Messdaten und kleinen konstanten Stichproben nennt die Folie X-quer-/R-Regelkarten.",
+    "source": "M11, Folie 26"
+  },
+  {
+    "id": "chapter-11-26",
+    "number": 26,
+    "topic": "Statistik",
+    "type": "chapter",
+    "chapter": 11,
+    "q": "Ein Stichprobenwert liegt zwischen Warn- und Eingriffsgrenze. Welche Interpretation nennt die Shewhart-Folie?",
+    "a": [
+      "Der Prozess ist sicher fehlerfrei.",
+      "Es besteht Verdacht auf eine Störung; erhöhte Aufmerksamkeit ist nötig.",
+      "Der gesamte Prozess muss sofort endgültig stillgelegt werden.",
+      "Die Warngrenze ist für diesen Wert bedeutungslos."
+    ],
+    "correct": 1,
+    "why": "Zwischen Warn- und Eingriffsgrenzen besteht ein Verdacht, dem nachzugehen ist.",
+    "source": "M11, Folie 28"
+  },
+  {
+    "id": "chapter-11-27",
+    "number": 27,
+    "topic": "Statistik",
+    "type": "chapter",
+    "chapter": 11,
+    "q": "Ein Prozess weist einen statistisch stabilen Verlauf auf, erfüllt die Spezifikationsgrenzen aber nicht ausreichend. Was trifft zu?",
+    "a": [
+      "Der Prozess ist gleichzeitig fähig.",
+      "Ein stabiler Prozess kann niemals fehlerhafte Teile liefern.",
+      "Stabilität beweist automatisch Cpk ≥ 1,67.",
+      "Der Prozess ist beherrscht, aber nicht fähig."
+    ],
+    "correct": 3,
+    "why": "Die Folie unterscheidet stabile, aber nicht fähige Prozesse von stabilen und fähigen Prozessen.",
+    "source": "M11, Folie 42"
+  },
+  {
+    "id": "chapter-11-28",
+    "number": 28,
+    "topic": "Statistik",
+    "type": "chapter",
+    "chapter": 11,
+    "q": "Was kennzeichnet einen Prävalenz- beziehungsweise Basisratenfehler?",
+    "a": [
+      "Bewusstes Erhöhen des Stichprobenumfangs",
+      "Einfaches Addieren disjunkter Ereignisse",
+      "Missachtung der Häufigkeit eines Ereignisses in der Grundgesamtheit bei der Interpretation bedingter Wahrscheinlichkeiten",
+      "Die Berechnung des Mittelwerts aus einer Stichprobe"
+    ],
+    "correct": 2,
+    "why": "Der Prävalenzfehler entsteht, wenn die Basisrate bei der Interpretation bedingter Wahrscheinlichkeiten ignoriert wird.",
+    "source": "M11, Folie 47"
   }
 ];
