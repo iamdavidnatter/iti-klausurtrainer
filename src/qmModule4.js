@@ -25,9 +25,9 @@ export const module4Questions = [
     "q": "Auf einem Normdokument steht die Bezeichnung ÖNORM EN ISO. Was sagt der Bestandteil EN aus?",
     "a": [
       "Europäische Norm",
-      "Er kennzeichnet eine ausschließlich österreichische Regel ohne europäischen Bezug.",
-      "Er weist auf eine nur internationale, nicht europäisch übernommene Norm hin.",
-      "Er bestätigt die rechtliche Harmonisierung jeder enthaltenen Anforderung."
+      "Österreichische Norm",
+      "Internationale Norm",
+      "Harmonisierte Norm"
     ],
     "correct": 0,
     "why": "EN bedeutet Europäische Norm; eine harmonisierte Norm ist ein spezifischerer Fall.",
@@ -41,9 +41,9 @@ export const module4Questions = [
     "chapter": 4,
     "q": "Welche Institution ist insbesondere für internationale Normung im elektrotechnischen Bereich zuständig?",
     "a": [
-      "ITU – Telekommunikation und zugehörige Standards",
-      "ISO – branchenübergreifende internationale Normung",
-      "Austrian Standards – nationale österreichische Normungsarbeit",
+      "ITU",
+      "ISO",
+      "Austrian Standards",
       "IEC"
     ],
     "correct": 3,
@@ -58,10 +58,10 @@ export const module4Questions = [
     "chapter": 4,
     "q": "Eine Organisation sucht eine Norm mit verbindlich formulierten Anforderungen für ein Umweltmanagementsystem. Welche passt?",
     "a": [
-      "ISO 19011:2018 – Audit-Leitfaden",
+      "ISO 19011",
       "ISO 14001",
-      "ISO 9004:2018 – Leitfaden für nachhaltigen Erfolg",
-      "ISO 10002 – Leitfaden für Reklamationsmanagement"
+      "ISO 9004",
+      "ISO 10002"
     ],
     "correct": 1,
     "why": "ISO 14001 ist ein Anforderungsmodell für Umweltmanagementsysteme; die anderen Normen sind Leitfäden.",
